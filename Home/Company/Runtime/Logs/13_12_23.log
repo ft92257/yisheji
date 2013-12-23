@@ -1,0 +1,128 @@
+[ 2013-12-23T11:52:30+08:00 ] 127.0.0.1 /yisheji/company.php?s=/User/qqAuth
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000720s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000812s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001380s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001619s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  t_access_token C:\AppServ\www\yisheji\Public\Library\qqAuth\QqAuth.class.php 第 19 行.
+NOTIC: [8] Undefined index:  t_openid C:\AppServ\www\yisheji\Public\Library\qqAuth\QqAuth.class.php 第 19 行.
+NOTIC: [8] Undefined index:  code C:\AppServ\www\yisheji\Public\Library\qqAuth\QqAuth.class.php 第 27 行.
+NOTIC: [8] Undefined index:  openid C:\AppServ\www\yisheji\Public\Library\qqAuth\QqAuth.class.php 第 55 行.
+NOTIC: [8] Undefined variable: type C:\AppServ\www\yisheji\Public\Library\qqAuth\Tencent.class.php 第 42 行.
+
+[ 2013-12-23T11:57:05+08:00 ] 127.0.0.1 /yisheji/company.php?s=/User/qqAuth
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001352s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001460s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001156s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001614s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001629s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  t_access_token C:\AppServ\www\yisheji\Public\Library\qqAuth\QqAuth.class.php 第 13 行.
+NOTIC: [8] Undefined index:  t_openid C:\AppServ\www\yisheji\Public\Library\qqAuth\QqAuth.class.php 第 13 行.
+NOTIC: [8] Undefined index:  code C:\AppServ\www\yisheji\Public\Library\qqAuth\QqAuth.class.php 第 22 行.
+NOTIC: [8] Undefined index:  openid C:\AppServ\www\yisheji\Public\Library\qqAuth\QqAuth.class.php 第 50 行.
+NOTIC: [8] Undefined variable: type C:\AppServ\www\yisheji\Public\Library\qqAuth\Tencent.class.php 第 42 行.
+
+[ 2013-12-23T11:57:38+08:00 ] 127.0.0.1 /yisheji/company.php?s=/User/qqAuth
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001172s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001270s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001370s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001532s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  t_access_token C:\AppServ\www\yisheji\Public\Library\qqAuth\QqAuth.class.php 第 13 行.
+NOTIC: [8] Undefined index:  t_openid C:\AppServ\www\yisheji\Public\Library\qqAuth\QqAuth.class.php 第 13 行.
+NOTIC: [8] Undefined index:  code C:\AppServ\www\yisheji\Public\Library\qqAuth\QqAuth.class.php 第 23 行.
+NOTIC: [8] Undefined index:  openid C:\AppServ\www\yisheji\Public\Library\qqAuth\QqAuth.class.php 第 51 行.
+NOTIC: [8] Undefined variable: type C:\AppServ\www\yisheji\Public\Library\qqAuth\Tencent.class.php 第 42 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Public\Library\qqAuth\QqAuth.class.php:21) C:\AppServ\www\yisheji\Public\Library\qqAuth\QqAuth.class.php 第 63 行.
+
+[ 2013-12-23T11:59:46+08:00 ] 127.0.0.1 /yisheji/company.php?s=/User/qqAuth
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001342s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001448s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000823s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001380s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001487s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  t_access_token C:\AppServ\www\yisheji\Public\Library\qqAuth\QqAuth.class.php 第 13 行.
+NOTIC: [8] Undefined index:  t_openid C:\AppServ\www\yisheji\Public\Library\qqAuth\QqAuth.class.php 第 13 行.
+NOTIC: [8] Undefined index:  code C:\AppServ\www\yisheji\Public\Library\qqAuth\QqAuth.class.php 第 24 行.
+NOTIC: [8] Undefined index:  openid C:\AppServ\www\yisheji\Public\Library\qqAuth\QqAuth.class.php 第 52 行.
+NOTIC: [8] Undefined variable: type C:\AppServ\www\yisheji\Public\Library\qqAuth\Tencent.class.php 第 42 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Public\Library\qqAuth\QqAuth.class.php:21) C:\AppServ\www\yisheji\Public\Library\qqAuth\QqAuth.class.php 第 64 行.
+
+[ 2013-12-23T12:00:28+08:00 ] 127.0.0.1 /yisheji/company.php?s=/User/qqAuth
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000936s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001058s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001324s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001664s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  t_access_token C:\AppServ\www\yisheji\Public\Library\qqAuth\QqAuth.class.php 第 13 行.
+NOTIC: [8] Undefined index:  t_openid C:\AppServ\www\yisheji\Public\Library\qqAuth\QqAuth.class.php 第 13 行.
+NOTIC: [8] Undefined index:  code C:\AppServ\www\yisheji\Public\Library\qqAuth\QqAuth.class.php 第 22 行.
+NOTIC: [8] Undefined index:  openid C:\AppServ\www\yisheji\Public\Library\qqAuth\QqAuth.class.php 第 50 行.
+NOTIC: [8] Undefined variable: type C:\AppServ\www\yisheji\Public\Library\qqAuth\Tencent.class.php 第 42 行.
+
+[ 2013-12-23T12:04:07+08:00 ] 127.0.0.1 /yisheji/company.php?s=/User/qqAuth
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000995s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001082s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001363s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002025s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  t_access_token C:\AppServ\www\yisheji\Public\Library\qqAuth\QqAuth.class.php 第 13 行.
+NOTIC: [8] Undefined index:  t_openid C:\AppServ\www\yisheji\Public\Library\qqAuth\QqAuth.class.php 第 13 行.
+NOTIC: [8] Undefined index:  code C:\AppServ\www\yisheji\Public\Library\qqAuth\QqAuth.class.php 第 22 行.
+NOTIC: [8] Undefined index:  openid C:\AppServ\www\yisheji\Public\Library\qqAuth\QqAuth.class.php 第 50 行.
+NOTIC: [8] Undefined variable: type C:\AppServ\www\yisheji\Public\Library\qqAuth\Tencent.class.php 第 42 行.
+
