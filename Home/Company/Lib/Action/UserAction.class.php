@@ -85,9 +85,7 @@ class UserAction extends BaseAction {
 	}
 	
 	public function sina_callback() {
-		dump($_SESSION);
-		dump($_GET);
-		echo 'hello';
+		include "./public/Library/sinaAuth/index.php";
 	}
 }
 ?>
