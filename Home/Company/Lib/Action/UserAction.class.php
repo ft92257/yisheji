@@ -72,33 +72,20 @@ class UserAction extends BaseAction {
 	public function qq_callback() {
 		require_once "./public/Library/qqAuth/qqConnectAPI.php";
 		$qc = new QC();
-		echo $qc->qq_callback();
-		echo $qc->get_openid();
-		
+		//echo $qc->qq_callback();
+		$openid = $qc->get_openid();
 		$arr = $qc->get_user_info();
+		$nickname = $arr["nickname"];
 		
-		echo '<meta charset="UTF-8">';
-		echo "<p>";
-		echo "Gender:".$arr["gender"];
-		echo "</p>";
-		echo "<p>";
-		echo "NickName:".$arr["nickname"];
-		echo "</p>";
-		echo "<p>";
-		echo "<img src=\"".$arr['figureurl']."\">";
-		echo "<p>";
-		echo "<p>";
-		echo "<img src=\"".$arr['figureurl_1']."\">";
-		echo "<p>";
-		echo "<p>";
-		echo "<img src=\"".$arr['figureurl_2']."\">";
-		echo "<p>";
-		echo "vip:".$arr["vip"];
-		echo "</p>";
-		echo "level:".$arr["level"];
-		echo "</p>";
-		echo "is_yellow_year_vip:".$arr["is_yellow_year_vip"];
-		echo "</p>";
+		//TODO 注册登录操作
+	}
+	
+	public function sina_login() {
+		include "./public/Library/sinaAuth/index.php";
+	}
+	
+	public function sina_callback() {
+		echo 'hello';
 	}
 }
 ?>
