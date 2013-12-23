@@ -1,5 +1,5 @@
 <?php
-session_start();
+//session_start();
 
 include_once( 'config.php' );
 include_once( 'saetv2.ex.class.php' );
@@ -21,7 +21,7 @@ if (empty($_SESSION['oauth2']["user_id"])) {
 		<html xmlns="http://www.w3.org/1999/xhtml">
 		<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>未授权时的页面</title>
+		<title>新浪微博帐号注册登录</title>
 		</head>
 
 		<script src="http://tjs.sjs.sinajs.cn/t35/apps/opent/js/frames/client.js" language="JavaScript"></script>
