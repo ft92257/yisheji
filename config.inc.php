@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 if (!defined('THINK_PATH'))	exit();
 
 return array (
@@ -7,7 +7,7 @@ return array (
 	'DB_HOST'               => 'localhost',
 	'DB_NAME'               => 'yisheji',      
 	'DB_USER'               => 'root',    
-	'DB_PWD'                => '63351510',  
+	'DB_PWD'                => 'ft63351510',  
 	'DB_PORT'               => '3306',  
 	'DB_PREFIX'             => 'tb_',  
     'DB_FIELDTYPE_CHECK'    => false,    

@@ -81,33 +81,48 @@ class UserAction extends BaseAction {
 	}
 	
 	public function sina_login() {
-		define( "WB_AKEY" , '3883171093' );
-		define( "WB_SKEY" , '556417a95fd6f06b938ffddf74b3a435' );
-		define( "CANVAS_PAGE" , "http://yisheji.com/index.php?s=/User/sina_login" );
+		$dir = './Public/Library/sinaAuth/';
+		include_once( $dir . 'config.php' );
+		include_once( $dir . 'saetv2.ex.class.php' );
 		
-		include_once( './Public/Library/sinaAuth/saetv2.ex.class.php' );
+		$o = new SaeTOAuthV2( WB_AKEY , WB_SKEY );
+		$code_url = $o->getAuthorizeURL( WB_CALLBACK_URL );
 		
-		//从POST过来的signed_request中提取oauth2信息
-		if(!empty($_REQUEST["signed_request"])){
-			$o = new SaeTOAuthV2( WB_AKEY , WB_SKEY  );
-			$data=$o->parseSignedRequest($_REQUEST["signed_request"]);
-			if($data=='-2'){
-				die('签名错误!');
-			}else{
-				$_SESSION['oauth2']=$data;
+		echo '<a href="'.$code_url.'">点击进入授权页面</a>';
+	}
+	
+	public function sina_callback() {
+		$dir = './Public/Library/sinaAuth/';
+		include_once( $dir . 'config.php' );
+		include_once( $dir . 'saetv2.ex.class.php' );
+
+		$o = new SaeTOAuthV2( WB_AKEY , WB_SKEY );
+
+		if (isset($_REQUEST['code'])) {
+			$keys = array();
+			$keys['code'] = $_REQUEST['code'];
+			$keys['redirect_uri'] = WB_CALLBACK_URL;
+			try {
+				$token = $o->getAccessToken( 'code', $keys ) ;
+			} catch (OAuthException $e) {
 			}
 		}
-		//判断用户是否授权
-		if (empty($_SESSION['oauth2']["user_id"])) {
-			$this->assign('appkey', WB_SKEY);
-			$this->assign('callback', CANVAS_PAGE);
-			
-			$this->display();
-			exit;
+
+		if ($token) {
+			$_SESSION['token'] = $token;
+			setcookie( 'weibojs_'.$o->client_id, http_build_query($token) );
+
+			$c = new SaeTClientV2( WB_AKEY , WB_SKEY , $_SESSION['token']['access_token'] );
+			//$ms  = $c->home_timeline(); // done
+			$uid_get = $c->get_uid();
+			$uid = $uid_get['uid'];
+			$user_message = $c->show_user_by_id( $uid);//根据ID获取用户等基本信息
+
+			$openid = $user_message['idstr'];
+			$nickname = $user_message['name'];
+			//TODO 注册登录
 		} else {
-			$c = new SaeTClientV2( WB_AKEY , WB_SKEY ,$_SESSION['oauth2']['oauth_token'] ,'' );
-			$ms  = $c->home_timeline(); // done
-			dump($ms);
+			echo '授权失败。';
 		}
 	}
 	
