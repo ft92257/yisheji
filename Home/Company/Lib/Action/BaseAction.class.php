@@ -41,7 +41,8 @@ class BaseAction extends Action {
 			}
 		} else {
 			if (MODULE_NAME != 'User') {
-				$this->error('请先登录', 'index.php?s=/User/login');
+				redirect('index.php?s=/User/login');
+				//$this->error('请先登录', 'index.php?s=/User/login');
 			}
 		} 
 		
