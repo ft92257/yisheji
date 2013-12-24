@@ -13,6 +13,12 @@ class ReserveAction extends BaseAction {
 	
 	//列表
 	public function index(){
+		//TODO 处理未扣款订单
+		if ($this->oUser->money > 0) {
+			
+		}
+		
+		
 		$params = array(
 				'where' => $this->getPurviewCondition(),
 				'order' => 'createtime DESC',
