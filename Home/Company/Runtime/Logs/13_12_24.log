@@ -1,0 +1,381 @@
+﻿
+[ 2013-12-24T12:54:59+08:00 ] 124.77.4.57 /index.php?s=/User/sina_callback&code=e5d4b89bd2454eb3b2f7c94203ef21ca
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002371s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002623s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001773s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001982s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY D:\AppServ\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object D:\AppServ\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002623s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [2] UserAction::include_once(./Public/Library/sinaAuth/config.php) [<a href='useraction.include-once'>useraction.include-once</a>]: failed to open stream: No such file or directory D:\AppServ\yisheji\Home\Company\Lib\Action\UserAction.class.php 第 85 行.
+NOTIC: [2] UserAction::include_once() [<a href='function.include'>function.include</a>]: Failed opening './Public/Library/sinaAuth/config.php' for inclusion (include_path='.;C:\php5\pear;D:\AppServ\yisheji\ThinkPHP/Extend/Vendor/') D:\AppServ\yisheji\Home\Company\Lib\Action\UserAction.class.php 第 85 行.
+NOTIC: [8] Use of undefined constant WB_AKEY - assumed 'WB_AKEY' D:\AppServ\yisheji\Home\Company\Lib\Action\UserAction.class.php 第 88 行.
+NOTIC: [8] Use of undefined constant WB_SKEY - assumed 'WB_SKEY' D:\AppServ\yisheji\Home\Company\Lib\Action\UserAction.class.php 第 88 行.
+NOTIC: [8] Use of undefined constant WB_CALLBACK_URL - assumed 'WB_CALLBACK_URL' D:\AppServ\yisheji\Home\Company\Lib\Action\UserAction.class.php 第 93 行.
+NOTIC: [8] Undefined variable: token D:\AppServ\yisheji\Home\Company\Lib\Action\UserAction.class.php 第 100 行.
+
+[ 2013-12-24T12:55:14+08:00 ] 124.77.4.57 /index.php?s=/User/sina_callback&code=fb1b0d362171c800baa398a2a5b89553
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001834s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001991s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001270s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.003012s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY D:\AppServ\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object D:\AppServ\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.005530s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [2] UserAction::include_once(./Public/Library/sinaAuth/config.php) [<a href='useraction.include-once'>useraction.include-once</a>]: failed to open stream: No such file or directory D:\AppServ\yisheji\Home\Company\Lib\Action\UserAction.class.php 第 85 行.
+NOTIC: [2] UserAction::include_once() [<a href='function.include'>function.include</a>]: Failed opening './Public/Library/sinaAuth/config.php' for inclusion (include_path='.;C:\php5\pear;D:\AppServ\yisheji\ThinkPHP/Extend/Vendor/') D:\AppServ\yisheji\Home\Company\Lib\Action\UserAction.class.php 第 85 行.
+NOTIC: [8] Use of undefined constant WB_AKEY - assumed 'WB_AKEY' D:\AppServ\yisheji\Home\Company\Lib\Action\UserAction.class.php 第 88 行.
+NOTIC: [8] Use of undefined constant WB_SKEY - assumed 'WB_SKEY' D:\AppServ\yisheji\Home\Company\Lib\Action\UserAction.class.php 第 88 行.
+NOTIC: [8] Use of undefined constant WB_CALLBACK_URL - assumed 'WB_CALLBACK_URL' D:\AppServ\yisheji\Home\Company\Lib\Action\UserAction.class.php 第 93 行.
+NOTIC: [8] Undefined variable: token D:\AppServ\yisheji\Home\Company\Lib\Action\UserAction.class.php 第 100 行.
+
+[ 2013-12-24T12:57:42+08:00 ] 124.77.4.57 /index.php?s=/User/sina_callback&code=fb1b0d362171c800baa398a2a5b89553
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002444s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002636s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002747s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.003105s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY D:\AppServ\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object D:\AppServ\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002601s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [2] UserAction::include_once(./Public/Library/sinaAuth/config.php) [<a href='useraction.include-once'>useraction.include-once</a>]: failed to open stream: No such file or directory D:\AppServ\yisheji\Home\Company\Lib\Action\UserAction.class.php 第 85 行.
+NOTIC: [2] UserAction::include_once() [<a href='function.include'>function.include</a>]: Failed opening './Public/Library/sinaAuth/config.php' for inclusion (include_path='.;C:\php5\pear;D:\AppServ\yisheji\ThinkPHP/Extend/Vendor/') D:\AppServ\yisheji\Home\Company\Lib\Action\UserAction.class.php 第 85 行.
+NOTIC: [8] Use of undefined constant WB_AKEY - assumed 'WB_AKEY' D:\AppServ\yisheji\Home\Company\Lib\Action\UserAction.class.php 第 88 行.
+NOTIC: [8] Use of undefined constant WB_SKEY - assumed 'WB_SKEY' D:\AppServ\yisheji\Home\Company\Lib\Action\UserAction.class.php 第 88 行.
+NOTIC: [8] Use of undefined constant WB_CALLBACK_URL - assumed 'WB_CALLBACK_URL' D:\AppServ\yisheji\Home\Company\Lib\Action\UserAction.class.php 第 93 行.
+NOTIC: [8] Undefined variable: token D:\AppServ\yisheji\Home\Company\Lib\Action\UserAction.class.php 第 100 行.
+
+[ 2013-12-24T12:57:49+08:00 ] 124.77.4.57 /index.php?s=/User/sina_callback&code=6bf4b58a9d63f56e5ce6ce00e89be57d
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002671s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002892s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002824s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.003943s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY D:\AppServ\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object D:\AppServ\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.004735s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [2] UserAction::include_once(./Public/Library/sinaAuth/config.php) [<a href='useraction.include-once'>useraction.include-once</a>]: failed to open stream: No such file or directory D:\AppServ\yisheji\Home\Company\Lib\Action\UserAction.class.php 第 85 行.
+NOTIC: [2] UserAction::include_once() [<a href='function.include'>function.include</a>]: Failed opening './Public/Library/sinaAuth/config.php' for inclusion (include_path='.;C:\php5\pear;D:\AppServ\yisheji\ThinkPHP/Extend/Vendor/') D:\AppServ\yisheji\Home\Company\Lib\Action\UserAction.class.php 第 85 行.
+NOTIC: [8] Use of undefined constant WB_AKEY - assumed 'WB_AKEY' D:\AppServ\yisheji\Home\Company\Lib\Action\UserAction.class.php 第 88 行.
+NOTIC: [8] Use of undefined constant WB_SKEY - assumed 'WB_SKEY' D:\AppServ\yisheji\Home\Company\Lib\Action\UserAction.class.php 第 88 行.
+NOTIC: [8] Use of undefined constant WB_CALLBACK_URL - assumed 'WB_CALLBACK_URL' D:\AppServ\yisheji\Home\Company\Lib\Action\UserAction.class.php 第 93 行.
+NOTIC: [8] Undefined variable: token D:\AppServ\yisheji\Home\Company\Lib\Action\UserAction.class.php 第 100 行.
+
+[ 2013-12-24T13:04:05+08:00 ] 124.77.4.57 /index.php?s=/User/sina_login
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002572s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002742s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002520s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.002380s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY D:\AppServ\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object D:\AppServ\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002636s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+
+[ 2013-12-24T13:04:08+08:00 ] 124.77.4.57 /index.php?s=/User/sina_callback&code=127df19afb07fcbfb68ed5d969943151
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002759s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002920s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002143s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.002435s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY D:\AppServ\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object D:\AppServ\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002422s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+
+[ 2013-12-24T13:04:17+08:00 ] 124.77.4.57 /index.php?s=/User/sina_callback&code=127df19afb07fcbfb68ed5d969943151
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002717s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002907s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002612s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.002281s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY D:\AppServ\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object D:\AppServ\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002692s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined variable: token D:\AppServ\yisheji\Home\Company\Lib\Action\UserAction.class.php 第 111 行.
+
+[ 2013-12-24T13:04:19+08:00 ] 124.77.4.57 /index.php?s=/User/sina_login
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.006171s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006429s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002459s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.002163s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY D:\AppServ\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object D:\AppServ\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002491s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+
+[ 2013-12-24T13:04:33+08:00 ] 124.77.4.57 /index.php?s=/User/sina_callback&code=0135022d4ec8e59c389d7a12d57efd2c
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.003493s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003670s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002780s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.002882s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY D:\AppServ\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object D:\AppServ\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.003730s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+
+[ 2013-12-24T13:06:54+08:00 ] 124.77.4.57 /index.php?s=/User/sina_login
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001890s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002052s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001830s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.054772s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY D:\AppServ\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object D:\AppServ\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.005055s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+
+[ 2013-12-24T13:06:57+08:00 ] 124.77.4.57 /index.php?s=/User/sina_login
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002317s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002552s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001424s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.004035s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY D:\AppServ\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object D:\AppServ\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.004019s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+
+[ 2013-12-24T13:06:58+08:00 ] 124.77.4.57 /index.php?s=/User/sina_login
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002171s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001202s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.002970s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY D:\AppServ\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object D:\AppServ\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002645s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+
+[ 2013-12-24T13:07:05+08:00 ] 124.77.4.57 /index.php?s=/User/sina_callback&code=72e1906e7ee87c27acd1be832c718db2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002243s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002486s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002113s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.002752s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY D:\AppServ\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object D:\AppServ\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002207s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+
+[ 2013-12-24T13:08:05+08:00 ] 124.77.4.57 /index.php?s=/User/sina_login
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001814s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001980s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000972s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001103s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.002248s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY D:\AppServ\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object D:\AppServ\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002847s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+
+[ 2013-12-24T13:08:17+08:00 ] 124.77.4.57 /index.php?s=/User/sina_login
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002131s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002442s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001734s ]
+NOTIC: [8] Undefined variable: data D:\AppServ\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001948s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY D:\AppServ\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object D:\AppServ\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002136s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+
+[ 2013-12-24T13:13:36+08:00 ] 124.77.4.57 /index.php?s=/User/sina_callback&code=fa923cb03574dbc2bc39e8495cf586b9
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.003729s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003953s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002699s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.002704s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY D:\AppServ\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object D:\AppServ\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.003453s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+
+[ 2013-12-24T13:13:47+08:00 ] 124.77.4.57 /index.php?s=/User/sina_login
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.005262s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005458s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.004188s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005460s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.002240s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY D:\AppServ\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object D:\AppServ\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002988s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+
+[ 2013-12-24T13:13:58+08:00 ] 124.77.4.57 /index.php?s=/User/sina_login
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.003059s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003275s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002964s ]
+NOTIC: [8] Undefined variable: data D:\AppServ\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.002088s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY D:\AppServ\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object D:\AppServ\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002308s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+
+[ 2013-12-24T13:14:12+08:00 ] 124.77.4.57 /index.php?s=/User/sina_callback&code=5c29e4f987f025c3edf77cb6c95a03d7
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001918s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002076s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001588s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001987s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY D:\AppServ\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object D:\AppServ\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002135s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+
+[ 2013-12-24T13:17:35+08:00 ] 124.77.4.57 /index.php?s=/User/sina_callback&code=5c29e4f987f025c3edf77cb6c95a03d7
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002547s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002714s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002154s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.002370s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY D:\AppServ\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object D:\AppServ\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002748s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined variable: token D:\AppServ\yisheji\Home\Company\Lib\Action\UserAction.class.php 第 111 行.
+
+[ 2013-12-24T13:17:40+08:00 ] 124.77.4.57 /index.php?s=/User/sina_login
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002842s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003054s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002490s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.002095s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY D:\AppServ\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object D:\AppServ\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002749s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+
+[ 2013-12-24T13:17:44+08:00 ] 124.77.4.57 /index.php?s=/User/sina_callback&code=6ee8af18d13172e3b7f546b975a968a4
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.003009s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003211s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003156s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.002649s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY D:\AppServ\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object D:\AppServ\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.003471s ]
+NOTIC: [8] Undefined index:  company D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user D:\AppServ\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+
