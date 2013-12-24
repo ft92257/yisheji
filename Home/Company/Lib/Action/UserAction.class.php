@@ -85,7 +85,7 @@ class UserAction extends BaseAction {
 		define( "WB_SKEY" , '556417a95fd6f06b938ffddf74b3a435' );
 		define( "CANVAS_PAGE" , "http://yisheji.com/index.php?s=/User/sina_login" );
 		
-		include_once( 'saetv2.ex.class.php' );
+		include_once( './Public/Library/sinaAuth/saetv2.ex.class.php' );
 		
 		//从POST过来的signed_request中提取oauth2信息
 		if(!empty($_REQUEST["signed_request"])){
@@ -99,6 +99,9 @@ class UserAction extends BaseAction {
 		}
 		//判断用户是否授权
 		if (empty($_SESSION['oauth2']["user_id"])) {
+			$this->assign('appkey', WB_SKEY);
+			$this->assign('callback', CANVAS_PAGE);
+			
 			$this->display();
 			exit;
 		} else {
