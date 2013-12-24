@@ -7,6 +7,6 @@
 	//项目路径
 	define('APP_PATH','Home/Company/');
 	//引入框架核心文件
-	require'ThinkPHP/ThinkPHP.php';
+	require 'ThinkPHP/ThinkPHP.php';
 
 ?>

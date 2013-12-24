@@ -61,7 +61,7 @@ class SessionModel extends BaseModel {
 		
 		$expire = time() + 36000;
 		setcookie('SN_KEY', $key, $expire, '/');
-		
+
 		return $key;
 	}
 	

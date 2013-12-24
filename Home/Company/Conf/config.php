@@ -1,6 +1,5 @@
 <?php
-if (!defined('THINK_PATH'))exit();
-
+if (!defined('THINK_PATH')) exit();
 
 $DB = require("config.inc.php");	//数据库配置
 

@@ -71,6 +71,7 @@ class View {
         $this->render($content,$charset,$contentType);
         // 视图结束标签
         tag('view_end');
+       
     }
 
     /**
