@@ -20,7 +20,7 @@ require_once ("./tenpay_config.php");
 		$resHandler->setKey($key);
 
 	//判断签名
-		if($resHandler->isTenpaySign()) {
+		if( $resHandler->isTenpaySign()) {
 	
 	//通知id
 		$notify_id = $resHandler->getParameter("notify_id");
@@ -39,19 +39,19 @@ require_once ("./tenpay_config.php");
 		$httpClient->setTimeOut(5);
 	//设置请求内容
 		$httpClient->setReqContent($queryReq->getRequestURL());
-	
+		
 	//后台调用
-		if($httpClient->call()) {
+		if( $httpClient->call()) {
 	//设置结果参数
 			$queryRes = new ClientResponseHandler();
 			$queryRes->setContent($httpClient->getResContent());
 			$queryRes->setKey($key);
 		
-		if($resHandler->getParameter("trade_mode") == "1"){
+		if( $resHandler->getParameter("trade_mode") == "1"){
 	//判断签名及结果（即时到帐）
 	//只有签名正确,retcode为0，trade_state为0才是支付成功
-		if($queryRes->isTenpaySign() && $queryRes->getParameter("retcode") == "0" && $resHandler->getParameter("trade_state") == "0") {
-				//log_result("即时到帐验签ID成功");
+		if( $queryRes->isTenpaySign() && $queryRes->getParameter("retcode") == "0" && $resHandler->getParameter("trade_state") == "0") {
+				log_result("即时到帐验签ID成功");
 	//取结果参数做业务处理
 				$out_trade_no = $resHandler->getParameter("out_trade_no");
 	//财付通订单号
@@ -67,9 +67,13 @@ require_once ("./tenpay_config.php");
 				require_once("classes/dbmysql.class.php");
 				$oDb = DbMysql::getInstance($aDbConfig);
 				$where = "out_trade_no = '$out_trade_no' AND status = 0";
+				$oDb->query("LOCK TABLES tb_pay WRITE");
 				$aPay = $oDb->fetchFirstArray("SELECT * FROM tb_pay WHERE $where");
 				if (empty($aPay) || $aPay['result'] != 0) {
-					die('fail');
+					$oDb->query("UNLOCK TABLES");
+					
+					log_result("即时到帐后台回调，之前已充值成功");
+					die('success');
 				} else {
 					$result_info = 'transaction_id: ' . $transaction_id . ', ';
 					$result_info .= 'total_fee: ' . $total_fee . ', ';
@@ -79,9 +83,11 @@ require_once ("./tenpay_config.php");
 								'result' => 1,
 							);
 					$res = $oDb->update('tb_pay', $data, $where);
-
-					$oDb->query("UPDATE tb_user SET result = 1,money = money + " . ($total_fee/100) . " WHERE id = " . $aPay['id'];
+					$oDb->query("UNLOCK TABLES");
+					
+					$oDb->query("UPDATE tb_user SET money = money + " . ($total_fee/100) . " WHERE id = " . $aPay['uid']);
 				}
+				
 				//处理数据库逻辑
 				//注意交易单不要重复处理
 				//注意判断返回金额

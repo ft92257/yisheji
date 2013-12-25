@@ -37,7 +37,7 @@ if($resHandler->isTenpaySign()) {
 	if("1" == $trade_mode ) {
 		if( "0" == $trade_state){ 
 		
-			
+			//TODO 如果已处理则不处理
 			echo "<br/>" . ((float) $total_fee / 100). "元充值成功！" . "<br/>";
 	
 		} else {
