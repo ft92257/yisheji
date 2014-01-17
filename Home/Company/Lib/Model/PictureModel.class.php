@@ -16,7 +16,7 @@ class PictureModel extends BaseModel {
 	protected $listConfig = array(
 				'id' => '编号',
 				'fid' => array('图片', array('img')),
-				'title' => '说明',
+				'title' => array('说明', array('textarea' => '/Picture/autoUpdate/id/{id}')),
 				'createtime' => '添加时间',
 				array('操作', array(
 						array('/Picture/edit/id/{id}', '编辑'),

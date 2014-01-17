@@ -1,0 +1,34 @@
+<include file="Public:header" />
+<include file="Public:left" />
+<div class="right">
+	<h2>编辑页面</h2>
+	<div class="b frame">
+		<h3>填写基本信息</h3>
+		<style>
+			.menus .current{
+				color:#333;
+			}
+			.menus a{
+				text-decoration:none;
+			}
+		</style>
+		<div class="menus">
+		父菜单&nbsp;&nbsp;&nbsp;&nbsp;<foreach name="parent_menus" item="pm"><a href="{$pm.href}" class="{$pm.current}">{$pm.menu}&nbsp;&nbsp;|&nbsp;&nbsp;</a></foreach>
+		<a href="{:U('add')}">+添加</a><br>
+		子菜单&nbsp;&nbsp;&nbsp;&nbsp;<foreach name="menus" item="mu"><a href="{$mu.href}" class="{$mu.current}">{$mu.menu}&nbsp;&nbsp;|&nbsp;&nbsp;</a></foreach>
+		<a href="{$addhref}">+添加</a>
+		</div>
+<script charset="utf-8" src="__STATICS__/js/kindeditor/kindeditor.js"></script>
+<script charset="utf-8" src="__STATICS__/js/kindeditor/lang/zh_CN.js"></script>
+
+<form method="post" action="">
+	<table width="100%">
+	<tr><td width="80"></td><td></td></tr>
+	{$formHtml}
+	</table>
+</form>
+	</div>
+	
+</div>
+</body>
+</html>

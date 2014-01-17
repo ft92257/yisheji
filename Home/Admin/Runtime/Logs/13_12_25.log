@@ -1,0 +1,1553 @@
+[ 2013-12-25T15:15:22+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001550s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001678s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001636s ]
+NOTIC: [8] Undefined variable: data C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001764s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002153s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+SQL: SELECT * FROM `tb_user` WHERE ( status = 0 AND appid = 1 )  [ RunTime:0.000474s ]
+
+[ 2013-12-25T15:27:11+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001158s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001274s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001202s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001448s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001583s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` > '1' AND status = 0 AND appid = 1 )  [ RunTime:0.009656s ]
+
+[ 2013-12-25T15:27:32+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001056s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001145s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001713s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001460s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001598s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` > '1' AND `status` = 0 AND `appid` = 1 )  [ RunTime:0.000405s ]
+
+[ 2013-12-25T15:27:48+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001023s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001112s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001252s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001820s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001701s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '1' AND `status` = 0 AND `appid` = 1 )  [ RunTime:0.000267s ]
+
+[ 2013-12-25T15:27:56+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002130s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002297s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002669s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001728s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002004s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `status` = 0 AND `appid` = 1 )  [ RunTime:0.000289s ]
+
+[ 2013-12-25T15:28:20+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001074s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001166s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001264s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001454s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001652s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `status` = '0' AND `appid` = '1' )  [ RunTime:0.000269s ]
+
+[ 2013-12-25T15:29:18+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001074s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001163s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001172s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001920s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001611s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '2'`type` in '(1,2,3)' AND `status` = '0' AND `appid` = '1' )  [ RunTime:0.000141s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`type` in '(1,2,3)' AND `status` = '0' AND `appid` = '1' )' at line 1
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `id` = '2'`type` in '(1,2,3)' AND `status` = '0' AND `appid` = '1' ) 
+
+[ 2013-12-25T15:30:24+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001311s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001412s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002303s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001373s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001533s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '2'`type` in '(1,2,3)' AND `status` = '0' AND `appid` = '1' )  [ RunTime:0.000146s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`type` in '(1,2,3)' AND `status` = '0' AND `appid` = '1' )' at line 1
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `id` = '2'`type` in '(1,2,3)' AND `status` = '0' AND `appid` = '1' ) 
+
+[ 2013-12-25T15:30:57+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001126s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001236s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001498s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001870s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001649s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type` in '(1,2,3)' AND `status` = '0' AND `appid` = '1' )  [ RunTime:0.000143s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''(1,2,3)' AND `status` = '0' AND `appid` = '1' )' at line 1
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type` in '(1,2,3)' AND `status` = '0' AND `appid` = '1' ) 
+
+[ 2013-12-25T15:31:14+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000958s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001051s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001149s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001212s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001405s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002008s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type` IN '(1,2,3)' AND `status` = '0' AND `appid` = '1' )  [ RunTime:0.000160s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''(1,2,3)' AND `status` = '0' AND `appid` = '1' )' at line 1
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type` IN '(1,2,3)' AND `status` = '0' AND `appid` = '1' ) 
+
+[ 2013-12-25T15:56:18+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001129s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001228s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001228s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001641s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002070s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type` IN '(1,2,3)' AND `qq` LIKE '%hh%' AND `status` = '0' AND `appid` = '1' )  [ RunTime:0.000839s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''(1,2,3)' AND `qq` LIKE '%hh%' AND `status` = '0' AND `appid` = '1' )' at line 1
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type` IN '(1,2,3)' AND `qq` LIKE '%hh%' AND `status` = '0' AND `appid` = '1' ) 
+
+[ 2013-12-25T15:58:23+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001059s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001150s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001180s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001519s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001894s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type` IN '(1,2,3)' AND `qq` LIKE '%hh%' AND `money` BETWEEN '1 AND 2' AND `status` = '0' AND `appid` = '1' )  [ RunTime:0.000164s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''(1,2,3)' AND `qq` LIKE '%hh%' AND `money` BETWEEN '1 AND 2' AND `status` = '0' ' at line 1
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type` IN '(1,2,3)' AND `qq` LIKE '%hh%' AND `money` BETWEEN '1 AND 2' AND `status` = '0' AND `appid` = '1' ) 
+
+[ 2013-12-25T16:24:51+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001084s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001175s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001909s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.002007s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.005414s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [2] preg_replace() [<a href='function.preg-replace'>function.preg-replace</a>]: Empty regular expression C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 175 行.
+NOTIC: [2] preg_replace() [<a href='function.preg-replace'>function.preg-replace</a>]: Empty regular expression C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 175 行.
+NOTIC: [2] preg_replace() [<a href='function.preg-replace'>function.preg-replace</a>]: Empty regular expression C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 175 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '2' AND ` '1,2,3' AND ` '%hh%' AND ` '1 AND 2' AND `status` = '0' AND `appid` = '1' )  [ RunTime:0.000184s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''%hh%' AND ` '1 AND 2' AND `status` = '0' AND `appid` = '1' )' at line 1
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `id` = '2' AND ` '1,2,3' AND ` '%hh%' AND ` '1 AND 2' AND `status` = '0' AND `appid` = '1' ) 
+
+[ 2013-12-25T16:25:38+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001313s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001455s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001112s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001173s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.002113s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001649s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type` IN '1,2,3' AND `qq` LIKE '%hh%' AND `money` BETWEEN '1 AND 2' AND `status` = '0' AND `appid` = '1' )  [ RunTime:0.000145s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1,2,3' AND `qq` LIKE '%hh%' AND `money` BETWEEN '1 AND 2' AND `status` = '0' AN' at line 1
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type` IN '1,2,3' AND `qq` LIKE '%hh%' AND `money` BETWEEN '1 AND 2' AND `status` = '0' AND `appid` = '1' ) 
+
+[ 2013-12-25T16:26:39+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000880s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000974s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001197s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001503s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001524s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type` IN '1,2,3' AND `qq` LIKE '%hh%' AND `money` BETWEEN '1 AND 2' AND `status` = '0' AND `appid` = '1' )  [ RunTime:0.000147s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1,2,3' AND `qq` LIKE '%hh%' AND `money` BETWEEN '1 AND 2' AND `status` = '0' AN' at line 1
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type` IN '1,2,3' AND `qq` LIKE '%hh%' AND `money` BETWEEN '1 AND 2' AND `status` = '0' AND `appid` = '1' ) 
+
+[ 2013-12-25T16:27:09+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001121s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001219s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001315s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001395s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001619s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type` IN '1,2,3' AND `qq` LIKE '%hh%' AND `money` BETWEEN '1 AND 2' AND `status` = '0' AND `appid` = '1' )  [ RunTime:0.000153s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1,2,3' AND `qq` LIKE '%hh%' AND `money` BETWEEN '1 AND 2' AND `status` = '0' AN' at line 1
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type` IN '1,2,3' AND `qq` LIKE '%hh%' AND `money` BETWEEN '1 AND 2' AND `status` = '0' AND `appid` = '1' ) 
+
+[ 2013-12-25T16:27:35+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002073s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002254s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002581s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001612s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001624s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type` IN '1,2,3' AND `qq` LIKE '%hh%' AND `money` BETWEEN '1 AND 2' AND `status` = '0' AND `appid` = '1' )  [ RunTime:0.000175s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1,2,3' AND `qq` LIKE '%hh%' AND `money` BETWEEN '1 AND 2' AND `status` = '0' AN' at line 1
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type` IN '1,2,3' AND `qq` LIKE '%hh%' AND `money` BETWEEN '1 AND 2' AND `status` = '0' AND `appid` = '1' ) 
+
+[ 2013-12-25T16:28:16+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000871s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000968s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001360s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001492s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001601s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type` IN '1,2,3' AND `qq` LIKE '%hh%' AND `money` BETWEEN '1 AND 2' AND `status` = '0' AND `appid` = '1' )  [ RunTime:0.000161s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1,2,3' AND `qq` LIKE '%hh%' AND `money` BETWEEN '1 AND 2' AND `status` = '0' AN' at line 1
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type` IN '1,2,3' AND `qq` LIKE '%hh%' AND `money` BETWEEN '1 AND 2' AND `status` = '0' AND `appid` = '1' ) 
+
+[ 2013-12-25T16:28:35+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000869s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000957s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001305s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001419s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001673s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type` IN (1,2,3) AND `qq` LIKE '%hh%' AND `money` BETWEEN 1 AND 2 AND `status` = '0' AND `appid` = '1' )  [ RunTime:0.015811s ]
+
+[ 2013-12-25T16:32:29+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001055s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001151s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001149s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001223s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001430s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001721s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type` IN (1,2,3) AND `qq` LIKE '%hh%' AND `money` BETWEEN 1 AND 2 AND `status` = '0' AND `appid` = '1' )  [ RunTime:0.000269s ]
+
+[ 2013-12-25T16:32:46+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001894s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002060s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002386s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001365s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001576s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type` not IN (1,2,3) AND `qq` LIKE '%hh%' AND `money` BETWEEN 1 AND 2 AND `status` = '0' AND `appid` = '1' )  [ RunTime:0.000270s ]
+
+[ 2013-12-25T16:33:00+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001134s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001247s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001735s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001476s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001674s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type` not IN (1,2,3) AND `qq` not LIKE '%hh%' AND `money` BETWEEN 1 AND 2 AND `status` = '0' AND `appid` = '1' )  [ RunTime:0.000309s ]
+
+[ 2013-12-25T16:33:09+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000875s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000965s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001112s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001171s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001425s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001928s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type` not IN (1,2,3) AND `qq`  LIKE '%hh%' AND `money` BETWEEN 1 AND 2 AND `status` = '0' AND `appid` = '1' )  [ RunTime:0.000784s ]
+
+[ 2013-12-25T16:33:20+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000860s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000950s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001102s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001161s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001407s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001645s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type` not  IN (1,2,3) AND `qq` LIKE '%hh%' AND `money` BETWEEN 1 AND 2 AND `status` = '0' AND `appid` = '1' )  [ RunTime:0.000315s ]
+
+[ 2013-12-25T16:33:29+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000902s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000997s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001175s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001435s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001531s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type`  not IN (1,2,3) AND `qq` LIKE '%hh%' AND `money` BETWEEN 1 AND 2 AND `status` = '0' AND `appid` = '1' )  [ RunTime:0.000374s ]
+
+[ 2013-12-25T16:33:46+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001345s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001477s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002046s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001399s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001635s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type` not IN ('1','2','3') AND `qq` LIKE '%hh%' AND `money` BETWEEN 1 AND 2 AND `status` = '0' AND `appid` = '1' )  [ RunTime:0.000269s ]
+
+[ 2013-12-25T16:34:01+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001089s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001218s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001522s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001751s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001606s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type` not IN ('1','2','3') AND `qq` LIKE '%hh%' AND `money` BETWEEN '1' AND '2' AND `status` = '0' AND `appid` = '1' )  [ RunTime:0.000273s ]
+
+[ 2013-12-25T16:37:24+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001567s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001686s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001751s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001529s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002194s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type` not in ('1','2','3') AND `qq` like '%hh%' AND `money` between '1' AND '2' AND `status` = '0' AND `appid` = '1' )  [ RunTime:0.000328s ]
+
+[ 2013-12-25T16:38:02+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001348s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001462s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001534s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001545s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001714s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type` not in ('1','2','3') AND `qq` like '%hh%' AND `money` between '1' AND '2' AND `status` = '0' AND `appid` = '1' )  [ RunTime:0.000292s ]
+
+[ 2013-12-25T16:48:13+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002552s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002738s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001682s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001573s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001990s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [2] Wrong parameter count for strstr() C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 176 行.
+NOTIC: [2] Wrong parameter count for strstr() C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 176 行.
+NOTIC: [2] Wrong parameter count for strstr() C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 176 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `` NOT IN ('1','2','3') AND `` LIKE '%hh%' AND `` BETWEEN '1' AND '2' AND `status` = '0' AND `appid` = '1' )  [ RunTime:0.000196s ]
+ERR: Unknown column '' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `` NOT IN ('1','2','3') AND `` LIKE '%hh%' AND `` BETWEEN '1' AND '2' AND `status` = '0' AND `appid` = '1' ) 
+
+[ 2013-12-25T16:49:20+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001090s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001184s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001179s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001390s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001654s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [2] Wrong parameter count for strstr() C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 172 行.
+NOTIC: [2] Wrong parameter count for strstr() C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 172 行.
+NOTIC: [2] Wrong parameter count for strstr() C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 177 行.
+NOTIC: [2] Wrong parameter count for strstr() C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 172 行.
+NOTIC: [2] Wrong parameter count for strstr() C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 177 行.
+NOTIC: [2] Wrong parameter count for strstr() C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 172 行.
+NOTIC: [2] Wrong parameter count for strstr() C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 177 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `` NOT IN ('1','2','3') AND `` LIKE '%hh%' AND `` BETWEEN '1' AND '2' AND `status` = '0' AND `appid` = '1' )  [ RunTime:0.000186s ]
+ERR: Unknown column '' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `` NOT IN ('1','2','3') AND `` LIKE '%hh%' AND `` BETWEEN '1' AND '2' AND `status` = '0' AND `appid` = '1' ) 
+
+[ 2013-12-25T16:49:22+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001136s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001251s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001777s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001454s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002079s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [2] Wrong parameter count for strstr() C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 172 行.
+NOTIC: [2] Wrong parameter count for strstr() C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 172 行.
+NOTIC: [2] Wrong parameter count for strstr() C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 177 行.
+NOTIC: [2] Wrong parameter count for strstr() C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 172 行.
+NOTIC: [2] Wrong parameter count for strstr() C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 177 行.
+NOTIC: [2] Wrong parameter count for strstr() C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 172 行.
+NOTIC: [2] Wrong parameter count for strstr() C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 177 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `` NOT IN ('1','2','3') AND `` LIKE '%hh%' AND `` BETWEEN '1' AND '2' AND `status` = '0' AND `appid` = '1' )  [ RunTime:0.000216s ]
+ERR: Unknown column '' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `` NOT IN ('1','2','3') AND `` LIKE '%hh%' AND `` BETWEEN '1' AND '2' AND `status` = '0' AND `appid` = '1' ) 
+
+[ 2013-12-25T16:56:30+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001141s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001239s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001269s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001495s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001613s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type` NOT IN ('1','2','3') AND `qq` LIKE '%hh%' AND `money` BETWEEN '1' AND '2' AND `status` = '0' AND `appid` = '1' )  [ RunTime:0.000293s ]
+
+[ 2013-12-25T16:58:55+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001038s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001130s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001179s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001509s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001582s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type` NOT IN ('1','2','3') AND `qq` LIKE '%hh%' AND `money` BETWEEN '1' AND '2' AND ( account = 'ffff' ) AND `status` = '0' AND `appid` = '1' )  [ RunTime:0.000258s ]
+
+[ 2013-12-25T16:59:16+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001412s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001528s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001553s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001457s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001631s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type` NOT IN ('1','2','3') AND `qq` LIKE '%hh%' AND `money` BETWEEN '1' AND '2' AND ( `account` = 'ffff' ) AND `status` = '0' AND `appid` = '1' )  [ RunTime:0.000275s ]
+
+[ 2013-12-25T17:13:44+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001058s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001152s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001144s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001204s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001433s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001570s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [2] vsprintf() [<a href='function.vsprintf'>function.vsprintf</a>]: Too few arguments C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\Model.class.php 第 1461 行.
+SQL: SELECT * FROM `tb_user`  [ RunTime:0.000368s ]
+
+[ 2013-12-25T17:14:12+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001037s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001129s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001228s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001496s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001746s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [2] vsprintf() [<a href='function.vsprintf'>function.vsprintf</a>]: Too few arguments C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\Model.class.php 第 1461 行.
+SQL: SELECT * FROM `tb_user`  [ RunTime:0.000437s ]
+
+[ 2013-12-25T17:20:30+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001092s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001184s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001283s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001678s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002181s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type` NOT IN ('1','2','3') AND `qq` LIKE '%hh%' AND `money` BETWEEN '1' AND '2' AND ( `account` = \'ffff\' ) AND `status` = '0' AND `appid` = '1' )  [ RunTime:0.000192s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\'ffff\' ) AND `status` = '0' AND `appid` = '1' )' at line 1
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type` NOT IN ('1','2','3') AND `qq` LIKE '%hh%' AND `money` BETWEEN '1' AND '2' AND ( `account` = \'ffff\' ) AND `status` = '0' AND `appid` = '1' ) 
+
+[ 2013-12-25T17:22:33+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001080s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001202s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001140s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001202s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001805s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001533s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type` NOT IN ('1','2','3') AND `qq` LIKE '%hh%' AND `money` BETWEEN '1' AND '2' AND ( `account` = 'ffff' ) AND `status` = '0' AND `appid` = '1' )  [ RunTime:0.000279s ]
+
+[ 2013-12-25T17:28:29+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001073s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001164s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001155s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001373s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001825s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 165 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 205 行.
+NOTIC: [8] Undefined index:  _string C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 205 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type` NOT IN ('1','2','3') AND `qq` LIKE '%hh%' AND `money` BETWEEN '1' AND '2' AND ( `account` = 'ffff' ) AND `status` = '0' AND `appid` = '1' )  [ RunTime:0.000286s ]
+
+[ 2013-12-25T17:29:43+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001359s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001461s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001275s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001405s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002203s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 165 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 205 行.
+NOTIC: [8] Undefined index:  _string C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 205 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `status` = '0' AND `appid` = '1'`id` = '2' AND `status` = '0' AND `appid` = '1' AND `type` NOT IN ('1','2','3') AND `qq` LIKE '%hh%' AND `money` BETWEEN '1' AND '2' AND ( `account` = 'ffff' ) AND `status` = '0' AND `appid` = '1' )  [ RunTime:0.000164s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`id` = '2' AND `status` = '0' AND `appid` = '1' AND `type` NOT IN ('1','2','3') ' at line 1
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `status` = '0' AND `appid` = '1'`id` = '2' AND `status` = '0' AND `appid` = '1' AND `type` NOT IN ('1','2','3') AND `qq` LIKE '%hh%' AND `money` BETWEEN '1' AND '2' AND ( `account` = 'ffff' ) AND `status` = '0' AND `appid` = '1' ) 
+
+[ 2013-12-25T17:32:15+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001197s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001314s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001270s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001479s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001593s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 165 行.
+NOTIC: [8] Undefined index:  _string C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 207 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( `id` = '2' AND `status` = '0' AND `appid` = '1'`id` = '2' AND `status` = '0' AND `appid` = '1' AND `type` NOT IN ('1','2','3') AND `qq` LIKE '%hh%' AND `money` BETWEEN '1' AND '2' AND ( `account` = 'ffff' ) AND `status` = '0' AND `appid` = '1' )  [ RunTime:0.000180s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`id` = '2' AND `status` = '0' AND `appid` = '1' AND `type` NOT IN ('1','2','3') ' at line 1
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( `id` = '2' AND `status` = '0' AND `appid` = '1'`id` = '2' AND `status` = '0' AND `appid` = '1' AND `type` NOT IN ('1','2','3') AND `qq` LIKE '%hh%' AND `money` BETWEEN '1' AND '2' AND ( `account` = 'ffff' ) AND `status` = '0' AND `appid` = '1' ) 
+
+[ 2013-12-25T17:32:52+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001020s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001109s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001125s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001188s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001513s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001615s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 165 行.
+NOTIC: [8] Undefined index:  _string C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 207 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( `id` = '2'`id` = '2' AND `type` NOT IN ('1','2','3') AND `qq` LIKE '%hh%' AND `money` BETWEEN '1' AND '2' AND ( `account` = 'ffff' ) )  [ RunTime:0.000171s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`id` = '2' AND `type` NOT IN ('1','2','3') AND `qq` LIKE '%hh%' AND `money` BETW' at line 1
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( `id` = '2'`id` = '2' AND `type` NOT IN ('1','2','3') AND `qq` LIKE '%hh%' AND `money` BETWEEN '1' AND '2' AND ( `account` = 'ffff' ) ) 
+
+[ 2013-12-25T17:34:35+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002014s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002174s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001505s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001688s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001702s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 165 行.
+NOTIC: [8] Undefined index:  _string C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 207 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( `id` = '2'`id` = '2' AND `type` NOT IN ('1','2','3') AND `qq` LIKE '%hh%' AND `money` BETWEEN '1' AND '2' AND ( `account` = 'ffff' ) )  [ RunTime:0.000174s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`id` = '2' AND `type` NOT IN ('1','2','3') AND `qq` LIKE '%hh%' AND `money` BETW' at line 1
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( `id` = '2'`id` = '2' AND `type` NOT IN ('1','2','3') AND `qq` LIKE '%hh%' AND `money` BETWEEN '1' AND '2' AND ( `account` = 'ffff' ) ) 
+
+[ 2013-12-25T17:35:51+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001033s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001124s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001183s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001255s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001406s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001741s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 165 行.
+NOTIC: [8] Undefined index:  _string C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 207 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( `id` = '2'`id` = '2' AND `type` NOT IN ('1','2','3') AND `qq` LIKE '%hh%' AND `money` BETWEEN '1' AND '2' AND ( `account` = 'ffff' ) )  [ RunTime:0.000163s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`id` = '2' AND `type` NOT IN ('1','2','3') AND `qq` LIKE '%hh%' AND `money` BETW' at line 1
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( `id` = '2'`id` = '2' AND `type` NOT IN ('1','2','3') AND `qq` LIKE '%hh%' AND `money` BETWEEN '1' AND '2' AND ( `account` = 'ffff' ) ) 
+
+[ 2013-12-25T17:40:39+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001324s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001427s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001262s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001509s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001626s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 165 行.
+NOTIC: [8] Undefined index:  _string C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 205 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( (`id` = '2')(`id` = '2') AND (`type` NOT IN ('1','2','3')) AND (`qq` LIKE '%hh%') AND (`money` BETWEEN '1' AND '2') AND (( `account` = 'ffff' )) )  [ RunTime:0.000159s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(`id` = '2') AND (`type` NOT IN ('1','2','3')) AND (`qq` LIKE '%hh%') AND (`mone' at line 1
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( (`id` = '2')(`id` = '2') AND (`type` NOT IN ('1','2','3')) AND (`qq` LIKE '%hh%') AND (`money` BETWEEN '1' AND '2') AND (( `account` = 'ffff' )) ) 
+
+[ 2013-12-25T17:49:57+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001077s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001172s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001538s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001579s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001923s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 165 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 203 行.
+NOTIC: [8] Undefined index:  _string C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 206 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( (`id` = '2')(`id` = '2') AND (`type` NOT IN ('1','2','3')) AND (`qq` LIKE '%rrr%') AND (`money` BETWEEN '1' AND '2') AND (( `account` = 'ffff' )) )  [ RunTime:0.000156s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(`id` = '2') AND (`type` NOT IN ('1','2','3')) AND (`qq` LIKE '%rrr%') AND (`mon' at line 1
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( (`id` = '2')(`id` = '2') AND (`type` NOT IN ('1','2','3')) AND (`qq` LIKE '%rrr%') AND (`money` BETWEEN '1' AND '2') AND (( `account` = 'ffff' )) ) 
+
+[ 2013-12-25T17:49:59+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001181s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001302s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001521s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.002148s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001849s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 165 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 203 行.
+NOTIC: [8] Undefined index:  _string C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 206 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( (`id` = '2')(`id` = '2') AND (`type` NOT IN ('1','2','3')) AND (`qq` LIKE '%rrr%') AND (`money` BETWEEN '1' AND '2') AND (( `account` = 'ffff' )) )  [ RunTime:0.000155s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(`id` = '2') AND (`type` NOT IN ('1','2','3')) AND (`qq` LIKE '%rrr%') AND (`mon' at line 1
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( (`id` = '2')(`id` = '2') AND (`type` NOT IN ('1','2','3')) AND (`qq` LIKE '%rrr%') AND (`money` BETWEEN '1' AND '2') AND (( `account` = 'ffff' )) ) 
+
+[ 2013-12-25T17:50:41+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001022s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001111s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001152s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001414s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001870s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 165 行.
+NOTIC: [8] Undefined index:  _string C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 206 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( (`id` = '2')(`id` = '2') AND (`type` NOT IN ('1','2','3')) AND (`qq` LIKE '%rrr%') AND (`money` BETWEEN '1' AND '2') AND (( `account` = 'ffff' )) )  [ RunTime:0.000169s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(`id` = '2') AND (`type` NOT IN ('1','2','3')) AND (`qq` LIKE '%rrr%') AND (`mon' at line 1
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( (`id` = '2')(`id` = '2') AND (`type` NOT IN ('1','2','3')) AND (`qq` LIKE '%rrr%') AND (`money` BETWEEN '1' AND '2') AND (( `account` = 'ffff' )) ) 
+
+[ 2013-12-25T17:51:59+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001066s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001160s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001419s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001626s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001680s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 165 行.
+NOTIC: [8] Undefined index:  _string C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 206 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( (`id` = '2')(`id` = '2') AND (`type` NOT IN ('1','2','3')) AND (`qq` LIKE '%rrr%') AND (`money` BETWEEN '1' AND '2') AND (( `account` = 'ffff' )) )  [ RunTime:0.000185s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(`id` = '2') AND (`type` NOT IN ('1','2','3')) AND (`qq` LIKE '%rrr%') AND (`mon' at line 1
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( (`id` = '2')(`id` = '2') AND (`type` NOT IN ('1','2','3')) AND (`qq` LIKE '%rrr%') AND (`money` BETWEEN '1' AND '2') AND (( `account` = 'ffff' )) ) 
+
+[ 2013-12-25T17:52:58+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001049s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001140s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001105s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001167s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001459s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001905s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 165 行.
+NOTIC: [8] Undefined index:  _string C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 207 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( (`id` = '2')(`id` = '2') AND (`type` NOT IN ('1','2','3')) AND (`qq` LIKE '%rrr%') AND (`money` BETWEEN '1' AND '2') AND (( `account` = 'ffff' )) )  [ RunTime:0.000154s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(`id` = '2') AND (`type` NOT IN ('1','2','3')) AND (`qq` LIKE '%rrr%') AND (`mon' at line 1
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( (`id` = '2')(`id` = '2') AND (`type` NOT IN ('1','2','3')) AND (`qq` LIKE '%rrr%') AND (`money` BETWEEN '1' AND '2') AND (( `account` = 'ffff' )) ) 
+
+[ 2013-12-25T17:54:07+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001216s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001501s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001321s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001514s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001599s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 164 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 165 行.
+NOTIC: [8] Undefined index:  _string C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 205 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( (`id` = '2')(`id` = '2') AND (`type` NOT IN ('1','2','3')) AND (`qq` LIKE '%rrr%') AND (`money` BETWEEN '1' AND '2') AND (( `account` = 'ffff' )) )  [ RunTime:0.000155s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(`id` = '2') AND (`type` NOT IN ('1','2','3')) AND (`qq` LIKE '%rrr%') AND (`mon' at line 1
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( (`id` = '2')(`id` = '2') AND (`type` NOT IN ('1','2','3')) AND (`qq` LIKE '%rrr%') AND (`money` BETWEEN '1' AND '2') AND (( `account` = 'ffff' )) ) 
+
+[ 2013-12-25T17:54:37+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000869s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000959s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001157s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.012407s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001675s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 164 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 165 行.
+NOTIC: [8] Undefined index:  _string C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 205 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( (`id` = '2')(`id` = '2') AND (`type` NOT IN ('1','2','3')) AND (`qq` LIKE '%rrr%') AND (`money` BETWEEN '1' AND '2') AND (( `account` = 'ffff' )) )  [ RunTime:0.000150s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(`id` = '2') AND (`type` NOT IN ('1','2','3')) AND (`qq` LIKE '%rrr%') AND (`mon' at line 1
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( (`id` = '2')(`id` = '2') AND (`type` NOT IN ('1','2','3')) AND (`qq` LIKE '%rrr%') AND (`money` BETWEEN '1' AND '2') AND (( `account` = 'ffff' )) ) 
+
+[ 2013-12-25T17:54:45+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000863s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000951s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001160s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001397s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001696s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 164 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 165 行.
+NOTIC: [8] Undefined index:  _string C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 205 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( (`type` NOT IN ('1','2','3')) AND (`qq` LIKE '%rrr%') AND (`money` BETWEEN '1' AND '2') AND (( `account` = 'ffff' )) )  [ RunTime:0.000312s ]
+
+[ 2013-12-25T17:55:31+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001036s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001126s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001258s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001456s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001695s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 164 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 165 行.
+NOTIC: [8] Undefined index:  _string C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 206 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( (`type` NOT IN ('1','2','3')) AND (`qq` LIKE '%rrr%') AND (`money` BETWEEN '1' AND '2') AND (( `account` = 'ffff' )) )  [ RunTime:0.000322s ]
+
+[ 2013-12-25T17:55:32+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000984s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001088s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001345s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001530s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002434s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 164 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 165 行.
+NOTIC: [8] Undefined index:  _string C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 206 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( (`type` NOT IN ('1','2','3')) AND (`qq` LIKE '%rrr%') AND (`money` BETWEEN '1' AND '2') AND (( `account` = 'ffff' )) )  [ RunTime:0.000356s ]
+
+[ 2013-12-25T17:56:25+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001552s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001673s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001679s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001412s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001588s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 164 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 165 行.
+NOTIC: [8] Undefined index:  _string C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 207 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( (`type` NOT IN ('1','2','3')) )  [ RunTime:0.000327s ]
+
+[ 2013-12-25T17:57:09+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001670s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001822s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002115s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002228s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001494s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001690s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 164 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 165 行.
+NOTIC: [8] Undefined index:  _string C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 207 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( `type` NOT IN ('1','2','3') )  [ RunTime:0.000362s ]
+
+[ 2013-12-25T17:57:21+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001148s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001262s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001230s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001567s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001787s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 164 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 165 行.
+NOTIC: [8] Undefined index:  _string C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 205 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( `type` NOT IN ('1','2','3') AND `qq` LIKE '%rrr%' AND `money` BETWEEN '1' AND '2' AND ( `account` = 'ffff' ) )  [ RunTime:0.000306s ]
+
+[ 2013-12-25T17:58:17+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001029s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001117s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001125s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001190s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001395s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001669s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 164 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 165 行.
+NOTIC: [8] Undefined index:  _string C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 205 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( `type` NOT IN ('1','2','3') AND `qq` LIKE '%rrr%' AND `money` BETWEEN '1' AND '2' AND `account` = 'ffff' )  [ RunTime:0.000381s ]
+
+[ 2013-12-25T17:58:42+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001030s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001122s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001150s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001330s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001579s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 164 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 165 行.
+NOTIC: [8] Undefined index:  _string C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 204 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( `type` NOT IN ('1','2','3') AND `qq` LIKE '%rrr%' AND `money` BETWEEN '1' AND '2' AND `account` = 'ffff' )  [ RunTime:0.000287s ]
+
+[ 2013-12-25T17:59:01+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001099s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001206s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001638s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001423s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001584s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 164 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 165 行.
+NOTIC: [8] Undefined index:  _string C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 204 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( `type` NOT IN ('1','2','3') AND `qq` LIKE '%r\'rr%' AND `money` BETWEEN '1' AND '2' AND `account` = 'ffff' )  [ RunTime:0.000316s ]
+
+[ 2013-12-25T17:59:32+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000940s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001039s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001278s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001438s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002146s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 164 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 165 行.
+NOTIC: [8] Undefined index:  _string C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 204 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( `id` = '2' )  [ RunTime:0.000332s ]
+
+[ 2013-12-25T17:59:40+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000951s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001050s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001311s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001576s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001664s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 164 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 165 行.
+NOTIC: [8] Undefined index:  _string C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 204 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( `id` = '2'`id` = '2' AND `type` NOT IN ('1','2','3') AND `qq` LIKE '%r\'rr%' AND `money` BETWEEN '1' AND '2' AND `account` = 'ffff' )  [ RunTime:0.000150s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`id` = '2' AND `type` NOT IN ('1','2','3') AND `qq` LIKE '%r\'rr%' AND `money` B' at line 1
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( `id` = '2'`id` = '2' AND `type` NOT IN ('1','2','3') AND `qq` LIKE '%r\'rr%' AND `money` BETWEEN '1' AND '2' AND `account` = 'ffff' ) 
+
+[ 2013-12-25T18:00:02+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000960s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001070s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001218s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001431s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001680s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 165 行.
+NOTIC: [8] Undefined index:  _string C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 204 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( `id` = '2'`id` = '2' AND `type` NOT IN ('1','2','3') AND `qq` LIKE '%r\'rr%' AND `money` BETWEEN '1' AND '2' AND `account` = 'ffff' )  [ RunTime:0.000148s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`id` = '2' AND `type` NOT IN ('1','2','3') AND `qq` LIKE '%r\'rr%' AND `money` B' at line 1
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( `id` = '2'`id` = '2' AND `type` NOT IN ('1','2','3') AND `qq` LIKE '%r\'rr%' AND `money` BETWEEN '1' AND '2' AND `account` = 'ffff' ) 
+
+[ 2013-12-25T18:00:33+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001943s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002088s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001200s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001656s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001698s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 165 行.
+NOTIC: [8] Undefined index:  _string C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 204 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( `id` = '2'`id` = '2' AND `uid` = '2'`id` = '2'`id` = '2' AND `uid` = '2' AND `type` NOT IN ('1','2','3') AND `qq` LIKE '%r\'rr%' AND `money` BETWEEN '1' AND '2' AND `account` = 'ffff' )  [ RunTime:0.000146s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`id` = '2' AND `uid` = '2'`id` = '2'`id` = '2' AND `uid` = '2' AND `type` NOT IN' at line 1
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( `id` = '2'`id` = '2' AND `uid` = '2'`id` = '2'`id` = '2' AND `uid` = '2' AND `type` NOT IN ('1','2','3') AND `qq` LIKE '%r\'rr%' AND `money` BETWEEN '1' AND '2' AND `account` = 'ffff' ) 
+
+[ 2013-12-25T18:01:01+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001034s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001126s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001159s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.010512s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001614s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 165 行.
+NOTIC: [8] Undefined index:  _string C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 204 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( `id` = '2'`id` = '2' AND `uid` = '3' )  [ RunTime:0.000148s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`id` = '2' AND `uid` = '3' )' at line 1
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( `id` = '2'`id` = '2' AND `uid` = '3' ) 
+
+[ 2013-12-25T18:01:55+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001650s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001796s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001102s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001162s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001416s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001675s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  _string C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 205 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( `id` = '2'`uid` = '3' )  [ RunTime:0.000158s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`uid` = '3' )' at line 1
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( `id` = '2'`uid` = '3' ) 
+
+[ 2013-12-25T18:02:22+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000909s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001007s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001327s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001547s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001628s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 165 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( `id` = '2' AND `uid` = '3' )  [ RunTime:0.000181s ]
+ERR: Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( `id` = '2' AND `uid` = '3' ) 
+
+[ 2013-12-25T18:02:34+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001761s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001924s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001121s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001185s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001414s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002119s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 165 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( `id` = '2' AND `uid` = '3' AND `type` NOT IN ('1','2','3') AND `qq` LIKE '%r\'rr%' AND `money` BETWEEN '1' AND '2' AND `account` = 'ffff' )  [ RunTime:0.000275s ]
+ERR: Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( `id` = '2' AND `uid` = '3' AND `type` NOT IN ('1','2','3') AND `qq` LIKE '%r\'rr%' AND `money` BETWEEN '1' AND '2' AND `account` = 'ffff' ) 
+
+[ 2013-12-25T18:02:59+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000868s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000965s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001104s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001164s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.009145s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001535s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 165 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) AND ( `id` = '2' AND `type` NOT IN ('1','2','3') AND `qq` LIKE '%r\'rr%' AND `money` BETWEEN '1' AND '2' AND `account` = 'ffff' )  [ RunTime:0.000294s ]
+
+[ 2013-12-25T18:06:06+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001434s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001527s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001123s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001182s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001477s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001622s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 165 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = '2' AND `type` NOT IN ('1','2','3') AND `qq` LIKE '%r\'rr%' AND `money` BETWEEN '1' AND '2' AND `account` = 'ffff' ) AND ( `status` = 0 ) AND ( `appid` = 1 )  [ RunTime:0.000290s ]
+
+[ 2013-12-25T18:11:09+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001552s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001667s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001554s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001733s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001677s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 174 行.
+SQL: SELECT * FROM `tb_user` WHERE (  ) AND ( `status` = 0 ) AND ( `appid` = 1 )  [ RunTime:0.000146s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AND ( `status` = 0 ) AND ( `appid` = 1 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE (  ) AND ( `status` = 0 ) AND ( `appid` = 1 ) 
+
+[ 2013-12-25T18:11:59+08:00 ] 127.0.0.1 /yisheji/?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001283s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001394s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001493s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.014006s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001635s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 174 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 )  [ RunTime:0.000388s ]
+
+[ 2013-12-25T18:42:04+08:00 ] 127.0.0.1 /yisheji/company.php?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001061s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001147s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001189s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001260s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001700s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001562s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 175 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `status` = 0 ) AND ( `appid` = 1 )  [ RunTime:0.000411s ]
+
+[ 2013-12-25T18:42:20+08:00 ] 127.0.0.1 /yisheji/company.php?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001119s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001213s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001270s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001880s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001659s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 175 行.
+SQL: SELECT * FROM `tb_user` WHERE ( (`type` NOT IN ('1','2','3')) AND (`qq` LIKE '%r\'rr%') AND (`money` BETWEEN '1' AND '2') AND (`account` = 'ffff') AND (`id` >|UID < 'Array') ) AND ( `status` = 0 ) AND ( `appid` = 1 )  [ RunTime:0.000177s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '|UID < 'Array') ) AND ( `status` = 0 ) AND ( `appid` = 1 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( (`type` NOT IN ('1','2','3')) AND (`qq` LIKE '%r\'rr%') AND (`money` BETWEEN '1' AND '2') AND (`account` = 'ffff') AND (`id` >|UID < 'Array') ) AND ( `status` = 0 ) AND ( `appid` = 1 ) 
+
+[ 2013-12-25T18:43:47+08:00 ] 127.0.0.1 /yisheji/company.php?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001036s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001142s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002205s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001365s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002095s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 175 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `type` NOT IN ('1','2','3')) AND (`qq` LIKE '%r\'rr%') AND (`money` BETWEEN '1' AND '2') AND (`account` = 'ffff') AND (`id` >|UID < 'Array' ) AND ( `status` = 0 ) AND ( `appid` = 1 )  [ RunTime:0.000488s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '|UID < 'Array' ) AND ( `status` = 0 ) AND ( `appid` = 1 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `type` NOT IN ('1','2','3')) AND (`qq` LIKE '%r\'rr%') AND (`money` BETWEEN '1' AND '2') AND (`account` = 'ffff') AND (`id` >|UID < 'Array' ) AND ( `status` = 0 ) AND ( `appid` = 1 ) 
+
+[ 2013-12-25T18:53:20+08:00 ] 127.0.0.1 /yisheji/company.php?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001086s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001179s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001183s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001530s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002020s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 175 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `type` NOT IN ('1','2','3')) AND (`qq` LIKE '%r\'rr%') AND (`money` BETWEEN '1' AND '2') AND (`account` = 'ffff') AND (`id` > '1' OR `uid` < '2' ) AND ( `status` = 0 ) AND ( `appid` = 1 )  [ RunTime:0.000217s ]
+ERR: Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `type` NOT IN ('1','2','3')) AND (`qq` LIKE '%r\'rr%') AND (`money` BETWEEN '1' AND '2') AND (`account` = 'ffff') AND (`id` > '1' OR `uid` < '2' ) AND ( `status` = 0 ) AND ( `appid` = 1 ) 
+
+[ 2013-12-25T18:53:36+08:00 ] 127.0.0.1 /yisheji/company.php?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001781s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001903s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001171s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001403s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001760s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 175 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `type` NOT IN ('1','2','3')) AND (`qq` LIKE '%r\'rr%') AND (`money` BETWEEN '1' AND '2') AND (`account` = 'ffff') AND (`id` > '1' OR `uid` < '2' ) AND ( `status` = 0 ) AND ( `appid` = 1 )  [ RunTime:0.000249s ]
+ERR: Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `type` NOT IN ('1','2','3')) AND (`qq` LIKE '%r\'rr%') AND (`money` BETWEEN '1' AND '2') AND (`account` = 'ffff') AND (`id` > '1' OR `uid` < '2' ) AND ( `status` = 0 ) AND ( `appid` = 1 ) 
+
+[ 2013-12-25T18:53:38+08:00 ] 127.0.0.1 /yisheji/company.php?s=/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002786s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002953s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002712s ]
+SQL: SHOW COLUMNS FROM `tb_session` [ RunTime:0.001803s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  SN_KEY C:\AppServ\www\yisheji\Home\Company\Lib\Model\SessionModel.class.php 第 14 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\yisheji\Home\Company\Lib\Action\BaseAction.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001769s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 45 行.
+NOTIC: [8] Undefined index:  user C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 46 行.
+NOTIC: [8] Undefined index:  where C:\AppServ\www\yisheji\Home\Company\Lib\Model\BaseModel.class.php 第 175 行.
+SQL: SELECT * FROM `tb_user` WHERE ( `type` NOT IN ('1','2','3')) AND (`qq` LIKE '%r\'rr%') AND (`money` BETWEEN '1' AND '2') AND (`account` = 'ffff') AND (`id` > '1' OR `uid` < '2' ) AND ( `status` = 0 ) AND ( `appid` = 1 )  [ RunTime:0.000219s ]
+ERR: Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `tb_user` WHERE ( `type` NOT IN ('1','2','3')) AND (`qq` LIKE '%r\'rr%') AND (`money` BETWEEN '1' AND '2') AND (`account` = 'ffff') AND (`id` > '1' OR `uid` < '2' ) AND ( `status` = 0 ) AND ( `appid` = 1 ) 
+

@@ -1,0 +1,1379 @@
+[ 2013-11-21T09:54:47+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Manager/verify
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000683s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000750s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+SQL: SHOW COLUMNS FROM `tb_manager` [ RunTime:0.006364s ]
+
+[ 2013-11-21T09:54:55+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Manager/login
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000960s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001027s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000577s ]
+SQL: SHOW COLUMNS FROM `tb_manager` [ RunTime:0.005941s ]
+SQL: SELECT * FROM `tb_manager` WHERE ( `account` = 'admin' ) AND ( `appid` = 1 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.016252s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.030374s ]
+INFO: [ view_template ] --END-- [ RunTime:0.030584s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\25e16930de30c2eddf3898c44ac6a012.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.025192s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025301s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000887s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000635s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000502s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000721s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002925s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000888s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000956s ]
+
+[ 2013-11-21T09:54:57+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Index/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001143s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001262s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.010522s ]
+INFO: [ view_template ] --END-- [ RunTime:0.010609s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.010621s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010693s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000521s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000509s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000395s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000562s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002123s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000712s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000759s ]
+
+[ 2013-11-21T09:54:57+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Index/top
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000713s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000572s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000635s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\3fa9528951f49840cd6db1fb79fa06a4.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.019746s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019805s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000466s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000352s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000256s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000399s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001587s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000518s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000557s ]
+
+[ 2013-11-21T09:54:57+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Index/left
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000801s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000869s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000756s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000822s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\37143eef06b0f455826c39b692c7c0cc.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.013410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013467s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000558s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000425s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000330s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000472s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001904s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000589s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000630s ]
+
+[ 2013-11-21T09:54:58+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Company/company
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000703s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000766s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000685s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.027579s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000978s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000778s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.007129s ]
+INFO: [ view_template ] --END-- [ RunTime:0.007222s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\3dbb8342dba5dceca89a4b04b0753a77.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.020018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020092s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000936s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000565s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000388s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000619s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002698s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000789s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000850s ]
+
+[ 2013-11-21T10:40:27+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Score/clist
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001125s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001214s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001189s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001282s ]
+SQL: SHOW COLUMNS FROM `tb_score` [ RunTime:0.033927s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' F:\www\jianliapp\Home\Admin\Lib\Action\ScoreAction.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_score` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000869s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' F:\www\jianliapp\Home\Admin\Lib\Action\ScoreAction.class.php 第 27 行.
+SQL: SELECT * FROM `tb_score` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime LIMIT 0,5   [ RunTime:0.000793s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.022177s ]
+INFO: [ view_template ] --END-- [ RunTime:0.022273s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\4582f7e6a7cae08ae4e3bb65f8a9cef2.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.028650s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028726s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000804s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000657s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000503s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000730s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002867s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001162s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001298s ]
+
+[ 2013-11-21T14:39:54+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Manager/verify
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000654s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `tb_manager` [ RunTime:0.008245s ]
+
+[ 2013-11-21T14:40:11+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Manager/verify
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000706s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000787s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+SQL: SHOW COLUMNS FROM `tb_manager` [ RunTime:0.005980s ]
+
+[ 2013-11-21T14:40:28+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Manager/verify
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000663s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `tb_manager` [ RunTime:0.007209s ]
+
+[ 2013-11-21T14:40:30+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Manager/verify
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001114s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001225s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000811s ]
+SQL: SHOW COLUMNS FROM `tb_manager` [ RunTime:0.006114s ]
+
+[ 2013-11-21T14:40:32+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Manager/verify
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001408s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001518s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000833s ]
+SQL: SHOW COLUMNS FROM `tb_manager` [ RunTime:0.006590s ]
+
+[ 2013-11-21T14:40:45+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Manager/login
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001042s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001122s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+SQL: SHOW COLUMNS FROM `tb_manager` [ RunTime:0.005791s ]
+SQL: SELECT * FROM `tb_manager` WHERE ( `account` = 'admin' ) AND ( `appid` = 1 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.001559s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.003214s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003396s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\25e16930de30c2eddf3898c44ac6a012.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.019077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019183s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000693s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000532s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000403s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000630s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002433s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000808s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000869s ]
+
+[ 2013-11-21T14:40:46+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Index/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000859s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000938s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000659s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000697s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000759s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.006970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007035s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000438s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000414s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000310s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000494s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001797s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000638s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000684s ]
+
+[ 2013-11-21T14:40:46+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Index/left
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000673s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000795s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000870s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\37143eef06b0f455826c39b692c7c0cc.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.022628s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022677s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000513s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000382s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000265s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000404s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001679s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000520s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000561s ]
+
+[ 2013-11-21T14:40:47+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Company/company
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000671s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.006518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006577s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.007926s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000994s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.001383s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001612s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001711s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\3dbb8342dba5dceca89a4b04b0753a77.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.013187s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013257s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000644s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000547s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000393s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000658s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002412s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000791s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000852s ]
+
+[ 2013-11-21T14:43:23+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Index/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001466s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001571s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000909s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000712s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000764s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.006737s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006795s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000403s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000388s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000310s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000433s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001665s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000585s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000622s ]
+
+[ 2013-11-21T14:43:23+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Index/left
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001520s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001595s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000754s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000811s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\37143eef06b0f455826c39b692c7c0cc.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.008194s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008245s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000563s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000404s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000311s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002938s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000685s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000728s ]
+
+[ 2013-11-21T14:43:23+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Index/top
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001054s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001127s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000439s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000494s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\3fa9528951f49840cd6db1fb79fa06a4.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.007909s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007961s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000512s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000393s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001425s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000474s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002958s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000584s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000624s ]
+
+[ 2013-11-21T14:43:24+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Company/company
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000838s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000650s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.003936s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.001458s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000700s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001440s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001513s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\3dbb8342dba5dceca89a4b04b0753a77.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.013703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013774s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000767s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000650s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000816s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000967s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003411s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000930s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000992s ]
+
+[ 2013-11-21T14:43:49+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Index/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001015s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001097s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000815s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000887s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.008724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008815s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000545s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000532s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000397s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002714s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000660s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000708s ]
+
+[ 2013-11-21T14:43:49+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Index/left
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000674s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000578s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000929s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000994s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\37143eef06b0f455826c39b692c7c0cc.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.007930s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007980s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000416s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000334s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000242s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000375s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001475s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000512s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000549s ]
+
+[ 2013-11-21T14:43:50+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Company/company
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000745s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000812s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.003598s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.001067s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000799s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001069s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001137s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\3dbb8342dba5dceca89a4b04b0753a77.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.013209s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013280s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000660s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000544s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000392s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000623s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002387s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000787s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000848s ]
+
+[ 2013-11-21T14:47:35+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Index/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001032s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001121s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000846s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000915s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.008287s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008354s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000514s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000523s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000498s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000657s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002370s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000791s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000842s ]
+
+[ 2013-11-21T14:47:35+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Index/top
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000670s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000511s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000560s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\3fa9528951f49840cd6db1fb79fa06a4.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.008562s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008611s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000637s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000389s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000262s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001801s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000510s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000549s ]
+
+[ 2013-11-21T14:47:35+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Index/left
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.003558s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003635s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000719s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000778s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\37143eef06b0f455826c39b692c7c0cc.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.008211s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008277s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000488s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000566s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000383s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000469s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002023s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000566s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000605s ]
+
+[ 2013-11-21T14:47:37+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Company/company
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000700s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.007038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000729s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000721s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.003627s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003728s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\3dbb8342dba5dceca89a4b04b0753a77.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.013979s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014054s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000750s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000834s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000536s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000750s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003157s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001264s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001355s ]
+
+[ 2013-11-21T14:47:50+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Index/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001284s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001369s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001111s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001182s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000880s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000946s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.008424s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008494s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000518s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000512s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000392s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000564s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002127s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000714s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000762s ]
+
+[ 2013-11-21T14:47:50+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Index/top
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000708s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000789s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000562s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000617s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\3fa9528951f49840cd6db1fb79fa06a4.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.007549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007600s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000409s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000353s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000278s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000401s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001549s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000511s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000550s ]
+
+[ 2013-11-21T14:47:50+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Index/left
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000781s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000854s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000485s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000541s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\37143eef06b0f455826c39b692c7c0cc.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.007469s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007519s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000447s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000521s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000456s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000435s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001990s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000510s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000549s ]
+
+[ 2013-11-21T14:47:51+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Company/company
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002938s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003016s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000795s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.003399s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000523s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000545s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001435s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001512s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\3dbb8342dba5dceca89a4b04b0753a77.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.016606s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016682s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000806s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001326s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000480s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000653s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003479s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000670s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000715s ]
+
+[ 2013-11-21T14:49:27+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Index/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000664s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000528s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000577s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.006097s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006157s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000379s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000342s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000423s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000602s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001909s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000588s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000625s ]
+
+[ 2013-11-21T14:49:28+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Company/company
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001556s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001647s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.008470s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.001068s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.001207s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002931s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003138s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\3dbb8342dba5dceca89a4b04b0753a77.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.019369s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019464s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000517s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000418s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000315s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001903s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000626s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000673s ]
+
+[ 2013-11-21T14:49:28+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Index/left
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000722s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000788s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000543s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000540s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000761s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\37143eef06b0f455826c39b692c7c0cc.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.016287s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016365s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000769s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000786s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000513s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002806s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000564s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000609s ]
+
+[ 2013-11-21T14:49:28+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Index/top
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000712s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000782s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000574s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000645s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\3fa9528951f49840cd6db1fb79fa06a4.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.016816s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016871s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001662s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000610s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000311s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000419s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003169s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000575s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000619s ]
+
+[ 2013-11-21T14:49:37+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Index/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000985s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001066s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000810s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000887s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.007319s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007386s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000466s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000435s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000308s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000499s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001856s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000655s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000711s ]
+
+[ 2013-11-21T14:49:37+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Index/top
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000677s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000521s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000577s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\3fa9528951f49840cd6db1fb79fa06a4.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.008520s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008571s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000398s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000339s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000483s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000455s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001817s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000538s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000580s ]
+
+[ 2013-11-21T14:49:38+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Company/company
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000822s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000892s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.009019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.002281s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.001363s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.003084s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003250s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\3dbb8342dba5dceca89a4b04b0753a77.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.018175s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018281s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000804s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000653s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000520s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001879s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004060s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001038s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001103s ]
+
+[ 2013-11-21T14:49:38+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Index/left
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002466s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002548s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000696s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000779s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\37143eef06b0f455826c39b692c7c0cc.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.010986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011098s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000594s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000479s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000344s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.004422s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005982s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.002489s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002640s ]
+
+[ 2013-11-21T14:49:39+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Index/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001068s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001165s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000817s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000847s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000926s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.008952s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009037s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000543s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000521s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000409s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002099s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000530s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000567s ]
+
+[ 2013-11-21T14:49:39+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Index/top
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000696s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000760s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000512s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000560s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\3fa9528951f49840cd6db1fb79fa06a4.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.007074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007135s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000500s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000677s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000305s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000387s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001989s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000524s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000563s ]
+
+[ 2013-11-21T14:49:39+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Index/left
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000852s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000930s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000681s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000733s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\37143eef06b0f455826c39b692c7c0cc.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.009517s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009565s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000676s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000433s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000402s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000546s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002174s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000682s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000723s ]
+
+[ 2013-11-21T14:49:40+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Company/company
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000865s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000931s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001109s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.007685s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.002402s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.001369s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.003160s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003345s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\3dbb8342dba5dceca89a4b04b0753a77.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.019552s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019674s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000772s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000559s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000408s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000563s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002454s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000713s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000761s ]
+
+[ 2013-11-21T14:52:01+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Index/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001292s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001389s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000841s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000904s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000666s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000715s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.007283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007342s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000426s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000422s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000312s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000437s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001703s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000563s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000613s ]
+
+[ 2013-11-21T14:52:01+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Index/top
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001543s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001631s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000439s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000491s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\3fa9528951f49840cd6db1fb79fa06a4.php 第 9 行.
+NOTIC: [8] Undefined variable: last F:\www\jianliapp\Home\Admin\Runtime\Cache\3fa9528951f49840cd6db1fb79fa06a4.php 第 50 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.007940s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007989s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000399s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000341s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000255s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000403s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001503s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000539s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000577s ]
+
+[ 2013-11-21T14:52:02+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Company/company
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000866s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000932s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000650s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.004055s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000563s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000755s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001418s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001490s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\3dbb8342dba5dceca89a4b04b0753a77.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.013215s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013271s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000511s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000396s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000309s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000444s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001778s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000570s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000610s ]
+
+[ 2013-11-21T14:52:02+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Index/left
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001228s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001304s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000630s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001437s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001569s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\37143eef06b0f455826c39b692c7c0cc.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.020474s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020527s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000651s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000412s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000319s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001644s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003159s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000725s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000767s ]
+
+[ 2013-11-21T14:54:15+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Index/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001037s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001114s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001048s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001116s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.008395s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008461s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000510s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000401s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000320s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000443s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001786s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000586s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000624s ]
+
+[ 2013-11-21T14:54:15+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Index/top
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000667s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000943s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001005s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\3fa9528951f49840cd6db1fb79fa06a4.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.009973s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010025s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000415s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000349s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000246s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000406s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001529s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000714s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000771s ]
+
+[ 2013-11-21T14:54:16+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Company/company
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001805s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001883s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.007014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.006699s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.001807s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002929s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003083s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\3dbb8342dba5dceca89a4b04b0753a77.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.018860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018960s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000737s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000971s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000779s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000693s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003399s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000788s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000841s ]
+
+[ 2013-11-21T14:54:16+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Index/left
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000826s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000894s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001893s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001987s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\37143eef06b0f455826c39b692c7c0cc.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.012436s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012492s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000484s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000471s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000388s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000523s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001987s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000652s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000695s ]
+
+[ 2013-11-21T14:54:19+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Index/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001067s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001162s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000814s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000955s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001043s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.009090s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009175s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000540s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000522s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000382s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000608s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002222s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001065s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001131s ]
+
+[ 2013-11-21T14:54:20+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Company/company
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000888s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000953s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001119s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.003466s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000688s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000665s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001380s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001457s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\3dbb8342dba5dceca89a4b04b0753a77.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.013784s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013856s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000765s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000640s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000503s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000720s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002817s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000903s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000966s ]
+
+[ 2013-11-21T14:54:20+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Index/left
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000689s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000827s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000913s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\37143eef06b0f455826c39b692c7c0cc.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.009365s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009426s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000429s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000337s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000280s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000391s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001547s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000534s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000573s ]
+
+[ 2013-11-21T14:54:20+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Index/top
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000661s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000724s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000574s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000634s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\3fa9528951f49840cd6db1fb79fa06a4.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.006941s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006998s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000464s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000555s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000301s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000556s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001997s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000565s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000606s ]
+
+[ 2013-11-21T15:00:36+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Score/fresh
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001210s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001319s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+SQL: SHOW COLUMNS FROM `tb_score` [ RunTime:0.004292s ]
+SQL: SELECT  type,target,usertype ,avg(score) avgs,count(*) amount FROM `tb_score` where isreal=1  group by type,target,usertype [ RunTime:0.001032s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.003587s ]
+SQL: UPDATE `tb_company` SET `score_owner`='7.00000',`score_owner_count`=1 WHERE ( `id` = 2 ) AND ( `appid` = 1 ) [ RunTime:0.000680s ]
+SQL: UPDATE `tb_company` SET `score_expert`='1.00000',`score_expert_count`=2 WHERE ( `id` = 2 ) AND ( `appid` = 1 ) [ RunTime:0.000501s ]
+SQL: UPDATE `tb_company` SET `score_expert`='1.00000',`score_expert_count`=2 WHERE ( `id` = 3 ) AND ( `appid` = 1 ) [ RunTime:0.000537s ]
+SQL: SHOW COLUMNS FROM `tb_construction` [ RunTime:0.025113s ]
+SQL: UPDATE `tb_construction` SET `score_owner`='6.00000',`score_owner_count`=2 WHERE ( `id` = 14 ) AND ( `appid` = 1 ) [ RunTime:0.002939s ]
+SQL: UPDATE `tb_construction` SET `score_expert`='5.00000',`score_expert_count`=1 WHERE ( `id` = 14 ) AND ( `appid` = 1 ) [ RunTime:0.000483s ]
+SQL: UPDATE `tb_construction` SET `score_owner`='5.00000',`score_owner_count`=1 WHERE ( `id` = 15 ) AND ( `appid` = 1 ) [ RunTime:0.000469s ]
+SQL: SHOW COLUMNS FROM `tb_case` [ RunTime:0.018519s ]
+SQL: UPDATE `tb_case` SET `score_owner`='7.00000',`score_owner_count`=1 WHERE ( `id` = 14 ) AND ( `appid` = 1 ) [ RunTime:0.000479s ]
+SQL: UPDATE `tb_case` SET `score_owner`='7.50000',`score_owner_count`=2 WHERE ( `id` = 15 ) AND ( `appid` = 1 ) [ RunTime:0.001039s ]
+SQL: UPDATE `tb_case` SET `score_expert`='7.00000',`score_expert_count`=1 WHERE ( `id` = 15 ) AND ( `appid` = 1 ) [ RunTime:0.000494s ]
+SQL: UPDATE `tb_case` SET `score_owner`='5.00000',`score_owner_count`=2 WHERE ( `id` = 17 ) AND ( `appid` = 1 ) [ RunTime:0.000489s ]
+SQL: UPDATE `tb_case` SET `score_owner`='8.00000',`score_owner_count`=1 WHERE ( `id` = 18 ) AND ( `appid` = 1 ) [ RunTime:0.000485s ]
+SQL: UPDATE `tb_case` SET `score_expert`='8.00000',`score_expert_count`=1 WHERE ( `id` = 18 ) AND ( `appid` = 1 ) [ RunTime:0.000469s ]
+SQL: SELECT  type,target,avg(score) avgs FROM `tb_score` where isreal=1 group by type,target [ RunTime:0.000897s ]
+SQL: UPDATE `tb_company` SET `score_complex`='3.00000' WHERE ( `id` = 2 ) AND ( `appid` = 1 ) [ RunTime:0.000482s ]
+SQL: UPDATE `tb_company` SET `score_complex`='1.00000' WHERE ( `id` = 3 ) AND ( `appid` = 1 ) [ RunTime:0.000501s ]
+SQL: UPDATE `tb_construction` SET `score_complex`='5.66667' WHERE ( `id` = 14 ) AND ( `appid` = 1 ) [ RunTime:0.000507s ]
+SQL: UPDATE `tb_construction` SET `score_complex`='5.00000' WHERE ( `id` = 15 ) AND ( `appid` = 1 ) [ RunTime:0.000413s ]
+SQL: UPDATE `tb_case` SET `score_complex`='7.00000' WHERE ( `id` = 14 ) AND ( `appid` = 1 ) [ RunTime:0.000439s ]
+SQL: UPDATE `tb_case` SET `score_complex`='7.33333' WHERE ( `id` = 15 ) AND ( `appid` = 1 ) [ RunTime:0.000517s ]
+SQL: UPDATE `tb_case` SET `score_complex`='5.00000' WHERE ( `id` = 17 ) AND ( `appid` = 1 ) [ RunTime:0.000469s ]
+SQL: UPDATE `tb_case` SET `score_complex`='8.00000' WHERE ( `id` = 18 ) AND ( `appid` = 1 ) [ RunTime:0.000480s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001474s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001549s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\25e16930de30c2eddf3898c44ac6a012.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.014400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014459s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000439s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000401s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000313s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000441s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001701s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000552s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000590s ]
+
+[ 2013-11-21T15:00:38+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Score/clist
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001063s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001159s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+SQL: SHOW COLUMNS FROM `tb_score` [ RunTime:0.003166s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' F:\www\jianliapp\Home\Admin\Lib\Action\ScoreAction.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_score` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000570s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' F:\www\jianliapp\Home\Admin\Lib\Action\ScoreAction.class.php 第 27 行.
+SQL: SELECT * FROM `tb_score` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime LIMIT 0,5   [ RunTime:0.000802s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001352s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001439s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\jianliapp\Home\Admin\Runtime\Cache\4582f7e6a7cae08ae4e3bb65f8a9cef2.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.013817s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013877s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000455s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000341s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000241s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000393s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001535s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000645s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000695s ]
+
+[ 2013-11-21T15:52:29+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Manager/verify
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000659s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000721s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+SQL: SHOW COLUMNS FROM `tb_manager` [ RunTime:0.003050s ]
+
+[ 2013-11-21T15:52:47+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Manager/verify
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001030s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001114s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000643s ]
+SQL: SHOW COLUMNS FROM `tb_manager` [ RunTime:0.006035s ]
+
+[ 2013-11-21T15:54:04+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Manager/verify
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002586s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002679s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+SQL: SHOW COLUMNS FROM `tb_manager` [ RunTime:0.005799s ]
+
+[ 2013-11-21T15:54:09+08:00 ] 0.0.0.0 /jianliapp/admin.php?s=/Manager/verify
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000839s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000915s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000626s ]
+SQL: SHOW COLUMNS FROM `tb_manager` [ RunTime:0.002812s ]
+

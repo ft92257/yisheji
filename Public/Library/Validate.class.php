@@ -11,7 +11,7 @@ class Validate {
 	
 	protected $model;
 	
-	public function __construct($model) {
+	public function __construct($model, $oldData) {
 		$this->model = $model;
 	}
 	

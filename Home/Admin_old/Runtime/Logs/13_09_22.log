@@ -1,0 +1,149 @@
+[ 2013-09-22T09:57:42+08:00 ] ERR: (ThinkException) 无法加载模块:Index
+[ 2013-09-22T09:57:43+08:00 ] ERR: (ThinkException) 无法加载模块:Index
+[ 2013-09-22T09:57:45+08:00 ] ERR: (ThinkException) 无法加载模块:Index
+[ 2013-09-22T09:59:30+08:00 ] ERR: (ThinkException) 模板不存在[Home/Admin/Tpl/Public/Login.html]
+[ 2013-09-22T10:00:11+08:00 ] ERR: (ThinkException) 模板不存在[Home/Admin/Tpl/Public/Login.html]
+[ 2013-09-22T10:00:12+08:00 ] ERR: (ThinkException) 模板不存在[Home/Admin/Tpl/Public/Login.html]
+[ 2013-09-22T10:00:12+08:00 ] ERR: (ThinkException) 模板不存在[Home/Admin/Tpl/Public/Login.html]
+[ 2013-09-22T10:00:36+08:00 ] 127.0.0.1 /jianliapp/admin.php/Public/login
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000858s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000933s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001203s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\jianliapp\Home\Admin\Lib\Action\PublicAction.class.php 第 17 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001483s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001546s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.011533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011608s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000991s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000642s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000839s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001020s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003646s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001239s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001334s ]
+
+[ 2013-09-22T10:00:36+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:00:36+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:00:36+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:00:36+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:00:36+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:00:36+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:00:36+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:00:36+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:00:36+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:00:36+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:00:36+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:00:37+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:00:42+08:00 ] 127.0.0.1 /jianliapp/admin.php/Public/login
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000836s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000916s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\jianliapp\Home\Admin\Lib\Action\PublicAction.class.php 第 17 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001488s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001548s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.015336s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015409s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000936s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000619s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000815s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000965s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003487s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001543s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001620s ]
+
+[ 2013-09-22T10:00:42+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:00:42+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:00:42+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:00:43+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:00:43+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:00:43+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:00:43+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:00:43+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:00:43+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:00:43+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:00:43+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:00:43+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:02:55+08:00 ] 127.0.0.1 /jianliapp/admin.php/Public/login
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001414s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001517s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001087s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\jianliapp\Home\Admin\Lib\Action\PublicAction.class.php 第 17 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001349s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001421s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.017255s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017338s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000824s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000716s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000560s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000715s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002980s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001013s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001114s ]
+
+[ 2013-09-22T10:02:55+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:02:55+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:02:55+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:02:55+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:02:55+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:02:55+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:02:55+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:02:55+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:02:55+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:02:55+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:02:55+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:02:58+08:00 ] 127.0.0.1 /jianliapp/admin.php/Public/login
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000752s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000839s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+NOTIC: [8] Undefined index:  company C:\AppServ\www\jianliapp\Home\Admin\Lib\Action\PublicAction.class.php 第 17 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001060s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001118s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.014613s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014695s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000670s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000639s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000539s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000771s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002774s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001075s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001159s ]
+
+[ 2013-09-22T10:02:58+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:02:58+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:02:58+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:02:58+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:02:58+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:02:58+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:02:58+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:02:58+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:02:58+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:02:58+08:00 ] ERR: (ThinkException) 非法操作:Home
+[ 2013-09-22T10:02:58+08:00 ] ERR: (ThinkException) 非法操作:Home

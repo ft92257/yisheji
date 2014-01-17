@@ -1,0 +1,21 @@
+<include file="Public:header" />
+<include file="Public:left" />
+<div class="right">
+	<h2><if condition="$parent_menu"><a href="{:U('edit')}/id/{$pid}">{$parent_menu}</a> > 添加子页面<else /><a href="{:U('edit')}">添加页面</a></if></h2>
+	<div class="b frame">
+		<h3>填写基本信息</h3>
+		
+<script charset="utf-8" src="__STATICS__/js/kindeditor/kindeditor.js"></script>
+<script charset="utf-8" src="__STATICS__/js/kindeditor/lang/zh_CN.js"></script>
+
+<form method="post" action="">
+	<table width="100%">
+	<tr><td width="80"></td><td></td></tr>
+	{$formHtml}
+	</table>
+</form>
+	</div>
+	
+</div>
+</body>
+</html>

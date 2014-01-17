@@ -1,0 +1,2427 @@
+[ 2014-01-06T15:47:57+08:00 ] 127.0.0.1 /yisheji/admin.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000963s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001463s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001527s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.008244s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008321s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000696s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000685s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000590s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003187s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 91 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000844s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000897s ]
+
+[ 2014-01-06T15:47:58+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Index/top
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002977s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003116s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001228s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php 第 28 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001624s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001722s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\3fa9528951f49840cd6db1fb79fa06a4.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.011737s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011863s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000713s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000465s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000288s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001165s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002912s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 91 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000682s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000773s ]
+
+[ 2014-01-06T15:47:58+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Company/company
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001054s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001137s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.003583s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000593s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000161s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001342s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001406s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\3dbb8342dba5dceca89a4b04b0753a77.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.016021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016090s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000692s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000649s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000551s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000702s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002741s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000828s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000882s ]
+
+[ 2014-01-06T15:47:58+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Index/left
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002077s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002221s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001905s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002187s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002343s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\37143eef06b0f455826c39b692c7c0cc.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.022073s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022180s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001075s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001806s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001272s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005525s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 91 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001159s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001214s ]
+
+[ 2014-01-06T15:48:30+08:00 ] 127.0.0.1 /yisheji/admin.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001396s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001651s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001714s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.009299s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009366s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000987s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001058s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000888s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004121s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 91 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001171s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001229s ]
+
+[ 2014-01-06T15:48:30+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Index/left
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000677s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000760s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000926s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000997s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\37143eef06b0f455826c39b692c7c0cc.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.008169s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008236s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000337s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000299s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000207s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000372s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001363s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 91 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000593s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000729s ]
+
+[ 2014-01-06T15:48:30+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Index/top
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002086s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002214s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001741s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php 第 28 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002410s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002600s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\3fa9528951f49840cd6db1fb79fa06a4.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.023587s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023738s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.003625s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.002299s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.003331s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.004468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014503s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 91 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.004122s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004359s ]
+
+[ 2014-01-06T15:48:30+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Company/company
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.003863s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004107s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002234s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.002688s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000313s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000303s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002173s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002298s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\3dbb8342dba5dceca89a4b04b0753a77.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.013363s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013451s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000727s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000841s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000705s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003917s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001078s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001167s ]
+
+[ 2014-01-06T15:50:40+08:00 ] 127.0.0.1 /yisheji/admin.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001007s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001438s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001507s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.008763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008842s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001236s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000721s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000638s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003795s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 91 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000821s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000875s ]
+
+[ 2014-01-06T15:50:40+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Company/company
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001036s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001117s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001279s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.001612s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000799s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000657s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001333s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001413s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\3dbb8342dba5dceca89a4b04b0753a77.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.012222s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012335s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000757s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000675s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000586s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000769s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002985s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001115s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001234s ]
+
+[ 2014-01-06T15:50:40+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Index/top
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001715s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001815s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000979s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php 第 28 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001119s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001196s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\3fa9528951f49840cd6db1fb79fa06a4.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.009934s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010015s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000996s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000374s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000263s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003233s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 91 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000896s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001016s ]
+
+[ 2014-01-06T15:50:40+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Index/left
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002638s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002854s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003174s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003429s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002664s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002803s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\37143eef06b0f455826c39b692c7c0cc.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.014391s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014489s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001314s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001369s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001026s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001163s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005149s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 91 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001473s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001591s ]
+
+[ 2014-01-06T15:52:59+08:00 ] 127.0.0.1 /yisheji/admin.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000906s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001323s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001385s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.008280s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008357s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000646s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000647s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000549s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001066s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003062s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 91 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000827s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000882s ]
+
+[ 2014-01-06T15:52:59+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Index/top
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001211s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001308s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000691s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php 第 28 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000985s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001049s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\3fa9528951f49840cd6db1fb79fa06a4.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.008701s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008766s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000386s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000432s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000243s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000949s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002232s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 91 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000507s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000567s ]
+
+[ 2014-01-06T15:52:59+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Company/company
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002491s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002636s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001298s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.002452s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000730s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000604s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.003235s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003469s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\3dbb8342dba5dceca89a4b04b0753a77.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.018423s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018547s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000961s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001250s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000968s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001839s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005294s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000985s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001051s ]
+
+[ 2014-01-06T15:52:59+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Index/left
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.004553s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004686s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002134s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002248s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002653s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002762s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\37143eef06b0f455826c39b692c7c0cc.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.018642s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018889s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.002856s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001891s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001724s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001828s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008669s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 91 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001885s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001982s ]
+
+[ 2014-01-06T15:53:01+08:00 ] 127.0.0.1 /yisheji/admin.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001561s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000972s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001040s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.006738s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006813s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000345s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000298s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000205s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000885s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001884s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 91 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000481s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000533s ]
+
+[ 2014-01-06T15:53:01+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Index/top
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000679s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php 第 28 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001064s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001129s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\3fa9528951f49840cd6db1fb79fa06a4.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.013817s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013914s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000329s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000297s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000201s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000995s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001994s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 91 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000479s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000531s ]
+
+[ 2014-01-06T15:53:01+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Index/left
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001426s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002050s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001116s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001179s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.003105s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003266s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\37143eef06b0f455826c39b692c7c0cc.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.020081s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020208s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001775s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001810s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.002486s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001711s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008138s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 91 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001917s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002026s ]
+
+[ 2014-01-06T15:53:01+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Company/company
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001127s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001209s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000891s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.001961s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.001246s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000257s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001275s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001348s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\3dbb8342dba5dceca89a4b04b0753a77.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.011387s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011459s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000818s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000713s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000615s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000790s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003147s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000909s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000974s ]
+
+[ 2014-01-06T15:55:18+08:00 ] 127.0.0.1 /yisheji/admin.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001559s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002108s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002219s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.009616s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009728s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000951s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000937s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000798s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001508s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004427s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 91 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000951s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001137s ]
+
+[ 2014-01-06T15:55:19+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Index/left
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001779s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001896s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001434s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.004890s ]
+INFO: [ view_template ] --END-- [ RunTime:0.005190s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\37143eef06b0f455826c39b692c7c0cc.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.021217s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021375s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001452s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001039s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000955s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004712s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 91 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001390s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001468s ]
+
+[ 2014-01-06T15:55:19+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Index/top
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001529s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001635s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000752s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php 第 28 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001753s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001881s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\3fa9528951f49840cd6db1fb79fa06a4.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.016695s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016813s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000540s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000471s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000326s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001433s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003053s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 91 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000751s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000845s ]
+
+[ 2014-01-06T15:55:19+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Company/company
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002097s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002295s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002072s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.002329s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000381s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000330s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002168s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002283s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\3dbb8342dba5dceca89a4b04b0753a77.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.017710s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017814s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001075s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000735s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000631s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001783s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004502s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001419s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001529s ]
+
+[ 2014-01-06T15:57:20+08:00 ] 127.0.0.1 /yisheji/admin.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001209s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001626s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001688s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.009212s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009279s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001011s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000992s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000884s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004095s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 91 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001144s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001199s ]
+
+[ 2014-01-06T15:57:20+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Index/top
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002052s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002170s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001123s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001183s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php 第 28 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002802s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002909s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\3fa9528951f49840cd6db1fb79fa06a4.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.011631s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011718s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001519s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001098s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000998s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005063s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 91 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.002244s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002405s ]
+
+[ 2014-01-06T15:57:20+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Index/left
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001694s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001820s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001343s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001588s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001707s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\37143eef06b0f455826c39b692c7c0cc.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.023507s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023727s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.002005s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000804s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000568s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001136s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004768s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 91 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000960s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001038s ]
+
+[ 2014-01-06T15:57:20+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Company/company
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002212s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002331s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001113s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.002079s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000263s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000147s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002066s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002188s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\3dbb8342dba5dceca89a4b04b0753a77.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.019174s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019318s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001334s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.002053s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000965s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001732s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006462s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000909s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000970s ]
+
+[ 2014-01-06T15:57:31+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Company/company
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001020s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001112s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.001586s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000221s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000155s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001386s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001445s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\3dbb8342dba5dceca89a4b04b0753a77.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.011611s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011679s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000704s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000647s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000552s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003107s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000852s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000909s ]
+
+[ 2014-01-06T15:57:34+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Company/company
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001379s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001540s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001389s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.001691s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000248s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000171s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001131s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001194s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\3dbb8342dba5dceca89a4b04b0753a77.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.010928s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000360s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000323s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000219s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000958s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002015s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000482s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000535s ]
+
+[ 2014-01-06T15:57:41+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Article/edit
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001490s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001683s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000921s ]
+SQL: SHOW COLUMNS FROM `tb_article` [ RunTime:0.001724s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_article`
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.000269s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `tb_article` WHERE ( status = 0 ) LIMIT 1  
+SQL: SELECT * FROM `tb_article` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime LIMIT 0,5   [ RunTime:0.000236s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_article` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime LIMIT 0,5  
+NOTIC: [2] Invalid argument supplied for foreach() C:\AppServ\www\yisheji\Home\Admin\Lib\Model\ArticleModel.class.php 第 22 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000896s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000957s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\6943ab58b90dad5005859c360863f5df.php 第 9 行.
+NOTIC: [8] Undefined variable: id C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\6943ab58b90dad5005859c360863f5df.php 第 110 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.011758s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011827s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000318s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000301s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000203s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000356s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001324s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000471s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000525s ]
+
+[ 2014-01-06T15:57:49+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Article/edit
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000735s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+SQL: SHOW COLUMNS FROM `tb_article` [ RunTime:0.001842s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_article`
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.000255s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `tb_article` WHERE ( status = 0 ) LIMIT 1  
+SQL: SELECT * FROM `tb_article` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime LIMIT 0,5   [ RunTime:0.000238s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_article` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime LIMIT 0,5  
+NOTIC: [2] Invalid argument supplied for foreach() C:\AppServ\www\yisheji\Home\Admin\Lib\Model\ArticleModel.class.php 第 22 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001124s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001187s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\6943ab58b90dad5005859c360863f5df.php 第 9 行.
+NOTIC: [8] Undefined variable: id C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\6943ab58b90dad5005859c360863f5df.php 第 110 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.013617s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013685s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000305s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000362s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000212s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002163s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000485s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000541s ]
+
+[ 2014-01-06T15:57:52+08:00 ] ERR: (ThinkException) 非法操作:clist
+[ 2014-01-06T15:57:55+08:00 ] ERR: (ThinkException) 非法操作:clist
+[ 2014-01-06T15:57:57+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/User/userlist
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001390s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001553s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001506s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002237s ]
+NOTIC: [2] Missing argument 1 for BaseModel::where(), called in C:\AppServ\www\yisheji\Home\Admin\Lib\Action\UserAction.class.php on line 24 and defined C:\AppServ\www\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 138 行.
+NOTIC: [8] Undefined variable: condition C:\AppServ\www\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 139 行.
+NOTIC: [8] Undefined variable: condition C:\AppServ\www\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 144 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_user` LIMIT 1   [ RunTime:0.000189s ]
+NOTIC: [2] Missing argument 1 for BaseModel::where(), called in C:\AppServ\www\yisheji\Home\Admin\Lib\Action\UserAction.class.php on line 27 and defined C:\AppServ\www\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 138 行.
+NOTIC: [8] Undefined variable: condition C:\AppServ\www\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 139 行.
+NOTIC: [8] Undefined variable: condition C:\AppServ\www\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 144 行.
+SQL: SELECT * FROM `tb_user` ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000287s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001139s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001199s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\0a220bfbaf9de7cfe24243968f008de6.php 第 9 行.
+NOTIC: [8] Use of undefined constant User - assumed 'User' C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\0a220bfbaf9de7cfe24243968f008de6.php 第 67 行.
+NOTIC: [8] Use of undefined constant userlist - assumed 'userlist' C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\0a220bfbaf9de7cfe24243968f008de6.php 第 67 行.
+NOTIC: [2] Division by zero C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\0a220bfbaf9de7cfe24243968f008de6.php 第 67 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\0a220bfbaf9de7cfe24243968f008de6.php 第 67 行.
+NOTIC: [2] Division by zero C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\0a220bfbaf9de7cfe24243968f008de6.php 第 67 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.012871s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012948s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000367s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000302s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000203s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000917s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001941s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000630s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000704s ]
+
+[ 2014-01-06T15:58:00+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Certification/cerList
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002777s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002937s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002549s ]
+SQL: SHOW COLUMNS FROM `tb_certification` [ RunTime:0.001642s ]
+ERR: Table 'yisheji.tb_certification' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_certification`
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_certification` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000278s ]
+ERR: Table 'yisheji.tb_certification' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `tb_certification` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1  
+SQL: SELECT * FROM `tb_certification` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000192s ]
+ERR: Table 'yisheji.tb_certification' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_certification` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5  
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001772s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001837s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\055ac6056e4f0bcd11d0997d227c9553.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.013924s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013996s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001069s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000980s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000875s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001030s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004113s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001156s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001216s ]
+
+[ 2014-01-06T15:58:02+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/User/userlist
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001481s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001643s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000962s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001677s ]
+NOTIC: [2] Missing argument 1 for BaseModel::where(), called in C:\AppServ\www\yisheji\Home\Admin\Lib\Action\UserAction.class.php on line 24 and defined C:\AppServ\www\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 138 行.
+NOTIC: [8] Undefined variable: condition C:\AppServ\www\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 139 行.
+NOTIC: [8] Undefined variable: condition C:\AppServ\www\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 144 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_user` LIMIT 1   [ RunTime:0.000176s ]
+NOTIC: [2] Missing argument 1 for BaseModel::where(), called in C:\AppServ\www\yisheji\Home\Admin\Lib\Action\UserAction.class.php on line 27 and defined C:\AppServ\www\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 138 行.
+NOTIC: [8] Undefined variable: condition C:\AppServ\www\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 139 行.
+NOTIC: [8] Undefined variable: condition C:\AppServ\www\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 144 行.
+SQL: SELECT * FROM `tb_user` ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000275s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000832s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000890s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\0a220bfbaf9de7cfe24243968f008de6.php 第 9 行.
+NOTIC: [8] Use of undefined constant User - assumed 'User' C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\0a220bfbaf9de7cfe24243968f008de6.php 第 67 行.
+NOTIC: [8] Use of undefined constant userlist - assumed 'userlist' C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\0a220bfbaf9de7cfe24243968f008de6.php 第 67 行.
+NOTIC: [2] Division by zero C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\0a220bfbaf9de7cfe24243968f008de6.php 第 67 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\0a220bfbaf9de7cfe24243968f008de6.php 第 67 行.
+NOTIC: [2] Division by zero C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\0a220bfbaf9de7cfe24243968f008de6.php 第 67 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.011209s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011287s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000362s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000304s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000204s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000359s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001375s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000659s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000744s ]
+
+[ 2014-01-06T15:58:05+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/User/userlist
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002789s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002965s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001560s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002063s ]
+NOTIC: [2] Missing argument 1 for BaseModel::where(), called in C:\AppServ\www\yisheji\Home\Admin\Lib\Action\UserAction.class.php on line 24 and defined C:\AppServ\www\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 138 行.
+NOTIC: [8] Undefined variable: condition C:\AppServ\www\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 139 行.
+NOTIC: [8] Undefined variable: condition C:\AppServ\www\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 144 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_user` LIMIT 1   [ RunTime:0.000192s ]
+NOTIC: [2] Missing argument 1 for BaseModel::where(), called in C:\AppServ\www\yisheji\Home\Admin\Lib\Action\UserAction.class.php on line 27 and defined C:\AppServ\www\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 138 行.
+NOTIC: [8] Undefined variable: condition C:\AppServ\www\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 139 行.
+NOTIC: [8] Undefined variable: condition C:\AppServ\www\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 144 行.
+SQL: SELECT * FROM `tb_user` ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000293s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000950s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001014s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\0a220bfbaf9de7cfe24243968f008de6.php 第 9 行.
+NOTIC: [8] Use of undefined constant User - assumed 'User' C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\0a220bfbaf9de7cfe24243968f008de6.php 第 67 行.
+NOTIC: [8] Use of undefined constant userlist - assumed 'userlist' C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\0a220bfbaf9de7cfe24243968f008de6.php 第 67 行.
+NOTIC: [2] Division by zero C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\0a220bfbaf9de7cfe24243968f008de6.php 第 67 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\0a220bfbaf9de7cfe24243968f008de6.php 第 67 行.
+NOTIC: [2] Division by zero C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\0a220bfbaf9de7cfe24243968f008de6.php 第 67 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.013420s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013504s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000399s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000336s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000222s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000981s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002103s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000588s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000671s ]
+
+[ 2014-01-06T15:58:09+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Certification/cerList
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002321s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002479s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001261s ]
+SQL: SHOW COLUMNS FROM `tb_certification` [ RunTime:0.001705s ]
+ERR: Table 'yisheji.tb_certification' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_certification`
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_certification` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000241s ]
+ERR: Table 'yisheji.tb_certification' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `tb_certification` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1  
+SQL: SELECT * FROM `tb_certification` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000208s ]
+ERR: Table 'yisheji.tb_certification' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_certification` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5  
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001034s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001090s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\055ac6056e4f0bcd11d0997d227c9553.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.011587s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011659s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000353s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000308s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000223s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000934s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001979s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000474s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000530s ]
+
+[ 2014-01-06T15:58:11+08:00 ] ERR: (ThinkException) 非法操作:clist
+[ 2014-01-06T15:58:18+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Article/edit
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001332s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001487s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001370s ]
+SQL: SHOW COLUMNS FROM `tb_article` [ RunTime:0.001637s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_article`
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.000282s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `tb_article` WHERE ( status = 0 ) LIMIT 1  
+SQL: SELECT * FROM `tb_article` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime LIMIT 0,5   [ RunTime:0.000207s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_article` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime LIMIT 0,5  
+NOTIC: [2] Invalid argument supplied for foreach() C:\AppServ\www\yisheji\Home\Admin\Lib\Model\ArticleModel.class.php 第 22 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001081s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001144s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\6943ab58b90dad5005859c360863f5df.php 第 9 行.
+NOTIC: [8] Undefined variable: id C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\6943ab58b90dad5005859c360863f5df.php 第 110 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.013410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013483s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000318s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000302s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000204s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000905s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001877s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000471s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000525s ]
+
+[ 2014-01-06T15:58:19+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Company/company
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000737s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000831s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.001655s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000251s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000179s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001121s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001184s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\3dbb8342dba5dceca89a4b04b0753a77.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.010671s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010741s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000324s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000301s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000202s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000889s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001861s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000482s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000534s ]
+
+[ 2014-01-06T15:59:20+08:00 ] 127.0.0.1 /yisheji/admin.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001430s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000992s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001061s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.006933s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000283s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000299s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000205s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000878s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001807s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 91 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000471s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000524s ]
+
+[ 2014-01-06T15:59:20+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Index/top
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000682s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000764s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php 第 28 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000969s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001027s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\3fa9528951f49840cd6db1fb79fa06a4.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.009114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009184s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000333s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000304s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000372s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000891s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002051s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 91 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000474s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000524s ]
+
+[ 2014-01-06T15:59:20+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Index/left
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001362s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001443s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001109s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001173s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002362s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002435s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\37143eef06b0f455826c39b692c7c0cc.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.035317s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035417s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000877s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001611s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.002245s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.002063s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007135s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 91 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001810s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001919s ]
+
+[ 2014-01-06T15:59:20+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Company/company
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001321s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001409s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.003128s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000372s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000333s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000994s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001096s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\3dbb8342dba5dceca89a4b04b0753a77.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.011287s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011373s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000366s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000313s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000214s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000934s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001992s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000522s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000587s ]
+
+[ 2014-01-06T16:00:21+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Certification/cerList
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001747s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001860s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001491s ]
+SQL: SHOW COLUMNS FROM `tb_certification` [ RunTime:0.002001s ]
+ERR: Table 'yisheji.tb_certification' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_certification`
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_certification` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000352s ]
+ERR: Table 'yisheji.tb_certification' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `tb_certification` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1  
+SQL: SELECT * FROM `tb_certification` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000247s ]
+ERR: Table 'yisheji.tb_certification' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_certification` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5  
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002153s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002226s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\055ac6056e4f0bcd11d0997d227c9553.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.016738s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016847s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000899s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001209s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001073s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001406s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004782s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001408s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001486s ]
+
+[ 2014-01-06T16:00:22+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/User/userlist
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002129s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002331s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001918s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001699s ]
+NOTIC: [2] Missing argument 1 for BaseModel::where(), called in C:\AppServ\www\yisheji\Home\Admin\Lib\Action\UserAction.class.php on line 24 and defined C:\AppServ\www\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 138 行.
+NOTIC: [8] Undefined variable: condition C:\AppServ\www\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 139 行.
+NOTIC: [8] Undefined variable: condition C:\AppServ\www\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 144 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_user` LIMIT 1   [ RunTime:0.000231s ]
+NOTIC: [2] Missing argument 1 for BaseModel::where(), called in C:\AppServ\www\yisheji\Home\Admin\Lib\Action\UserAction.class.php on line 27 and defined C:\AppServ\www\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 138 行.
+NOTIC: [8] Undefined variable: condition C:\AppServ\www\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 139 行.
+NOTIC: [8] Undefined variable: condition C:\AppServ\www\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 144 行.
+SQL: SELECT * FROM `tb_user` ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000292s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001539s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001612s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\0a220bfbaf9de7cfe24243968f008de6.php 第 9 行.
+NOTIC: [8] Use of undefined constant User - assumed 'User' C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\0a220bfbaf9de7cfe24243968f008de6.php 第 67 行.
+NOTIC: [8] Use of undefined constant userlist - assumed 'userlist' C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\0a220bfbaf9de7cfe24243968f008de6.php 第 67 行.
+NOTIC: [2] Division by zero C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\0a220bfbaf9de7cfe24243968f008de6.php 第 67 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\0a220bfbaf9de7cfe24243968f008de6.php 第 67 行.
+NOTIC: [2] Division by zero C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\0a220bfbaf9de7cfe24243968f008de6.php 第 67 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.013978s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014073s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000749s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000669s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000561s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003211s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001038s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001117s ]
+
+[ 2014-01-06T16:00:24+08:00 ] ERR: (ThinkException) 非法操作:clist
+[ 2014-01-06T16:00:32+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Article/edit
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001580s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001706s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001321s ]
+SQL: SHOW COLUMNS FROM `tb_article` [ RunTime:0.001752s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_article`
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.000287s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `tb_article` WHERE ( status = 0 ) LIMIT 1  
+SQL: SELECT * FROM `tb_article` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime LIMIT 0,5   [ RunTime:0.000263s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_article` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime LIMIT 0,5  
+NOTIC: [2] Invalid argument supplied for foreach() C:\AppServ\www\yisheji\Home\Admin\Lib\Model\ArticleModel.class.php 第 22 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001706s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001764s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\6943ab58b90dad5005859c360863f5df.php 第 9 行.
+NOTIC: [8] Undefined variable: id C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\6943ab58b90dad5005859c360863f5df.php 第 110 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.015473s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015545s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000500s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000977s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000870s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003531s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001132s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001188s ]
+
+[ 2014-01-06T16:00:33+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Article/edit
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001553s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001662s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001280s ]
+SQL: SHOW COLUMNS FROM `tb_article` [ RunTime:0.001820s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_article`
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.000293s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `tb_article` WHERE ( status = 0 ) LIMIT 1  
+SQL: SELECT * FROM `tb_article` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime LIMIT 0,5   [ RunTime:0.000248s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_article` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime LIMIT 0,5  
+NOTIC: [2] Invalid argument supplied for foreach() C:\AppServ\www\yisheji\Home\Admin\Lib\Model\ArticleModel.class.php 第 22 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001790s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001851s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\6943ab58b90dad5005859c360863f5df.php 第 9 行.
+NOTIC: [8] Undefined variable: id C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\6943ab58b90dad5005859c360863f5df.php 第 110 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.015473s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015546s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000504s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000976s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000869s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003619s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001144s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001201s ]
+
+[ 2014-01-06T16:01:08+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Article/edit
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001421s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001585s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000995s ]
+SQL: SHOW COLUMNS FROM `tb_article` [ RunTime:0.001628s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_article`
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.000237s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `tb_article` WHERE ( status = 0 ) LIMIT 1  
+SQL: SELECT * FROM `tb_article` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime LIMIT 0,5   [ RunTime:0.000188s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_article` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime LIMIT 0,5  
+NOTIC: [2] Invalid argument supplied for foreach() C:\AppServ\www\yisheji\Home\Admin\Lib\Model\ArticleModel.class.php 第 22 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000802s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000860s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\6943ab58b90dad5005859c360863f5df.php 第 9 行.
+NOTIC: [8] Undefined variable: id C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\6943ab58b90dad5005859c360863f5df.php 第 110 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.012129s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012199s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000318s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000449s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000224s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000367s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001522s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000470s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000524s ]
+
+[ 2014-01-06T16:08:06+08:00 ] 127.0.0.1 /yisheji/admin.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001184s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001155s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001221s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.007586s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007664s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000627s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000644s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000541s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003020s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 91 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000869s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000922s ]
+
+[ 2014-01-06T16:08:06+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Index/left
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001041s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001134s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000821s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002318s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002440s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\37143eef06b0f455826c39b692c7c0cc.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.031124s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031240s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001067s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000789s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000685s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003848s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 91 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000868s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000928s ]
+
+[ 2014-01-06T16:08:06+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Index/top
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001509s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001607s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php 第 28 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001310s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001386s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\3fa9528951f49840cd6db1fb79fa06a4.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.009193s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009272s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000411s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000322s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000211s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000972s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002089s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 91 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000503s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000590s ]
+
+[ 2014-01-06T16:08:06+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Company/company
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002132s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002248s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001966s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.001741s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000309s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000172s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001849s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001924s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\3dbb8342dba5dceca89a4b04b0753a77.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.016255s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016330s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000772s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001294s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001047s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.002319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005746s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.002262s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002449s ]
+
+[ 2014-01-06T16:08:09+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Company/company
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001350s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001438s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001157s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.001479s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000215s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000170s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001808s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001879s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\3dbb8342dba5dceca89a4b04b0753a77.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.012314s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012382s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000727s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000977s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000887s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003806s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001141s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001196s ]
+
+[ 2014-01-06T16:08:11+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Company/company
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002784s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002946s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001674s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.001502s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000240s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000184s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001692s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001751s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\3dbb8342dba5dceca89a4b04b0753a77.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.012559s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012629s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000515s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000974s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000863s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003532s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001145s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001201s ]
+
+[ 2014-01-06T16:08:15+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Article/edit
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001019s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001110s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000829s ]
+SQL: SHOW COLUMNS FROM `tb_article` [ RunTime:0.001690s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_article`
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.000252s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `tb_article` WHERE ( status = 0 ) LIMIT 1  
+SQL: SELECT * FROM `tb_article` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime LIMIT 0,5   [ RunTime:0.000193s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_article` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime LIMIT 0,5  
+NOTIC: [2] Invalid argument supplied for foreach() C:\AppServ\www\yisheji\Home\Admin\Lib\Model\ArticleModel.class.php 第 22 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001342s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001400s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\6943ab58b90dad5005859c360863f5df.php 第 9 行.
+NOTIC: [8] Undefined variable: id C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\6943ab58b90dad5005859c360863f5df.php 第 110 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.014173s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014253s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001001s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000639s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000542s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003367s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000807s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000862s ]
+
+[ 2014-01-06T16:08:17+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Article/edit
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000685s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000778s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+SQL: SHOW COLUMNS FROM `tb_article` [ RunTime:0.001604s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_article`
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.000243s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `tb_article` WHERE ( status = 0 ) LIMIT 1  
+SQL: SELECT * FROM `tb_article` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime LIMIT 0,5   [ RunTime:0.000193s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_article` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime LIMIT 0,5  
+NOTIC: [2] Invalid argument supplied for foreach() C:\AppServ\www\yisheji\Home\Admin\Lib\Model\ArticleModel.class.php 第 22 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000812s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000870s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\6943ab58b90dad5005859c360863f5df.php 第 9 行.
+NOTIC: [8] Undefined variable: id C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\6943ab58b90dad5005859c360863f5df.php 第 110 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.012646s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012716s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000839s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000315s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000207s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000874s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002407s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000477s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000529s ]
+
+[ 2014-01-06T16:08:20+08:00 ] ERR: (ThinkException) 非法操作:clist
+[ 2014-01-06T16:08:25+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/User/userlist
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000730s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000820s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001871s ]
+NOTIC: [2] Missing argument 1 for BaseModel::where(), called in C:\AppServ\www\yisheji\Home\Admin\Lib\Action\UserAction.class.php on line 24 and defined C:\AppServ\www\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 138 行.
+NOTIC: [8] Undefined variable: condition C:\AppServ\www\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 139 行.
+NOTIC: [8] Undefined variable: condition C:\AppServ\www\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 144 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_user` LIMIT 1   [ RunTime:0.000202s ]
+NOTIC: [2] Missing argument 1 for BaseModel::where(), called in C:\AppServ\www\yisheji\Home\Admin\Lib\Action\UserAction.class.php on line 27 and defined C:\AppServ\www\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 138 行.
+NOTIC: [8] Undefined variable: condition C:\AppServ\www\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 139 行.
+NOTIC: [8] Undefined variable: condition C:\AppServ\www\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 144 行.
+SQL: SELECT * FROM `tb_user` ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000392s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001005s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001075s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\0a220bfbaf9de7cfe24243968f008de6.php 第 9 行.
+NOTIC: [8] Use of undefined constant User - assumed 'User' C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\0a220bfbaf9de7cfe24243968f008de6.php 第 67 行.
+NOTIC: [8] Use of undefined constant userlist - assumed 'userlist' C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\0a220bfbaf9de7cfe24243968f008de6.php 第 67 行.
+NOTIC: [2] Division by zero C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\0a220bfbaf9de7cfe24243968f008de6.php 第 67 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\0a220bfbaf9de7cfe24243968f008de6.php 第 67 行.
+NOTIC: [2] Division by zero C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\0a220bfbaf9de7cfe24243968f008de6.php 第 67 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.012031s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012109s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000867s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000301s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000205s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000884s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002425s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000552s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000619s ]
+
+[ 2014-01-06T16:08:30+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Certification/cerList
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002753s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002914s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002457s ]
+SQL: SHOW COLUMNS FROM `tb_certification` [ RunTime:0.001724s ]
+ERR: Table 'yisheji.tb_certification' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_certification`
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_certification` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000289s ]
+ERR: Table 'yisheji.tb_certification' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `tb_certification` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1  
+SQL: SELECT * FROM `tb_certification` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000232s ]
+ERR: Table 'yisheji.tb_certification' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_certification` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5  
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001687s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001750s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\055ac6056e4f0bcd11d0997d227c9553.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.013651s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013722s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000509s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000978s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000861s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001020s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003527s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001136s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001196s ]
+
+[ 2014-01-06T16:08:36+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/User/userlist
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001670s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001777s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001460s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001784s ]
+NOTIC: [2] Missing argument 1 for BaseModel::where(), called in C:\AppServ\www\yisheji\Home\Admin\Lib\Action\UserAction.class.php on line 24 and defined C:\AppServ\www\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 138 行.
+NOTIC: [8] Undefined variable: condition C:\AppServ\www\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 139 行.
+NOTIC: [8] Undefined variable: condition C:\AppServ\www\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 144 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_user` LIMIT 1   [ RunTime:0.000190s ]
+NOTIC: [2] Missing argument 1 for BaseModel::where(), called in C:\AppServ\www\yisheji\Home\Admin\Lib\Action\UserAction.class.php on line 27 and defined C:\AppServ\www\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 138 行.
+NOTIC: [8] Undefined variable: condition C:\AppServ\www\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 139 行.
+NOTIC: [8] Undefined variable: condition C:\AppServ\www\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 144 行.
+SQL: SELECT * FROM `tb_user` ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000272s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001746s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001810s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\0a220bfbaf9de7cfe24243968f008de6.php 第 9 行.
+NOTIC: [8] Use of undefined constant User - assumed 'User' C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\0a220bfbaf9de7cfe24243968f008de6.php 第 67 行.
+NOTIC: [8] Use of undefined constant userlist - assumed 'userlist' C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\0a220bfbaf9de7cfe24243968f008de6.php 第 67 行.
+NOTIC: [2] Division by zero C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\0a220bfbaf9de7cfe24243968f008de6.php 第 67 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\0a220bfbaf9de7cfe24243968f008de6.php 第 67 行.
+NOTIC: [2] Division by zero C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\0a220bfbaf9de7cfe24243968f008de6.php 第 67 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.014788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014865s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000558s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001022s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000924s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003714s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001228s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001303s ]
+
+[ 2014-01-06T16:08:39+08:00 ] ERR: (ThinkException) 非法操作:clist
+[ 2014-01-06T16:08:42+08:00 ] ERR: (ThinkException) 非法操作:clist
+[ 2014-01-06T16:08:44+08:00 ] ERR: (ThinkException) 非法操作:clist
+[ 2014-01-06T16:08:46+08:00 ] ERR: (ThinkException) 非法操作:clist
+[ 2014-01-06T16:08:48+08:00 ] ERR: (ThinkException) 非法操作:clist
+[ 2014-01-06T16:08:52+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Article/edit
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002821s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002993s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002104s ]
+SQL: SHOW COLUMNS FROM `tb_article` [ RunTime:0.001711s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_article`
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.000255s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `tb_article` WHERE ( status = 0 ) LIMIT 1  
+SQL: SELECT * FROM `tb_article` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime LIMIT 0,5   [ RunTime:0.000208s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_article` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime LIMIT 0,5  
+NOTIC: [2] Invalid argument supplied for foreach() C:\AppServ\www\yisheji\Home\Admin\Lib\Model\ArticleModel.class.php 第 22 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001760s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001827s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\6943ab58b90dad5005859c360863f5df.php 第 9 行.
+NOTIC: [8] Undefined variable: id C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\6943ab58b90dad5005859c360863f5df.php 第 110 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.015147s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015218s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000489s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000967s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000857s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001018s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003497s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001121s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001177s ]
+
+[ 2014-01-06T16:08:53+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Article/edit
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001774s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001902s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001152s ]
+SQL: SHOW COLUMNS FROM `tb_article` [ RunTime:0.001631s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_article`
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.000290s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `tb_article` WHERE ( status = 0 ) LIMIT 1  
+SQL: SELECT * FROM `tb_article` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime LIMIT 0,5   [ RunTime:0.000264s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_article` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime LIMIT 0,5  
+NOTIC: [2] Invalid argument supplied for foreach() C:\AppServ\www\yisheji\Home\Admin\Lib\Model\ArticleModel.class.php 第 22 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001755s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001816s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\6943ab58b90dad5005859c360863f5df.php 第 9 行.
+NOTIC: [8] Undefined variable: id C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\6943ab58b90dad5005859c360863f5df.php 第 110 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.015299s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015370s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000528s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000981s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000870s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001020s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003557s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001132s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001190s ]
+
+[ 2014-01-06T16:09:00+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Article/edit
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001368s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001457s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001224s ]
+SQL: SHOW COLUMNS FROM `tb_article` [ RunTime:0.001658s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_article`
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.000285s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `tb_article` WHERE ( status = 0 ) LIMIT 1  
+SQL: SELECT * FROM `tb_article` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime LIMIT 0,5   [ RunTime:0.000230s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_article` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime LIMIT 0,5  
+NOTIC: [2] Invalid argument supplied for foreach() C:\AppServ\www\yisheji\Home\Admin\Lib\Model\ArticleModel.class.php 第 22 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001685s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001744s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\6943ab58b90dad5005859c360863f5df.php 第 9 行.
+NOTIC: [8] Undefined variable: id C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\6943ab58b90dad5005859c360863f5df.php 第 110 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.015207s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015278s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000502s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001026s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000867s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001019s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003570s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001127s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001183s ]
+
+[ 2014-01-06T16:10:08+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Company/company
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001350s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001442s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001148s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001211s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.001522s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000238s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000183s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001711s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001771s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\3dbb8342dba5dceca89a4b04b0753a77.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.012505s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012572s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000681s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000975s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000871s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001017s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003696s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001140s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001194s ]
+
+[ 2014-01-06T16:10:13+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Article/edit
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001352s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001442s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001157s ]
+SQL: SHOW COLUMNS FROM `tb_article` [ RunTime:0.001587s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_article`
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.000267s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `tb_article` WHERE ( status = 0 ) LIMIT 1  
+SQL: SELECT * FROM `tb_article` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime LIMIT 0,5   [ RunTime:0.000193s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_article` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime LIMIT 0,5  
+NOTIC: [2] Invalid argument supplied for foreach() C:\AppServ\www\yisheji\Home\Admin\Lib\Model\ArticleModel.class.php 第 22 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001707s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001773s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\6943ab58b90dad5005859c360863f5df.php 第 9 行.
+NOTIC: [8] Undefined variable: id C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\6943ab58b90dad5005859c360863f5df.php 第 110 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015685s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000630s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001087s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000872s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003803s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001130s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001185s ]
+
+[ 2014-01-06T16:10:16+08:00 ] ERR: (ThinkException) 非法操作:clist
+[ 2014-01-06T16:10:18+08:00 ] ERR: (ThinkException) 非法操作:clist
+[ 2014-01-06T16:11:54+08:00 ] 127.0.0.1 /yisheji/admin.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001462s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001983s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002058s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.010866s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010945s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000464s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000969s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000866s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001017s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003469s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 91 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001142s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001197s ]
+
+[ 2014-01-06T16:11:54+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Index/top
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001440s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001525s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001545s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php 第 28 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002141s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002263s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\3fa9528951f49840cd6db1fb79fa06a4.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.016804s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016916s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000738s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001480s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000924s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004649s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 91 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001304s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001378s ]
+
+[ 2014-01-06T16:11:54+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Company/company
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002010s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002143s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001791s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.002036s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000317s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000247s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002982s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003080s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\3dbb8342dba5dceca89a4b04b0753a77.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.016657s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016729s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000690s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001364s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000914s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004386s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001379s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001446s ]
+
+[ 2014-01-06T16:11:54+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Index/left
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001080s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001176s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000983s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001061s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001362s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001456s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\37143eef06b0f455826c39b692c7c0cc.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.019419s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019524s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001121s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000892s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000959s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001752s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004981s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 91 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001584s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001752s ]
+
+[ 2014-01-06T16:11:56+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Score/scoreList
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001648s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001763s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001323s ]
+SQL: SHOW COLUMNS FROM `tb_score` [ RunTime:0.001757s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' C:\AppServ\www\yisheji\Home\Admin\Lib\Action\ScoreAction.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_score` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000302s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' C:\AppServ\www\yisheji\Home\Admin\Lib\Action\ScoreAction.class.php 第 27 行.
+SQL: SELECT * FROM `tb_score` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000277s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001731s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001790s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\491efc43b616f2684582208b874653c7.php 第 9 行.
+NOTIC: [8] Undefined index:  score C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\491efc43b616f2684582208b874653c7.php 第 91 行.
+NOTIC: [8] Undefined index:  score C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\491efc43b616f2684582208b874653c7.php 第 91 行.
+NOTIC: [8] Undefined index:  score C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\491efc43b616f2684582208b874653c7.php 第 91 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.013794s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013871s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000535s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000974s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000865s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001022s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003557s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001353s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001435s ]
+
+[ 2014-01-06T16:12:00+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Score/scoreList
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002873s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003134s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001841s ]
+SQL: SHOW COLUMNS FROM `tb_score` [ RunTime:0.001598s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' C:\AppServ\www\yisheji\Home\Admin\Lib\Action\ScoreAction.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_score` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000298s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' C:\AppServ\www\yisheji\Home\Admin\Lib\Action\ScoreAction.class.php 第 27 行.
+SQL: SELECT * FROM `tb_score` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000222s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001742s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001803s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\491efc43b616f2684582208b874653c7.php 第 9 行.
+NOTIC: [8] Undefined index:  score C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\491efc43b616f2684582208b874653c7.php 第 91 行.
+NOTIC: [8] Undefined index:  score C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\491efc43b616f2684582208b874653c7.php 第 91 行.
+NOTIC: [8] Undefined index:  score C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\491efc43b616f2684582208b874653c7.php 第 91 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.013612s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013686s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000528s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000975s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000868s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003552s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001385s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001467s ]
+
+[ 2014-01-06T16:12:53+08:00 ] 127.0.0.1 /yisheji/admin.php?s=/Company/company
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001810s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001928s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001597s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.001667s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000255s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000175s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001747s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001807s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin\Runtime\Cache\3dbb8342dba5dceca89a4b04b0753a77.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.012530s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012597s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000509s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000973s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000865s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003586s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001173s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001228s ]
+
+[ 2014-01-06T16:15:04+08:00 ] 127.0.0.1 /yisheji/admin_old.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001476s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002055s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002139s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.011085s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011158s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000655s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000988s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000983s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003936s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin_old\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin_old\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin_old\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 91 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001237s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001294s ]
+
+[ 2014-01-06T16:15:04+08:00 ] 127.0.0.1 /yisheji/admin_old.php?s=/Index/top
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001519s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001627s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001564s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin_old\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\Home\Admin_old\Lib\Action\IndexAction.class.php 第 28 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002183s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002280s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin_old\Runtime\Cache\8d83b10326dc1364c9783b5090216acc.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.012428s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012512s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000645s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001284s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000890s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004026s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin_old\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin_old\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin_old\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 91 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001140s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001193s ]
+
+[ 2014-01-06T16:15:04+08:00 ] 127.0.0.1 /yisheji/admin_old.php?s=/Index/left
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001494s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001614s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001254s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001721s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001852s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin_old\Runtime\Cache\7069e2d700df799947be7a56109ad02c.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.011929s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012058s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001472s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000743s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000747s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004336s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin_old\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin_old\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\AppServ\www\yisheji\Home\Admin_old\Lib\Action\IndexAction.class.php:35) C:\AppServ\www\yisheji\ThinkPHP\Lib\Core\View.class.php 第 91 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000906s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2014-01-06T16:15:04+08:00 ] 127.0.0.1 /yisheji/admin_old.php?s=/Company/company
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001401s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001480s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001197s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001275s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.002752s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000312s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000182s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001862s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001944s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin_old\Runtime\Cache\cf10a6db19b27d4a3128a5d13fa71a5d.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.015116s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015206s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000917s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001213s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001027s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004462s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001538s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001646s ]
+
+[ 2014-01-06T16:15:06+08:00 ] 127.0.0.1 /yisheji/admin_old.php?s=/Company/company
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001836s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001951s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001570s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.001553s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000332s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000188s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001760s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001819s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin_old\Runtime\Cache\cf10a6db19b27d4a3128a5d13fa71a5d.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.012919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012988s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000527s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000649s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000876s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003231s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001171s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001239s ]
+
+[ 2014-01-06T16:15:07+08:00 ] 127.0.0.1 /yisheji/admin_old.php?s=/Article/edit
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002835s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002417s ]
+SQL: SHOW COLUMNS FROM `tb_article` [ RunTime:0.001631s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_article`
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.000286s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `tb_article` WHERE ( status = 0 ) LIMIT 1  
+SQL: SELECT * FROM `tb_article` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime LIMIT 0,5   [ RunTime:0.000246s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_article` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime LIMIT 0,5  
+NOTIC: [2] Invalid argument supplied for foreach() C:\AppServ\www\yisheji\Home\Admin_old\Lib\Model\ArticleModel.class.php 第 22 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001817s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001899s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin_old\Runtime\Cache\6a02c99a3a66fc9a0f8b19f3f84aa803.php 第 9 行.
+NOTIC: [8] Undefined variable: id C:\AppServ\www\yisheji\Home\Admin_old\Runtime\Cache\6a02c99a3a66fc9a0f8b19f3f84aa803.php 第 110 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.015594s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015667s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000513s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000479s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000874s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003052s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001160s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001240s ]
+
+[ 2014-01-06T16:15:10+08:00 ] 127.0.0.1 /yisheji/admin_old.php?s=/Score/scoreList
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002646s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002778s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001299s ]
+SQL: SHOW COLUMNS FROM `tb_score` [ RunTime:0.001776s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' C:\AppServ\www\yisheji\Home\Admin_old\Lib\Action\ScoreAction.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_score` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000280s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' C:\AppServ\www\yisheji\Home\Admin_old\Lib\Action\ScoreAction.class.php 第 27 行.
+SQL: SELECT * FROM `tb_score` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000256s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001986s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002057s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin_old\Runtime\Cache\4e36f0a46ee51f5bdab86f8039308d61.php 第 9 行.
+NOTIC: [8] Undefined index:  score C:\AppServ\www\yisheji\Home\Admin_old\Runtime\Cache\4e36f0a46ee51f5bdab86f8039308d61.php 第 91 行.
+NOTIC: [8] Undefined index:  score C:\AppServ\www\yisheji\Home\Admin_old\Runtime\Cache\4e36f0a46ee51f5bdab86f8039308d61.php 第 91 行.
+NOTIC: [8] Undefined index:  score C:\AppServ\www\yisheji\Home\Admin_old\Runtime\Cache\4e36f0a46ee51f5bdab86f8039308d61.php 第 91 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.014079s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014162s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000543s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000478s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000872s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003137s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001373s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001455s ]
+
+[ 2014-01-06T16:15:12+08:00 ] 127.0.0.1 /yisheji/admin_old.php?s=/User/userlist
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002601s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002777s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001249s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002220s ]
+NOTIC: [2] Missing argument 1 for BaseModel::where(), called in C:\AppServ\www\yisheji\Home\Admin_old\Lib\Action\UserAction.class.php on line 24 and defined C:\AppServ\www\yisheji\Home\Admin_old\Lib\Model\BaseModel.class.php 第 138 行.
+NOTIC: [8] Undefined variable: condition C:\AppServ\www\yisheji\Home\Admin_old\Lib\Model\BaseModel.class.php 第 139 行.
+NOTIC: [8] Undefined variable: condition C:\AppServ\www\yisheji\Home\Admin_old\Lib\Model\BaseModel.class.php 第 144 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_user` LIMIT 1   [ RunTime:0.000186s ]
+NOTIC: [2] Missing argument 1 for BaseModel::where(), called in C:\AppServ\www\yisheji\Home\Admin_old\Lib\Action\UserAction.class.php on line 27 and defined C:\AppServ\www\yisheji\Home\Admin_old\Lib\Model\BaseModel.class.php 第 138 行.
+NOTIC: [8] Undefined variable: condition C:\AppServ\www\yisheji\Home\Admin_old\Lib\Model\BaseModel.class.php 第 139 行.
+NOTIC: [8] Undefined variable: condition C:\AppServ\www\yisheji\Home\Admin_old\Lib\Model\BaseModel.class.php 第 144 行.
+SQL: SELECT * FROM `tb_user` ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000278s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001134s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001200s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin_old\Runtime\Cache\bd9e7b06dd6bde0389ad796dacc2cee5.php 第 9 行.
+NOTIC: [8] Use of undefined constant User - assumed 'User' C:\AppServ\www\yisheji\Home\Admin_old\Runtime\Cache\bd9e7b06dd6bde0389ad796dacc2cee5.php 第 67 行.
+NOTIC: [8] Use of undefined constant userlist - assumed 'userlist' C:\AppServ\www\yisheji\Home\Admin_old\Runtime\Cache\bd9e7b06dd6bde0389ad796dacc2cee5.php 第 67 行.
+NOTIC: [2] Division by zero C:\AppServ\www\yisheji\Home\Admin_old\Runtime\Cache\bd9e7b06dd6bde0389ad796dacc2cee5.php 第 67 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' C:\AppServ\www\yisheji\Home\Admin_old\Runtime\Cache\bd9e7b06dd6bde0389ad796dacc2cee5.php 第 67 行.
+NOTIC: [2] Division by zero C:\AppServ\www\yisheji\Home\Admin_old\Runtime\Cache\bd9e7b06dd6bde0389ad796dacc2cee5.php 第 67 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.012154s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012231s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000361s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000308s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000204s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000890s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001915s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000542s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000626s ]
+
+[ 2014-01-06T16:15:14+08:00 ] 127.0.0.1 /yisheji/admin_old.php?s=/Certification/cerList
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001413s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001511s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+SQL: SHOW COLUMNS FROM `tb_certification` [ RunTime:0.001991s ]
+ERR: Table 'yisheji.tb_certification' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_certification`
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_certification` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000333s ]
+ERR: Table 'yisheji.tb_certification' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `tb_certification` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1  
+SQL: SELECT * FROM `tb_certification` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000222s ]
+ERR: Table 'yisheji.tb_certification' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_certification` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5  
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001277s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001345s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin_old\Runtime\Cache\1d8533e3337ce8df203ca65852c2cef5.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.011348s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011419s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000327s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000299s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000202s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000929s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001910s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000475s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000530s ]
+
+[ 2014-01-06T16:15:18+08:00 ] 127.0.0.1 /yisheji/admin_old.php?s=/Company/company
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002702s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002877s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001468s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.001623s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000241s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime desc LIMIT 0,5   [ RunTime:0.000191s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001114s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001177s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin_old\Runtime\Cache\cf10a6db19b27d4a3128a5d13fa71a5d.php 第 9 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.010768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010842s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000377s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000331s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000222s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000979s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002065s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000511s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000568s ]
+
+[ 2014-01-06T16:15:20+08:00 ] 127.0.0.1 /yisheji/admin_old.php?s=/Article/edit
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001513s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001620s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+SQL: SHOW COLUMNS FROM `tb_article` [ RunTime:0.002008s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_article`
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_article` WHERE ( status = 0 ) LIMIT 1   [ RunTime:0.000331s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `tb_article` WHERE ( status = 0 ) LIMIT 1  
+SQL: SELECT * FROM `tb_article` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime LIMIT 0,5   [ RunTime:0.000257s ]
+ERR: Table 'yisheji.tb_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_article` WHERE ( `status` = 0 ) AND ( `appid` = 1 ) ORDER BY createtime LIMIT 0,5  
+NOTIC: [2] Invalid argument supplied for foreach() C:\AppServ\www\yisheji\Home\Admin_old\Lib\Model\ArticleModel.class.php 第 22 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001333s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001407s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title C:\AppServ\www\yisheji\Home\Admin_old\Runtime\Cache\6a02c99a3a66fc9a0f8b19f3f84aa803.php 第 9 行.
+NOTIC: [8] Undefined variable: id C:\AppServ\www\yisheji\Home\Admin_old\Runtime\Cache\6a02c99a3a66fc9a0f8b19f3f84aa803.php 第 110 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.014380s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014457s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000334s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000467s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000221s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000921s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002105s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000480s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000535s ]
+

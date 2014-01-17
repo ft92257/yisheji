@@ -27,7 +27,7 @@ $system = array(
 	//上传文件目录	
 	'TMPL_PARSE_STRING' => array(
 		'__FILES__' => 'data/files',
-		'__STATICS__' => 'statics',
+		'__STATICS__' => 'statics/company',
 	),
 		
 	'OUTPUT_ENCODE' => false,

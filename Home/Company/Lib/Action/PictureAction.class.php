@@ -37,6 +37,18 @@ class PictureAction extends BaseAction {
 	}
 	
 	/*
+	 * 添加图片
+	*/
+	/*
+	public function multiadd(){
+		$this->retType = array(
+			'success' => array('success' => 1),
+			'error' => array('error' => 1),
+		);
+		$this->add();
+	}*/
+	
+	/*
 	 * 修改
 	 */
 	public function edit() {
@@ -56,6 +68,17 @@ class PictureAction extends BaseAction {
 			$data['fid'] = getFileUrl($data['fid'], '80-80');
 			$this->_display_form($data, 'add');
 		}
+	}
+	
+	/*
+	 * 更新列表字段
+	 */
+	public function autoUpdate() {
+		$id = getRequest('id');
+		$data = $this->model->getById($id);
+		$this->checkPurviewData($data);
+		
+		$this->_autoUpdate(array('id' => $id));
 	}
 	
 	/*
