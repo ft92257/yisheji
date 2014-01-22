@@ -1,0 +1,95 @@
+<include file="Public:header" />
+    <div id="pbody"><div class="extra pb-6 pt-2">
+    	<div class="w-76">
+        	<!-- start:activeFocus -->
+        	<div class="t-1 pb-1-5">
+            	<h3>精彩活动回顾</h3>
+            </div>
+            <div class="activity-top">
+                <div class="scroll j_scrollSize" data-meta="{size:1,seek:'activityTop'}">
+                	<div class="items">
+                	<foreach name='activeImg' item='vo'>
+                    	<div data-meta="{ title:'{$vo.title}'}" ><a href="__GROUP__/Active/activeDetails/id/{$vo.id}"><img src="{$vo.focus_img}" alt="" /></a></div>
+                    </foreach>
+                    </div>
+                </div>
+                <div class="page-1 j_activityTop">
+                	<strong>{$activeImg[0]['title']}</strong><div class="ico"><a class="prev" title="上一条">上一条</a><a class="next" title="下一条">下一条</a></div>
+                </div>
+            </div>
+            <!-- end:activeFocus -->
+            
+            <!-- start:activeList -->
+            <div class="box-filter clearfix mt-2"> 
+        <!--下拉列表使用方法，参照首页-->
+        <div class="slt j_select" name="select-name" wd="100" swd="100" data-meta="{fun:'activeListType'}">
+          <div class="curr"><span></span></div>
+          <div class="show">
+            <ul>
+              	<li selected="selected"><a>按类型</a></li>
+                  <foreach name="{activeType}" item="vo" key="i" >
+                  <li val="{$i}"><a>{$vo}</a></li>
+                  </foreach>
+              </ul>
+          </div>
+        </div>
+        <div class="slt j_select" name="select-name" wd="100" swd="100" data-meta="{fun:'activeListHot'}">
+          <div class="curr"><span></span></div>
+          <div class="show">
+            <ul>
+                 <li selected="selected"><a>按人气</a></li>
+                 <li val="1"><a>降序</a></li>
+                 <li val="2"><a>升序</a></li>
+             </ul>
+          </div>
+        </div>
+        <div class="slt j_select" name="select-name" wd="100" swd="100" data-meta="{fun:'activeListTime'}">
+          <div class="curr"><span></span></div>
+          <div class="show">
+            <ul>
+                 <li selected="selected"><a>按时间</a></li>
+                 <li val="1"><a>降序</a></li>
+                 <li val="2"><a>升序</a></li>
+             </ul>
+          </div>
+        </div>
+      </div>
+      <div class="list-activity pt-2">
+        <ul class="j_hover">
+        <foreach name='activeList' item='vo'>
+          <li>
+            <div class="pic"><a href="__GROUP__/Active/activeDetails/id/{$vo['id']}"><img src="{$vo.focus_img}" alt="" /></a></div>
+            <div class="r"> <strong><a href="__GROUP__/Active/activeDetails/id/{$vo['id']}">{$vo.title}</a></strong>
+              <p>{$vo.info}</p>
+              <div class="bottom">
+                <p>主办方&nbsp; <a href="#">{$vo.organizer}</a></p>
+                <p>地 &nbsp;&nbsp; 点&nbsp; {$vo.address}</p>
+                <p>时 &nbsp;&nbsp; 间&nbsp; {$vo.begin_date} - {$vo.end_date}</p>
+              </div>
+            </div>
+          </li>
+        </foreach>  
+        </ul>
+      </div>
+      <div class="page-2 clearfix mt-1">
+         {$activePage}
+        </div>
+            <!-- end:activeList -->
+        </div>
+        <div class="w-22 r">
+        <include file="Public:right_hotDesigner" />
+            <include file="Public:right_hotCase" />
+            <div class="hr-1 pb-2"><span></span></div>
+            <div class="propaganda-1 w-22">
+            	<a href="#"><img src="__STATICS__/images/propaganda_1.jpg" alt="" /></a>
+            </div>
+        </div>
+    </div></div>
+<!---->
+</div>
+<include file="Public:footer" />
+<script>
+function activeListType(v){ window.location.href = v == undefined ? '__GROUP__/Active/activeIndex' : '__GROUP__/Active/activeIndex/list_type/'+v; }
+function activeListHot(v){ window.location.href = v == undefined ? '__GROUP__/Active/activeIndex' : '__GROUP__/Active/activeIndex/list_collect_count/'+v;}
+function activeListTime(v){ window.location.href = v == undefined ? '__GROUP__/Active/activeIndex' : '__GROUP__/Active/activeIndex/list_createtime/'+v;}
+</script>

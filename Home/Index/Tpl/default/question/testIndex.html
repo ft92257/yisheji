@@ -1,0 +1,34 @@
+<include file="Public:header2" />
+<input type='hidden'  id='hid_number' value="{$hidden['number']}"/>
+<input type='hidden'  id='hid_max_number' value="{$hidden['max_number']}"/>
+<input type='hidden'  id='hid_type' value="{$hidden['type']}"/>
+    <div id="pbody" class="pt-3-5 pb-6">
+    	<div class="row-2"><div class="extra">
+        	<div class="decoration-category">
+            	<h3>请选择设计装修种类：</h3>
+                <a class="btn btn-3" href="javascript:void(0)" data-attr='1' data-val='2'><span class="ml-2-5">家装设计</span><i class="ico ico-7"></i></a>
+                <a class="btn btn-3 ml-3-5" href="javascript:void(0)" data-attr='1' data-val='1'><span class="ml-2-5">工装设计</span><i class="ico ico-7"></i></a>
+            </div>
+        </div></div>
+    </div>
+<!---->
+</div>
+<include file="Public:footer" />
+<script>
+$(function(){
+	$(".btn-3").bind('click', function(){
+		$('#hid_type').val($(this).attr('data-val'));
+		$.ajax({
+			'type' : 'post',
+			'url' : GROUP+'/Question/saveArray',
+			'data' : 'id='+$(this).attr('data-attr')+'&val='+$(this).attr('data-val'),
+			'success' : function(r){
+				if(r){
+					var id = parseInt($("#hid_number").val())+1;
+					window.location.href = GROUP+'/Question/testStep/id/'+id+'/type/'+$("#hid_type").val();
+				}
+			}
+		});
+	});
+});
+</script>

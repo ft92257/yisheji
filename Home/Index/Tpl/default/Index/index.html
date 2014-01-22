@@ -1,0 +1,183 @@
+<include file="Public:header" />
+    <div id="banner">
+    	<div class="extra">
+        	<div class="t">为您的项目找到最合适的设计师</div>
+            <div class="box">
+            	<div class="c-h">业主</div>
+                <div class="c-b">优秀设计师+海量设计案例，独创测试系统智能匹配，找到最适合你的设计师和设计方案！</div>
+                <div class="c-f"><a class="btn btn-1" href="__GROUP__/Question/testIndex"><span class="ml-2-5">立即开启体验</span><i class="ico ico-7"></i></a></div>
+                <i class="bg"></i>
+            </div>
+            <div class="box l-53">
+            	<div class="c-h">设计师</div>
+                <div class="c-b">专业人士的圈子等你加入，丰富活动+案例展示，向更多业主及同行呈现优秀的设计优秀的你！</div>
+                <div class="c-f"><a class="btn btn-2" href="__GROUP__/User/login"><span class="ml-3-5">加入易设计</span><i class="ico ico-8"></i></a></div>
+                <i class="bg"></i>
+            </div>
+        </div>
+        <i class="bg-silde"></i>
+        <ul class="silde j_sildeCnt">
+        	<li style="background:url(__STATICS__/images/banner_1.jpg) center top no-repeat;"></li>
+        </ul>
+        <div><a></a></div>
+    </div>
+    <!---->
+    <div id="nav-icon">
+    	<div class="extra">
+        	<a class="prev"><i class="ico ico-9"></i></a>
+            <div class="scroll j_scrollSize" data-meta="{size:4}">
+            	<div class="items">
+                	<div>
+                    	<a href="#">
+                    		<i class="icon icon-1"></i>
+                        	<div class="r">
+                        		<strong>活动</strong>
+                                <p>别墅的设计不仅能体现别墅主人的设计</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                    	<a href="#">
+                    		<i class="icon icon-2"></i>
+                        	<div class="r">
+                        		<strong>软装</strong>
+                                <p>别墅的设计不仅能体现别墅主人的设计</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                    	<a href="#">
+                    		<i class="icon icon-3"></i>
+                        	<div class="r">
+                        		<strong>设计师</strong>
+                                <p>北欧风格以简洁著称于世，并影响到后来</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                    	<a href="#">
+                    		<i class="icon icon-4"></i>
+                        	<div class="r">
+                        		<strong>案例</strong>
+                                <p>别墅的设计不仅能体现别墅主人的设计</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a class="next"><i class="ico ico-7"></i></a>
+        </div>
+    </div>
+    <!---->
+    <div id="cooperation-index">
+    	<div class="extra">
+        	<h3>合作机构：</h3>
+            <ul>
+            <foreach name="companyLogo" item="vo">
+            	<li><a target="_blank" href="#"><img src="{$vo.logo_img}" alt="" /></a></li>
+            </foreach>
+            </ul>
+        </div>
+    </div>
+    <!---->
+    <div id="pbody">
+    
+    	<iframe src="__GROUP__/Index/indexCase" style="width:100%; height:846px; margin-bottom:-5px; border:0 none; display:inline" scrolling="no" frameborder="0"></iframe>
+        <iframe src="__GROUP__/Index/indexDesigner" style="width:100%; height:438px; margin-bottom:-5px; border:0 none" scrolling="no" frameborder="0"></iframe>
+        
+        <div class="row-1"><div class="extra pt-3 pb-6">
+        	<div class="t-1 pb-3">
+            	<h3>活动</h3>
+            </div>
+            <div class="active-index">
+                <div class="tabs j_tabs j_first" data-meta="{firstTag:'i'}"><i></i><a>展览</a><i></i><a>商业交流</a><i></i><a>聚会</a></div>
+                <div class="tabCnt j_tabCnt">
+                    <a class="prev"><i class="ico ico-11"></i></a>
+                    <div class="scroll j_scrollSize" data-meta="{size:1}">
+                        <ul class="items">
+                            <foreach name="activeType1" item="vo">
+                            <li><div class="pic">
+                            		<div class="thumb j_gallery">
+                            		<foreach name="vo['photo']['list']" item="val">
+                                        <a data-meta="{ pic:'{$val.fid_img}'}"><img src="{$val.fid_img}" alt="" /></a>
+                                       </foreach>
+                                    </div>
+                                    <div class="bigpic j_galleryCnt"></div>
+                            	</div>
+                            	<div class="info">
+                                	<strong>{$vo.title}</strong>
+                                    <p class="date clearfix"><i class="ico ico-14"></i>{$vo.begin_date}~{$vo.end_date}&nbsp;{$vo.begin_time}~{$vo.end_time}</p>
+                                    <p class="clearfix"><i class="ico ico-15"></i>{$vo.address}</p>
+                                    <p>发起人：<a href="#">{$vo.organizer}</a></p>
+                                    <p>类 &nbsp;&nbsp; 型：{$vo.type_zh}</p>
+                                    <p>费 &nbsp;&nbsp; 用：{$vo.design_fee}</p>
+                                    <p class="intro">{$vo.info}</p>
+                                </div>
+                            </li>
+                            </foreach>
+                        </ul>
+                    </div>
+                    <a class="next"><i class="ico ico-12"></i></a>
+                </div>
+            	<div class="tabCnt j_tabCnt">
+                    <a class="prev"><i class="ico ico-11"></i></a>
+                    <div class="scroll j_scrollSize" data-meta="{size:1}">
+                        <ul class="items">
+                            <foreach name="activeType2" item="vo">
+                            <li><div class="pic">
+                            		<div class="thumb j_gallery">
+                            		<foreach name="vo['photo']['list']" item="val">
+                                        <a data-meta="{ pic:'{$val.fid_img}'}"><img src="{$val.fid_img}" alt="" /></a>
+                                       </foreach>
+                                    </div>
+                                    <div class="bigpic j_galleryCnt"></div>
+                            	</div>
+                            	<div class="info">
+                                	<strong>{$vo.title}</strong>
+                                    <p class="date clearfix"><i class="ico ico-14"></i>{$vo.begin_date}~{$vo.end_date}&nbsp;{$vo.begin_time}~{$vo.end_time}</p>
+                                    <p class="clearfix"><i class="ico ico-15"></i>{$vo.address}</p>
+                                    <p>发起人：<a href="#">{$vo.organizer}</a></p>
+                                    <p>类 &nbsp;&nbsp; 型：{$vo.type_zh}</p>
+                                    <p>费 &nbsp;&nbsp; 用：{$vo.design_fee}</p>
+                                    <p class="intro">{$vo.info}</p>
+                                </div>
+                            </li>
+                            </foreach>
+                        </ul>
+                    </div>
+                    <a class="next"><i class="ico ico-12"></i></a>
+                </div>
+                <div class="tabCnt j_tabCnt">
+                    <a class="prev"><i class="ico ico-11"></i></a>
+                    <div class="scroll j_scrollSize" data-meta="{size:1}">
+                        <ul class="items">
+                            <foreach name="activeType3" item="vo">
+                            <li><div class="pic">
+                            		<div class="thumb j_gallery">
+                            		<foreach name="vo['photo']['list']" item="val">
+                                        <a data-meta="{ pic:'{$val.fid_img}'}"><img src="{$val.fid_img}" alt="" /></a>
+                                       </foreach>
+                                    </div>
+                                    <div class="bigpic j_galleryCnt"></div>
+                            	</div>
+                            	<div class="info">
+                                	<strong>{$vo.title}</strong>
+                                    <p class="date clearfix"><i class="ico ico-14"></i>{$vo.begin_date}~{$vo.end_date}&nbsp;{$vo.begin_time}~{$vo.end_time}</p>
+                                    <p class="clearfix"><i class="ico ico-15"></i>{$vo.address}</p>
+                                    <p>发起人：<a href="#">{$vo.organizer}</a></p>
+                                    <p>类 &nbsp;&nbsp; 型：{$vo.type_zh}</p>
+                                    <p>费 &nbsp;&nbsp; 用：{$vo.design_fee}</p>
+                                    <p class="intro">{$vo.info}</p>
+                                </div>
+                            </li>
+                            </foreach>
+                        </ul>
+                    </div>
+                    <a class="next"><i class="ico ico-12"></i></a>
+                </div>
+            </div>
+        </div></div>
+    </div>
+<!---->
+</div>
+<include file="Public:footer" />

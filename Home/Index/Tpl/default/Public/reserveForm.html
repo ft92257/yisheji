@@ -1,0 +1,29 @@
+<!-- 预约表单（弹层） -->
+<form id='reserve_form'>
+<div id="reserve-designer" class="overlay clearfix">
+	<div class="t-3">
+    	<h3>预约设计师</h3>
+    </div>
+    <div class="score-cnt">
+    	<p class="tips">请填写真实的详细信息</p>
+        <table width="460">
+            <tr>
+            	<td>真实名称：</td>
+                <td><input name='name' type="text" watermark="如54平家装设计北欧风格" /></td>
+            </tr>
+            <tr>
+            	<td>手机号码：</td>
+                <td><input name='telephone' type="text" watermark="如54平家装设计北欧风格" /></div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                	<input class="btn btn-submit-1" type="button" id='reserve_sub' value="提交" />
+                </td>
+            </tr>
+        </table>
+        <input type='hidden' name='uid' value='{$designerInfo.uid}'/>
+        <input type='hidden' name='type' value='2'/>
+    </div>
+</div>
+</form>

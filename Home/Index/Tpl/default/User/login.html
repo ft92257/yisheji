@@ -1,0 +1,65 @@
+<include file="Public:header" />
+	<div id="pbody" class="pt-3-5 pb-6">
+        <div class="row-2">
+        <div class="extra pt-4 pb-6">
+            <div class="login-l">
+                <div class="t-4 pb-2">
+                    <h3>登录</h3>
+                </div>
+                <div class="table-main-2 form-main-2">
+                    <form id="login_form">
+                        <table>
+                            <tr>
+                                <th width="80">用户名</th>
+                                <td><input class="text w-32" type="text" name='account' id='txt_account'/></td>
+                            </tr>
+                            <tr>
+                                <th>密码</th>
+                                <td><input class="text w-32" type="password" name='password'  id='txt_password'/></td>
+                            </tr>
+                            <tr>
+                            	<th></th>
+                                <td><label class="mr-2"><input class="checkbox" type="checkbox" />自动登录</label>
+                                	<label><input class="checkbox" checked type="checkbox" />记住用户名</label>
+                                    <div class="r"><input class="btn btn-submit-1" type='button' id='login_sub' value="登 录" /></div>
+                                </td>
+                            </tr>
+                            <tr>
+                            	<th></th>
+                                <td><div class="r"><a style="color:#2197DD;" href="#">忘记密码</a></div></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <div class="login-other mt-1">
+                	<div class="t">第三方帐号快速登录</div>
+                    <div class="cnt clearfix">
+                    	<a href="#"><i class="ico ico-43"></i>新浪微博</a>
+                        <a href="#"><i class="ico ico-44"></i>腾讯QQ</a>
+                        <a href="#"><i class="ico ico-45"></i>腾讯微博</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-36 r">
+            	<div class="login-regist">
+                	<p>还没有注册过账号? </p>
+                    <a class="btn btn-11" href="__URL__/register">立即注册</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+<!---->
+</div>
+<include file='Public:footer' />
+<script>
+$(function(){
+	$("#login_sub").bind('click', function(){
+		if($("#txt_account").val() == "" && $("#txt_password").val() == ""){
+			alert('用户名或密码不能为空');
+		}else{
+			actRequest($("#login_form").serialize(), '1003');
+		}
+	});
+});
+</script>

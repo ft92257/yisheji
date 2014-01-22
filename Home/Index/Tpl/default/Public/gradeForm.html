@@ -1,0 +1,77 @@
+<div id="gradeForm" class="overlay clearfix">
+	<div class="t-3">
+    	<h3>给设计师评价</h3>
+    </div>
+    <div class="score-cnt">
+    	<p class="tips">如果您曾经委托过设计师“原研哉”，请针对项目对其进行评价：</p>
+        <table width="460">
+        	<tr>
+            	<td width="65">项目周期：</td>
+                <td width="395"><input class="text w-10 j_pickday" type="text" />
+                	<span class="line">—</span>
+                    <input class="text w-10 j_pickday" type="text" />
+                    <!--此处js位置可以根据需要随便调动，反正这只是为了突出位置和程序方便找到-->
+					<script src="__STATICS__/js/moment.min.js"></script>
+                    <script src="__STATICS__/js/pikaday.min.js"></script>
+                    <script>
+                    $('.j_pickday').pikaday({
+                        firstDay:1,
+                        format:'YYYY/MM/DD',
+                        i18n: {
+                            previousMonth : '上个月',
+                            nextMonth : '下个月',
+                            months: ['一月','二月','三月','四月','五月','六月','七月','八月','九月','十月','十一月','十二月'],
+                            weekdays: ['星期日','星期一','星期二','星期三','星期四','星期五','星期六'],
+                            weekdaysShort: ['日','一','二','三','四','五','六']
+                        },
+                        onSelect: function(date) {
+                            console.log(this.getMoment().format('YYYY/MM/DD'));
+                        }
+                    });
+                    </script>
+                </td>
+            </tr>
+            <tr>
+            	<td>项目名称：</td>
+                <td><input class="text w-36 j_watermark" type="text" watermark="如54平家装设计北欧风格" /></td>
+            </tr>
+            <tr>
+            	<td>设计水平：</td>
+                <td><div class="score-star" id="j_scoreStar-1"></div>
+                	<script>
+                    $(function(){
+						$('#j_scoreStar-1').raty({
+							path:'__STATICS__/images',
+							scoreName:'scoreStar-1'	//这里定义评分 隐藏域 的name
+						});	
+					});
+                    </script>
+                </td>
+            </tr>
+            <tr>
+            	<td>服务态度：</td>
+                <td><div class="score-star" id="j_scoreStar-2"></div>
+                	<script>
+                    $(function(){
+						$('#j_scoreStar-2').raty({
+							path:'__STATICS__/images',
+							scoreName:'scoreStar-2'	//这里定义评分 隐藏域 的name	
+						});	
+					});
+                    </script>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                	<div class="t">补充评价内容</div>
+                    <textarea class="w-44 h-8 j_watermark" watermark="可将您的体验心得写在这里，包括对设计师的意见与建议等"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                	<input class="btn btn-submit-1" type="submit" value="提交" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

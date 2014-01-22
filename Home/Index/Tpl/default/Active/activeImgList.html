@@ -1,0 +1,27 @@
+<include file="Public:header" />
+    <div id="pbody"><div class="extra pb-6">
+    	<div id="local"><a href="#">首页</a>&gt;<a href="#">活动</a>&gt;<span>思维导图—让工作变轻松</span></div>
+        <div class="hr-1 pt-0-5"><span></span></div>
+        <div class="t-3 pt-1-5 pb-2-5">
+        	<h3><i class="ico ico-38"></i>活动照片—思维导图—让工作变轻松</h3>
+            <div class="fun"><a class="back" href="__GROUP__/Active/activeDetails/id/{$id}">返回活动页 &gt;&gt;</a></div>
+        </div>
+        <div class="w-76">
+        	<ul class="list_vgepic clearfix">
+        	
+        	<foreach name='activePhoto' item='vo'>
+                <li><a href="__GROUP__/Active/activeImgDetails/id/{$id}"><img src="{$vo.fid_img}" /></a>
+                    <br />
+                    <a href="#">{$vo.title}</a>
+                    <p>来自 <a href="#">{$vo.nickname}</a></p>
+                    <p><a href="#">转发</a> | <a href="#">评论(2)</a></p>
+                </li>
+            </foreach>   
+            </ul>
+        </div>
+        <div class="w-22 r">
+        </div>
+    </div></div>
+<!---->
+</div>
+<include file="Public:footer" />

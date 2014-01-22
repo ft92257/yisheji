@@ -40,7 +40,7 @@ $system = array(
 		'id' => 1,
 		'name' => '上海主站',		
 	),
-	
+	'REDIS_OPEN' => false,//是否开启redis
 );
 
 function getHostUrl() {

@@ -1,0 +1,66 @@
+<div class="t-designerTab pb-2 j_tabs">
+	<a class="current">发起的</a>|<a>参加的</a>|<a>感兴趣的</a>
+</div>
+<div class="w-72 list-6 j_tabCnt">
+	<ul>
+	<foreach name='activeList1' item='vo'>
+    	<li><div class="pic"><a href="#"><img src="{$vo.focus_img}" alt="" /></a></div>
+        	<div class="w-60 r">
+                <strong><a href="#">{$vo.title}</a></strong>
+                <div class="cnt">{$vo.info}</div>
+                <div class="opt clearfix">
+                    <div class="date"><i class="ico ico-14"></i>{$vo.begin_date}&nbsp;{$vo.begin_time}</div>
+                    <div class="left"><i class="ico ico-15"></i><a href="#">{$vo.organizer}</a>{$vo.address}</div>
+                    <div class="right">
+                        <span><i class="ico ico-35"></i>{$vo.comment_count}</span>
+                        <span><i class="ico ico-36"></i>{$vo.like_count}</span>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </foreach>  
+    </ul>
+</div>
+<div class="w-72 list-6 j_tabCnt">
+	<ul>
+        <foreach name='activeList2' item='vo'>
+    	<li><div class="pic"><a href="#"><img src="{$vo.focus_img}" alt="" /></a></div>
+        	<div class="w-60 r">
+                <strong><a href="#">{$vo.title}</a></strong>
+                <div class="cnt">{$vo.info}</div>
+                <div class="opt clearfix">
+                    <div class="date"><i class="ico ico-14"></i>{$vo.begin_date}&nbsp;{$vo.begin_time}</div>
+                    <div class="left"><i class="ico ico-15"></i><a href="#">{$vo.organizer}</a>{$vo.address}</div>
+                    <div class="right">
+                        <span><i class="ico ico-35"></i>{$vo.comment_count}</span>
+                        <span><i class="ico ico-36"></i>{$vo.like_count}</span>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </foreach>  
+    </ul>
+</div>
+<div class="w-72 list-6 j_tabCnt">
+	<ul>
+    	<foreach name='activeList3' item='vo'>
+    	<li><div class="pic"><a href="#"><img src="{$vo.focus_img}" alt="" /></a></div>
+        	<div class="w-60 r">
+                <strong><a href="#">{$vo.title}</a></strong>
+                <div class="cnt">{$vo.info}</div>
+                <div class="opt clearfix">
+                    <div class="date"><i class="ico ico-14"></i>{$vo.begin_date}&nbsp;{$vo.begin_time}</div>
+                    <div class="left"><i class="ico ico-15"></i><a href="#">{$vo.organizer}</a>{$vo.address}</div>
+                    <div class="right">
+                        <span><i class="ico ico-35"></i>{$vo.comment_count}</span>
+                        <span><i class="ico ico-36"></i>{$vo.like_count}</span>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </foreach>  
+    </ul>
+</div>
+<script>
+	$('.j_tabs').tabs('.j_tabCnt');
+</script>

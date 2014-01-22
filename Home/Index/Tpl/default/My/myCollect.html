@@ -1,0 +1,28 @@
+<include file="Public:header" />
+    <div id="pbody"><div class="extra pt-3 pb-6">
+        <div class="t-3 pb-1-5">
+        	<h3>我的收藏</h3>
+        </div>
+        <div class="collect-tag mb-1-5">
+        	<b>标签：</b><a href="#">别墅</a><a href="#">北欧极简</a><a href="#">意式风格</a><a href="#">美式乡村</a><a href="#">艺术家</a>
+        </div>
+        <div class="w-100 list-collect">
+        	<ul class="w-110 j_hover">
+        	<foreach name='myCollect' item='vo'>
+            	<li><a class="pic" href="#"><img src="{$vo['focus_img']}" alt="" /></a>
+                	<strong><a href="#">{$vo['title']}</a></strong>
+                    <p></p>
+                    <div class="designer">
+                    	<a href="#"><img src="{$vo['header']}" alt="" />
+                        	<p>一款真正好的产品和它的外观设计有一定关系…</p>
+                        </a>
+                    </div>
+                    <div class="del"><a href="#"><i class="ico ico-30"></i></a></div>
+                </li>
+            </foreach>
+            </ul>
+        </div>
+    </div></div>
+<!---->
+</div>
+<include file="Public:footer" />

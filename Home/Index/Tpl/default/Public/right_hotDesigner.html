@@ -1,0 +1,11 @@
+<div class="t-2">
+            	<h3><i class="ico ico-19"></i>热门设计师</h3>
+                <div class="hr-1"><span></span></div>
+            </div>
+        	<div class="w-22 list-designer-1">
+            	<ul class="w-25">
+            	<foreach name="hot_designer" item="vo">
+                	<li><a href="__GROUP__/Designer/designerDetails/uid/{$vo['uid']}"><img src="{$vo['header']}" alt="{$vo['name_zh']}" /></a></li>
+                 </foreach>
+                </ul>
+            </div>

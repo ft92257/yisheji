@@ -1,0 +1,108 @@
+<include file="Public:header" />
+    <div id="pbody"><div class="extra pb-6">
+    	<div id="local"><a href="#">首页</a>&gt;<a href="#">案例</a>&gt;<span>案例详情</span></div>
+        <div class="row-3 relative clearfix">
+        	<div class="w-69 pb-7">
+                <div class="t-case pt-1 pb-1">
+                    <h3><span>[{$caseInfo['is_original_zh']}]</span>{$caseInfo['name']}</h3>
+                    <div class="fun case-user-info">
+                        <a href="#">{$caseInfo['designer_name']}</a> 上传于{$caseInfo['createtime_zh']}
+                    </div>
+                </div>
+                <div class="case-info clearfix">
+                	<div class="tag"><i class="ico ico-18"></i>
+                	<foreach name='caseInfo["tag_zh"]' item='i'>
+                		<a href="#">{$i}</a>
+                	</foreach>
+                	</div>
+                    <span><a><i class="ico ico-20"></i>浏览<b>（{$caseInfo['click_count']}）</b></a></span>
+                    <span><a><i class="ico ico-21"></i>收藏<b>（{$caseInfo['collect_count']}）</b></a></span>
+                    <span><a><i class="ico ico-22"></i>浏览<b>（{$caseInfo['comment_count']}）</b></a></span>
+                </div>
+                <div class="cnt-article clearfix pt-2 pb-3">
+                	{$caseInfo['info']}
+                </div>
+                <div class="cnt-article-bottom">
+                	<div class="l"><i class="ico ico-28"></i>该作品有问题，我要 <a href="__GROUP__/Case/caseReport/id/{$caseInfo['id']}">举报</a></div>
+                    <div class="r">
+                    	<a href="#"><i class="ico ico-23"></i><span>分享<br />{$caseInfo['share_count']}</span></a>
+                        <a href="#"><i class="ico ico-24"></i><span>喜欢<br />{$caseInfo['like_count']}</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-22 r mr-0-5 pb-3">
+            	<div class="case-designer-info pt-2 clearfix">
+                	<a href="#"><img src="{$designerInfo['header']}"  alt="" /></a>
+                    <strong>{$designerInfo['name_zh']}</strong>
+                    <div class="star"><span class="star-2"></span></div>
+                    <p>{$designerInfo.nationality}，{$designerInfo.housetype_zh}设计</p>
+                    <p class="intro">{$vo['info']}</p>
+                    <p class="pb-1">设计专长：<br />{$designerInfo.decoration_type_zh}</p>
+                    <a rel="#reserve-designer" class="btn btn-4" href="javascript:void(0)"><i class="ico ico-16"></i><span>立即预约</span></a>
+                </div>
+                <div class="list-decoration-1 pt-3">
+                	<div class="t">他的最新案例</div>
+                    <ul>
+                    <foreach name='designerCase' item="vo">
+                        <li><a href="#"><img src="{$vo['focus_img']}" alt="" />
+                                <p>{$vo['name']}</p>
+                            </a>
+                        </li>
+                    </foreach>    
+                    </ul>
+                    <div class="more"><a href="__GROUP__/Designer/designerDetails/uid/{$designerInfo['uid']}">查看更多作品请前往设计师个人主页 »</a></div>
+                </div>
+            </div>
+            <if condition="$pid gt 0">
+            <a class="case-prev" href='__GROUP__/Case/caseDetails/id/{$pid}'><i class="ico ico-11"></i></a>
+            </if>
+            <if condition="$nid gt 0">
+            <a class="case-next" href='__GROUP__/Case/caseDetails/id/{$nid}'><i class="ico ico-12"></i></a>
+            </if>
+        </div>
+        <div class="comment-1 w-66 f-no pt-2-5">
+            <h3 class="t-comment-1">作品讨论</h3>
+            <include file="Public:speakForm1" />
+            <include file="Active:activeDetailsComment" />
+        </div>
+    </div></div>
+<!---->
+</div>
+
+<!-- start:reserveForm -->
+<form id='reserve_form'>
+<div id="reserve-designer" class="overlay clearfix">
+	<div class="t-3">
+    	<h3>预约设计师</h3>
+    </div>
+    <div class="score-cnt">
+    	<p class="tips">请填写真实的详细信息</p>
+        <table width="460">
+            <tr>
+            	<td>真实名称：</td>
+                <td><input name='name' type="text" watermark="如54平家装设计北欧风格" /></td>
+            </tr>
+            <tr>
+            	<td>手机号码：</td>
+                <td><input name='telephone' type="text" watermark="如54平家装设计北欧风格" /></div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                	<input class="btn btn-submit-1" type="button" id='reserve_sub' value="提交" />
+                </td>
+            </tr>
+        </table>
+        <input type='hidden' name='uid' value='{$designerInfo.uid}'/>
+        <input type='hidden' name='type' value='2'/>
+    </div>
+</div>
+</form>
+<!-- end:reserveForm -->
+
+<include file="Public:footer" />
+<script>
+$(function(){
+	$('#reserve_sub').bind('click', function(){ actRequest($('#reserve_form').serialize(), '9101'); });
+});
+</script>

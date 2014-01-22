@@ -1,0 +1,148 @@
+<include file="Public:header" />
+    <div id="pbody"><div class="extra pb-6 pt-1">
+    	<div class="designer-top clearfix">
+        	<div class="pic"><img src="__STATICS__/images/pic_6.jpg" alt="加入易设计" /></div>
+            <div class="cnt clearfix">
+            	<div class="l">专业人士的圈子等你加入，丰富活动+案例展示，向更多业主及同行呈现优秀的设计优秀的你！</div>
+                <div class="r"><a class="btn btn-2" href="#"><span class="ml-3-5">加入易设计</span><i class="ico ico-8"></i></a></div>
+            </div>
+        </div>
+        <div class="w-14 pt-2">
+        	<div class="t-2">
+            	<h3><i class="ico ico-19"></i>按专业类型</h3>
+                <div class="hr-1"><span></span></div>
+            </div>
+            <ul class="list-4 pt-1 pb-3">
+            <foreach name='decoration_type_c' item='vo'>
+            	<li><span>（{$vo.decoration_type_c}）</span><a href="__URL__/designerIndex/list_decoration_type/{$vo.decoration_type}">{$vo.decoration_type_zh}</a></li>
+             </foreach>   
+            </ul>
+            <div class="t-2">
+            	<h3><i class="ico ico-19"></i>按设计风格</h3>
+                <div class="hr-1"><span></span></div>
+            </div>
+            <ul class="list-4 pt-1 pb-3">
+            <foreach name='style_c' item='vo'>
+            	<li><span>（{$vo.style_c}）</span><a href="__URL__/designerIndex/list_style/{$vo.style}">{$vo.style_zh}</a></li>
+            </foreach> 
+            </ul>
+        </div>
+        <div class="w-80 r pt-2">
+        	<div class="t-1">
+            	<h3>{$total}名专业设计师</h3>
+                <div class="cnt-article clearfix pt-1 pb-1-5">
+                	<p>这里是一段吸引人的话比如说我们就是一个媒介，在提供设计师一个向客户展示的平台同时，也帮助消费者藉由我们建立起来的资料库，找到自己想要的理想居家环境，并能联系上这些优秀的设计专家来寻求帮忙。</p>
+                </div>
+            </div>
+            
+ <!-- statr Designer:designerList -->
+            <div class="box-filter clearfix">
+            	<!--下拉列表使用方法，参照首页-->
+                <div class="slt j_select" name="select-name" wd="100" swd="100" data-meta="{fun:'designerListArea'}">
+                    <div class="curr"><span></span></div>
+                    <div class="show">
+                        <ul>
+                        	<li selected="selected"><a>按地区</a></li>
+                            <foreach name="{service_area}" item="vo" key="i">
+                            <li val="{$i}"><a>{$vo}</a></li>
+                            </foreach>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slt j_select" name="select-name" wd="100" swd="100" data-meta="{fun:'designerListStyle'}">
+                    <div class="curr"><span></span></div>
+                    <div class="show">
+                        <ul>
+                        	<li selected="selected"><a>按风格</a></li>
+                            <foreach name="{style}" item="vo" key="i">
+                            <li val="{$i}"><a>{$vo}</a></li>
+                            </foreach>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slt j_select" name="select-name" wd="100" swd="100" data-meta="{fun:'designerListFee'}">
+                    <div class="curr"><span></span></div>
+                    <div class="show">
+                        <ul>
+                        	<li selected="selected"><a>设计费</a></li>
+                            <foreach name="{design_fee}" item="vo" key="i">
+                            <li val="{$i}"><a>{$vo}</a></li>
+                            </foreach>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slt j_select" name="select-name" wd="100" swd="100" data-meta="{fun:'designerListNationality'}">
+                    <div class="curr"><span></span></div>
+                    <div class="show">
+                        <ul>
+                        	<li selected="selected"><a>国籍</a></li>
+                            <foreach name="{nationality}" item="vo" key="i">
+                            <li val="{$vo}"><a>{$vo}</a></li>
+                            </foreach>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slt j_select" name="select-name" wd="100" swd="100" data-meta="{fun:'designerListType'}">
+                    <div class="curr"><span></span></div>
+                    <div class="show">
+                        <ul>
+                        	<li selected="selected"><a>按专长</a></li>
+                            <foreach name="{decoration_type}" item="vo" key="i">
+                            <li val="{$i}"><a>{$vo}</a></li>
+                            </foreach>
+                        </ul>
+                    </div>
+                </div>
+                <div class="r">
+                    <div class="slt j_select" name="select-name" wd="100" swd="100" data-meta="{fun:'caseListHotSelect'}">
+                        <div class="curr"><span></span></div>
+                        <div class="show">
+                             <ul>
+	                            <li selected="selected"><a>按人气</a></li>
+	                            <li val="1"><a>降序</a></li>
+	                            <li val="2"><a>升序</a></li>
+	                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      <div class="list-designer pt-2-5">
+        <ul>
+	<foreach name='designerList' item='vo'>
+          <li>
+            <div class="pic"><a href="__GROUP__/Designer/designerDetails/uid/{$vo['uid']}" target="_blank"><img src="{$vo.header}" alt="" /></a></div>
+            <div class="r">
+              <div class="designer clearfix">
+                <div class="designer-pic"><a href="__GROUP__/Designer/designerDetails/uid/{$vo['uid']}" target="_blank"><img src="{$vo.header}" alt="" /></a></div>
+                <div class="l"> <strong><a href="__GROUP__/Designer/designer_info/uid/{$vo['uid']}" target="_blank">{$vo.name_zh}</a></strong>
+                  <div class="star">{$vo.star_html}</div>
+                </div>
+                <a class="r" title="详细" href="__GROUP__/Designer/designerDetails/uid/{$vo.uid}" target = 'blank'><i class="ico ico-32"></i></a> </div>
+              <div class="info">
+                <p class="t">{$vo.service_area}， 擅长{$vo.decoration_type_zh}、{$vo.housetype_zh}设计</p>
+                <p>{$vo.info}</p>
+              </div>
+            </div>
+          </li>
+    </foreach>     
+        </ul>
+      </div>
+      <div class="page-2 clearfix mt-1">
+      {$designerPage}
+     </div>
+    </div>
+<!-- end Designer:designerList -->
+        </div>
+        
+    </div></div>
+<!---->
+</div>
+<include file="Public:footer" />
+<script>
+function designerListArea(v){ window.location.href = v == undefined ? '__GROUP__/Designer/designerIndex' : '__GROUP__/Designer/designerIndex/list_service_area/'+v; }
+function designerListStyle(v){ window.location.href = v == undefined ? '__GROUP__/Designer/designerIndex' : '__GROUP__/Designer/designerIndex/list_style/'+v; }
+function designerListFee(v){ window.location.href = v == undefined ? '__GROUP__/Designer/designerIndex' : '__GROUP__/Designer/designerIndex/list_design_fee/'+v; }
+function designerListNationality(v){ window.location.href = v == undefined ? '__GROUP__/Designer/designerIndex' : '__GROUP__/Designer/designerIndex/list_nationality/'+v; }
+function designerListType(v){ window.location.href = v == undefined ? '__GROUP__/Designer/designerIndex' : '__GROUP__/Designer/designerIndex/list_decoration_type/'+v; }
+function designerListHot(v){ window.location.href = v == undefined ? '__GROUP__/Designer/designerIndex' : '__GROUP__/Designer/designerIndex/list_reserve_count/'+v; }
+</script>

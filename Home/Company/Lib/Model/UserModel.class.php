@@ -3,6 +3,8 @@
  * 后台用户登录
  */
 class UserModel extends BaseModel {
+	protected $useRedis = true;//使用redis
+	
 	/*
 	 * 验证form字段规则
 	*/
@@ -69,7 +71,7 @@ class UserModel extends BaseModel {
 	
 		return $oUser;
 	}
-	
+
 }
 
 

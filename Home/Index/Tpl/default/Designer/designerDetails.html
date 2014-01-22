@@ -1,0 +1,235 @@
+<include file="Public:header" />
+    <div id="pbody"><div class="extra pb-6 pt-2">
+    	<div class="designer-info clearfix">
+        	<div class="l">
+            	<div class="left">
+                	<div class="pic"><img src="{$designerInfo.header}" style='width:200px; height:200px'/></div>
+                    <div class="statistic clearfix">
+                    	<a href="#"><b>168</b><br />发布</a>
+                        <i></i>
+                        <a href="#"><b>2689</b><br />人气</a>
+                        <i></i>
+                        <a href="#"><b>65</b><br />关注</a>
+                        <i></i>
+                        <a href="#"><b>37</b><br />粉丝</a>
+                    </div>
+                </div>
+                <div class="right">
+                	<div class="t">
+                    	<h3>{$designerInfo.name_zh}</h3>
+                    	<if condition="($isSelf eq 0)">
+                        <a class="btn btn-8" ><i class="ico ico-33"></i><span>已关注</span></a>
+                        <a rel="#send-letter" href="javascript:void(0)" class="btn btn-9"><i class="ico ico-34" ></i><span>发私信</span></a>
+                        </if>
+                    </div>
+                    <div class="cnt-article clearfix">
+                    	<p>{$designerInfo.nationality}/ {$designerInfo.designation}</p>
+                        <p>{$designerInfo.info}</p>
+                        <p><br /></p>
+                        <p>工作年限：3-5年</p>
+                        <p>设计费用：{$designerInfo.design_fee}</p>
+                        <p>设计专长：{$designerInfo.decoration_type_zh}</p>
+                    </div>
+                    <div class="order">
+                    	<if condition="($isSelf eq 0)"><a rel="#reserve-designer" class="btn btn-4" href="javascript:void(0)"><i class="ico ico-16"></i><span>立即预约</span></a></if>
+                    </div>
+                </div>
+            </div>
+            <div class="r">
+            	<div class="score"><b>{$designerInfo.avg_score}</b>分</div>
+                <div class="star">{$designerInfo.star_html}</div>
+                <p>设计水平：<span><b>{$designerInfo.score_skill}</b>分</span></p>
+                <div class="tips mt-0-5 mb-0-5">
+                	<p>比本站设计师平均水平{$designerInfo.avg_score_skill}分 
+                	<span>
+                	<if condition="($designerInfo.avg_score_skill gt $designerInfo.score_skill)"> 高 
+                	<elseif condition="($designerInfo.avg_score_skill lt $designerInfo.score_skill)"/>低
+                	<else/>持平
+                	</if>
+                	</span>
+                	</p>
+                    <i></i>
+                </div>
+                <p>服务态度：<span><b>{$designerInfo.score_service}</b>分</span></p>
+                <div class="tips mt-0-5 mb-1">
+                	<p>比本站设计师平均水平{$designerInfo.avg_score_service}分 <span>高</span></p>
+                    <i></i>
+                </div>
+                <div class="pl-5 mb-0-5 clearfix"><if condition="($isSelf eq 0)"><a rel="#score-designer" class="btn btn-9">我要评分</a></if></div><!--弹出框内容在底部↓↓-->
+                <p>{$designerInfo.score_count}人已经评分 </p>
+            </div>
+        </div>
+        <div class="pt-3 clearfix">
+            <!--以下为异步加载-->
+            <div class="designer-tab j_tabAjax">
+                <a onClick="return false;" href="__URL__/designerCase/uid/{$designerInfo['uid']}">案例<i></i></a>
+                <a onClick="return false;" href="__URL__/designerComment/uid/{$designerInfo['uid']}">评论<i></i></a>
+                <a onClick="return false;" href="__URL__/designerActive/uid/{$designerInfo['uid']}">活动<i></i></a>
+                <a onClick="return false;" href="__URL__/designerFriend/uid/{$designerInfo['uid']}">圈子<i></i></a>
+                <a onClick="return false;" href="__URL__/designerInfo/uid/{$designerInfo['uid']}">Ta的资料<i></i></a>
+                <a onClick="return false;" href="__URL__/designerMessage/uid/{$designerInfo['uid']}">客户分享<i></i></a>
+            </div>
+        	<div class="designer-tabCnt clearfix j_tabAjax-cnt"><div class="loading"></div></div>
+            <div class="designer-tabCnt clearfix j_tabAjax-cnt"><div class="loading"></div></div>
+            <div class="designer-tabCnt clearfix j_tabAjax-cnt"><div class="loading"></div></div>
+            <div class="designer-tabCnt clearfix j_tabAjax-cnt"><div class="loading"></div></div>
+            <div class="designer-tabCnt clearfix j_tabAjax-cnt"><div class="loading"></div></div>
+            <div class="designer-tabCnt clearfix j_tabAjax-cnt"><div class="loading"></div></div>
+        </div>
+    </div></div>
+<!---->
+</div>
+<!--评分弹出框-->
+<!-- start:gradeForm  -->
+<form id='grade_form'>
+<div id="score-designer" class="overlay clearfix">
+	<div class="t-3">
+    	<h3>给设计师评价</h3>
+    </div>
+    <div class="score-cnt">
+    	<p class="tips">如果您曾经委托过设计师“{$designerInfo.name_zh}”，请针对项目对其进行评价：</p>
+        <table width="460">
+        	<tr>
+            	<td width="65">项目周期：</td>
+                <td width="395"><input class="text w-10 j_pickday" type="text" name='case_begin'  />
+                	<span class="line">—</span>
+                    <input class="text w-10 j_pickday" type="text" name='case_end'  />
+                    <!--此处js位置可以根据需要随便调动，反正这只是为了突出位置和程序方便找到-->
+					<script src="__STATICS__/js/moment.min.js"></script>
+                    <script src="__STATICS__/js/pikaday.min.js"></script>
+                    <script>
+                    $('.j_pickday').pikaday({
+                        firstDay:1,
+                        format:'YYYY-MM-DD',
+                        i18n: {
+                            previousMonth : '上个月',
+                            nextMonth : '下个月',
+                            months: ['一月','二月','三月','四月','五月','六月','七月','八月','九月','十月','十一月','十二月'],
+                            weekdays: ['星期日','星期一','星期二','星期三','星期四','星期五','星期六'],
+                            weekdaysShort: ['日','一','二','三','四','五','六']
+                        },
+                        onSelect: function(date) {
+                            console.log(this.getMoment().format('YYYY-MM-DD'));
+                        }
+                    });
+                    </script>
+                </td>
+            </tr>
+            <tr>
+            	<td>项目名称：</td>
+                <td><input name='case_name' class="text w-36 j_watermark" type="text" watermark="如54平家装设计北欧风格" /></td>
+            </tr>
+            <tr>
+            	<td>设计水平：</td>
+                <td><div class="score-star" id="j_scoreStar-1"></div>
+                	<script>
+                    $(function(){
+						$('#j_scoreStar-1').raty({
+							path:'__STATICS__/images/',
+							scoreName:'score_skill'	//这里定义评分 隐藏域 的name
+						});	
+					});
+                    </script>
+                </td>
+            </tr>
+            <tr>
+            	<td>服务态度：</td>
+                <td><div class="score-star" id="j_scoreStar-2"></div>
+                	<script>
+                    $(function(){
+						$('#j_scoreStar-2').raty({
+							path:'__STATICS__/images/',
+							scoreName:'score_service'	//这里定义评分 隐藏域 的name	
+						});	
+					});
+                    </script>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                	<div class="t">补充评价内容</div>
+                    <textarea class="w-44 h-8 j_watermark" name='comment' watermark="可将您的体验心得写在这里，包括对设计师的意见与建议等"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                	<input class="btn btn-submit-1" type="button" id='grade_sub' value="提交" />
+                </td>
+            </tr>
+        </table>
+        <input type='hidden' name='uid' value='{$designerInfo.uid}'/>
+    </div>
+</div>
+</form>
+<!-- end:gradeForm  -->
+
+<!-- start:reserveForm  -->
+<form id='reserve_form'>
+<div id="reserve-designer" class="overlay clearfix">
+	<div class="t-3">
+    	<h3>预约设计师</h3>
+    </div>
+    <div class="score-cnt">
+    	<p class="tips">请填写真实的详细信息</p>
+        <table width="460">
+            <tr>
+            	<td>真实名称：</td>
+                <td><input name='name' type="text" /></td>
+            </tr>
+            <tr>
+            	<td>手机号码：</td>
+                <td><input name='telephone' type="text" /></div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                	<input class="btn btn-submit-1" type="button" id='reserve_sub' value="提交" />
+                </td>
+            </tr>
+        </table>
+        <input type='hidden' name='uid' value='{$designerInfo.uid}'/>
+         <input type='hidden' name='type' value='2'/>
+    </div>
+</div>
+</form>
+<!-- end:reserveForm  -->
+
+<!-- start:reserveForm  -->
+<form id='letter_form'>
+<div id="send-letter" class="overlay clearfix">
+	<div class="t-3">
+    	<h3></h3>
+    </div>
+    <div class="score-cnt">
+    	<p class="tips">写点你想说的话给TA</p>
+        <table width="460">
+            <tr>
+            	<td></td>
+                <td><textarea id='txt_content' name='content' style='width:500px'></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                	<input class="btn btn-submit-1" type="button" id='letter_sub' value="发送" />
+                </td>
+            </tr>
+        </table> 
+         <input type='hidden' name='sender' value='{$sender}'/>
+         <input type='hidden' name='recipient' value="{$recipient}"/>
+    </div>
+</div>
+</form>
+<!-- end:sendLetterForm  -->
+<include file="Public:footer" />
+<script>
+$(function(){
+	$('#grade_sub').bind('click', function(){ actRequest($('#grade_form').serialize(), '1111'); });
+	$('#reserve_sub').bind('click', function(){ actRequest($('#reserve_form').serialize(), '9101'); });
+	$('#letter_sub').bind('click', function(){ 
+		if($('#txt_content').val().replace(/[ ]/g,"") == ''){
+			alert('你必须填写内容');
+			return false;
+		}
+		actRequest($('#letter_form').serialize(), '9103'); 
+	});
+});
+</script>

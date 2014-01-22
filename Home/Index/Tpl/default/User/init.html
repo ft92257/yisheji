@@ -1,0 +1,100 @@
+<include file='Public:header' />
+    <div id="pbody" class="pt-3-5 pb-6">
+        <div class="row-2"><div class="extra pt-6 pb-6">
+            <div class="t-4 pl-6-5 pb-2">
+                <h3>填写详细资料</h3>
+            </div>
+            <div class="table-main-2 form-main-2 pl-8">
+                <form id='init_form'>
+                <input type='hidden' name='uid' value='{$uid}'/>
+                <input type='hidden' name='act' value='init'/>
+                    <table>
+                        <tr>
+                            <th width="60">性别</th>
+                            <td><label class="mr-2"><input name='sex' checked class="radio" type="radio" />男</label>
+                                <label><input name='sex' class="radio" type="radio" />女</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>职业</th>
+                            <td><select name='occupation' class="w-25">
+                            <option value='-1' selected='selected'>职业</option>
+                            <foreach name='occupation' item='vo' key='i'>
+                            <option value='{$i}'>{$vo}</option>
+                            </foreach>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <th>所在地</th>
+                            <td id='zh'><!--  select class="w-12 mr-1"><option>选择省份</option></select>
+                                <select class="w-12"><option>选择城市</option></select-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>联系电话</th>
+                            <td><input name='mobile' class="text w-37" type="text" /></td>
+                        </tr>
+                        <tr>
+                            <th>个人网站</th>
+                            <td><input name='web' class="text w-37" type="text" /></td>
+                        </tr>
+                        <tr>
+                            <th>毕业学校</th>
+                            <td><input name='school' class="text w-37" type="text" /></td>
+                        </tr>
+                        <tr>
+                            <th>专业</th>
+                            <td><input name='subject' class="text w-37" type="text" /></td>
+                        </tr>
+                        <tr>
+                            <th>兴趣爱好</th>
+                            <td><input name='hobby' class="text w-37" type="text" /></td>
+                        </tr>
+                        <tr>
+                            <th valign="top">简介</th>
+                            <td><textarea class="w-37 h-11" name='info'></textarea></td>
+                        </tr>
+                        <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                        <tr>
+                            <th></th>
+                            <td><input class="btn btn-submit-1" type="button" id='init_sub' value="完成" /><div class="exp ml-20"><a href="javascript:void(0)" id='go'>跳过</a></div></td>
+                        </tr>
+                    </table>
+                </form>
+                </div>
+        </div></div>
+    </div>
+<!---->
+</div>
+<include file='Public:footer' />
+<script>
+function ajaxCity(act,json){
+	$.ajax({
+		type:'post',
+		url:'__GROUP__/City/citySelect',
+		async:false,
+		data:{'data':json,'act':act},
+		success:function(r){
+			$("#"+act).append(r);
+			}
+		});
+}
+function remove(obj){
+	if(obj.attr('id') == 'province'){
+		$("#city").remove();
+		$("#county").remove();
+	}else if(obj.attr('id') == 'city'){
+		$("#county").remove();	
+	}
+}
+
+$(function(){
+	ajaxCity('zh');
+	$("#go").bind('click', function(){
+		actRequest('account='+getCookie('uaccount')+'&password='+getCookie('upassword'), '102');
+	});
+	$('#init_sub').bind('click',function(){
+		actRequest($("#init_form").serialize(), '1002');
+	});
+});
+</script>

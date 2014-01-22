@@ -5,6 +5,8 @@
 
 class FileModel extends BaseModel {
 	
+	protected $useRedis = true;//使用redis
+	
 	/**
 	 * 上传文件
 	 * @param Array     $filename 表单file控件的name属性
