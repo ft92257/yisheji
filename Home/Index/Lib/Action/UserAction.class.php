@@ -5,7 +5,7 @@ class UserAction extends BaseAction {
 	
 	public function __construct() {
 		parent::__construct();
-		$this->returnUrl = '/MyProject2/index.php?s=/Index/index';
+		$this->returnUrl = 'index.php?s=/Index/index';
 	}
 	
 	public function register() {
