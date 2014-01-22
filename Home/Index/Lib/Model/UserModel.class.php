@@ -17,7 +17,7 @@ class UserModel extends BaseModel {
 		if(empty($oUser)){
 			return  false;
 		}
-		D('Session')->setKey($oUser);
+		D('Session')->setKey((object)$oUser);
 		return $oUser;
 	}
 
