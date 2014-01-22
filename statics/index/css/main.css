@@ -572,6 +572,7 @@ footer .nav_site nav{ margin-left:-10px; cursor:default;}
 #score-designer{ width:460px; height:400px;}
 .overlay .score-cnt { line-height:20px;padding-top:5px;}
 .overlay .score-cnt .tips{color:#395A78; padding-bottom:5px; padding-top:2px;}
+.overlay .score-cnt talble{width:460px}
 .overlay .score-cnt td{padding:8px 0; line-height:20px;}
 .overlay .score-cnt input,.overlay .score-cnt label{ float:left;}
 .overlay .score-cnt .text{border:1px solid #ddd;height:16px; line-height:16px;padding:3px 9px;}

@@ -88,7 +88,7 @@
     </div>
     <div class="score-cnt">
     	<p class="tips">如果您曾经委托过设计师“{$designerInfo.name_zh}”，请针对项目对其进行评价：</p>
-        <table width="460">
+        <table>
         	<tr>
             	<td width="65">项目周期：</td>
                 <td width="395"><input class="text w-10 j_pickday" type="text" name='case_begin'  />
@@ -171,7 +171,7 @@
     </div>
     <div class="score-cnt">
     	<p class="tips">请填写真实的详细信息</p>
-        <table width="460">
+        <table>
             <tr>
             	<td>真实名称：</td>
                 <td><input name='name' type="text" /></td>
@@ -182,7 +182,8 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="2">
+            	<td></td>
+                <td>
                 	<input class="btn btn-submit-1" type="button" id='reserve_sub' value="提交" />
                 </td>
             </tr>
@@ -205,7 +206,7 @@
         <table width="460">
             <tr>
             	<td></td>
-                <td><textarea id='txt_content' name='content' style='width:500px'></textarea></td>
+                <td><textarea id='txt_content' name='content' style='width:500px;' rows='3'></textarea></td>
             </tr>
             <tr>
                 <td colspan="2">

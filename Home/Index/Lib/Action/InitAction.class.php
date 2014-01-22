@@ -4,6 +4,12 @@ class InitAction extends BaseAction {
 	public function __construct() {
 		parent::__construct();
 	}
+	public function addAll(){
+		$this->addUser();
+		$this->addCase();
+		$this->addActive();
+		$this->addHouse();
+	}
 	
 	public function addUser(){
 		$total = $_REQUEST['total'] ? $_REQUEST['total'] : 100;
