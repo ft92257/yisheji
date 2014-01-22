@@ -317,7 +317,9 @@ class BaseModel extends Model {
 		foreach ($this->formConfig as $field => $aValue) {
 			switch ($aValue[1]) {
 				case 'checkbox':
-					$data[$field] = join(',', $data[$field]);
+					if (!empty($data[$field])) {
+						$data[$field] = join(',', $data[$field]);
+					}
 					break;
 				case 'file':
 					$aConfig = isset($aValue[3]['thumbs']) ? array('thumbs' => $aValue[3]['thumbs']) : array();
