@@ -42,5 +42,56 @@
 <script src="__STATICS__/js/main.js"></script>
 <script src="__STATICS__/js/common.js"></script>
 <script src="__STATICS__/js/ajax.js"></script>
+<script src="__STATICS__/layer/layer.min.js"></script>
+<script>
+$(function(){
+	$("#login_sub").bind('click', function(){
+		if($("#txt_account").val() == "" && $("#txt_password").val() == ""){
+			alert('用户名或密码不能为空');
+		}else{
+			actRequest($("#login_form").serialize(), '1003');
+		}
+	});
+});
+</script>
+<div class='layer_notice' style="display:none; width:430px; height:350px; padding-left:20px; padding-top:20px">
+ 
+                <div class="t-4 pb-2">
+                    <h3>登录</h3>
+                </div>
+                <div class="table-main-2 form-main-2">
+                    <form id="login_form">
+                        <table>
+                            <tbody><tr>
+                                <th width="80">用户名</th>
+                                <td><input class="text w-32" name="account" id="txt_account" type="text"></td>
+                            </tr>
+                            <tr>
+                                <th>密码</th>
+                                <td><input class="text w-32" name="password" id="txt_password" type="password"></td>
+                            </tr>
+                            <tr>
+                            	<th></th>
+                                <td><label class="mr-2"><input class="checkbox" type="checkbox">自动登录</label>
+                                	<label><input class="checkbox" checked="" type="checkbox">记住用户名</label>
+                                    <div class="r"><input class="btn btn-submit-1" id="login_sub" value="登 录" type="button"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                            	<th></th>
+                                <td><div class="r"><a style="color:#2197DD;" href="#">忘记密码</a></div></td>
+                            </tr>
+                        </tbody></table>
+                    </form>
+                </div>
+                <div class="login-other mt-1">
+                	<div class="t">第三方帐号快速登录</div>
+                    <div class="cnt clearfix">
+                    	<a href="#"><i class="ico ico-43"></i>新浪微博</a>
+                        <a href="#"><i class="ico ico-44"></i>腾讯QQ</a>
+                        <a href="#"><i class="ico ico-45"></i>腾讯微博</a>
+                    </div>
+                </div>
+</div>
 </body>
 </html>

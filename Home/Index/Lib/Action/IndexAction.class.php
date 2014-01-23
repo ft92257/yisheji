@@ -21,6 +21,15 @@ class IndexAction extends BaseAction{
 
 	}
 	
+	public  function getFeeRange($i){
+		switch($i){
+			case '1' : return array('min' => 0, 'max' => 50000);
+			case '2' : return array('min' => 50001, 'max' => 200000);
+			case '3' : return array('min' => 200001, 'max' => 500000);
+			case '4' : return array('min' => 500001, 'max' => 9999999);
+		}
+	}
+	
 	public function indexHouse(){
 		
 		$this->model = D('House');
@@ -84,8 +93,7 @@ class IndexAction extends BaseAction{
 		}
 		$data = $this->model->getList($where, 'recommend desc,createtime desc', 6);
 		$this->assign('designer', $data);
-		
-		$this->assign('style', $this->aBaseOptions['style']);
+		$this->assign('style', $this->_aBaseOptions['style']);
 		$this->assign('design_fee', $this->_aBaseOptions['designFee']);
 		$this->assign('service_area', $this->_aBaseOptions['serviceArea']);
 		$this->assign('search', $this->para);

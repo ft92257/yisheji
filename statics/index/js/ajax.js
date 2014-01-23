@@ -11,12 +11,27 @@ function actRequest(data, act){
 	});
 }
 
+function showLogin(){
+	var login_layer = $.layer({
+		shade : [0.5 , '#000' , true],
+		type : 1,
+		area : ['auto','auto'],
+		title : false,
+		border : [0],
+		page : {dom : '.layer_notice'},
+		close : function(index){
+			layer.close(index);
+		}
+	});
+}
+
+
 function ajaxReturnFun(r){
 	switch(r.status){
 		case -1:
 			alert('参数错误:'+r.msg); return;
 		case -2:
-			alert('未登录'); return;
+			showLogin(); return;
 		case -3:
 			alert('数据库错误:'+r.msg); return;
 	}
@@ -30,7 +45,7 @@ function ajaxReturnFun(r){
 			return;
 		case '1003':
 			if(r.status == 1){
-				window.location.href = urlCode.decode(getCookie('return_url'));
+				window.location.href = GROUP + '/Index/index';
 			}else if(r.status == 2){
 				window.location.href = GROUP + '/Index/index';
 			}else{
