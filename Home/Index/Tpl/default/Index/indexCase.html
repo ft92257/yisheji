@@ -22,24 +22,24 @@
             	<div class="fun">
                 	<!--下拉列表开始-->
                     <div class="pt-1 r">
-                        <div class="slt j_select" name="select-name" wd="100" swd="100" data-meta="{fun:'caseStyleSelect'}">
+                        <div class="slt j_select" name="select-name" wd="100" swd="100" data-meta="{fun:'caseStyle'}">
                             <div class="curr"><span></span></div>
                             <div class="show">
                                 <ul>
-                                    <li selected="selected"><a>风格</a></li>
+                                    <li <empty name="search['style']"> selected="selected"  </empty> ><a>风格</a></li>
                                     <foreach name="{style}" item="vo" key="i">
-                                    <li val="{$i}"><a>{$vo}</a></li>
+                                    <li val="{$i}" <if condition="($search['style'] eq $i)"> selected="selected" </if>><a>{$vo}</a></li>
                                     </foreach>
                                 </ul>
                             </div>
                         </div>
-                        <div class="slt j_select" name="select-name" wd="100" swd="100" data-meta="{fun:'caseHouseSelect'}">
+                        <div class="slt j_select" name="select-name" wd="100" swd="100" data-meta="{fun:'caseHouse'}">
                             <div class="curr"><span></span></div>
                             <div class="show">
                                 <ul>
-                                    <li selected="selected"><a>户型</a></li>
+                                    <li <empty name="search['housetype']"> selected="selected"  </empty> ><a>户型</a></li>
                                     <foreach name="{housetype}" item="vo" key="i">
-                                    <li val="{$i}"><a>{$vo}</a></li>
+                                    <li val="{$i}" <if condition="($search['housetype'] eq $i)"> selected="selected" </if>><a>{$vo}</a></li>
                                     </foreach>
                                 </ul>
                             </div>

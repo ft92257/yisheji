@@ -26,9 +26,9 @@
                             <div class="curr"><span></span></div>
                             <div class="show">
                                 <ul>
-                                    <li selected="selected"><a>风格</a></li>
+                                    <li <empty name="search['style']"> selected="selected"  </empty> ><a>风格</a></li>
                                     <foreach name="{style}" item="vo" key="i">
-                                    <li val="{$i}"><a>{$vo}</a></li>
+                                    <li val="{$i}" <if condition="($search['style'] eq $i)"> selected="selected" </if>><a>{$vo}</a></li>
                                     </foreach>
                                 </ul>
                             </div>
@@ -37,9 +37,9 @@
                             <div class="curr"><span></span></div>
                             <div class="show">
                                 <ul>
-                                    <li selected="selected"><a>费用</a></li>
+                                    <li <empty name="search['design_fee']"> selected="selected"  </empty>><a>费用</a></li>
                                     <foreach name="design_fee" item="vo" key="i">
-                                    <li val="{$i}"><a>{$vo}</a></li>
+                                    <li val="{$i}" <if condition="($search['design_fee'] eq $i)"> selected="selected" </if>><a>{$vo}</a></li>
                                     </foreach>
                                 </ul>
                             </div>
@@ -48,9 +48,9 @@
                             <div class="curr"><span></span></div>
                             <div class="show">
                                 <ul>
-                                    <li selected="selected"><a>服务范围</a></li>
+                                    <li <empty name="search['service_area']"> selected="selected"  </empty>><a>服务范围</a></li>
                                     <foreach name="{service_area}" item="vo" key="i">
-                                    <li val="{$i}"><a>{$vo}</a></li>
+                                    <li val="{$i}" <if condition="($search['service_area'] eq $i)"> selected="selected" </if>><a>{$vo}</a></li>
                                     </foreach>
                                 </ul>
                             </div>

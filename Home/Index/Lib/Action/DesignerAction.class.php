@@ -45,6 +45,8 @@ class DesignerAction extends BaseAction{
 		$data = $this->designerList();
 		$this->assign('designerList', $data['list']);
 		$this->assign('designerPage', $data['page']);
+		
+		$this->assign('search', $this->para);
 		$this->display();
 	}
 	

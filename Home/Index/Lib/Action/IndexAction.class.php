@@ -31,11 +31,12 @@ class IndexAction extends BaseAction{
 		if($this->para['housetype']){
 			$where = array('housetype' => $this->para['housetype']);
 		}
-		$data = $this->model->getList($where, 'ord desc, createtime desc', 6);
+		$data = $this->model->getList($where, 'recommend desc, createtime desc', 6);
 		$this->assign('house', $data);
 		
 		$this->assign('style', $this->_aBaseOptions['style']);
 		$this->assign('housetype', $this->_aBaseOptions['houseType']);
+		$this->assign('search', $this->para);
 		
 		$this->display();
 	}
@@ -49,8 +50,7 @@ class IndexAction extends BaseAction{
 		if($this->para['housetype'] > 0){
 			$where = array('housetype' => $this->para['housetype']);
 		}
-		$data = $this->model->getList($where, 'ord desc, createtime desc', 6);
-		
+		$data = $this->model->getList($where, 'recommend desc, createtime desc', 6);
 		$this->assign('caseType1', $data);
 		
 		$where = array('decoration_type' => 2);
@@ -60,12 +60,12 @@ class IndexAction extends BaseAction{
 		if($this->para['housetype']){
 			$where = array_merge($where, array('housetype' => $this->para['housetype']));
 		}
-		$data = $this->model->getList($where, 'ord desc, createtime desc', 6);
-		
+		$data = $this->model->getList($where, 'recommend desc, createtime desc', 6);
 		$this->assign('caseType2', $data);
 		$this->assign('housetype', $this->_aBaseOptions['houseType']);
 		$this->assign('style', $this->_aBaseOptions['style']);
 		$this->assign('decoration_type', $this->_aBaseOptions['decoration_type']);
+		$this->assign('search', $this->para);
 		$this->display();
 	}
 	
@@ -79,7 +79,7 @@ class IndexAction extends BaseAction{
 			$fee = $this->getFeeRange($this->para['design_fee']);
 			$where = array_merge($where, array('_string' => "design_fee >= ".$fee['min']." and design_fee < ".$fee['max'] ));
 		}
-		if($para['service_area']){
+		if($this->para['service_area']){
 			$where = array_merge($where, array('service_area' => $this->para['service_area']));
 		}
 		$data = $this->model->getList($where, 'recommend desc,createtime desc', 6);
@@ -88,6 +88,7 @@ class IndexAction extends BaseAction{
 		$this->assign('style', $this->aBaseOptions['style']);
 		$this->assign('design_fee', $this->_aBaseOptions['designFee']);
 		$this->assign('service_area', $this->_aBaseOptions['serviceArea']);
+		$this->assign('search', $this->para);
 		$this->display();
 	}
 	

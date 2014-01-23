@@ -165,31 +165,28 @@
 
 <!-- start:reserveForm  -->
 <form id='reserve_form'>
-<div id="reserve-designer" class="overlay clearfix">
-	<div class="t-3">
+<div id="reserve-designer"" class="overlay clearfix">
+	<div class="t-3 pb-1">
     	<h3>预约设计师</h3>
     </div>
     <div class="score-cnt">
     	<p class="tips">请填写真实的详细信息</p>
-        <table>
-            <tr>
-            	<td>真实名称：</td>
-                <td><input name='name' type="text" /></td>
+        <table width="100%">
+        	<tr>
+            	<td width="76">真实姓名</td>
+                <td><input class="text w-20" type="text" name='name'/></td>
             </tr>
             <tr>
-            	<td>手机号码：</td>
-                <td><input name='telephone' type="text" /></div>
-                </td>
+            	<td>联系方式</td>
+                <td><input class="text w-20 j_watermark" type="text" name='telephone'/></td>
             </tr>
             <tr>
             	<td></td>
                 <td>
-                	<input class="btn btn-submit-1" type="button" id='reserve_sub' value="提交" />
-                </td>
+                <input type='hidden' name='aid' value="{$activeInfo['id']}"/>
+                <input class="btn btn-submit-1" type="button" id='active_apply_sub' value="确认提交" /></td>
             </tr>
         </table>
-        <input type='hidden' name='uid' value='{$designerInfo.uid}'/>
-         <input type='hidden' name='type' value='2'/>
     </div>
 </div>
 </form>

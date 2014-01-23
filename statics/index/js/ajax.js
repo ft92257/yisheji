@@ -59,5 +59,5 @@ function ajaxReturnFun(r){
 	if(r.msg != null){
 		alert(r.msg);
 	}
-	r.url != null ? window.location.reload() : window.location.href = r.url;
+	r.url == null ? window.location.reload() : window.location.href = r.url;
 }

@@ -27,6 +27,10 @@ class CaseAction extends BaseAction{
 		if(empty($data)){
 			redirect(__URL__.'/caseIndex');
 		}
+		
+		$click_count = $this->model->where(array('id' => $this->para['id']))->getField('click_count');
+		$this->model->update(array('click_count' => $click_count+1), array('id' => $this->para['id']));
+		
 		$this->assign('caseInfo', $data);
 		$pid = $this->model->where(array('id' => array('lt', $this->para['id'])))->order('createtime desc')->limit(1)->getField('id');
 		$nid = $this->model->where(array('id' => array('gt', $this->para['id'])))->limit(1)->getField('id');
@@ -36,6 +40,7 @@ class CaseAction extends BaseAction{
 		$this->assign('designerCase', $this->model->getDesignerCase($data['uid'], 4));
 		$this->assign('designerInfo', D('User_designer')->queryOne(array('uid' => $data['uid'])));
 		
+		$this->assign('casePhoto', $this->model->getCasePhoto($data['id']));
 		$this->display();
 	}
 	
@@ -74,7 +79,7 @@ class CaseAction extends BaseAction{
 		return $this->model->getList($where, "{$order} createtime desc", 6);
 	}
 	
-	public function case_report(){
+	public function caseReport(){
 		if($this->para['act'] == '2105'){
 			$this->model = D('Report');
 			#一个账号只能举报一次一个（未处理举报的）案例
@@ -86,7 +91,7 @@ class CaseAction extends BaseAction{
 			);
 			$res = $this->model->queryOne($where);
 			if(!empty($res)){
-				$this->resultFormat(null, -1);
+				$this->resultFormat(null, 0, '一个账号只能举报一次一个（未处理举报的）案例');
 			}
 			$data = array(
 					'uid'=> $this->oUser['id'],
@@ -98,7 +103,7 @@ class CaseAction extends BaseAction{
 					'url' => $this->para['url']
 			);
 			$res = $this->model->insert($data);
-			$res != false ? $this->resultFormat(null, 1, $res) : $this->resultFormat(null, 0, $this->model->getLastSql());
+			$res != false ? $this->resultFormat(null, 1, '举报成功', __APP__ . "/Case/caseDetails/id/{$this->para['target']}") : $this->resultFormat(null, 0, $this->model->getLastSql());
 		}else {
 			if(!$this->para['id']){
 				redirect(__URL__.'/caseIndex');
