@@ -21,8 +21,8 @@
                 </div>
                 <div class="cnt-article clearfix pt-2 pb-3">
                 	{$caseInfo['info']}<br/>
-                	<foreach name="casePhoto" item="vo">
-                	<img src="{$vo['fid_img']}" alt=""/><br/>
+                	<foreach name="casePhoto" item="vo" key="i">
+                	<a href="javascript:void(0)" class='look' data-num="{$i+1}" data-id="{$caseInfo['id']}"><img src="{$vo['fid_img']}" alt=""/></a><br/>
                 	<p>{$vo['title']}</p>
                 	</foreach>
                 </div>
@@ -94,7 +94,7 @@
             	<td></td>
                 <td>
                 <input type='hidden' name='aid' value="{$activeInfo['id']}"/>
-                <input class="btn btn-submit-1" type="button" id='active_apply_sub' value="确认提交" /></td>
+                <input class="btn btn-submit-1" type="button" id='reserve_sub' value="确认提交" /></td>
             </tr>
         </table>
     </div>
@@ -106,5 +106,18 @@
 <script>
 $(function(){
 	$('#reserve_sub').bind('click', function(){ actRequest($('#reserve_form').serialize(), '9101'); });
+});
+
+$('.look').bind('click', function(){
+	$.layer({
+		border : [0,0,'',false],
+		title : false,
+	    type : 2,
+	    offset : ['100px', ''],
+	    iframe : {
+	        src : 'http://'+window.location.host+GROUP+'Case/caseImgDetails/id/'+$(this).attr("data-id")+'/num/'+$(this).attr("data-num")
+	    },	
+	    area : ['1100px','602px']
+	})
 });
 </script>

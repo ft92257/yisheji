@@ -236,8 +236,6 @@ class BaseAction extends Action {
 			case '108': 
 				A("User")->passwordCheck(); #检查密码
 				break;
-			
-			
 		}
 	}
 	
