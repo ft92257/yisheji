@@ -31,9 +31,8 @@ begin;
 begin;
 		}
 		$field = $field[$level];
-		$res = D('District')->getOptionData($pid);
-		
-		if($res){
+		$res = D('District')->getList(array('upid' => $pid));
+		if(!empty($res)){
 			$html = <<<begin
 			<select class="w-12 mr-1" name="{$field}" id="{$field}">{$option}
 begin;

@@ -51,7 +51,7 @@ class SessionModel extends BaseModel {
 		
 		$session = $this->getById($oUser->id, 'uid');
 		if (empty($session)) {
-			$data['appid'] = $this->oApp->id;
+			$data['appid'] = $this->oApp['id'];
 			$data['uid'] = $oUser->id;
 			$data['createtime'] = time();
 			$this->add($data);

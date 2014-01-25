@@ -36,34 +36,6 @@ function ajaxReturnFun(r){
 			alert('数据库错误:'+r.msg); return;
 	}
 	switch(r.act){
-		case '1001':
-			if(r.status){
-				window.location.href = GROUP+'/User/init/uid/'+r.data.uid;
-			}else{
-				alert(r.msg);
-			}
-			return;
-		case '1003':
-			if(r.status == 1){
-				window.location.href = GROUP + '/Index/index';
-			}else if(r.status == 2){
-				window.location.href = GROUP + '/Index/index';
-			}else{
-				alert(r.msg);
-			}
-			return;
-		case '1002':
-			if(r.status){
-				alert('注册成功');
-				actRequest('account='+getCookie('uaccount')+'&password='+getCookie('upassword'), '1003');
-			}else{
-				if(confirm('详情信息添加失败')){
-					return false;
-				}else{
-					actRequest('account='+getCookie('uaccount')+'&password='+getCookie('upassword'), '1003');
-				}
-			}
-			return;
 		case '105':
 			flag = r.status ? 0 : 1; return;
 		case '106':

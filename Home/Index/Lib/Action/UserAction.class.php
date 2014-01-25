@@ -5,7 +5,6 @@ class UserAction extends BaseAction {
 	
 	public function __construct() {
 		parent::__construct();
-		$this->returnUrl = 'index.php?s=/Index/index';
 	}
 	
 	public function register() {
@@ -34,9 +33,9 @@ class UserAction extends BaseAction {
 			}
 			setcookie('uaccount', $this->para['account'], time()+7200, '/');
 			setcookie('upassword', $this->para['password'], time()+7200, '/');
-			$this->resultFormat(array('uid' => $data['uid']), 1);
+			$user = D('User')->login($this->para['account'], $this->para['password']);
+			$this->resultFormat(array('uid' => $data['uid']), 1, null, __APP__ . "/User/init/uid/{$id}");
 		}else {
-			setcookie('return_url', $this->returnUrl,  time() + 7200, '/');
 			$this->display();
 		}
 	}
@@ -62,10 +61,10 @@ class UserAction extends BaseAction {
 			);
 			$where = array('id' => $this->para['uid']);
 			$res = $this->model->update($data, $where);
-			$res ? $this->resultFormat(null, 1, $res) : $this->resultFormat(null, 0, $this->model->getLastSql());
+			$res !== false ? $this->resultFormat(null, 1, '注册成功', __APP__ . "/Index/index") : $this->resultFormat(null, 0, $this->model->getLastSql());
 		}else {
-			$this->assign('occupation', $this->model->_aBaseOptions['occupation']);
-			$this->assign('hobby', $this->model->_aBaseOptions['hobby']);
+			$this->assign('occupation', $this->_aBaseOptions['occupation']);
+			$this->assign('hobby', $this->_aBaseOptions['hobby']);
 			$this->assign('uid', $this->para['uid']);
 			$this->display();
 		}
@@ -73,8 +72,9 @@ class UserAction extends BaseAction {
 	
 	public function login() {
 		if($this->para['act'] == '1003'){
+			
 			if(!empty($this->oUser)){
-				$this->resultFormat($this->oUser, 2);
+				$this->resultFormat($this->oUser, 1, null,  __APP__ . "/Index/index");
 			}
 			$user = D('User')->login($this->para['account'], $this->para['password']);
 			if ($user) {
@@ -87,7 +87,6 @@ class UserAction extends BaseAction {
 				header('Location: ' . U('/Index/index'));
 				exit;
 			}
-			setcookie('return_url', $this->returnUrl,  time() + 7200, '/');
 			$this->display();
 		}
 	}
