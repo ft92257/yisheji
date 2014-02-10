@@ -87,7 +87,7 @@ class BaseAction extends Action {
 				A('My')->mySet(); #个人中心设置
 				break;
 			case '0205': 
-				A("User")->passwordSave(); #修改密码
+				A("My")->passwordSave(); #修改密码
 				break;
 			case '0206': 
 				A("My")->headerEdit(); #头像设置
@@ -103,6 +103,9 @@ class BaseAction extends Action {
 				break;
 			case '1003': 
 				A('User')->login();  #登录
+				break;
+			case '1004':
+				A('User')->fastLogin();  #快速登录（弹层）
 				break;
 			#Designer
 			case '1101': 

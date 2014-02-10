@@ -72,7 +72,6 @@ class UserAction extends BaseAction {
 	
 	public function login() {
 		if($this->para['act'] == '1003'){
-			
 			if(!empty($this->oUser)){
 				$this->resultFormat($this->oUser, 1, null,  __APP__ . "/Index/index");
 			}
@@ -91,6 +90,18 @@ class UserAction extends BaseAction {
 		}
 	}
 	
+	public function fastLogin() {
+		if($this->para['act'] == '1004'){
+			$jumpUrl = $this->para['jumpUrl'] ? $this->para['jumpUrl'] : null;
+			$user = D('User')->login($this->para['account'], $this->para['password']);
+			if ($user) {
+				$this->resultFormat($user, 1, null, $jumpUrl);
+			} else {
+				$this->resultFormat(null, 0, '用户名或密码错误');
+			}
+		}
+	}
+	
 	//退出
 	public function logout() {
 		D('Session')->destroy($this->oUser['id']);
@@ -105,29 +116,23 @@ class UserAction extends BaseAction {
 	//邮箱唯一验证
 	public function emailUnique(){
 		$this->model = D('User');
-		$res = $this->model->where(array('email' => $_REQUEST['email']))->find();
+		$res = $this->model->where(array('email' => $this->para['email']))->find();
 		empty($res) ? $this->resultFormat(null, 1) : $this->resultFormat(null, 0); 
 		exit;
 	}
 	//手机唯一验证
 	public function mobileUnique(){
 		$this->model = D('User');
-		$res = $this->model->where(array('mobile' => $_REQUEST['mobile']))->find('id');
+		$res = $this->model->where(array('mobile' => $this->para['mobile']))->find();
 		empty($res) ? $this->resultFormat(null, 1) : $this->resultFormat(null, 0); 
 		exit;
 	}
 	//密码校验
 	public function passwordCheck(){
 		$this->model = D('User');
-		$password = $this->model->where(array('id' => $this->oUser['id']))->getField('password');
-		$password == md5($_REQUEST['oldpassword']) ? $this->resultFormat(null, 1) : $this->resultFormat(null, 0);
+		$res = $this->model->where(array('id' => $this->oUser['id'], 'password' => md5($this->para['oldpassword'])))->find();
+		!empty($res) ? $this->resultFormat(null, 1) : $this->resultFormat(null, 0); 
 		exit;
-	}
-	//保存密码
-	public function passwordSave(){
-		$this->model = D('User');
-		$res = $this->model->where(array('id' => $this->oUser['id']))->data(array('password' => md5($_REQUEST['password'])))->save();
-		echo  $res ? $this->resultFormat(null, 1) : $this->resultFormat(null, 0);
 	}
 	
 	public function qq_login() {

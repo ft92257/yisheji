@@ -93,20 +93,20 @@
          <form id='pass_form'>
         	<table>
                 <tr>
-                	<th width="60">旧密码</th>
+                	<th width="60"><span style='color:red'>*</span>旧密码</th>
                     <td><input class="text w-37" type="password" name='oldpassword' id='oldpassword'/><span style='color:red' id='oldpassword_msg'></span></td>
                 </tr>
                 <tr>
-                	<th>新密码</th>
+                	<th><span style='color:red'>*</span>新密码</th>
                     <td><input class="text w-37" type="password" name='password' id='password'/><span style='color:red' id='password_msg'></span></td>
                 </tr>
                 <tr>
-                	<th>重复密码</th>
+                	<th><span style='color:red'>*</span>重复密码</th>
                     <td><input class="text w-37" type="password" name='repassword' id='repassword' /><span style='color:red' id='repassword_msg'></span></td>
                 </tr>
                 <tr>
                 	<th></th>
-                    <td><input class="btn btn-submit-1" type="button" id='form_pass' value="完成" /></td>
+                    <td><input class="btn btn-submit-1" type="button" id='pass_sub' value="完成" /></td>
                 </tr>
             </table>
         </form>
@@ -117,7 +117,7 @@
         <elseif condition="($user['designer'] eq 3)"/>您当前的状态：【申请认证未处理】，请耐心等待管理员的处理结果
         <elseif condition="($user['designer'] eq 2)"/>您当前的状态：【申请认证未通过】，请确认并重新提交资料
         </if>
-        <form id='apply_form' action="__GROUP__/My/designerApply" enctype="multipart/form-data" method="post">
+        <form id='designer_apply_form' action="__GROUP__/My/designerApply" enctype="multipart/form-data" method="post">
         	<table>
                 <tr>
                 	<th width="110"><span>*</span>手机号</th>
@@ -159,7 +159,7 @@
                     <td>
                     <input type="hidden" name='act' value='114'/>
                     <if condition="($user['designer'] neq 3)">
-                    <input class="btn btn-submit-1" type="button" id='form_apply' value="完成" /></td>
+                    <input class="btn btn-submit-1" type="button" id='designer_apply_sub' value="完成" /></td>
                     </if>
                 </tr>
             </table>
@@ -169,12 +169,13 @@
 <!---->
 </div>
 <include file='Public:footer' />
+<script src="__STATICS__/js/check.js"></script>
 <script>
 var flag = 0;
-var error = [];
-error['repassword'] = false;
-error['password'] = false;
-error['repassword'] = false;
+var error_pass = [];
+error_pass['repassword'] = false;
+error_pass['password'] = false;
+error_pass['repassword'] = false;
 
 function ajaxCity(act,json){
 	
@@ -222,41 +223,57 @@ $(function(){
 	$('#oldpassword').bind('blur',function(){
 		if(isEmpty($(this).val())) return;
 		flag = 0;
-		actRequest('password='+$(this).val(), '108');
+		actRequest('oldpassword='+$(this).val(), '108');
 		if(flag == 1){
 			$('#oldpassword_msg').html('密码错误');
-			error['oldpassword'] = false;
-		}else{
-			error['oldpassword'] = true;
+			error_pass['oldpassword'] = false;
+			return;
 		}
+		$('#oldpassword_msg').html('');
+		error_pass['oldpassword'] = true;
 	});
 	
 	$('#password').bind('blur',function(){
 		if(!checkPass($(this).val())){
 			$('#password_msg').html('密码名由6~16位字母、数字或下划线组成');
-			error['password'] = false;
-		}else{
-			$('#password_msg').html('');
-			error['password'] = true;
+			error_pass['password'] = false;
+			return;
 		}
+		$('#password_msg').html('');
+		error_pass['password'] = true;
+		
+		if($(this).val() == $('#oldpassword').val()){
+			$('#password_msg').html('新密码不能与旧密码相同');
+			error_pass['password'] = false;
+			return;
+		}
+		$('#password_msg').html('');
+		error_pass['password'] = true;
+
 	});
 	$('#repassword').bind('blur',function(){
 		if($(this).val() != $('#password').val()){
 			$('#repassword_msg').html('两次密码不一致');
-			error['repassword'] = false;
-		}else{
-			$('#repassword_msg').html('');
-			error['repassword'] = true;
+			error_pass['repassword'] = false;
+			return;
 		}
+		$('#repassword_msg').html('');
+		error_pass['repassword'] = true;
 	});
 });
 
-$('#form_pass').bind('click',function(){
-	actRequest($("#pass_form").serialize(), '109');
+$('#pass_sub').bind('click',function(){
+	for(i in error_pass){
+		if(error_pass[i] == false){
+			alert('请确认*项填写无误');
+			return false;
+		}
+	}
+	actRequest($("#pass_form").serialize(), '0205');
 });
 
-$('#form_apply').bind('click',function(){
-	$("#apply_form").submit();
+$('#designer_apply_sub').bind('click',function(){
+	$("#designer_apply_form").submit();
 });
 
  $(".designer-tab a").click(function(){

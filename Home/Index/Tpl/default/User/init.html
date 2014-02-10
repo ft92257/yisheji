@@ -90,9 +90,7 @@ function remove(obj){
 
 $(function(){
 	ajaxCity('zh');
-	$("#go").bind('click', function(){
-		actRequest('account='+getCookie('uaccount')+'&password='+getCookie('upassword'), '102');
-	});
+
 	$('#init_sub').bind('click',function(){
 		actRequest($("#init_form").serialize(), '1002');
 	});
