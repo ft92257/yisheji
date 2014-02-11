@@ -2,10 +2,9 @@
 /**
  * 后台用户登录
  */
-class UserModel extends BaseModel {
+class ReportModel extends BaseModel {
 	protected $aOptions = array(
-		'type' => array('1' => '普通用户', '2' => '设计师','3' => '公司'),
-		'sex' => array('0'=>'保密','1'=>'男','2'=>'女'),
+		'type' => array( '1' => '设计师','2' => '案列'),
 	);
 	/*
 	 * 验证form字段规则
@@ -30,21 +29,20 @@ class UserModel extends BaseModel {
 	protected $listConfig = array(
 			'id' => '编号',
 			'type' => '类型',
-			'account' => '账户',
-			'sex' => '性别',
-			'realname' => '真实姓名',
-			'nickname' =>'昵称',
+			'name' => '举报对象',
+			'reason' => '举报理由',
+			'telephone' =>'联系电话',
 			'createtime' => '添加时间',
 			'status' => array('状态', array('audit')),
 	);
 	protected $searchConfig = array(
 			'status' => array('状态：', 'radio_list'),
-			'account' => array('账号：', 'text'),
+			'name' => array('举报对象：', 'text'),
 			'createtime' => array('选择时间：', 'date'),
 	);
 	/*
 	 * 扣款
-	*/
+	 */
 	public function charge($id, $money) {
 		$aManager = $this->getById($id);
 		if ($aManager['money'] < $money) {
