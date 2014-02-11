@@ -4,6 +4,9 @@
  */
 class DistrictModel extends BaseModel {
 	
+	protected $useRedis = true;//使用redis
+	protected $addbase = false;//不添加默认查询条件
+	
 	protected $aValidate = array(
 	);
 	
@@ -85,12 +88,12 @@ class DistrictModel extends BaseModel {
 		return $html;
 	}
 	
-	protected function _getOptionHtml($upid, $val, $level, $field) {
+	protected function _getOptionHtml($upid, $val, $level) {
 		if ($level == 1) {
 			$where = "level = 1";
 		} else {
 			if (!$upid) {
-				$aDist = $this->where('id = ' . intval($val))->find();
+				$aDist = $this->getById($val);
 				if (empty($aDist)) {
 					return '';
 				} else {
@@ -99,7 +102,21 @@ class DistrictModel extends BaseModel {
 			}
 			$where = "upid = '$upid'";
 		}
-		$data = $this->where($where)->order('ord DESC')->select();
+		
+		$redis = $this->getRedis();
+		if ($redis === null) {
+			return $this->where($where)->order('ord DESC')->select();
+		}
+		$key = $this->trueTableName . '-where:' . md5($where);
+		if (!$redis->exists($key)) {
+			$data = $this->where($where)->order('ord DESC')->select();
+			$redis->set($key, serialize($data));
+		} else {
+			$data = $redis->get($key);
+			$data = unserialize($data);
+		}
+
+		$html = '';
 		foreach ($data as $value) {
 			$selected = $val == $value['id'] ? ' selected="selected"' : '';
 			$html .= '<option'.$selected.' value="'.$value['id'].'">'.$value['name'].'</option>'."\n";

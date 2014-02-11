@@ -1,0 +1,57 @@
+<include file="Public:header" />
+    <div id="pbody"><div class="extra pt-3 pb-6">
+        <div class="t-3 pb-1-5">
+        	<h3>我的私信</h3>
+        </div>
+        <div class="comment-1 center-message w-66 f-no pt-1">
+        	<p class="pb-2">发私信给 {$recipient_name}:</p>
+            <div class="form-comment-1 pb-2 clearfix">
+            <form id='letter_form'>
+                <textarea id='txt_content' name='content'></textarea>
+                <input type='hidden' name='sender' value='{$sender}'/>
+                <input type='hidden' name='recipient' value='{$recipient}'/>
+                <div class="r"><input class="btn btn-submit-1" type="button" id='letter_sub' value="发布" /></div>
+            </form>	
+            </div>
+            <div class="list-comment-1">
+                <ul>
+                <foreach name='letterList' item='vo'>
+                    <li><div class="pic"><a href="#"><img src="{$vo['header']}" alt="" /></a></div>
+                        <div class="l">
+                        <if condition="($vo['is_sender'] eq 1)">
+                        	<div class="t">我发送给<a href="javascript:void(0)">{$recipient_name}</a>：</div>
+                        <else/>
+                            <div class="t"><a href="javascript:void(0)">{$recipient_name}</a>发送给我：</div>
+                           </if>
+                            <div class="cnt-article clearfix">
+                                <p>{$vo['content']}</p>
+                            </div>
+                        </div>
+                        <div class="r">
+                            <div class="time">{$vo['time_zh']}</div>
+                            <a href="javascript:void(0)" data-id="{$vo['id']}" id='letter_del'>删除</a>
+                        </div>
+                    </li>
+                </foreach>   
+                </ul>
+            </div>
+            <div>{$page}</div>
+        </div>
+    </div></div>
+<!---->
+</div>
+<include file="Public:footer" />
+<script>
+$(function(){
+	$('#letter_sub').bind('click', function(){ 
+		if($('#txt_content').val().replace(/[ ]/g,"") == ''){
+			alert('你必须填写内容');
+			return false;
+		}
+		actRequest($('#letter_form').serialize(), '9103'); 
+	});
+	$('#letter_del').bind('click', function(){
+		actRequest('type=byId&ids='+$(this).attr('data-id'), '9104');
+	});
+});
+</script>

@@ -1,0 +1,81 @@
+<include file="Public:header" />
+    <div id="pbody"><div class="extra pb-6">
+    	<div id="local"><a href="#">首页</a>&gt;<a href="#">活动</a>&gt;<span>活动详情</span></div>
+        <div class="w-76">
+        	<div class="activity-content">
+            	<div class="pic"><a href="__GROUP__/Active/activeImgList/id/{$activeInfo['id']}"><img src="{$activeInfo['focus_img']}" alt="" /></a></div>
+                <div class="box"><div class="in clearfix">
+                	<div class="l">
+                    	<h2>{$activeInfo['title']}</h2>
+                        <p>主办方&nbsp; <a href="#">{$activeInfo['organizer']}</a></p>
+                        <p>时 &nbsp;&nbsp; 间&nbsp; {$activeInfo['begin_time']}-{$activeInfo['end_time']}</p>
+                        <p>地 &nbsp;&nbsp; 点&nbsp; {$activeInfo['address']}</p>
+                    </div>
+                    <div class="r">
+                    	<div><a class="btn btn-11" href="javascript:void(0)" id='active_zan_sub' data-target="{$activeInfo['id']}"><i class="ico ico-36"></i><span>我有兴趣</span></a>
+                        	<p><b>{$activeInfo['like_count']}</b> 人感兴趣</p> 
+                        </div>
+                        <div><a rel="#overlay-activity" class="btn btn-12" data-target="{$activeInfo['id']}">报名参加</a>
+                        	<p><b>{$activeInfo['join_count']}</b> 人已报名</p>
+                        </div>
+                    </div>
+                </div></div>
+            </div>
+            <div class="bg-white p-3 clearfix">
+            	<div class="cnt-article clearfix">
+                	{$activeInfo['info']}
+                </div>
+                <div class="hr-2 pt-2"><span></span></div>
+                <div class="comment-1 w-66 f-no">
+                    <h3 class="t-comment-1">活动讨论</h3>
+                    <include file="Public:speakForm1" />
+                    <include file="Active:activeDetailsComment" />
+                </div>
+            </div>
+        </div>
+        <div class="w-22 r">
+       		<include file="Public:right_hotDesigner" />
+            <include file="Public:right_hotCase" />
+            <div class="hr-1 pb-2"><span></span></div>
+            <div class="propaganda-1 w-22">
+            	<a href="#"><img src="__STATICS__/images/propaganda_1.jpg" alt="" /></a>
+            </div>
+        </div>
+    </div></div>
+<!---->
+</div>
+<!-- start:activeApply-->
+<div id="overlay-activity" class="overlay clearfix">
+<form id='active_apply_form'>
+	<div class="t-3 pb-1">
+    	<h3>报名表</h3>
+    </div>
+    <div class="score-cnt">
+    	<p class="tips">我要申请参加“思维导图-让工作变轻松”</p>
+        <table width="100%">
+        	<tr>
+            	<td width="76">真实姓名</td>
+                <td><input class="text w-20" type="text" name='name'/></td>
+            </tr>
+            <tr>
+            	<td>联系方式</td>
+                <td><input class="text w-20 j_watermark" type="text" name='telephone'/></td>
+            </tr>
+            <tr>
+            	<td></td>
+                <td>
+                <input type='hidden' name='aid' value="{$activeInfo['id']}"/>
+                <input class="btn btn-submit-1" type="button" id='active_apply_sub' value="确认提交" /></td>
+            </tr>
+        </table>
+    </div>
+ </form>
+</div>
+<!-- start:activeApply -->
+<include file="Public:footer" />
+<script>
+$(function(){
+	$("#active_zan_sub").bind('click',function(){ actRequest("target="+$(this).attr('data-target')+"&type=1", '9102'); });
+	$("#active_apply_sub").bind('click',function(){ actRequest($("#active_apply_form").serialize(), '3107'); });
+});
+</script>

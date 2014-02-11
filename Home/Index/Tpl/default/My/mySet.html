@@ -1,0 +1,302 @@
+<include file="Public:header" />
+<style type="text/css">
+
+ .qh_sh th span,.color_red_display td{ color:#F00}
+ .color_red_display{ display:none}
+ .file_idcard_box{ height:200px; width:376px; border:#E3E3E3 2px dashed; cursor:pointer; background-color:#fff}
+</style>
+	<input type='hidden' id='sheng' value="{$user['province']}"/>
+	<input type='hidden' id='shi' value="{$user['city']}"/>
+	<input type='hidden' id='qu' value="{$user['county']}"/>
+    <div id="pbody"><div class="extra pt-3 pb-6">
+        <div class="t-3 pb-1-5">
+        	<h3>个人设置</h3>
+        </div>
+        <div class="designer-tab">
+            <a class="current" href="javascript:void(0)">基本资料<i></i></a>
+            <a href="javascript:void(0)">修改头像<i></i></a>
+            <a href="javascript:void(0)">修改密码<i></i></a>
+            <a href="javascript:void(0)">申请成为设计师<i></i></a>
+        </div>
+        <div class="table-main-2 form-main-2 pt-3 qh_sh" >
+        <form id='set_form'>
+                <input type='hidden' name='uid' value="{$user['id']}"/>
+                    <table>
+                        <tr>
+                            <th width="60">性别</th>
+                            <td><label class="mr-2"><input name='sex' value="1" <if condition="$user['sex'] eq 1" >checked</if> class="radio" type="radio" />男</label>
+                                <label><input name='sex' value="2" <if condition="$user['sex'] eq 2" >checked</if> class="radio" type="radio" />女</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>职业</th>
+                            <td><select name='occupation' class="w-25">
+                            <option value='-1' selected='selected'>职业</option>
+                            <foreach name='occupation' item='vo' key='i'>
+                            <option value='{$i}'  <if condition="$user['occupation'] eq $i" >selected="selected"</if> >{$vo}</option>
+                            </foreach>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <th>所在地</th>
+                            <td><div id='zh'></div></td>
+                        </tr>
+                        <tr>
+                            <th>联系电话</th>
+                            <td><input name='mobile' class="text w-37" type="text"  value="{$user['mobile']}" /></td>
+                        </tr>
+                        <tr>
+                            <th>个人网站</th>
+                            <td><input name='web' class="text w-37" type="text" value="{$user['web']}" /></td>
+                        </tr>
+                        <tr>
+                            <th>毕业学校</th>
+                            <td><input name='school' class="text w-37" type="text" value="{$user['school']}" /></td>
+                        </tr>
+                        <tr>
+                            <th>专业</th>
+                            <td><input name='subject' class="text w-37" type="text" value="{$user['subject']}" /></td>
+                        </tr>
+                        <tr>
+                            <th>兴趣爱好</th>
+                            <td><input name='hobby' class="text w-37" type="text" value="{$user['hobby']}" /></td>
+                        </tr>
+                        <tr>
+                            <th valign="top">简介</th>
+                            <td><textarea class="w-37 h-11" name='info' >{$user['info']}</textarea></td>
+                        </tr>
+                        <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                        <tr>
+                            <th></th>
+                            <td><input class="btn btn-submit-1" type="button" id='set_sub' value="完成" /></td>
+                        </tr>
+                    </table>
+                </form>
+                </div>
+        <!--修改头像-->
+        <div class="pt-3 qh_sh" style="display:none">
+         <dl class="file_box clearfix">
+          <dt class="left"><img src="{$user['header']}" width="200" height="200" /></dt>
+          <dd class="left ml-3">
+           <form id='header_form' action="__GROUP__/My/headerEdit" enctype="multipart/form-data" method="post">
+            <input type="file" name="header" id="sub_file" style="display:none" />
+            <input type="button" name="sub_moni" id="sub_moni" value="选择图片" />
+            <p class="mt-1-5">支持jpg、jpeg、gif、png格式的图片，不超过2M建议图片尺寸大于200×200</p>
+            <input type="button" class="sub_mit_file mt-1-5" id="form_img" value="完成" />
+           </form>
+          </dd>
+         </dl>
+        </div>
+        <!--修改头像 over-->
+        <!--修改密码-->
+        <div class="table-main-2 form-main-2 pt-3 qh_sh" style="display:none">
+         <form id='pass_form'>
+        	<table>
+                <tr>
+                	<th width="60"><span style='color:red'>*</span>旧密码</th>
+                    <td><input class="text w-37" type="password" name='oldpassword' id='oldpassword'/><span style='color:red' id='oldpassword_msg'></span></td>
+                </tr>
+                <tr>
+                	<th><span style='color:red'>*</span>新密码</th>
+                    <td><input class="text w-37" type="password" name='password' id='password'/><span style='color:red' id='password_msg'></span></td>
+                </tr>
+                <tr>
+                	<th><span style='color:red'>*</span>重复密码</th>
+                    <td><input class="text w-37" type="password" name='repassword' id='repassword' /><span style='color:red' id='repassword_msg'></span></td>
+                </tr>
+                <tr>
+                	<th></th>
+                    <td><input class="btn btn-submit-1" type="button" id='pass_sub' value="完成" /></td>
+                </tr>
+            </table>
+        </form>
+        </div>
+        <!--修改密码 over-->
+        <div class="table-main-2 form-main-2 pt-3 qh_sh" style="display:none">
+        <if condition="($user['designer'] eq 0)">您当前的状态：【未认证设计师】，以下请填写真实的资料
+        <elseif condition="($user['designer'] eq 3)"/>您当前的状态：【申请认证未处理】，请耐心等待管理员的处理结果
+        <elseif condition="($user['designer'] eq 2)"/>您当前的状态：【申请认证未通过】，请确认并重新提交资料
+        </if>
+        <form id='designer_apply_form' action="__GROUP__/My/designerApply" enctype="multipart/form-data" method="post">
+        	<table>
+                <tr>
+                	<th width="110"><span>*</span>手机号</th>
+                    <td><input class="text w-37" type="text" name='mobile' value="{$user['mobile']}" <if condition="($user['designer'] eq 3)">disabled</if> /></td>
+                </tr>
+                <tr class="color_red_display">
+                	<th></th>
+                    <td>请输入正确的手机号</td>
+                </tr>
+                <tr>
+                	<th><span>*</span>身份证号</th>
+                    <td><input class="text w-37" type="text" name='idnum' value="{$user['idnum']}" <if condition="($user['designer'] eq 3)">disabled</if> /></td>
+                </tr>
+                <tr class="color_red_display">
+                	<th></th>
+                    <td>请输入你的身份证，检查是否符合正确格式</td>
+                </tr>
+                <tr>
+                	<th><span>*</span>手持身份证半身照</th>
+                    <td>
+                     <div class="file_idcard_box"><img src="{$user['idcard']}" height="200" width="376"></div>
+                     <input type="file" class="file_idcard" style="display:none" name='idcard' id='idcard' <if condition="($user['designer'] eq 3)">disabled</if> />
+                    </td>
+                </tr>
+                <tr class="color_red_display">
+                	<th></th>
+                    <td>请上传你的手持身份证半身照</td>
+                </tr>
+                <tr>
+                	<th><span>*</span>绑定银行卡号</th>
+                    <td><input class="text w-37" type="text" name='bankcard' value="{$user['bankcard']}" <if condition="($user['designer'] eq 3)">disabled</if> /></td>
+                </tr>
+                <tr class="color_red_display">
+                	<th></th>
+                    <td>请绑定你的银行卡</td>
+                </tr>
+                <tr>
+                	<th></th>
+                    <td>
+                    <input type="hidden" name='act' value='114'/>
+                    <if condition="($user['designer'] neq 3)">
+                    <input class="btn btn-submit-1" type="button" id='designer_apply_sub' value="完成" /></td>
+                    </if>
+                </tr>
+            </table>
+        </form>
+        </div>
+    </div></div>
+<!---->
+</div>
+<include file='Public:footer' />
+<script src="__STATICS__/js/check.js"></script>
+<script>
+var flag = 0;
+var error_pass = [];
+error_pass['repassword'] = false;
+error_pass['password'] = false;
+error_pass['repassword'] = false;
+
+function ajaxCity(act,json){
+	
+	$.ajax({
+		type:'post',
+		url:'__GROUP__/City/citySelect',
+		async:false,
+		data:{'data':json,'act':act},
+		success:function(r){
+			$("#"+act).append(r);
+			}
+		});
+}
+function remove(obj){
+	if(obj.attr('id') == 'province'){
+		$("#city").remove();
+		$("#county").remove();
+	}else if(obj.attr('id') == 'city'){
+		$("#county").remove();	
+	}
+}
+
+$(function(){
+	if($("#sheng").val() == 0 && $("#shi").val() == 0 && $("#qu").val() == 0){
+		ajaxCity('zh');
+	}
+	if($("#sheng").val()>0){
+		ajaxCity('zh',{ 'level':1,'pid':0,'default':$('#sheng').val() });
+	}
+	if($("#shi").val()>0){
+		ajaxCity('zh',{ 'level':2,'pid':$('#sheng').val(),'default':$('#shi').val() });
+	}
+	if($("#qu").val()>0){
+		ajaxCity('zh',{ 'level':3,'pid':$('#shi').val(),'default':$('#qu').val() });
+	}
+
+	$('#set_sub').bind('click',function(){
+		actRequest($("#set_form").serialize(), '0207');
+	});
+	
+	$('#form_img').bind('click',function(){
+		$("#header_form").submit();
+	});
+	
+	$('#oldpassword').bind('blur',function(){
+		if(isEmpty($(this).val())) return;
+		flag = 0;
+		actRequest('oldpassword='+$(this).val(), '108');
+		if(flag == 1){
+			$('#oldpassword_msg').html('密码错误');
+			error_pass['oldpassword'] = false;
+			return;
+		}
+		$('#oldpassword_msg').html('');
+		error_pass['oldpassword'] = true;
+	});
+	
+	$('#password').bind('blur',function(){
+		if(!checkPass($(this).val())){
+			$('#password_msg').html('密码名由6~16位字母、数字或下划线组成');
+			error_pass['password'] = false;
+			return;
+		}
+		$('#password_msg').html('');
+		error_pass['password'] = true;
+		
+		if($(this).val() == $('#oldpassword').val()){
+			$('#password_msg').html('新密码不能与旧密码相同');
+			error_pass['password'] = false;
+			return;
+		}
+		$('#password_msg').html('');
+		error_pass['password'] = true;
+
+	});
+	$('#repassword').bind('blur',function(){
+		if($(this).val() != $('#password').val()){
+			$('#repassword_msg').html('两次密码不一致');
+			error_pass['repassword'] = false;
+			return;
+		}
+		$('#repassword_msg').html('');
+		error_pass['repassword'] = true;
+	});
+});
+
+$('#pass_sub').bind('click',function(){
+	for(i in error_pass){
+		if(error_pass[i] == false){
+			alert('请确认*项填写无误');
+			return false;
+		}
+	}
+	actRequest($("#pass_form").serialize(), '0205');
+});
+
+$('#designer_apply_sub').bind('click',function(){
+	$("#designer_apply_form").submit();
+});
+
+ $(".designer-tab a").click(function(){
+	  var qh_a_index=$(this).index();
+	  $(this).addClass("current").siblings("a").removeClass("current");
+	  $(".qh_sh").eq(qh_a_index).show().siblings(".qh_sh").hide();
+	 });
+ 
+ $("#sub_moni").click(function(){
+	  $("#sub_file").click();
+	 });
+ 
+ var tag ="{$tag}";
+ $(".designer-tab").find("a").eq(tag).click();
+ 
+ $(".designer-tab a").click(function(){
+	  var qh_a_index=$(this).index();
+	  $(this).addClass("current").siblings("a").removeClass("current");
+	  $(".qh_sh").eq(qh_a_index).stop(true,true).fadeIn().siblings(".qh_sh").hide();
+	 });
+
+ $(".file_idcard_box").click(function(){
+	  $(".file_idcard").click();
+	 });
+ 
+</script>

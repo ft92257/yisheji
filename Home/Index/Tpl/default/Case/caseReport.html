@@ -1,0 +1,46 @@
+<include file="Public:header" />
+    <div id="pbody"><div class="extra pt-3 pb-6">
+        <div class="t-3 pb-1-5">
+        	<h3>信息举报</h3>
+        </div>
+        <div class="designer-tab">
+            <a class="current" href="javascript:void(0)">基本资料<i></i></a>
+        </div>
+        <div class="table-main-2 form-main-2 pt-3 qh_sh">
+        <form id='case_report_form'>
+        <input type='hidden' value='{$target}' name='target'/>
+        	<table>
+                <tr>
+                	<th width="60">联系人</th>
+                    <td><input class="text w-37" type="text" name='name' id='name' /></td>
+                </tr>
+                <tr>
+                	<th>联系电话</th>
+                    <td><input class="text w-37" type="text" name='telephone' id='telephone'/></td>
+                </tr>
+                <tr>
+                	<th>举报链接</th>
+                    <td><input class="text w-37" type="text" name='url' id='url' /></td>
+                </tr>
+                <tr>
+                	<th valign="top">理由</th>
+                    <td><textarea class="w-37 h-11"  name="reason" id="reason"></textarea></td>
+                </tr>
+                <tr>
+                	<th></th>
+                    <td><input class="btn btn-submit-1" type="button" id='case_report_sub' value="完成" /></td>
+                </tr>
+            </table>
+        </form>
+        </div>
+    </div></div>
+<!---->
+</div>
+<include file="Public:footer" />
+<script>
+$(function(){
+	$("#case_report_sub").bind('click', function(){
+		actRequest($('#case_report_form').serialize(), '2105');
+	});
+});
+</script>

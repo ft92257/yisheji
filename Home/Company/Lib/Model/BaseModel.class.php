@@ -6,6 +6,9 @@ class BaseModel extends Model {
 	public $oApp;
 	public $oCom;//公司信息
 	public $oUser;//用户信息
+	private static $soRedis = null;//redis实例
+	protected $useRedis = false;//是否使用redis
+	protected $addbase = true;//添加默认查询条件
 	
 	//选项配置数组
 	protected $aOptions = array(
@@ -60,15 +63,28 @@ class BaseModel extends Model {
 	
 	/*
 	 * 根据id获取数组数据
-	 * @return array 
-	 */
+	* @return array
+	*/
 	public function getById($id, $pk = 'id') {
 		$id = (int) $id;
 		if ($id <= 0) {
 			return array();
 		}
+
+		$redis = $this->getRedis();
+		if ($redis === null) {
+			return $this->where(array($pk => $id))->find();
+		}
 		
-		return $this->where(array($pk => $id))->find();
+		$key = $this->trueTableName . ':' . $id;
+		if (!$redis->exists($key)) {
+			$data = $this->where(array($pk => $id))->find();
+			$redis->hmset($key, $data);
+			
+			return $data;
+		} else {
+			return $redis->hgetall($key);
+		}
 	}
 	
 	/*
@@ -167,7 +183,11 @@ class BaseModel extends Model {
 				'id >|uid <' => array(1,2),//or条件
 				);
 	 */
-	public function w($where = array(), $addbase = true) {
+	public function w($where = array(), $addbase = null) {
+		if ($addbase === null) {
+			$addbase = $this->addbase;
+		}
+		
 		if (!is_array($where)) {
 			return parent::where($where);
 		}
@@ -248,7 +268,7 @@ class BaseModel extends Model {
 	 * 查询条件，添加基础字段
 	 */
 	public function where($condition, $parse=null) {
-		if (is_array($condition)) {
+		if (is_array($condition) && $this->addbase) {
 			$base = array(
 					'status' => 0,
 					'appid' => $this->oApp->id,
@@ -297,7 +317,9 @@ class BaseModel extends Model {
 		foreach ($this->formConfig as $field => $aValue) {
 			switch ($aValue[1]) {
 				case 'checkbox':
-					$data[$field] = join(',', $data[$field]);
+					if (!empty($data[$field])) {
+						$data[$field] = join(',', $data[$field]);
+					}
 					break;
 				case 'file':
 					$aConfig = isset($aValue[3]['thumbs']) ? array('thumbs' => $aValue[3]['thumbs']) : array();
@@ -323,7 +345,7 @@ class BaseModel extends Model {
 				default:
 					break;
 			}
-			if (is_array($aValue[2]) && in_array('once', $aValue[2]) && $oldData[$field]) {
+			if (isset($aValue[2]) && is_array($aValue[2]) && in_array('once', $aValue[2]) && $oldData[$field]) {
 				$data[$field] = $oldData[$field];
 			}
 		}
@@ -440,7 +462,8 @@ class BaseModel extends Model {
 		$br = '';//单选项每项一行 radio
 		$all = '';//选择框请选择 select
 		$once = '';//值为空才允许编辑 text,textarea
-		if (is_array($aValue[2])) {
+		$multiple = '';
+		if (isset($aValue[2]) && is_array($aValue[2])) {
 			foreach ($aValue[2] as $operate) {
 				switch ($operate) {
 					case 'long':
@@ -467,7 +490,7 @@ class BaseModel extends Model {
 				}
 			}
 		} else {
-			$explain = $aValue[2];
+			$explain = isset($aValue[2]) ? $aValue[2] : '';
 		}
 		
 		switch ($aValue[1]) {
@@ -824,12 +847,63 @@ class BaseModel extends Model {
 			$urlbase = __URL__;
 			$href = substr($href, 7);
 		} else {
-			$urlbase = __GROUP__;
+			$urlbase = __APP__ ;
 		}
 		_replaceValue($href, $aValue);
 		_replaceValue($href, $vars, '[', ']');
 	
 		return $urlbase.$href;
+	}
+	
+	/*
+	 * 获取redis单一实例
+	 */
+	public function getRedis() {
+		if (!C('REDIS_OPEN') || !$this->useRedis || !class_exists('Redis', false)) {
+			return null;	
+		}
+		
+		if (self::$soRedis === null) {
+			$redis = new Redis();
+			$redis->connect('127.0.0.1', 6379);
+			
+			self::$soRedis = $redis;
+		}
+		
+		return self::$soRedis;
+	}
+	
+	/*
+	 * 更新redis缓存
+	 */
+	protected function _after_update($data,$options) {
+		$this->updateRedisCache($data, $options);
+	}
+	
+	protected function updateRedisCache($data, $options, $ret = null) {
+		$redis = $this->getRedis();
+		if ($redis !== null) {
+			if (isset($data['status']) && $data['status'] == -2) {
+				//删除操作
+				$id = $options['where']['id'];
+				if ($id) {
+					$key = $this->trueTableName . ':' . $id;
+					$redis->del($key);
+				}
+			} else {
+				if ($ret === null) {
+					$this->options = $options;
+					$ret = $this->select();
+				}
+				
+				foreach ($ret as $aValue) {
+					$key = $this->trueTableName . ':' . $aValue['id'];
+					if ($redis->exists($key)) {
+						$redis->hmset($key, $aValue);
+					}
+				}
+			}
+		}
 	}
 }
 ?>

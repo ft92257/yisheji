@@ -1,3 +1,5 @@
 config.inc.php
 data
 Home/Company/Runtime
+Home/Index/Runtime
+Home/Admin/Runtime

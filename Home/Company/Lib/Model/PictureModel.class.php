@@ -84,5 +84,6 @@ class PictureModel extends BaseModel {
 		}
 		return $url;
 	}
+	
 }
 ?>

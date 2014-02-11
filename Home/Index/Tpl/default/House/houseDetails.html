@@ -1,0 +1,118 @@
+<include file="Public:header" />
+    <style type="text/css">
+ .wl_a a{ color:#395978; font-weight:bold}
+ .wl_a p{ background:url(__STATICS__/images/2014-01-13_142651.png) left top no-repeat; padding-left:20px}
+</style>
+    <div id="pbody"><div class="extra pb-6 pt-2-5">
+    	<div class="t-1">
+        	<h2>{$houseInfo['name']}</h2>
+        </div>
+        <div class="w-74">
+        	<div class="model-house-pic j_galleryParent">
+            	<div class="thumb">
+                	<a class="prev"><i class="ico ico-46"></i></a>
+                    <div class="scroll j_scrollSize" data-meta="{size:5}">
+                    	<div class="items j_gallery">
+                    	<foreach name='houseInfo[picture]' item='vo' >
+                        	<a data-meta="{ pic:'{$vo[fid_img]}'}"><img src="{$vo[fid_img]}" alt="" /></a>
+                         </foreach>  
+                        </div>
+                    </div>
+                    <a class="next"><i class="ico ico-47"></i></a>
+                </div>
+                <div class="bigpic">
+                	<div class="pic j_galleryCnt"></div>
+                </div>
+            </div>
+             <div class="mt-1 clearfix wl_a"><p class="f-r"><a href="{$houseInfo[jl_jump]}">点击查看该样板房施工流程</a></p></div>
+            <div class="t-5 pt-2-5 pb-1">
+            	<h3>项目预算</h3>
+            </div>
+            <div class="model-house-table-1">
+            	<table width="100%">
+                	<tr>
+                    	<td>合同金额：<span class="money">¥{$houseInfo['contract_amount']}</span></td>
+                        <th rowspan="3" width="20">主<br />材<br />费<br />用</th>
+                        <td>{$houseInfo['material']['0']}</td>
+                        <td>{$houseInfo['material']['1']}</td>
+                    </tr>
+                    <tr>
+                    	<td>设计费用：<span class="money">¥{$houseInfo['design_fee']}</span></td>
+                        <td>{$houseInfo['material']['2']}</td>
+                        <td>{$houseInfo['material']['3']}</td>
+                    </tr>
+                    <tr>
+                    	<td>软装费用：<span class="money">¥{$houseInfo['cost']}</span></td>
+                        <td>{$houseInfo['material']['4']}</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="t-5 pt-2-5 pb-1">
+            	<h3>项目反馈</h3>
+            </div>
+            <div class="model-house-table-2">
+            	<table width="100%">
+                	<thead>
+                    	<tr>
+                        	<th width="60"></th>
+                            <th>业主</th>
+                            <th>设计师</th>
+                            <th>施工队</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    	<tr>
+                        	<th>最好<br />的地方</th>
+                            <td>{$houseInfo['owner_interview']['a1']}</td>
+                            <td>{$houseInfo['designer_interview']['a1']}</td>
+                            <td>{$houseInfo['cons_interview']['a1']}</td>
+                        </tr>
+                        <tr>
+                        	<th>最差<br />的地方</th>
+                            <td>{$houseInfo['owner_interview']['a2']}</td>
+                            <td>{$houseInfo['designer_interview']['a2']}</td>
+                            <td>{$houseInfo['cons_interview']['a2']}</td>
+                        </tr>
+                        <tr>
+                        	<th>该改善<br />的地方</th>
+                            <td>{$houseInfo['owner_interview']['a3']}</td>
+                            <td>{$houseInfo['designer_interview']['a3']}</td>
+                            <td>{$houseInfo['cons_interview']['a3']}</td>
+                        </tr>
+                        <tr>
+                        	<th>个人<br />心得</th>
+                            <td>{$houseInfo['owner_interview']['a4']}</td>
+                            <td>{$houseInfo['designer_interview']['a4']}</td>
+                            <td>{$houseInfo['cons_interview']['a4']}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="t-5 pt-2-5 pb-1">
+            	<h3>评论该样板房</h3>
+            </div>
+            <div class="comment-1 model-house-comment">
+                <include file="Public:speakForm1" />
+                <include file="Active:activeDetailsComment" />
+            </div>
+        </div>
+        <div class="w-24 r">
+        	<div class="active-add-exp">
+            	<div class="t">推荐预约的理由1：</div>
+                <p>1.有能最终确定的活动起止日期</p>
+                <p>2.具备现实中能集体参与的活动地点</p>
+                <p>3.是多人在现实中能碰面的活动</p>
+            	<div class="t pt-2">推荐预约的理由2：</div>
+                <p>1.标题简单明了</p>
+                <p>2.活动内容和特点介绍详细</p>
+                <p>3.活动海报吸引人眼球</p>
+            	<div class="t pt-4">推荐预约的理由3：</div>
+                <p>我们为优秀的活动争取商家赞助</p>
+                <div class="pt-3 pl-2 pb-1 clearfix"><a class="btn btn-4" href="#">申请成为样板房</a></div>
+            </div>
+        </div>
+    </div></div>
+<!---->
+</div>
+<include file="Public:footer" />

@@ -1,0 +1,26 @@
+<include file="Public:header" />
+    <div id="pbody"><div class="extra pt-3 pb-6">
+        <div class="t-3 pb-1-5">
+        	<h3>我的私信</h3>
+        </div>
+        <div class="list-comment-1 center-message">
+            <ul>
+            <foreach name='letterList' item='vo'>
+                <li><div class="pic"><a href="#"><img src="{$vo['header']}" alt="" /></a></div>
+                    <div class="l">
+                        <div class="t"><a href="#">{$vo['name_zh']} </a>发送给我：</div>
+                        <div class="cnt-article clearfix">
+                            <p>{$vo['content']}</p>
+                        </div>
+                    </div>
+                    <div class="r">
+                        <div class="time">{$vo['time_zh']}</div>
+                        <a href="__GROUP__/My/myLetterDetails/id/{$vo['sender']}">共{$vo['total']}条对话</a>|<a href="__GROUP__/My/myLetterDetails/id/{$vo['sender']}">回复</a>|<a href="javascript:void(0)" data-sender="{$vo['sender']}" data-recipient="{$vo['recipient']}">删除</a>
+                    </div>
+                </li>
+             </foreach>  
+            </ul>
+        </div>
+    </div></div>
+</div>
+<include file="Public:footer" />

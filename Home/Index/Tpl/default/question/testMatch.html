@@ -1,0 +1,31 @@
+<include file="Public:header2" />
+    <div id="pbody" class="pt-3-5 pb-6">
+    	<div class="row-2"><div class="extra">
+        	<div class="test-step clearfix">
+            	<div class="l">1. 检测  >  <span>2. 匹配</span></div>
+            </div>
+            <div class="t-1 pt-2">
+            	<h3>根据你的试题检测，易设计为你推荐以下设计师</h3>
+            </div>
+            <div class="list-match pb-6 mt--0-5">
+            	<ul>
+            	<foreach name='designerList' item='vo'>
+                	<li>
+                    	<div class="pic">
+                        	<a href="#"><img src="{$vo['header']}" alt="" /></a>
+                        </div>
+                        <div class="info">
+                        	<div class="t"><strong>{$vo['name_zh']}</strong><div class="star">{$vo.star_html}</div></div>
+                            <p>{$vo.service_area}/ {$vo.housetype_zh}设计</p>
+                            <p>{$vo['info']}</p>
+                            <p class="intro">设计专长：{$vo.decoration_type_zh}</p>
+                            <a class="btn btn-4" href="#"><i class="ico ico-16"></i><span>立即预约</span></a>
+                        </div>
+                    </li>
+                 </foreach>  
+                </ul>
+            </div>
+        </div></div>
+    </div>
+</div>
+<include file="Public:footer" />

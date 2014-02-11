@@ -181,3 +181,23 @@ function autoUpdate(obj, url) {
 		}
 	});
 }
+
+/*
+ * 控制下一级是否显示
+ */
+function selectTarget(field, index) {
+	var s = "[name='"+field+"']";
+	var obj = $(s).parent().parent().next();
+	$(s).change(function(){
+		if ($(this).val() == index) {
+			obj.show();
+		} else {
+			obj.hide();
+		}
+	});
+	if ($(s).val() == index) {
+		obj.show();
+	} else {
+		obj.hide();
+	}
+}

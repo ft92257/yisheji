@@ -1,0 +1,14 @@
+<div class="t-2 pt-2">
+            	<h3><i class="ico ico-19"></i>热门案例</h3>
+                <div class="hr-1"><span></span></div>
+            </div>
+            <div class="list-decoration-1 pt-1">
+            	<ul>
+                <foreach name='hot_case' item='vo'>
+                	<li><a href="__GROUP__/Case/caseDetails/id/{$vo['id']}"><img src="{$vo['focus_img']}" alt="{$vo['name']}" />
+                    		<p>{$vo['name']}</p>
+                    	</a>
+                    </li>
+                </foreach>    
+                </ul>
+            </div>
