@@ -1,18 +1,18 @@
 <?php 
 
 /**
- * 	案例
+ * 	举报信息
  */
-class CaseAction extends BaseAction {
+class ReportAction extends BaseAction {
 	
 	public function __construct() {
 		parent::__construct();
 	
-		$this->model = D('Case');
+		$this->model = D('Report');
 	}
 	
 	/*
-	 * 列表
+	 * 举报列表
 	 */
 	public function index(){
 		$params = array(

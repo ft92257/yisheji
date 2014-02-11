@@ -54,7 +54,24 @@ class UserAction extends BaseAction {
 		unset($_SESSION['admin_user']);
 		$this->success('退出成功！');
 	}
-	
-	
+	public function index() {
+			//dump($_SERVER);die;
+			//echo U('Case');die;
+		$params = array(
+			'order' => 'createtime DESC',
+		);
+		if(getRequest('type')){
+			$params['where'] = array('type'=>getRequest('type')) ;
+		}
+
+		$this->_getPageList($params);
+	}
+		/*
+	 * 审核
+	 */
+	public function audit() {
+		$this->_audit();
+	}
+		
 }
 ?>
