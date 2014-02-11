@@ -913,3 +913,9 @@ footer .nav_site nav{ margin-left:-10px; cursor:default;}
 
 #sub_moni{ background-image:url(../images/btn.png); background-position:-351px -374px; width:80px; height:30px; border:0 none; cursor:pointer; color:#FFF}
  #sub_moni:focus{ outline:none}
+
+.layerTable{ width:400px}
+ .layerTable .pLeft{ padding-left:20px}
+ .layerTable .zT{ text-align:left; width:200px}
+ .layerTable .cred{ font-size:60px; color:#F00; font-weight:bold;}
+ .layerTable p{ font-size:14px; line-height:20px; color:#999}

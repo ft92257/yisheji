@@ -60,9 +60,9 @@
                     <div class="curr"><span></span></div>
                     <div class="show">
                         <ul>
-                        	<li selected="selected"><a>按类型</a></li>
+                        	<li <empty name="search['list_decoration_type']"> selected="selected"  </empty> ><a>按类型</a></li>
                             <foreach name="{decoration_type}" item="vo" key="i">
-                            <li val="{$i}"><a>{$vo}</a></li>
+                            <li val="{$i}" <if condition="($search['list_decoration_type'] eq $i)"> selected="selected" </if> > <a>{$vo}</a></li>
                             </foreach>
                         </ul>
                     </div>
@@ -71,9 +71,9 @@
                     <div class="curr"><span></span></div>
                     <div class="show">
                         <ul>
-                        	<li selected="selected"><a>按风格</a></li>
+                        	<li <empty name="search['list_style']"> selected="selected"  </empty> ><a>按风格</a></li>
                             <foreach name="{style}" item="vo" key="i">
-                            <li val="{$i}"><a>{$vo}</a></li>
+                            <li val="{$i}" <if condition="($search['list_style'] eq $i)"> selected="selected" </if> ><a>{$vo}</a></li>
                             </foreach>
                         </ul>
                     </div>
@@ -82,9 +82,9 @@
                     <div class="curr"><span></span></div>
                     <div class="show">
                         <ul>
-                            <li selected="selected"><a>按人气</a></li>
-                            <li val="1"><a>降序</a></li>
-                            <li val="2"><a>升序</a></li>
+                            <li <empty name="search['list_collect_count']"> selected="selected"  </empty> ><a>按人气</a></li>
+	                            <li val="1" <if condition="($search['list_collect_count'] eq 1)"> selected="selected" </if> ><a>降序</a></li>
+	                            <li val="2" <if condition="($search['list_collect_count'] eq 2)"> selected="selected" </if> ><a>升序</a></li>
                         </ul>
                     </div>
                 </div>
@@ -92,9 +92,9 @@
                     <div class="curr"><span></span></div>
                     <div class="show">
                         <ul>
-                            <li selected="selected"><a>按时间</a></li>
-                            <li val="1"><a>降序</a></li>
-                            <li val="2"><a>升序</a></li>
+                            <li <empty name="search['list_createtime']"> selected="selected"  </empty> ><a>按人气</a></li>
+	                            <li val="1" <if condition="($search['list_createtime'] eq 1)"> selected="selected" </if> ><a>降序</a></li>
+	                            <li val="2" <if condition="($search['list_createtime'] eq 2)"> selected="selected" </if> ><a>升序</a></li>
                         </ul>
                     </div>
                 </div>

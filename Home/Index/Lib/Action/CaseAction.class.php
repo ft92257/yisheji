@@ -15,6 +15,7 @@ class CaseAction extends BaseAction{
 		$this->assign('caseList', $data['list']);
 		$this->assign('casePage', $data['page']);
 		
+		$this->assign('search', $this->para);
 		$this->display();
 	}
 	
