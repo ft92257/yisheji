@@ -40,7 +40,9 @@ class CollectAction extends BaseAction {
 				'title' => $res['title'] ? $res['title'] : $res['name'],
 				'pic' => $res['focus']
 		);
+		$this->resultFormat(null, 0, '111');
 		$res = $this->model->insert($data);
+		$this->resultFormat(null, 0, $this->model->getLastSql());
 		$res != false ? $this->resultFormat(null, 1) : $this->resultFormat(null, 0, $this->model->getLastSql()); 
 	}
 }
