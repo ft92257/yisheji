@@ -129,6 +129,7 @@ $(function(){
 			}
 		});
 		if(thumb.filter('.current').length > 0){
+			alert('ttt');
 			thumb.filter('.current').trigger('click');	
 		}else{
 			thumb.first().trigger('click');	
