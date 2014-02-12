@@ -46,8 +46,8 @@ class CompanyAction extends BaseAction {
 		    		$this->error('两次密码输入不一致');
 		    	}
 			}
-			$id  = D('User')->data(array('account'=>getRequest('account')))->add();
-			$res = $this->model->data(array('name'=>getRequest('name'),'uid'=>$id,'type'=>1))->add();
+			$id  = D('User')->data(array('account'=>getRequest('account'),'type'=>3,'appid'=>1))->add();
+			$res = $this->model->data(array('name'=>getRequest('name'),'uid'=>$id,'type'=>1,'appid'=>1))->add();
 			if($res !== false){
 				$this->success('添加成功');
 			}else{

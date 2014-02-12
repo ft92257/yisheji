@@ -72,7 +72,7 @@
 	  	selectNav('left_nav', 'current');
 	  </script>
 <div class="right">
-	<h2>题目管理</h2>
+	<h2>添加公司</h2>
 	<div class="b frame">
 		<h3>填写基本信息</h3>
 
