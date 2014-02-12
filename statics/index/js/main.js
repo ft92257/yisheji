@@ -28,6 +28,7 @@ $(function(){
 		});
 		tab.first().trigger('click');
     });
+	
 //滑动
 	$('.j_scrollSize').each(function() {
         var data=$(this).metadata();
@@ -48,10 +49,13 @@ $(function(){
 				if(data.cycle == 'true'){
 					cycle=true;	
 				}
-				$(this).scrollable({size:data.size,vertical:direction,circular:true});
-			}	
+				if ($(this).parent().css('display') != 'none') {
+					$(this).scrollable({size:data.size,vertical:direction,circular:true});
+				}
+			}
 		}
     });
+	
 	$('.j_scrollPage').each(function(){
 		var itemsSize=$(this).parent().find('.items').children().length - 2,
 			itemsIndex=1,
@@ -160,5 +164,4 @@ $(function(){
       closeOnClick:false,
 	  top:'center'
 	});
-	
 });
