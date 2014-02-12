@@ -248,3 +248,872 @@ INFO: [ view_end ] --START--
 INFO: Run ShowPageTrace Behavior [ RunTime:0.001339s ]
 INFO: [ view_end ] --END-- [ RunTime:0.001423s ]
 
+[ 2014-02-11T11:59:42+08:00 ] 180.154.12.246 /admin.php?s=/Index/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.003339s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003559s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002479s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.003016s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003170s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title D:\AppServ\yisheji\Home\Admin\Runtime\Cache\cb7f02cbf2d2ad775e98357ae17eb05e.php 第 11 行.
+NOTIC: [8] Undefined variable: com D:\AppServ\yisheji\Home\Admin\Runtime\Cache\cb7f02cbf2d2ad775e98357ae17eb05e.php 第 79 行.
+NOTIC: [8] Undefined variable: com D:\AppServ\yisheji\Home\Admin\Runtime\Cache\cb7f02cbf2d2ad775e98357ae17eb05e.php 第 80 行.
+NOTIC: [8] Undefined variable: num D:\AppServ\yisheji\Home\Admin\Runtime\Cache\cb7f02cbf2d2ad775e98357ae17eb05e.php 第 87 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.033714s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034007s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001977s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001889s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001621s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.002036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007968s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.002373s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002539s ]
+
+[ 2014-02-11T11:59:44+08:00 ] 180.154.12.246 /admin.php?s=/Company/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002789s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002977s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002235s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.002401s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000613s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `appid` = 1 ) ORDER BY createtime DESC LIMIT 0,10   [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `tb_file` [ RunTime:0.002421s ]
+SQL: SELECT * FROM `tb_file` WHERE ( `appid` = 1 ) AND ( `id` = 54 ) LIMIT 1   [ RunTime:0.000637s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.003636s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003837s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title D:\AppServ\yisheji\Home\Admin\Runtime\Cache\1aef20e5ea148302519f294cb2845321.php 第 11 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.030594s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030747s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001986s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.002136s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001660s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.002117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008319s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.002489s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002645s ]
+
+[ 2014-02-11T11:59:46+08:00 ] 180.154.12.246 /admin.php?s=/User/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.003002s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003160s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002520s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.005633s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_user` WHERE ( `appid` = 1 ) LIMIT 1   [ RunTime:0.004689s ]
+SQL: SELECT * FROM `tb_user` WHERE ( `appid` = 1 ) ORDER BY createtime DESC LIMIT 0,10   [ RunTime:0.001572s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.005314s ]
+INFO: [ view_template ] --END-- [ RunTime:0.005608s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title D:\AppServ\yisheji\Home\Admin\Runtime\Cache\f8a160c5f2f8255a2fc1fdc13ff4e110.php 第 11 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.036965s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037197s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.002321s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.003672s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001527s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.004901s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012952s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.002098s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002240s ]
+
+[ 2014-02-11T12:00:25+08:00 ] 180.154.12.246 /admin.php?s=/User/index/type/3
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.006255s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006712s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.004184s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004533s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002833s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_user` WHERE ( `appid` = 1 ) AND ( `type` = 3 ) LIMIT 1   [ RunTime:0.000665s ]
+SQL: SELECT * FROM `tb_user` WHERE ( `appid` = 1 ) AND ( `type` = 3 ) ORDER BY createtime DESC LIMIT 0,10   [ RunTime:0.000835s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.004828s ]
+INFO: [ view_template ] --END-- [ RunTime:0.005161s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title D:\AppServ\yisheji\Home\Admin\Runtime\Cache\f8a160c5f2f8255a2fc1fdc13ff4e110.php 第 11 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.043716s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044010s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.002501s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001667s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.002052s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.003540s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010599s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.003194s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003468s ]
+
+[ 2014-02-11T12:00:41+08:00 ] 180.154.12.246 /admin.php?s=/User/index/type/3
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001731s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001899s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001784s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002138s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_user` WHERE ( `appid` = 1 ) AND ( `type` = 3 ) LIMIT 1   [ RunTime:0.000640s ]
+SQL: SELECT * FROM `tb_user` WHERE ( `appid` = 1 ) AND ( `type` = 3 ) ORDER BY createtime DESC LIMIT 0,10   [ RunTime:0.000815s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.003283s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003470s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title D:\AppServ\yisheji\Home\Admin\Runtime\Cache\f8a160c5f2f8255a2fc1fdc13ff4e110.php 第 11 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.026938s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027134s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001593s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001514s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001320s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001657s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006534s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001961s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002101s ]
+
+[ 2014-02-11T12:00:43+08:00 ] 180.154.12.246 /admin.php?s=/User/index/type/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.003368s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003603s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002333s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002971s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_user` WHERE ( `appid` = 1 ) AND ( `type` = 2 ) LIMIT 1   [ RunTime:0.000706s ]
+SQL: SELECT * FROM `tb_user` WHERE ( `appid` = 1 ) AND ( `type` = 2 ) ORDER BY createtime DESC LIMIT 0,10   [ RunTime:0.000681s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002395s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002516s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title D:\AppServ\yisheji\Home\Admin\Runtime\Cache\f8a160c5f2f8255a2fc1fdc13ff4e110.php 第 11 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.025070s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025240s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001800s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.002025s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.002517s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.003552s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010630s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.005008s ]
+INFO: [ view_end ] --END-- [ RunTime:0.005297s ]
+
+[ 2014-02-11T12:00:45+08:00 ] 180.154.12.246 /admin.php?s=/User/index/type/3
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002593s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002830s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003460s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.004005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_user` WHERE ( `appid` = 1 ) AND ( `type` = 3 ) LIMIT 1   [ RunTime:0.000659s ]
+SQL: SELECT * FROM `tb_user` WHERE ( `appid` = 1 ) AND ( `type` = 3 ) ORDER BY createtime DESC LIMIT 0,10   [ RunTime:0.000677s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002851s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003005s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title D:\AppServ\yisheji\Home\Admin\Runtime\Cache\f8a160c5f2f8255a2fc1fdc13ff4e110.php 第 11 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.026391s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026550s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001859s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001610s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001700s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.002872s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008647s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.002055s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002227s ]
+
+[ 2014-02-11T12:01:22+08:00 ] 180.154.12.246 /admin.php?s=/User/index/type/3
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.003053s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003322s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002324s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002841s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_user` WHERE ( `appid` = 1 ) AND ( `type` = 3 ) LIMIT 1   [ RunTime:0.000884s ]
+SQL: SELECT * FROM `tb_user` WHERE ( `appid` = 1 ) AND ( `type` = 3 ) ORDER BY createtime DESC LIMIT 0,10   [ RunTime:0.003381s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.009185s ]
+INFO: [ view_template ] --END-- [ RunTime:0.009417s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title D:\AppServ\yisheji\Home\Admin\Runtime\Cache\f8a160c5f2f8255a2fc1fdc13ff4e110.php 第 11 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.041188s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041406s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.004724s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.002163s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.003539s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.003040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014986s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.003573s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003897s ]
+
+[ 2014-02-11T12:01:23+08:00 ] 180.154.12.246 /admin.php?s=/User/index/type/3
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001176s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001328s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001597s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002392s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_user` WHERE ( `appid` = 1 ) AND ( `type` = 3 ) LIMIT 1   [ RunTime:0.000955s ]
+SQL: SELECT * FROM `tb_user` WHERE ( `appid` = 1 ) AND ( `type` = 3 ) ORDER BY createtime DESC LIMIT 0,10   [ RunTime:0.000806s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.003785s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003911s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title D:\AppServ\yisheji\Home\Admin\Runtime\Cache\f8a160c5f2f8255a2fc1fdc13ff4e110.php 第 11 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.028602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030260s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.003136s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.002331s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.002111s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009335s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001396s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001502s ]
+
+[ 2014-02-11T12:01:26+08:00 ] 180.154.12.246 /admin.php?s=/Company/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002613s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002965s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002209s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002311s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.002870s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000824s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `appid` = 1 ) ORDER BY createtime DESC LIMIT 0,10   [ RunTime:0.000950s ]
+SQL: SHOW COLUMNS FROM `tb_file` [ RunTime:0.003404s ]
+SQL: SELECT * FROM `tb_file` WHERE ( `appid` = 1 ) AND ( `id` = 54 ) LIMIT 1   [ RunTime:0.000848s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.004671s ]
+INFO: [ view_template ] --END-- [ RunTime:0.005013s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title D:\AppServ\yisheji\Home\Admin\Runtime\Cache\1aef20e5ea148302519f294cb2845321.php 第 11 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.052541s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052763s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.036845s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.003212s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.076897s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.004874s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.122936s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.006587s ]
+INFO: [ view_end ] --END-- [ RunTime:0.006873s ]
+
+[ 2014-02-11T12:01:29+08:00 ] 180.154.12.246 /admin.php?s=/Company/add
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.003705s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006302s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003503s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.004679s ]
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 442 行.
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 466 行.
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 442 行.
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 466 行.
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 442 行.
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 466 行.
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 442 行.
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 466 行.
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 442 行.
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 466 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.005730s ]
+INFO: [ view_template ] --END-- [ RunTime:0.006164s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title D:\AppServ\yisheji\Home\Admin\Runtime\Cache\7e05340020fa70132df1505e323f3255.php 第 11 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.045801s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046060s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001861s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.004210s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.002245s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.002534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011325s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.002629s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002773s ]
+
+[ 2014-02-11T12:02:25+08:00 ] 180.154.12.246 /admin.php?s=/Company/add
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002267s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002435s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001796s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.002658s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002756s ]
+SQL: INSERT INTO `tb_user` (`account`) VALUES ('易设计管理') [ RunTime:0.000527s ]
+SQL: INSERT INTO `tb_company` (`name`,`uid`,`type`) VALUES ('易设计管理',54,1) [ RunTime:0.000561s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002308s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002438s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title D:\AppServ\yisheji\Home\Admin\Runtime\Cache\25e16930de30c2eddf3898c44ac6a012.php 第 11 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.026118s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026263s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001745s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.003922s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000942s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001978s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009195s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001987s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002137s ]
+
+[ 2014-02-11T12:02:26+08:00 ] 180.154.12.246 /admin.php?s=/Company/add
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.004207s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004395s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002742s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.311961s ]
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 442 行.
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 466 行.
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 442 行.
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 466 行.
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 442 行.
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 466 行.
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 442 行.
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 466 行.
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 442 行.
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 466 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.004971s ]
+INFO: [ view_template ] --END-- [ RunTime:0.005344s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title D:\AppServ\yisheji\Home\Admin\Runtime\Cache\7e05340020fa70132df1505e323f3255.php 第 11 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.033699s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033907s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001893s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001797s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000737s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001962s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006786s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001737s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001846s ]
+
+[ 2014-02-11T12:02:36+08:00 ] 180.154.12.246 /admin.php?s=/User/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.004615s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004846s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004219s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.099400s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_user` WHERE ( `appid` = 1 ) LIMIT 1   [ RunTime:0.150266s ]
+SQL: SELECT * FROM `tb_user` WHERE ( `appid` = 1 ) ORDER BY createtime DESC LIMIT 0,10   [ RunTime:0.001511s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.003368s ]
+INFO: [ view_template ] --END-- [ RunTime:0.008271s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title D:\AppServ\yisheji\Home\Admin\Runtime\Cache\f8a160c5f2f8255a2fc1fdc13ff4e110.php 第 11 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.196158s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.428278s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.002897s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.002849s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000932s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.002710s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010019s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.003132s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003322s ]
+
+[ 2014-02-11T12:02:38+08:00 ] 180.154.12.246 /admin.php?s=/User/index/type/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002453s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002598s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001910s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.004314s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_user` WHERE ( `appid` = 1 ) AND ( `type` = 2 ) LIMIT 1   [ RunTime:0.000593s ]
+SQL: SELECT * FROM `tb_user` WHERE ( `appid` = 1 ) AND ( `type` = 2 ) ORDER BY createtime DESC LIMIT 0,10   [ RunTime:0.000600s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002436s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002579s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title D:\AppServ\yisheji\Home\Admin\Runtime\Cache\f8a160c5f2f8255a2fc1fdc13ff4e110.php 第 11 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.028008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028231s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001506s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001351s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000578s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.002145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006242s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.002817s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003100s ]
+
+[ 2014-02-11T12:02:41+08:00 ] 180.154.12.246 /admin.php?s=/User/index/type/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001650s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001773s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003502s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.010676s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_user` WHERE ( `appid` = 1 ) AND ( `type` = 2 ) LIMIT 1   [ RunTime:0.001521s ]
+SQL: SELECT * FROM `tb_user` WHERE ( `appid` = 1 ) AND ( `type` = 2 ) ORDER BY createtime DESC LIMIT 0,10   [ RunTime:0.001789s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001994s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002144s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title D:\AppServ\yisheji\Home\Admin\Runtime\Cache\f8a160c5f2f8255a2fc1fdc13ff4e110.php 第 11 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.025491s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025649s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001549s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001151s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000540s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001940s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005535s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001308s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001419s ]
+
+[ 2014-02-11T12:02:45+08:00 ] 180.154.12.246 /admin.php?s=/User/index/type/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002139s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002297s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001678s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.093953s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_user` WHERE ( `appid` = 1 ) AND ( `type` = 2 ) LIMIT 1   [ RunTime:0.000650s ]
+SQL: SELECT * FROM `tb_user` WHERE ( `appid` = 1 ) AND ( `type` = 2 ) ORDER BY createtime DESC LIMIT 0,10   [ RunTime:0.002247s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001658s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001790s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title D:\AppServ\yisheji\Home\Admin\Runtime\Cache\f8a160c5f2f8255a2fc1fdc13ff4e110.php 第 11 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.023491s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023672s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001583s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001568s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000627s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005751s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001636s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001832s ]
+
+[ 2014-02-11T12:02:54+08:00 ] 180.154.12.246 /admin.php?s=/Company/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002176s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002361s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001725s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.284795s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `appid` = 1 ) LIMIT 1   [ RunTime:0.194402s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `appid` = 1 ) ORDER BY createtime DESC LIMIT 0,10   [ RunTime:0.085308s ]
+SQL: SHOW COLUMNS FROM `tb_file` [ RunTime:0.006808s ]
+SQL: SELECT * FROM `tb_file` WHERE ( `appid` = 1 ) AND ( `id` = 54 ) LIMIT 1   [ RunTime:0.064618s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001848s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002038s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title D:\AppServ\yisheji\Home\Admin\Runtime\Cache\1aef20e5ea148302519f294cb2845321.php 第 11 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.023816s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023953s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001553s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001388s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000556s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001544s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005459s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001806s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001905s ]
+
+[ 2014-02-11T12:03:01+08:00 ] 180.154.12.246 /admin.php?s=/Company/index/status/0
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002964s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003125s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002287s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:1.735362s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `appid` = 1 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.014518s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `appid` = 1 ) AND ( `status` = 0 ) ORDER BY createtime DESC LIMIT 0,10   [ RunTime:0.000956s ]
+SQL: SHOW COLUMNS FROM `tb_file` [ RunTime:0.009206s ]
+SQL: SELECT * FROM `tb_file` WHERE ( `appid` = 1 ) AND ( `id` = 54 ) LIMIT 1   [ RunTime:0.000490s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001287s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001385s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title D:\AppServ\yisheji\Home\Admin\Runtime\Cache\1aef20e5ea148302519f294cb2845321.php 第 11 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.019956s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020067s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001357s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001454s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000607s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001427s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005153s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001616s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001734s ]
+
+[ 2014-02-11T12:03:03+08:00 ] 180.154.12.246 /admin.php?s=/Company/index/status/-1
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001863s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001999s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001662s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.070699s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `appid` = 1 ) AND ( `status` = -1 ) LIMIT 1   [ RunTime:0.006312s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `appid` = 1 ) AND ( `status` = -1 ) ORDER BY createtime DESC LIMIT 0,10   [ RunTime:0.000411s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 724 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001971s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002181s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title D:\AppServ\yisheji\Home\Admin\Runtime\Cache\1aef20e5ea148302519f294cb2845321.php 第 11 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.018830s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018934s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001389s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001216s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000651s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001578s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005176s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001355s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001442s ]
+
+[ 2014-02-11T12:03:32+08:00 ] 180.154.12.246 /admin.php?s=/Company/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.003180s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003348s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002124s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.008544s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `appid` = 1 ) LIMIT 1   [ RunTime:0.001074s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `appid` = 1 ) ORDER BY createtime DESC LIMIT 0,10   [ RunTime:0.000634s ]
+SQL: SHOW COLUMNS FROM `tb_file` [ RunTime:0.007444s ]
+SQL: SELECT * FROM `tb_file` WHERE ( `appid` = 1 ) AND ( `id` = 54 ) LIMIT 1   [ RunTime:0.001911s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002528s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002756s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title D:\AppServ\yisheji\Home\Admin\Runtime\Cache\1aef20e5ea148302519f294cb2845321.php 第 11 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.199960s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.200136s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.002049s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001926s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000937s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.002030s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007356s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.092778s ]
+INFO: [ view_end ] --END-- [ RunTime:0.092980s ]
+
+[ 2014-02-11T12:03:36+08:00 ] 180.154.12.246 /admin.php?s=/User/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002721s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002922s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002462s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.120187s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_user` WHERE ( `appid` = 1 ) LIMIT 1   [ RunTime:0.001664s ]
+SQL: SELECT * FROM `tb_user` WHERE ( `appid` = 1 ) ORDER BY createtime DESC LIMIT 0,10   [ RunTime:0.004053s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002988s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003167s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title D:\AppServ\yisheji\Home\Admin\Runtime\Cache\f8a160c5f2f8255a2fc1fdc13ff4e110.php 第 11 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.037370s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037845s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.003618s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.002348s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001044s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.002734s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010447s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.002391s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002567s ]
+
+[ 2014-02-11T12:03:39+08:00 ] 180.154.12.246 /admin.php?s=/User/index/status/-1
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001608s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001744s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001372s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002443s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_user` WHERE ( `appid` = 1 ) AND ( `status` = -1 ) LIMIT 1   [ RunTime:0.001251s ]
+SQL: SELECT * FROM `tb_user` WHERE ( `appid` = 1 ) AND ( `status` = -1 ) ORDER BY createtime DESC LIMIT 0,10   [ RunTime:0.000940s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 724 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002130s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002259s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title D:\AppServ\yisheji\Home\Admin\Runtime\Cache\f8a160c5f2f8255a2fc1fdc13ff4e110.php 第 11 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.018547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018711s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001418s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001248s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000534s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001429s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005028s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001535s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001665s ]
+
+[ 2014-02-11T12:03:43+08:00 ] 180.154.12.246 /admin.php?s=/User/index/status/-2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001685s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001817s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001703s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.001738s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_user` WHERE ( `appid` = 1 ) AND ( `status` = -2 ) LIMIT 1   [ RunTime:0.000478s ]
+SQL: SELECT * FROM `tb_user` WHERE ( `appid` = 1 ) AND ( `status` = -2 ) ORDER BY createtime DESC LIMIT 0,10   [ RunTime:0.000465s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 724 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001596s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001728s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title D:\AppServ\yisheji\Home\Admin\Runtime\Cache\f8a160c5f2f8255a2fc1fdc13ff4e110.php 第 11 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.023201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023368s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001437s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001294s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000566s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001469s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005197s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001491s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001621s ]
+
+[ 2014-02-11T12:03:44+08:00 ] 180.154.12.246 /admin.php?s=/User/index/status/0
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001510s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001629s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001280s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002633s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_user` WHERE ( `appid` = 1 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.000606s ]
+SQL: SELECT * FROM `tb_user` WHERE ( `appid` = 1 ) AND ( `status` = 0 ) ORDER BY createtime DESC LIMIT 0,10   [ RunTime:0.000687s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001807s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001989s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title D:\AppServ\yisheji\Home\Admin\Runtime\Cache\f8a160c5f2f8255a2fc1fdc13ff4e110.php 第 11 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.017498s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017662s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001172s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001104s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000400s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001464s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004502s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001120s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001197s ]
+
+[ 2014-02-11T12:03:56+08:00 ] 180.154.12.246 /admin.php?s=/Company/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002072s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002206s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001770s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.003018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_company` WHERE ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000509s ]
+SQL: SELECT * FROM `tb_company` WHERE ( `appid` = 1 ) ORDER BY createtime DESC LIMIT 0,10   [ RunTime:0.000434s ]
+SQL: SHOW COLUMNS FROM `tb_file` [ RunTime:0.005486s ]
+SQL: SELECT * FROM `tb_file` WHERE ( `appid` = 1 ) AND ( `id` = 54 ) LIMIT 1   [ RunTime:0.000468s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001361s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001482s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title D:\AppServ\yisheji\Home\Admin\Runtime\Cache\1aef20e5ea148302519f294cb2845321.php 第 11 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.042122s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042271s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001327s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001044s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000445s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004218s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001069s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001145s ]
+
+[ 2014-02-11T12:03:59+08:00 ] 180.154.12.246 /admin.php?s=/Company/add
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002358s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002539s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001877s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.004048s ]
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 442 行.
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 466 行.
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 442 行.
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 466 行.
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 442 行.
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 466 行.
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 442 行.
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 466 行.
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 442 行.
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 466 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002308s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002464s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title D:\AppServ\yisheji\Home\Admin\Runtime\Cache\7e05340020fa70132df1505e323f3255.php 第 11 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.039003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039201s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.003288s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.002063s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000790s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.002177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008753s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.003031s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003215s ]
+
+[ 2014-02-11T12:04:30+08:00 ] 180.154.12.246 /admin.php?s=/Company/add
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002221s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002393s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001819s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.005228s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002833s ]
+SQL: INSERT INTO `tb_user` (`account`) VALUES ('易设计管理') [ RunTime:0.000577s ]
+SQL: INSERT INTO `tb_company` (`name`,`uid`,`type`) VALUES ('易设计管理',55,1) [ RunTime:0.000431s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002227s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002377s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title D:\AppServ\yisheji\Home\Admin\Runtime\Cache\25e16930de30c2eddf3898c44ac6a012.php 第 11 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.066008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066408s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.003333s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.002896s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000867s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.002190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010031s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.002514s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002707s ]
+
+[ 2014-02-11T12:04:31+08:00 ] 180.154.12.246 /admin.php?s=/Company/add
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.004157s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004382s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002503s ]
+SQL: SHOW COLUMNS FROM `tb_company` [ RunTime:0.002590s ]
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 442 行.
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 466 行.
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 442 行.
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 466 行.
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 442 行.
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 466 行.
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 442 行.
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 466 行.
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 442 行.
+NOTIC: [8] Undefined offset:  2 D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 466 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001922s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002046s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title D:\AppServ\yisheji\Home\Admin\Runtime\Cache\7e05340020fa70132df1505e323f3255.php 第 11 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.029400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029542s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001545s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001504s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000830s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.002259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006540s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.002437s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002613s ]
+
+[ 2014-02-11T12:04:35+08:00 ] 180.154.12.246 /admin.php?s=/User/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.003059s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003229s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003125s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003279s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.002994s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_user` WHERE ( `appid` = 1 ) LIMIT 1   [ RunTime:0.000590s ]
+SQL: SELECT * FROM `tb_user` WHERE ( `appid` = 1 ) ORDER BY createtime DESC LIMIT 0,10   [ RunTime:0.000889s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002098s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002299s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title D:\AppServ\yisheji\Home\Admin\Runtime\Cache\f8a160c5f2f8255a2fc1fdc13ff4e110.php 第 11 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.029771s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029992s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001586s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001881s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000680s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001972s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006567s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001962s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002089s ]
+
+[ 2014-02-11T15:23:23+08:00 ] 180.154.12.246 /admin.php?s=/Manager/verify
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002909s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003215s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003943s ]
+SQL: SHOW COLUMNS FROM `tb_manager` [ RunTime:0.002006s ]
+NOTIC: [8] Undefined index:  admin_user D:\AppServ\yisheji\Home\Admin\Lib\Model\BaseModel.class.php 第 45 行.
+
