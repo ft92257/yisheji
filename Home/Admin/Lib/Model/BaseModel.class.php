@@ -88,7 +88,6 @@ class BaseModel extends Model {
 				$data['appid'] = $this->oApp->id;
 				$data['createtime'] = time();
 			}
-			
 			$ret = $this->add($data);
 			if ($ret) {
 				return $ret;
