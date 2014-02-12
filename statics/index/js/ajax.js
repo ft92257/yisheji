@@ -36,7 +36,7 @@ function actRequest(data, act){
 			if(msg != null){
 				str.push('<p>'+msg+'</p>');
 			}
-			str.push('<p style=" font-size:12px; margin-top:5px"><span style="color:red">5秒后自动跳转</span> 点击 <a href="'+url+'">直接跳转</a></p>');
+			str.push('<p style=" font-size:12px; margin-top:5px"><span style="color:red">3秒后自动跳转</span></p>');
 			str.push('</td>');
 		}
 		if(status == 2){
@@ -46,7 +46,7 @@ function actRequest(data, act){
 			if(msg != null){
 				str.push('<p>'+msg+'</p>');
 			}
-			str.push('<p style=" font-size:12px; margin-top:5px"><span style="color:red">5秒后自动跳转</span> 点击 <a href="'+url+'">直接跳转</a></p>');
+			str.push('<p style=" font-size:12px; margin-top:5px"><span style="color:red">3秒后自动跳转</span></p>');
 			str.push('</td>');
 		}
 		str.push('</tr></table></div>');
@@ -57,12 +57,12 @@ function actRequest(data, act){
 			area : ['auto','auto'],
 			title : false,
 			border : [0],
-			page : {html : html}/*,
+			page : {html : html},
 			close : function(index){
 				layer.close(index);
-			}*/
+			}
 		});
-		//setTimeout(function(){url == null ? window.location.reload() : window.location.href = url;},5000);
+		setTimeout(function(){url == null ? window.location.reload() : window.location.href = url;},3000);
 	}
 	
 	
