@@ -56,10 +56,10 @@
                 	<foreach name='caseType1' item='vo'>
                     	<li>
                     		<a class="pic " href="javascript:void(0)" data-collect="{$vo['is_collect']}"><img src="{$vo['focus_img']}" alt="" /></a>
-                    		<strong><a href="__GROUP__/Case/case_info/id/{$vo['id']}" target="_blank">{$vo['name']}</a></strong>
+                    		<strong><a href="__GROUP__/Case/caseDetails/id/{$vo['id']}" target="_blank">{$vo['name']}</a></strong>
                             <p class="info">{$vo['housetype_zh']},{$vo['style_zh']},￥{$vo['design_fee']}</p>
                             <p>{$vo['info']}</p>
-                            <a class="pic_designer" title="" href="#"><img src="{$vo['header']}" alt="" /></a>
+                            <a class="pic_designer" title="" href="__GROUP__/Designer/designerDetails/uid/{$vo['uid']}"><img src="{$vo['header']}" alt="" /></a>
                     		<if condition="($vo['is_collect'] eq 1)">
                             <div class="status" data-collect="{$vo['is_collect']}">
                             <span><i class="ico ico-10"></i>已收藏</span>
@@ -85,10 +85,10 @@
                 	<foreach name='caseType2' item='vo'>
                     	<li>
                         	<a class="pic " href="javascript:void(0)" data-collect="{$vo['is_collect']}"><img src="{$vo['focus_img']}" alt="" /></a>
-                    		<strong><a href="__GROUP__/Case/case_info/id/{$vo['id']}" target="_blank">{$vo['name']}</a></strong>
+                    		<strong><a href="__GROUP__/Case/caseDetails/id/{$vo['id']}" target="_blank">{$vo['name']}</a></strong>
                             <p class="info">{$vo['housetype_zh']},{$vo['style_zh']},￥{$vo['design_fee']}</p>
                             <p>{$vo['info']}</p>
-                            <a class="pic_designer" title="" href="#"><img src="{$vo['header']}" alt="" /></a>
+                            <a class="pic_designer" title="" href="__GROUP__/Designer/designerDetails/uid/{$vo['uid']}"><img src="{$vo['header']}" alt="" /></a>
                     		<if condition="($vo['is_collect'] eq 1)">
                             <div class="status" data-collect="{$vo['is_collect']}">
                             <span><i class="ico ico-10"></i>已收藏</span>
