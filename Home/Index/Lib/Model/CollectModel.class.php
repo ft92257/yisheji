@@ -6,6 +6,7 @@ class CollectModel extends BaseModel {
 	}
 	
 	protected function _after_find(&$resultSet,$options) {
+		
 		$resultSet['tags_zh'] = $this->_aBaseOptions['tags'][$resultSet['tags']];
 		$resultSet['focus_img'] = getFileUrl($resultSet['pic']);
 		$resultSet['tag_zh'] = formatTag($resultSet['tags']);
