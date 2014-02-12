@@ -8,8 +8,10 @@ class CompanyModel extends BaseModel {
 			'type' => array('1' => '公司', '2' => '设计师'),
 	);
 	protected $aValidate = array(
-			array('name', 'required', '请填写公司名称'),
 			array('name', 'unique', '公司名称已经存在'),
+			array('name', 'required', '请填写公司名称'),
+			
+			
 							);
 	protected $formConfig = array(
 			'name' => array('公司名称', 'text'),
@@ -28,7 +30,7 @@ class CompanyModel extends BaseModel {
 			'logo' => array('图片', array('img')),
 			'createtime' => '添加时间',
 			'status' => array('状态', array('audit')),
-			array('操作', array('<a href="index.php?s=/Company/detail/id/{id}">详情</a>')),
+			array('操作', array('edit')),
 	);
 	
 	protected $searchConfig = array(
