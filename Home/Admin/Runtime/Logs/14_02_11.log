@@ -593,3 +593,30 @@ INFO: [ view_end ] --START--
 INFO: Run ShowPageTrace Behavior [ RunTime:0.000805s ]
 INFO: [ view_end ] --END-- [ RunTime:0.000846s ]
 
+[ 2014-02-11T16:58:54+08:00 ] 0.0.0.0 /yisheji/admin.php?s=/Index/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001098s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001180s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001150s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001221s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: Title F:\www\yisheji\Home\Admin\Runtime\Cache\cb7f02cbf2d2ad775e98357ae17eb05e.php 第 11 行.
+NOTIC: [8] Undefined variable: com F:\www\yisheji\Home\Admin\Runtime\Cache\cb7f02cbf2d2ad775e98357ae17eb05e.php 第 79 行.
+NOTIC: [8] Undefined variable: com F:\www\yisheji\Home\Admin\Runtime\Cache\cb7f02cbf2d2ad775e98357ae17eb05e.php 第 80 行.
+NOTIC: [8] Undefined variable: num F:\www\yisheji\Home\Admin\Runtime\Cache\cb7f02cbf2d2ad775e98357ae17eb05e.php 第 87 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.022555s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022628s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000859s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000699s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000462s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003468s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000911s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000966s ]
+
