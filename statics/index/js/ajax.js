@@ -4,7 +4,7 @@ function actRequest(data, act){
 			'url' : GROUP+'/Base/actRequest',
 			'data': data+'&act='+act,
 			'dataType': 'json',
-			'async' : false,
+			//'async' : false,
 			'success': function(r){
 				ajaxReturnFun(r);
 			}
@@ -28,7 +28,7 @@ function actRequest(data, act){
 	
 	function showAlert(status, msg, url){
 		var str = [];
-		str.push('<div class="layer_alert" style="padding:10px"><table class="layerTable"><tr>');
+		str.push('<div class="layer_alert" style="padding:10px; background-color:#fff"><table class="layerTable"><tr>');
 		if(status == 1){
 			str.push('<td class="pLeft">');
 			str.push('<td class="pLeft"><img src="'+STATICS+'/images/1212121xiao.jpg" /></td>');
@@ -36,6 +36,7 @@ function actRequest(data, act){
 			if(msg != null){
 				str.push('<p>'+msg+'</p>');
 			}
+			str.push('<p style=" font-size:12px; margin-top:5px"><span style="color:red">5秒后自动跳转</span> 点击 <a href="'+url+'">直接跳转</a></p>');
 			str.push('</td>');
 		}
 		if(status == 2){
@@ -45,6 +46,7 @@ function actRequest(data, act){
 			if(msg != null){
 				str.push('<p>'+msg+'</p>');
 			}
+			str.push('<p style=" font-size:12px; margin-top:5px"><span style="color:red">5秒后自动跳转</span> 点击 <a href="'+url+'">直接跳转</a></p>');
 			str.push('</td>');
 		}
 		str.push('</tr></table></div>');
@@ -55,12 +57,12 @@ function actRequest(data, act){
 			area : ['auto','auto'],
 			title : false,
 			border : [0],
-			page : {html : html},
+			page : {html : html}/*,
 			close : function(index){
 				layer.close(index);
-			}
+			}*/
 		});
-		setTimeout(function(){url == null ? window.location.reload() : window.location.href = url;},5000);
+		//setTimeout(function(){url == null ? window.location.reload() : window.location.href = url;},5000);
 	}
 	
 	
