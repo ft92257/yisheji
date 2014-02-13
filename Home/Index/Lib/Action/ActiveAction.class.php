@@ -94,7 +94,7 @@ class ActiveAction extends BaseAction{
 				'telephone' => $this->para['telephone']
 		);
 		$res = $this->model->insert($data);
-		$res != false ? $this->resultFormat(null, 1) : $this->resultFormat(null, 0, $this->model->getLastSql()); 
+		$res !== false ? $this->resultFormat(null, 1) : $this->resultFormat(null, 0, $this->model->getLastSql()); 
 	}
 	
 }

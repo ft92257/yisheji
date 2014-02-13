@@ -11,7 +11,9 @@ class CaseAction extends BaseAction {
 		$this->model = D('Case');
 	}
 	
-	//列表
+	/*
+	 * 列表
+	 */
 	public function index(){
 		$params = array(
 			'order' => 'createtime DESC',

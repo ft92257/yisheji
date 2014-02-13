@@ -65,7 +65,7 @@ class myAction extends BaseAction{
 		);
 		$where = array('id' => $this->para['uid']);
 		$res = $this->model->update($data, $where);
-		$res ? $this->resultFormat(null, 1, '设置成功') : $this->resultFormat(null, 0, $this->model->getLastSql());
+		$res !== false ? $this->resultFormat(null, 1, '设置成功') : $this->resultFormat(null, 0, $this->model->getLastSql());
 	}
 	
 	public function mySet(){
@@ -94,29 +94,45 @@ class myAction extends BaseAction{
 		header("location:".__URL__."/mySet/uid/{$this->oUser['id']}/tag/1");
 	}
 	
-	public function designerApply(){
+	public function passwordSave(){
+		$this->model = D('User');
+		$data = array('password' => md5($this->para['password']));
+		$where = array('id' => $this->oUser['id']);
+		if($this->model->update($data, $where) === false){
+			$this->resultFormat(null, 0, $this->model->getLastSql());
+		}
+		D('Session')->destroy($this->oUser['id']);
+		$this->resultFormat(null, 1, '修改成功', __APP__."/User/login");
+	}
 	
-		if($this->para['act'] == '114'){
-			$this->model = D('File');
+	public function designerApply(){
+		$this->model = D('File');
+		$data = array(
+				'mobile' => $this->para['mobile'],
+				'idnum' => $this->para['idnum'],
+				'bankcard' => $this->para['bankcard']
+		);
+		if(!empty($_FILES)){
 			$res = $this->model->_upload('idcard');
 			if($res['status'] == 0){
-				$this->model = D('User');
-				$data = array(
-						'mobile' => $this->para['mobile'],
-						'idcard' => $res['data']['fileid'],
-						'idnum' => $this->para['idnum'],
-						'bankcard' => $this->para['bankcard']
-				);
-				$where = array('id' => $this->oUser['id']);
-				$res = $this->model->update($data, $where);
-				$this->model = D('User_designer');
-				$data = array(
-						'ischeck' => 3
-				);
-				$where = array('uid' => $this->oUser['id']);
-				$res = $this->model->update($data, $where);
+				$data['idcard'] = $res['data']['fileid'];
 			}
-			header("location:".__URL__."/mySet/uid/{$this->oUser['id']}/tag/3");
 		}
+		$this->model = D('User');
+		$data = array(
+				'mobile' => $this->para['mobile'],
+				'idcard' => $res['data']['fileid'],
+				'idnum' => $this->para['idnum'],
+				'bankcard' => $this->para['bankcard']
+		);
+		$where = array('id' => $this->oUser['id']);
+		$res = $this->model->update($data, $where);
+		$this->model = D('User_designer');
+		$data = array(
+				'ischeck' => 3
+		);
+		$where = array('uid' => $this->oUser['id']);
+		$res = $this->model->update($data, $where);
+		header("location:".__URL__."/mySet/uid/{$this->oUser['id']}/tag/3");
 	}
 }

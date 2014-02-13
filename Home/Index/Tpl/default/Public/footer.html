@@ -38,9 +38,33 @@
     <div class="weixin"><img onDragstart="return false;" src="__STATICS__/images/weixin.png" alt="用微信扫描二维码关注" />关注微信享9折</div>
     <a class="click"></a>
 </div>
+<script src="__STATICS__/layer/layer.min.js"></script>
 <script src="__STATICS__/js/jquery.plugin.js"></script>
 <script src="__STATICS__/js/main.js"></script>
 <script src="__STATICS__/js/common.js"></script>
 <script src="__STATICS__/js/ajax.js"></script>
+
+<script>
+$(function(){
+	$("#login_sub").bind('click', function(){
+		if($("#txt_account").val() == "" && $("#txt_password").val() == ""){
+			alert('用户名或密码不能为空');
+		}else{
+			actRequest($("#login_form").serialize(), '1003');
+		}
+	});
+	$("#fast_login_sub").bind('click', function(){
+		if($("#txt_account").val() == "" && $("#txt_password").val() == ""){
+			alert('用户名或密码不能为空');
+		}else{
+			actRequest($("#fast_login_form").serialize(), '1003');
+		}
+	});
+});
+/*
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F0c3937fa9561673cd20828dcfc2a8b45' type='text/javascript'%3E%3C/script%3E"));
+*/</script>
+<include file="Public:layer_login" />
 </body>
 </html>

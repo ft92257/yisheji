@@ -15,6 +15,14 @@ class CaseAction extends BaseAction{
 		$this->assign('caseList', $data['list']);
 		$this->assign('casePage', $data['page']);
 		
+		$this->assign('search', $this->para);
+		$this->display();
+	}
+	
+	public function caseImgDetails(){
+		$this->model = D('Case');
+		$this->assign('casePhoto', $this->model->getCasePhoto($this->para['id']));
+		$this->assign('num', $this->para['num']);
 		$this->display();
 	}
 	
@@ -22,11 +30,14 @@ class CaseAction extends BaseAction{
 		if(!$this->para['id']){
 			redirect(__URL__.'/caseIndex');
 		}
+		
 		$this->model = D('Case');
 		$data = $this->model->queryOne(array('id' => $this->para['id']));
+		
 		if(empty($data)){
 			redirect(__URL__.'/caseIndex');
 		}
+		$this->assign('casePhoto', $this->model->getCasePhoto($data['id']));
 		
 		$click_count = $this->model->where(array('id' => $this->para['id']))->getField('click_count');
 		$this->model->update(array('click_count' => $click_count+1), array('id' => $this->para['id']));
@@ -40,7 +51,7 @@ class CaseAction extends BaseAction{
 		$this->assign('designerCase', $this->model->getDesignerCase($data['uid'], 4));
 		$this->assign('designerInfo', D('User_designer')->queryOne(array('uid' => $data['uid'])));
 		
-		$this->assign('casePhoto', $this->model->getCasePhoto($data['id']));
+		
 		$this->display();
 	}
 	

@@ -4,12 +4,14 @@
 <meta charset="utf-8">
 <meta name="render" content="webkit">
 <meta http-equiv="X-UA-Compatible" content="edge,chrome=1" />
+<meta name="baidu-site-verification" content="8m0rQHsroO" />
 <title>易设计</title>
 <link rel="stylesheet" type="text/css" href="__STATICS__/css/screen.css">
 <link rel="stylesheet" type="text/css" href="__STATICS__/css/main.css">
 <script src="__STATICS__/js/jquery-1.7.2.min.js"></script>
 </head>
 <body>
+
 <div id="wrap">
 	<header><div class="extra">
     	<h1><a href="__GROUP__/Index/index">易设计</a></h1>
@@ -30,9 +32,18 @@
             </form>
             </div>
             <div class="login-info j_hover" data-meta="{hoverTag:'div.set'}">
+            
+            <if condition="($user['id'] gt 0)">
             	<span class="welcome-info">你好，<a href="__GROUP__/My/mySet/uid/{$user['id']}">{$user['account']}</a></span>
-                <a class="message-link" title="私信" href="__GROUP__/My/myLetterList/uid/{$user['id']}"><i class="ico ico-4"></i>{$letterCount}</a>
+            	<a class="message-link" title="私信" href="__GROUP__/My/myLetterList/uid/{$user['id']}"><i class="ico ico-4"></i>{$letterCount}</a>
                 <a class="attention-link" title="收藏" href="__GROUP__/My/myCollect/uid/{$user['id']}"><i class="ico ico-5"></i></a>
+            <else/>
+            	<span class="welcome-info">未登录</span>
+            	<a class="message-link" title="私信" href="__GROUP__/User/login" ><i class="ico ico-4"></i></a>
+                <a class="attention-link" title="收藏" href="__GROUP__/User/login"><i class="ico ico-5"></i></a>
+            </if>
+            	
+                
                 <div class="set">
                 	<a class="set-link"><i class="ico ico-6"></i></a>
                 	<div class="show">
@@ -40,9 +51,14 @@
                         <a href="#"><i class="icon icon-11"></i><span>发布活动</span></a>
                         <span class="line"></span>
                         <div class="right">
+                        <if condition="($user['id'] gt 0)">
                         	<p><a href="#">我的主页</a></p>
                             <p><a href="__GROUP__/My/mySet/uid/{$user['id']}">个人设置</a></p>
                             <p><a href="__GROUP__/User/logout">退出</a></p>
+                         <else/>
+                            <p><a href="__GROUP__/User/login">我的主页</a></p>
+                            <p><a href="__GROUP__/User/login">个人设置</a></p>
+                         </if>
                         </div>
                     </div>
                 </div>
@@ -55,4 +71,6 @@
 	 <script>
     var URL = '__URL__';
     var GROUP = '__GROUP__';
+    var STATICS = '__STATICS__';
+    
     </script>

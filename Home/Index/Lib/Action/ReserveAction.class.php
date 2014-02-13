@@ -1,8 +1,4 @@
 <?php 
-
-/**
- * 	预约功能相关页面
- */
 class ReserveAction extends BaseAction {
 
 	public function __construct() {
@@ -65,7 +61,7 @@ class ReserveAction extends BaseAction {
 		$where = array('id' => $this->oUser['id']);
 		$data = array('money' => ($money - $user_cost));
 		
-		if($this->model->update($data, $where) == false){
+		if($this->model->update($data, $where) === false){
 			$this->resultFormat(null, 0, $this->model->getLastSql());
 		}
 		
@@ -76,7 +72,7 @@ class ReserveAction extends BaseAction {
 				);
 		
 		$this->model = D('Money');
-		if($this->model->insert($data) == false){
+		if($this->model->insert($data) === false){
 			$this->resultFormat(null, 0, $this->model->getLastSql());
 		}
 		$this->model = D('User');
@@ -88,7 +84,7 @@ class ReserveAction extends BaseAction {
 		}else{
 			$where = array('id' => $this->para['uid']);
 			$data = array('money' => ($money - $cost));
-			if($this->model->update($data, $where) == false){
+			if($this->model->update($data, $where) === false){
 				$this->resultFormat(null, 0, $this->model->getLastSql());
 			}
 			$data['uid'] = $this->para['uid'];
@@ -98,7 +94,7 @@ class ReserveAction extends BaseAction {
 		}
 		
 		$this->model = D('Money');
-		if($this->model->insert($data) == false){
+		if($this->model->insert($data) === false){
 			$this->resultFormat(null, 0, $this->model->getLastSql());
 		}
 		
@@ -112,12 +108,9 @@ class ReserveAction extends BaseAction {
 			'target' => $this->para['uid'],
 			'name' => $this->para['name'],
 			'telephone' => $this->para['telephone'],
-			'expect_time' => $this->para['expect_time'],
-			'charge_time' => time(),
-			'charged' => $charged,	
-			'message' => $this->para['message']
+			'charged' => $charged
 		);
-		if($this->model->insert($data) == false){
+		if($this->model->insert($data) === false){
 			$this->resultFormat(null, 0, $this->model->getLastSql());
 		}
 		#更新设计师预约记录
@@ -134,7 +127,7 @@ class ReserveAction extends BaseAction {
 				break;
 		}
 		$res = $this->model->update($data, $where);
-		$res != false ? $this->resultFormat(null, 1, '预约成功') : $this->resultFormat(null, 0, $this->model->getLastSql());
+		$res !== false ? $this->resultFormat(null, 1, '预约成功') : $this->resultFormat(null, 0, $this->model->getLastSql());
 	}
 	
 	public function getcode() {

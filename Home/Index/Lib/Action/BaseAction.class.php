@@ -6,6 +6,7 @@ class BaseAction extends Action {
 	protected $_aBaseOptions;
 	protected $model;
 	protected $para;
+	protected $oCollect;
 	
 	public function __construct() {
 		parent::__construct();
@@ -25,6 +26,12 @@ class BaseAction extends Action {
 			$this->assign('user', $this->oUser);
 			#未读私信数
 			$this->assign('letterCount', D('Letter')->where(array('recipient' =>$uid, 'isread' => 0))->count());
+			
+			$collect['case'] = D('collect')->where(array('uid'=>$this->oUser['id'], 'type'=>1))->select();
+			$collect['house'] = D('collect')->where(array('uid'=>$this->oUser['id'], 'type'=>2))->select();
+			$collect['active'] = D('collect')->where(array('uid'=>$this->oUser['id'], 'type'=>3))->select();
+			$_SESSION['collect'] = $collect;
+			$this->oCollect = $collect;
 		}
 		$this->assign('hot_designer', D('User_designer')->getHotDesigner());
 		$this->assign('hot_case', D('Case')->getHotCase());
@@ -44,7 +51,7 @@ class BaseAction extends Action {
 	}
 
 	protected function rightCheck($act){
-		$confArr = array('1111', '2105', '3107', '9101', '9102', '9103');
+		$confArr = array('1111', '2105', '3107', '9101', '9102', '9103','9105');
 		if(in_array($act, $confArr)){
 			if(empty($this->oUser)){
 				$this->resultFormat(null,-2);
@@ -87,7 +94,7 @@ class BaseAction extends Action {
 				A('My')->mySet(); #个人中心设置
 				break;
 			case '0205': 
-				A("User")->passwordSave(); #修改密码
+				A("My")->passwordSave(); #修改密码
 				break;
 			case '0206': 
 				A("My")->headerEdit(); #头像设置
@@ -103,6 +110,9 @@ class BaseAction extends Action {
 				break;
 			case '1003': 
 				A('User')->login();  #登录
+				break;
+			case '1004':
+				A('User')->fastLogin();  #快速登录（弹层）
 				break;
 			#Designer
 			case '1101': 
@@ -236,8 +246,6 @@ class BaseAction extends Action {
 			case '108': 
 				A("User")->passwordCheck(); #检查密码
 				break;
-			
-			
 		}
 	}
 	

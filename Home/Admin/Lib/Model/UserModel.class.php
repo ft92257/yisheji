@@ -3,6 +3,10 @@
  * 后台用户登录
  */
 class UserModel extends BaseModel {
+	protected $aOptions = array(
+		'type' => array('1' => '普通用户', '2' => '设计师','3' => '公司'),
+		'sex' => array('0'=>'保密','1'=>'男','2'=>'女'),
+	);
 	/*
 	 * 验证form字段规则
 	*/
@@ -23,7 +27,21 @@ class UserModel extends BaseModel {
 		'nickname' => array('昵称', 'text'),
 		array('', 'submit'),
 	);
-	
+	protected $listConfig = array(
+			'id' => '编号',
+			'type' => '类型',
+			'account' => '账户',
+			'sex' => '性别',
+			'realname' => '真实姓名',
+			'nickname' =>'昵称',
+			'createtime' => '添加时间',
+			'status' => array('状态', array('audit')),
+	);
+	protected $searchConfig = array(
+			'status' => array('状态：', 'radio_list'),
+			'account' => array('账号：', 'text'),
+			'createtime' => array('选择时间：', 'date'),
+	);
 	/*
 	 * 扣款
 	*/
@@ -69,7 +87,12 @@ class UserModel extends BaseModel {
 	
 		return $oUser;
 	}
-	
+	protected function _after_select(&$resultSet,$options) {
+		foreach ($resultSet as &$value) {
+			$this->_auto_process_data($value);
+			$value['createtime'] = date('Y-m-d H:i', $value['createtime']);
+		}
+	}
 }
 
 

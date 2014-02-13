@@ -52,14 +52,3 @@
 <!---->
 </div>
 <include file='Public:footer' />
-<script>
-$(function(){
-	$("#login_sub").bind('click', function(){
-		if($("#txt_account").val() == "" && $("#txt_password").val() == ""){
-			alert('用户名或密码不能为空');
-		}else{
-			actRequest($("#login_form").serialize(), '1003');
-		}
-	});
-});
-</script>

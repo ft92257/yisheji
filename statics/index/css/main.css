@@ -673,7 +673,7 @@ footer .nav_site nav{ margin-left:-10px; cursor:default;}
 .list-activity .pic{ float:left; width:338px; height:258px; overflow:hidden; margin:1px 0 0 1px;}
 .list-activity .pic img{ height:258px; min-width:338px;_width:338px;}
 .list-activity .r{ width:388px;margin-right:1px; position:relative; z-index:1; height:249px;padding:10px 15px 0;color:#999; line-height:20px;}
-.list-activity .bottom{ height:50px; width:388px;  position:absolute;left:0;bottom:0;padding:10px 15px 0;}
+.list-activity .bottom{ height:65px; width:388px;  position:absolute;left:0;bottom:0;padding:10px 15px 0;}
 .list-activity .bottom a{color:#0099CC;}
 .list-activity strong{ font-size:14px; display:block;padding:5px 0 10px;}
 .list-activity strong a{color:#395978;}
@@ -913,3 +913,9 @@ footer .nav_site nav{ margin-left:-10px; cursor:default;}
 
 #sub_moni{ background-image:url(../images/btn.png); background-position:-351px -374px; width:80px; height:30px; border:0 none; cursor:pointer; color:#FFF}
  #sub_moni:focus{ outline:none}
+
+.layerTable{ width:400px}
+ .layerTable .pLeft{ padding-left:20px}
+ .layerTable .zT{ text-align:left; width:200px}
+ .layerTable .cred{ font-size:60px; color:#F00; font-weight:bold;}
+ .layerTable p{ font-size:14px; line-height:20px; color:#999}

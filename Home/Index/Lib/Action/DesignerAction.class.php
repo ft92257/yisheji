@@ -20,6 +20,7 @@ class DesignerAction extends BaseAction{
 					"{$field}_zh" => $this->_aBaseOptions[$format][$i[$field]],
 					"{$field}_c" => $i["{$field}_c"]
 			);
+			
 		}
 		return $arr;
 	}

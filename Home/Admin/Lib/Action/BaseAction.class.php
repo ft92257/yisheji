@@ -97,7 +97,7 @@ class BaseAction extends Action {
 	 * 输出表单模版
 	 */
 	protected function _display_form($data = array(), $template = '') {
-		$this->assign('formHtml', $this->model->getFormHtml($data));
+		$this->assign('formHtml',$this->model->getFormHtml($data));
 		$this->display($template);
 	}
 	
