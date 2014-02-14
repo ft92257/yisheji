@@ -14,6 +14,8 @@ class ActiveAction extends BaseAction{
 		$data = $this->activeList();
 		$this->assign('activeList', $data['list']);
 		$this->assign('activePage', $data['page']);
+		
+		$this->assign('search', $this->para);
 		$this->display();
 	}
 	

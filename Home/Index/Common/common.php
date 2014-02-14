@@ -260,11 +260,7 @@ begin;
 }
 
 function formatTag($tagString){
-	$tag = D('Tag');
-	foreach(explode(',', $tagString) as $v){
-		$arr[] = $tag->where(array('id' =>$v))->getField('content');
-	}
-	return $arr;
+	return explode(',', $tagString);
 }
 
 ?>

@@ -33,7 +33,6 @@ class CaseAction extends BaseAction{
 		
 		$this->model = D('Case');
 		$data = $this->model->queryOne(array('id' => $this->para['id']));
-		
 		if(empty($data)){
 			redirect(__URL__.'/caseIndex');
 		}
@@ -50,7 +49,6 @@ class CaseAction extends BaseAction{
 		
 		$this->assign('designerCase', $this->model->getDesignerCase($data['uid'], 4));
 		$this->assign('designerInfo', D('User_designer')->queryOne(array('uid' => $data['uid'])));
-		
 		
 		$this->display();
 	}
@@ -74,7 +72,6 @@ class CaseAction extends BaseAction{
 			$order =  "createtime {$order}";
 		}
 		return $this->model->getList($where, $order, 10, true);
-		
 	}
 	
 	public function caseFocus(){

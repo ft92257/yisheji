@@ -15,6 +15,7 @@ class HouseAction extends BaseAction{
 		$this->assign('houseList', $data['list']);
 		$this->assign('housePage', $data['page']);
 		
+		$this->assign('search', $this->para);
 		$this->display();
 	}
 	

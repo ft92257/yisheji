@@ -232,8 +232,7 @@ class BaseAction extends Action {
 				break;
 			case '9105':
 				A('Collect')->add(); #添加收藏
-				break;	
-							
+				break;				
 			case '105': 
 				A("User")->accountUnique(); #账号唯一校验
 				break;
