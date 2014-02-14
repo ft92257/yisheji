@@ -47,6 +47,9 @@ class ActiveAction extends BaseAction{
 			$order = $this->para['list_createtime'] == 1 ? 'desc' : '';
 			$order =  "list_createtime {$order}";
 		}
+		if($this->para['cid'] > 0){
+			$where['cid'] = $this->para['cid'];
+		}
 		return $this->model->getList($where, $order, 5, true);
 	}
 	

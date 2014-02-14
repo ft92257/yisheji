@@ -104,6 +104,9 @@ class DesignerAction extends BaseAction{
 			$order = $this->para['list_reserve_count'] == 1 ? 'desc' : '';
 			$order =  "reserve_count {$order}";
 		}
+		if($this->para['cid'] > 0){
+			$where['cid'] = $this->para['cid'];
+		}
 		return $this->model->getList($where, $order, 5, true);
 	}
 	

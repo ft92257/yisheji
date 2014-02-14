@@ -2,7 +2,7 @@
     <!---->
     <div id="pbody"><div class="extra pb-6 pt-2-5">
     	<div class="t-1">
-        	<h2>上海稻壳互联设计装修公司</h2>
+        	<h2>{$companyInfo['name']}</h2>
         </div>
         <div class="list-match mt--0-5">
             <ul>
@@ -26,125 +26,107 @@
             </ul>
         </div>
         <div class="t-5 pt-2-5 pb-1-5">
-            <h3>项目预算</h3>
-        	<div class="fun"><a class="more" href="#">查看更多 »</a></div>
+            <h3>活动</h3>
+        	<div class="fun"><a class="more" href="__GROUP__/Active/activeIndex/cid/{$companyInfo['id']}" target="_blank">查看更多 »</a></div>
         </div>
         <div class="list-activity list-company">
             <ul class="j_hover">
-                <li><div class="pic"><a href="#"><img src="__FILES__/image/pic_1.jpg" alt="" /></a></div>
+            	<foreach name="active" item="vo">
+                <li><div class="pic"><a href="__GROUP__/Active/activeDetails/id/{$vo['id']}" target="_blank"><img src="{$vo['focus_img']}" alt="" /></a></div>
                     <div class="r">
-                        <strong><a href="#">设计的设计 原研哉二零一一中国展</a></strong>
-                        <p>2011年6月13日—2011年7月15日，天安时间当代艺术中心将隆重推出日本平面设计的领军人物原研哉(Kenyahara)的首次大型个展“设计的设计”。展览由翁菱担任艺术总监，朱锷、汤静担任策展人，历时近三年筹备。</p>
+                        <strong><a href="__GROUP__/Active/activeDetails/id/{$vo['id']}" target="_blank">{$vo['title']}</a></strong>
+                        <p>{$vo['info']}</p>
                         <div class="bottom">
-                            <p>主办方&nbsp; <a href="#">当代艺术中心</a></p>
-                            <p>时 &nbsp;&nbsp; 间&nbsp; 2013/08/28 - 2013/08/10</p>
+                            <p>主办方&nbsp; <a href="#">{$vo['organizer']}</a></p>
+                            <p>时 &nbsp;&nbsp; 间&nbsp; {$vo['begin_date']}~{$vo['end_date']}&nbsp;{$vo['begin_time']}~{$vo['end_time']}</p>
                         </div>
                     </div>
                 </li>
+               </foreach>
             </ul>
         </div>
         <div class="t-5 pt-0-5 pb-1-5">
             <h3>样板房</h3>
-        	<div class="fun"><a class="more" href="#">查看更多 »</a></div>
+        	<div class="fun"><a class="more" href="__GROUP__/House/houseIndex/cid/{$companyInfo['id']}" target="_blank">查看更多 »</a></div>
         </div>
         <div class="bg-company">
         	<div class="w-96 list-1">
                 <ul class="w-100">
-                    <li>
-                        <a class="pic" href="#"><img src="__FILES__/image/decoration_1.jpg" alt="" /></a>
-                        <strong><a href="#">秋韵之都</a></strong>
-                        <p class="info">三室两厅,北欧极简,20W</p>
-                        <p>上海市 浦东新区,初期 线路敷设</p>
-                        <div class="status"><span><i class="ico ico-10"></i>已收藏</span>
+                    <foreach name='house' item='vo'>
+                    	<li>
+                    		<a class="pic " href="__GROUP__/House/houseDetails/id/{$vo['id']}" target="_blank" data-collect="{$vo['is_collect']}"><img src="{$vo['focus_img']}" alt="" /></a>
+                    		<strong><a href="__GROUP__/House/houseDetails/id/{$vo['id']}" target="_blank">{$vo['name']}</a></strong>
+                            <p class="info">{$vo['housetype_zh']},{$vo['style_zh']},<if condition="($vo['design_fee'] gt 0)">￥{$vo['design_fee']}</if></p>
+                            <p>{$vo['info']}</p>
+                            <empty name="vo['uid']">
+                            <a class="pic_designer" title="" href="__GROUP__/Designer/designerDetails/uid/{$vo['uid']}"><img src="{$vo['header']}" alt="" /></a>
+                    		</empty>
+                    		<if condition="($vo['is_collect'] eq 1)">
+                            <div class="status" data-collect="{$vo['is_collect']}">
+                            <span><i class="ico ico-10"></i>已收藏</span>
                             <i class="bg"></i>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="pic" href="#"><img src="__FILES__/image/decoration_2.jpg" alt="" /></a>
-                        <strong><a href="#">秋韵之都</a></strong>
-                        <p class="info">三室两厅,北欧极简,20W</p>
-                        <p>上海市 浦东新区,初期 线路敷设</p>
-                    </li>
-                    <li>
-                        <a class="pic" href="#"><img src="__FILES__/image/decoration_3.jpg" alt="" /></a>
-                        <strong><a href="#">秋韵之都</a></strong>
-                        <p class="info">三室两厅,北欧极简,20W</p>
-                        <p>上海市 浦东新区,初期 线路敷设</p>
-                    </li>
+                             </div>
+                    		<else/>
+                            <div class="status" style="display:block; cursor:pointer" >
+                            <span class='sp_collect' data-id="{$vo['id']}" data-type="1"><i class="ico ico-10"></i>添加收藏</span>
+                            <i class="bg"></i>
+                            </div>
+                            </if>
+                        </li>
+                     </foreach> 
                 </ul>
             </div>
         </div>
         <div class="t-5 pt-2-5 pb-1-5">
             <h3>设计师</h3>
-        	<div class="fun"><a class="more" href="#">查看更多 »</a></div>
+        	<div class="fun"><a class="more" href="__GROUP__/Designer/designerIndex/cid/{$companyInfo['id']}" target="_blank">查看更多 »</a></div>
         </div>
         <div class="bg-company company-designer">
         	<div class="w-96 list-1">
                 <ul class="w-100 j_hover">
-                    <li>
-                        <a class="pic" href="#"><img src="__FILES__/image/designer_style_1_1.jpg" alt="" /></a>
-                        <strong><a href="#">周周</a></strong>
-                        <p>专长：软装设计  费用：10W</p>
-                        <p>服务范围：为客户提供原创性、艺术性、专业性的软装设计方案。</p>
-                        <div class="status status-2"><a href="#"><i class="ico ico-13"></i>加关注</a>
-                            <i class="bg"></i>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="pic" href="#"><img src="__FILES__/image/designer_style_1_2.jpg" alt="" /></a>
-                        <strong><a href="#">Jay（澳大利亚）</a></strong>
-                        <p>专长：软装设计  费用：10W</p>
-                        <p>服务范围：为客户提供原创性、艺术性、专业性的软装设计方案。</p>
-                        <div class="status status-2"><a href="#"><i class="ico ico-13"></i>加关注</a>
-                            <i class="bg"></i>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="pic" href="#"><img src="__FILES__/image/designer_style_1_3.jpg" alt="" /></a>
-                        <strong><a href="#">Alex（英国）</a></strong>
-                        <p>专长：软装设计  费用：10W</p>
-                        <p>服务范围：为客户提供原创性、艺术性、专业性的软装设计方案。</p>
-                        <div class="status status-2"><a href="#"><i class="ico ico-13"></i>加关注</a>
-                            <i class="bg"></i>
-                        </div>
-                    </li>
+                    <foreach name='designer' item='vo'>
+                    	<li>
+                        	<a class="pic" href="__GROUP__/Designer/designerDetails/uid/{$vo['uid']}" target="_blank"><img src="{$vo['header']}" alt="" /></a>
+                            <strong><a href="__GROUP__/Designer/designerDetails/uid/{$vo['uid']}" target="_blank">{$vo['name_zh']}</a></strong>
+                            <p>专长：{$vo['decoration_type_zh']}  费用：￥{$vo['min_fee']}</p>
+                            <p>服务范围：{$vo['info']}</p>
+                            <div class="status status-2"><a href="#"><i class="ico ico-13"></i>加关注</a>
+                            	<i class="bg"></i>
+                            </div>
+                        </li>
+              		</foreach>
                 </ul>
             </div>
         </div>
         <div class="t-5 pt-2-5 pb-1-5">
             <h3>设计案例</h3>
-        	<div class="fun"><a class="more" href="#">查看更多 »</a></div>
+        	<div class="fun"><a class="more" href="__GROUP__/case/caseIndex/cid/{$companyInfo['id']}" target="_blank">查看更多 »</a></div>
         </div>
         <div class="bg-company">
         	<div class="w-96 list-1">
                 <ul class="w-100">
-                    <li>
-                        <a class="pic" href="#"><img src="__FILES__/image/decoration_1.jpg" alt="" /></a>
-                        <strong><a href="#">秋韵之都</a></strong>
-                        <p class="info">三室两厅,北欧极简,20W</p>
-                        <p>上海市 浦东新区,初期 线路敷设</p>
-                        <div class="status"><span><i class="ico ico-10"></i>已收藏</span>
+                    <foreach name='case' item='vo'>
+                    	<li>
+                    		<a class="pic " href="__GROUP__/Case/caseDetails/id/{$vo['id']}" target="_blank" data-collect="{$vo['is_collect']}"><img src="{$vo['focus_img']}" alt="" /></a>
+                    		<strong><a href="__GROUP__/Case/caseDetails/id/{$vo['id']}" target="_blank">{$vo['name']}</a></strong>
+                            <p class="info">{$vo['housetype_zh']},{$vo['style_zh']},<if condition="($vo['design_fee'] gt 0)">￥{$vo['design_fee']}</if></p>
+                            <p>{$vo['info']}</p>
+                            <empty name="vo['uid']">
+                            <a class="pic_designer" title="" href="__GROUP__/Designer/designerDetails/uid/{$vo['uid']}"><img src="{$vo['header']}" alt="" /></a>
+                    		</empty>
+                    		<if condition="($vo['is_collect'] eq 1)">
+                            <div class="status" data-collect="{$vo['is_collect']}">
+                            <span><i class="ico ico-10"></i>已收藏</span>
                             <i class="bg"></i>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="pic" href="#"><img src="__FILES__/image/decoration_2.jpg" alt="" /></a>
-                        <strong><a href="#">秋韵之都</a></strong>
-                        <p class="info">三室两厅,北欧极简,20W</p>
-                        <p>上海市 浦东新区,初期 线路敷设</p>
-                        <div class="status"><span><i class="ico ico-10"></i>已收藏</span>
+                             </div>
+                    		<else/>
+                            <div class="status" style="display:block; cursor:pointer" >
+                            <span class='sp_collect' data-id="{$vo['id']}" data-type="1"><i class="ico ico-10"></i>添加收藏</span>
                             <i class="bg"></i>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="pic" href="#"><img src="__FILES__/image/decoration_3.jpg" alt="" /></a>
-                        <strong><a href="#">秋韵之都</a></strong>
-                        <p class="info">三室两厅,北欧极简,20W</p>
-                        <p>上海市 浦东新区,初期 线路敷设</p>
-                        <div class="status"><span><i class="ico ico-10"></i>已收藏</span>
-                            <i class="bg"></i>
-                        </div>
-                    </li>
+                            </div>
+                            </if>
+                        </li>
+                     </foreach>   
                 </ul>
             </div>
         </div>
