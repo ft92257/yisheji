@@ -17,6 +17,7 @@ class HouseModel extends BaseModel {
 				}
 			}
 		}
+		$resultSet['info_j'] =  infoFormat($resultSet['info']);
 		$resultSet['picture'] = D('Picture')->where(array('type'=>3, 'target' => $resultSet['id']))->select();
 		$resultSet['material'] = explode("\n", $resultSet['material']);
 		$resultSet['owner_interview'] = json_decode($resultSet['owner_interview'], 1);

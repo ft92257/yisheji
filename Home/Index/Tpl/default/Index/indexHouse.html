@@ -57,7 +57,7 @@
                     		<a class="pic " href="__GROUP__/House/houseDetails/id/{$vo['id']}" target="_blank" data-collect="{$vo['is_collect']}"><img src="{$vo['focus_img']}" alt="" /></a>
                     		<strong><a href="__GROUP__/House/houseDetails/id/{$vo['id']}" target="_blank">{$vo['name']}</a></strong>
                             <p class="info">{$vo['housetype_zh']},{$vo['style_zh']},<if condition="($vo['design_fee'] gt 0)">￥{$vo['design_fee']}</if></p>
-                            <p>{$vo['info']}</p>
+                            <p>{$vo['info_j']}</p>
                             <empty name="vo['uid']">
                             <a class="pic_designer" title="" href="__GROUP__/Designer/designerDetails/uid/{$vo['uid']}"><img src="{$vo['header']}" alt="" /></a>
                     		</empty>

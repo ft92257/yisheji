@@ -10,7 +10,6 @@ class CaseAction extends BaseAction{
 		$this->assign('style', $this->_aBaseOptions['style']);
 		
 		$this->assign('caseFocus', $this->caseFocus());
-		
 		$data = $this->caseList();
 		$this->assign('caseList', $data['list']);
 		$this->assign('casePage', $data['page']);

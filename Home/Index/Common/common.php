@@ -263,4 +263,11 @@ function formatTag($tagString){
 	return explode(',', $tagString);
 }
 
+function infoFormat($str, $long = 126, $char = '...'){
+	if(strlen($str) > $long){
+		$str = substr($str, 0, 126).$char;
+	}
+	return $str;
+}
+
 ?>
