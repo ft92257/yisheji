@@ -185,19 +185,19 @@ function autoUpdate(obj, url) {
 /*
  * 控制下一级是否显示
  */
-function selectTarget(field, index) {
-	var s = "[name='"+field+"']";
-	var obj = $(s).parent().parent().next();
-	$(s).change(function(){
+function selectTarget(select, index, target) {
+	eval("select = "+select);
+	eval("target = "+target);
+	select.change(function(){
 		if ($(this).val() == index) {
-			obj.show();
+			target.show();
 		} else {
-			obj.hide();
+			target.hide();
 		}
 	});
-	if ($(s).val() == index) {
-		obj.show();
+	if (select.val() == index) {
+		target.show();
 	} else {
-		obj.hide();
+		target.hide();
 	}
 }

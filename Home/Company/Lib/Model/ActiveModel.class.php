@@ -63,5 +63,13 @@ class ActiveModel extends BaseModel {
 		}
 	}
 	
+	/*
+	 * 全文搜索添加记录
+	 */
+	protected function _after_insert($data,$options) {
+		$this->_auto_process_data($data);
+		$fields = 'title,type,address,organizer,info';
+		D('Search')->addRecord($data, $fields, 1);
+	}
 }
 ?>

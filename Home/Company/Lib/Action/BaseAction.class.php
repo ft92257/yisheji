@@ -9,7 +9,7 @@ class BaseAction extends Action {
 	protected $oCom;//用户信息
 	protected $aVerify = array();//需要验证的方法
 	protected $model;
-	protected $retType = 0;//返回数据格式 0：网页，1：ajax，自定义数组 array(状态字段  => 状态值, 消息字段 => 消息信息)
+	protected $retFunc = array();//例：array('success' => 'uploadSuccess','error' => 'uploadError');
 	
 	public function __construct() {
 		parent::__construct();
@@ -293,78 +293,23 @@ class BaseAction extends Action {
 		}
 	}
 	
-	protected function error($message,$jumpUrl='',$ajax=false) {
-		$retType = $this->retType;
-		if (is_array($retType)) {
-			$ret = array();
-			$ret = array_merge($ret, $retType['error']);
-			$ret = array_merge($ret, array($retType['msg'] => $message));
-			unset($retType['success']);
-			unset($retType['error']);
-			unset($retType['msg']);
-			$ret = array_merge($ret, $retType);
-			
-			die(json_encode($ret));
-		} elseif ($retType == 1) {
-			$this->dispatchJump($message,0,$jumpUrl, true);
+	protected function error($message,$jumpUrl='') {
+		if (isset($this->retFunc['error'])) {
+			$func = $this->retFunc['error'];
+			return $this->$func($message,$jumpUrl);
 		} else {
-			$this->dispatchJump($message,0,$jumpUrl,$ajax);
+			return parent::error($message,$jumpUrl);
 		}
 	}
 	
-	protected function success($message,$jumpUrl='',$ajax=false) {
-		$retType = $this->retType;
-		if (is_array($retType)) {
-			$ret = array();
-			$ret = array_merge($ret, $retType['success']);
-			$ret = array_merge($ret, array($retType['msg'] => $message));
-			unset($retType['success']);
-			unset($retType['error']);
-			unset($retType['msg']);
-			$ret = array_merge($ret, $retType);
-			
-			die(json_encode($ret));
-		} elseif ($retType == 1) {
-			$this->dispatchJump($message,1,$jumpUrl, true);
+	protected function success($message,$jumpUrl='') {
+		if (isset($this->retFunc['success'])) {
+			$func = $this->retFunc['success'];
+			return $this->$func($message,$jumpUrl);
 		} else {
-			$this->dispatchJump($message,1,$jumpUrl,$ajax);
+			return parent::success($message,$jumpUrl);
 		}
 	}
-	
-	private function dispatchJump($message,$status=1,$jumpUrl='',$ajax=false) {
-		if(true === $ajax || IS_AJAX) {// AJAX提交
-			$data           =   is_array($ajax)?$ajax:array();
-			$data['info']   =   $message;
-			$data['status'] =   $status;
-			$data['url']    =   $jumpUrl;
-			$this->ajaxReturn($data);
-		}
-		if(is_int($ajax)) $this->assign('waitSecond',$ajax);
-		if(!empty($jumpUrl)) $this->assign('jumpUrl',$jumpUrl);
-		// 提示标题
-		$this->assign('msgTitle',$status? L('_OPERATION_SUCCESS_') : L('_OPERATION_FAIL_'));
-		//如果设置了关闭窗口，则提示完毕后自动关闭窗口
-		if($this->get('closeWin'))    $this->assign('jumpUrl','javascript:window.close();');
-		$this->assign('status',$status);   // 状态
-		//保证输出不受静态缓存影响
-		C('HTML_CACHE_ON',false);
-		if($status) { //发送成功信息
-			$this->assign('message',$message);// 提示信息
-			// 成功操作后默认停留1秒
-			if(!isset($this->waitSecond))    $this->assign('waitSecond','1');
-			// 默认操作成功自动返回操作前页面
-			if(!isset($this->jumpUrl)) $this->assign("jumpUrl",$_SERVER["HTTP_REFERER"]);
-			$this->display(C('TMPL_ACTION_SUCCESS'));
-		}else{
-			$this->assign('error',$message);// 提示信息
-			//发生错误时候默认停留3秒
-			if(!isset($this->waitSecond))    $this->assign('waitSecond','3');
-			// 默认发生错误的话自动返回上页
-			if(!isset($this->jumpUrl)) $this->assign('jumpUrl',"javascript:history.back(-1);");
-			$this->display(C('TMPL_ACTION_ERROR'));
-			// 中止执行  避免出错后继续执行
-			exit ;
-		}
-	}
+
 }
 ?>
