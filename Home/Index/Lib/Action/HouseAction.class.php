@@ -15,6 +15,7 @@ class HouseAction extends BaseAction{
 		$this->assign('houseList', $data['list']);
 		$this->assign('housePage', $data['page']);
 		
+		$this->assign('search', $this->para);
 		$this->display();
 	}
 	
@@ -48,6 +49,9 @@ class HouseAction extends BaseAction{
 		if($this->para['list_createtime']>0){
 			$order = $this->para['list_createtime'] == 1 ? 'desc' : '';
 			$order =  "createtime {$order}";
+		}
+		if($this->para['cid'] > 0){
+			$where['cid'] = $this->para['cid'];
 		}
 		return $this->model->getList($where, $order, 10, true);
 	}

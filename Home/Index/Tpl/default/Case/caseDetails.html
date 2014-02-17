@@ -1,5 +1,5 @@
 <include file="Public:header" />
-    <div id="pbody"><div class="extra pb-6">
+	<div id="pbody"><div class="extra pb-6">
     	<div id="local"><a href="#">首页</a>&gt;<a href="#">案例</a>&gt;<span>案例详情</span></div>
         <div class="row-3 relative clearfix">
         	<div class="w-69 pb-7">
@@ -20,17 +20,20 @@
                     <span><a><i class="ico ico-22"></i>评论<b>（{$caseInfo['comment_count']}）</b></a></span>
                 </div>
                 <div class="cnt-article clearfix pt-2 pb-3">
-                	{$caseInfo['info']}<br/>
+                	<div class="mb-5">{$caseInfo['info']}</div>
                 	<foreach name="casePhoto" item="vo" key="i">
-                	<a href="javascript:void(0)" class='look' data-num="{$i+1}" data-id="{$caseInfo['id']}"><img src="{$vo['fid_img']}" alt=""/></a><br/>
-                	<p>{$vo['title']}</p>
+                	<div class="mt-3">
+                	 <a href="javascript:void(0)" class='look' data-num="{$i+1}" data-id="{$caseInfo['id']}"><img src="{$vo['fid_img']}" alt=""/></a><br/>
+                	 <p>{$vo['title']}</p>
+                	</div>
                 	</foreach>
                 </div>
                 <div class="cnt-article-bottom">
                 	<div class="l"><i class="ico ico-28"></i>该作品有问题，我要 <a href="__GROUP__/Case/caseReport/id/{$caseInfo['id']}">举报</a></div>
                     <div class="r">
-                    	<a href="#"><i class="ico ico-23"></i><span>分享<br />{$caseInfo['share_count']}</span></a>
-                        <a href="#"><i class="ico ico-24"></i><span>喜欢<br />{$caseInfo['like_count']}</span></a>
+                    	<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#uuid=999&style=-1"></script>
+                    	<a href='javasript:void(0)' onclick="javascript:bShare.more(event);return false;"><i class="ico ico-23"></i><span >分享<br />{$caseInfo['share_count']}</span></a>
+                        <a href="javascript:void(0)" id='case_zan_sub' data-target="{$caseInfo['id']}"><i class="ico ico-24"></i><span>喜欢<br />{$caseInfo['like_count']}</span></a>
                     </div>
                 </div>
             </div>
@@ -105,6 +108,7 @@
 <include file="Public:footer" />
 <script>
 $(function(){
+	$("#case_zan_sub").bind('click',function(){ actRequest("target="+$(this).attr('data-target')+"&type=3", '9102'); });
 	$('#reserve_sub').bind('click', function(){ actRequest($('#reserve_form').serialize(), '9101'); });
 });
 

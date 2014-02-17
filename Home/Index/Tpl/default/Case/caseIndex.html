@@ -83,8 +83,8 @@
                     <div class="show">
                         <ul>
                             <li <empty name="search['list_collect_count']"> selected="selected"  </empty> ><a>按人气</a></li>
-	                            <li val="1" <if condition="($search['list_collect_count'] eq 1)"> selected="selected" </if> ><a>降序</a></li>
-	                            <li val="2" <if condition="($search['list_collect_count'] eq 2)"> selected="selected" </if> ><a>升序</a></li>
+	                        <li val="1" <if condition="($search['list_collect_count'] eq 1)"> selected="selected" </if> ><a>降序</a></li>
+	                        <li val="2" <if condition="($search['list_collect_count'] eq 2)"> selected="selected" </if> ><a>升序</a></li>
                         </ul>
                     </div>
                 </div>
@@ -92,9 +92,9 @@
                     <div class="curr"><span></span></div>
                     <div class="show">
                         <ul>
-                            <li <empty name="search['list_createtime']"> selected="selected"  </empty> ><a>按人气</a></li>
-	                            <li val="1" <if condition="($search['list_createtime'] eq 1)"> selected="selected" </if> ><a>降序</a></li>
-	                            <li val="2" <if condition="($search['list_createtime'] eq 2)"> selected="selected" </if> ><a>升序</a></li>
+                            <li <empty name="search['list_createtime']"> selected="selected"  </empty> ><a>按时间</a></li>
+	                        <li val="1" <if condition="($search['list_createtime'] eq 1)"> selected="selected" </if> ><a>降序</a></li>
+	                        <li val="2" <if condition="($search['list_createtime'] eq 2)"> selected="selected" </if> ><a>升序</a></li>
                         </ul>
                     </div>
                 </div>
@@ -108,7 +108,7 @@
                 	<li><a href="__GROUP__/Case/caseDetails/id/{$vo['id']}"><img src="{$vo.focus_img}" alt="{$vo.name}" /></a>
                     	<div class="l">
                         	<a href="__GROUP__/Designer/designerDetails/uid/{$vo['uid']}">
-                            	<div class="pic"><img src="{$vo.header}" alt="" /></div>
+                            	<div class="pic">{$vo['header']}1111<img src="{$vo['header']}" alt="" /></div>
                             	{$vo.desginer_name}
                             </a>
                         </div>

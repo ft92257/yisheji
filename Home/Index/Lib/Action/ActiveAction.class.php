@@ -14,6 +14,8 @@ class ActiveAction extends BaseAction{
 		$data = $this->activeList();
 		$this->assign('activeList', $data['list']);
 		$this->assign('activePage', $data['page']);
+		
+		$this->assign('search', $this->para);
 		$this->display();
 	}
 	
@@ -39,11 +41,14 @@ class ActiveAction extends BaseAction{
 		}
 		if($this->para['list_collect_count']>0){
 			$order = $this->para['list_collect_count'] == 1 ? 'desc' : '';
-			$order =  "list_collect_count {$order}";
+			$order =  "collect_count {$order}";
 		}
 		if($this->para['list_createtime']>0){
 			$order = $this->para['list_createtime'] == 1 ? 'desc' : '';
-			$order =  "list_createtime {$order}";
+			$order =  "createtime {$order}";
+		}
+		if($this->para['cid'] > 0){
+			$where['cid'] = $this->para['cid'];
 		}
 		return $this->model->getList($where, $order, 5, true);
 	}

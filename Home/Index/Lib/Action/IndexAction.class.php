@@ -73,7 +73,7 @@ class IndexAction extends BaseAction{
 		$this->assign('caseType2', $data);
 		$this->assign('housetype', $this->_aBaseOptions['houseType']);
 		$this->assign('style', $this->_aBaseOptions['style']);
-		$this->assign('decoration_type', $this->_aBaseOptions['decoration_type']);
+		$this->assign('decorationType', $this->_aBaseOptions['decorationType']);
 		$this->assign('search', $this->para);
 		$this->display();
 	}

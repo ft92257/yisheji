@@ -20,6 +20,7 @@ class User_designerModel extends BaseModel {
 		$resultSet['header'] = getFileUrl($resultSet['avatar']);
 		$resultSet['avg_score'] = ($resultSet['score_skill'] + $resultSet['score_service']) / 2;
 		$resultSet['star_html'] = getStar($resultSet['avg_score']);
+		$resultSet['info_j'] =  infoFormat($resultSet['info']);
 	}
 	
 	public function getAvgScore(){
