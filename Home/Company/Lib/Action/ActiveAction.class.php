@@ -20,6 +20,10 @@ class ActiveAction extends BaseAction {
 					'cid' => $this->oCom->id,
 					'uid' => $this->oUser->id,
 			);
+			if (getRequest('datetype') == 1) {
+				$dataBase['begin_date'] = getRequest('active_date');
+				$dataBase['end_date'] = getRequest('active_date');
+			}
 			$this->_add($dataBase);
 		} else {
 			$this->_display_form();
@@ -42,9 +46,17 @@ class ActiveAction extends BaseAction {
 	public function edit() {
 		$data = $this->model->getById(getRequest('id'));
 		$this->checkPurviewData($data);
+		if ($data['datetype'] == 1) {
+			$data['active_date'] = $data['begin_date'];
+		}
 		
 		if ($this->isPost()) {
-			$this->_edit($data);
+			$dataBase = array();
+			if (getRequest('datetype') == 1) {
+				$dataBase['begin_date'] = getRequest('active_date');
+				$dataBase['end_date'] = getRequest('active_date');
+			}
+			$this->_edit($data, $dataBase);
 		} else {
 			$this->_display_form($data, 'add');
 		}

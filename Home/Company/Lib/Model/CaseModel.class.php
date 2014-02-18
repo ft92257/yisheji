@@ -50,7 +50,6 @@ class CaseModel extends BaseModel {
 			'id' => '编号',
 			'name' => '作品名称',
 			'decoration_type' => '装修类型',
-			'housetype' => '户型',
 			'style' => '风格',
 			'design_fee' => '费用(元)',
 			'recommend' => '推荐',

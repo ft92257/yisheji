@@ -81,5 +81,6 @@ class CaseAction extends BaseAction {
 
 		$this->success('设置成功！');
 	}
+	
 }
 ?>

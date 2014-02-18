@@ -201,3 +201,33 @@ function selectTarget(select, index, target) {
 		target.hide();
 	}
 }
+function checkedTarget(field, index, target) {
+	var s = "[name='"+field+"']";
+	eval("target = "+target);
+	$(s + ":eq("+index+")").click(function(){
+		target.show();
+	});
+	$(s + ":lt("+index+"),"+ s + ":gt("+index+")").click(function(){
+		target.hide();
+	});
+	if ($(s + ":eq("+index+")").attr('checked') == 'checked') {
+		target.show();
+	} else {
+		target.hide();
+	}
+}
+function checkedHideTarget(field, index, target) {
+	var s = "[name='"+field+"']";
+	eval("target = "+target);
+	$(s + ":eq("+index+")").click(function(){
+		target.hide();
+	});
+	$(s + ":lt("+index+"),"+ s + ":gt("+index+")").click(function(){
+		target.show();
+	});
+	if ($(s + ":eq("+index+")").attr('checked') == 'checked') {
+		target.hide();
+	} else {
+		target.show();
+	}
+}
