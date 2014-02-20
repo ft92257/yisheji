@@ -70,6 +70,10 @@ function actRequest(data, act){
 		
 	}
 	
+	function isLogin(){
+		
+	}
+	
 	
 	function ajaxReturnFun(r){
 		switch(r.act){

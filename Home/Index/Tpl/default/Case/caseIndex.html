@@ -40,7 +40,7 @@
                       <foreach name='caseFocus' item='vo'>
                     	<div>
                         	<div class="l">
-                            	<a href="__URL__/caseDetails/id/{$vo['id']}"><img src="{$vo['focus_img']}" alt="" /></a>
+                            	<a href="__URL__/caseDetails/id/{$vo['id']}"><img src="{$vo['focus_img']}" alt="{$vo['housetype_zh']}{$vo['stype_zh']}"  title="{$vo['name']}" /></a>
                             </div>
                             <div class="r">
                             	<strong>{$vo['name']}</strong>
@@ -108,7 +108,7 @@
              <div class="w-76 list-3">
             	<ul class="w-80 j-hover">
                   <foreach name='caseList' item='vo'>
-                	<li><a href="__GROUP__/Case/caseDetails/id/{$vo['id']}" target="_blank"><img src="{$vo.focus_img}" alt="{$vo.name}" /></a>
+                	<li><a href="__GROUP__/Case/caseDetails/id/{$vo['id']}" target="_blank"><img src="{$vo.focus_img}" alt="{$vo['housetype_zh']}{$vo['stype_zh']}"  title="{$vo['name']}" /></a>
                     	<div class="l">
                         	<a href="__GROUP__/Designer/designerDetails/uid/{$vo['uid']}" target="_blank">
                             	<div class="pic"><img src="{$vo['header']}" alt="" /></div>
