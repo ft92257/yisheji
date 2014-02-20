@@ -65,3 +65,12 @@ function getCookie(name){
 function isEmpty(v){
 	return v.replace(/[ ]/g,"") == "" ? true : false;
 }
+
+function replace_em(str){
+	str = str.replace(/\</g,'&lt;');
+	str = str.replace(/\>/g,'&gt;');
+	str = str.replace(/\n/g,'<br/>');
+	str = str.replace(/\[em_([0-9]*)\]/g,'<img src="http://s.trueart.com/js/ckeditor/plugins/smiley/images/$1.gif" border="0" />');
+	return str;
+}
+

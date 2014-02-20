@@ -919,3 +919,8 @@ footer .nav_site nav{ margin-left:-10px; cursor:default;}
  .layerTable .zT{ text-align:left; width:200px}
  .layerTable .cred{ font-size:60px; color:#F00; font-weight:bold;}
  .layerTable p{ font-size:14px; line-height:20px; color:#999}
+
+.qqFace{margin-top:4px;background:#fff;padding:2px;border:1px #dfe6f6 solid;}
+.qqFace table td{padding:0px;}
+.qqFace table td img{cursor:pointer;border:1px #fff solid;}
+.qqFace table td img:hover{border:1px #0066cc solid;}

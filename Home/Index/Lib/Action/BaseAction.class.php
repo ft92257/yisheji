@@ -51,7 +51,7 @@ class BaseAction extends Action {
 	}
 
 	protected function rightCheck($act){
-		$confArr = array('1111', '2105', '3107', '9101', '9102', '9103','9105');
+		$confArr = array('1111', '2105', '3107', '7101', '7102', '7103', '8101', '8102', '9101', '9102', '9103', '9105');
 		if(in_array($act, $confArr)){
 			if(empty($this->oUser)){
 				$this->resultFormat(null,-2);
@@ -216,7 +216,23 @@ class BaseAction extends Action {
 			case '4103':
 				A('Question')->testMatch(); #测试结果匹配
 				break;
-	
+			#comment
+			case '7101':
+				A('Comment')->add(); #发布评论
+				break;
+			case '7102':
+				A('Comment')->reply(); #回复评论
+				break;
+			case '7103':
+				A('Comment')->forward(); #转发评论
+				break;
+			#Friend
+			case '8101':
+				A('Friend')->add(); #加关注
+				break;
+			case '8102':
+				A('Friend')->del(); #取消关注
+				break;
 			#Common
 			case '9101':
 				A('Reserve')->add(); #预约设计师/装修公司

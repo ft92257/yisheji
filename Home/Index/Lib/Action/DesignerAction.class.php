@@ -59,7 +59,7 @@ class DesignerAction extends BaseAction{
 		$this->model = D('User_designer');
 		$data = $this->model->queryOne(array('uid' => $this->para['uid']));
 		if(empty($data)){
-			redirect(__URL__.'/caseIndex');
+			redirect(__URL__.'/designerIndex');
 		}
 		$click_count = $this->model->where(array('uid' => $this->para['uid']))->getField('click_count');
 		$this->model->update(array('click_count' => $click_count+1), array('uid' => $this->para['uid']));

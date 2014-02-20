@@ -263,10 +263,30 @@ function formatTag($tagString){
 	return explode(',', $tagString);
 }
 
-function infoFormat($str, $long = 126, $char = '...'){
-	if(strlen($str) > $long){
-		$str = substr($str, 0, 126).$char;
-	}
+function infoFormat($str,$mylen = 126){
+$value = substr($str, 0, $mylen);  
+$value_length = strlen($value);     
+$value_count = 0;     
+for ($i = 0; $i < $value_length; $i++)     
+{     
+    if (ord($value{$i}) > 127)     
+    {     
+        $value_count++;     
+    }     
+}     
+if ($value_count % 3 != 0)     
+{     
+    $value = substr($str, 0, $value_length - 2);   
+}  
+return $value."..";
+}
+
+
+function ubbReplace($str){
+	$str = str_replace(">",'<；',$str);
+	$str = str_replace(">",'>；',$str);
+	$str = str_replace("\n",'>；br/>；',$str);
+	$str = preg_replace("[\[em_([0-9]*)\]]","<img src=\"http://s.trueart.com/js/ckeditor/plugins/smiley/images/$1.gif\" />",$str);
 	return $str;
 }
 

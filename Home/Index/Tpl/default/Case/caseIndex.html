@@ -5,9 +5,9 @@
                 <div class="curr"><span></span></div>
                 <div class="show">
                     <ul>
-                        <li selected="selected"><a>编辑推荐</a></li>
-                        <li val="recommend"><a>热门推荐</a></li>
-                        <li val="collect_count"><a>人气案例</a></li>
+                        <li <empty name="search['focus_orderby']"> selected="selected"  </empty> ><a>编辑推荐</a></li>
+                        <li val="recommend" <if condition="($search['focus_orderby'] eq 'recommend')"> selected="selected" </if>><a>热门推荐</a></li>
+                        <li val="collect_count" <if condition="($search['focus_orderby'] eq 'collect_count')"> selected="selected" </if>><a>人气案例</a></li>
                     </ul>
                 </div>
             </div>
@@ -15,9 +15,10 @@
                 <div class="curr"><span></span></div>
                 <div class="show">
                     <ul>
-                        <li selected="selected"><a>全部分类</a></li>
-                        <li val="1"><a>商业空间</a></li>
-                        <li val="2"><a>家装设计</a></li>
+                        <li <empty name="search['focus_decoration_type']"> selected="selected"  </empty> ><a>全部分类</a></li>
+                         <foreach name="{decoration_type}" item="vo" key="i">
+                         <li val="{$i}" <if condition="($search['focus_decoration_type'] eq $i)"> selected="selected" </if> > <a>{$vo}</a></li>
+                         </foreach>
                     </ul>
                 </div>
             </div>
@@ -32,6 +33,7 @@
         	<div class="l">-&nbsp; 编辑推荐 &nbsp;-&nbsp; 全部分类</div>
            </div>
         <div class="w-76">
+        <notempty name="caseFocus">
         	<div class="case-push mt-1">
                 <div class="scroll j_scrollSize" data-meta="{size:1}">
                 	<div class="items">
@@ -42,7 +44,7 @@
                             </div>
                             <div class="r">
                             	<strong>{$vo['name']}</strong>
-                                <p>{$vo['info']}</p>
+                                <p>{$vo['info_j']}</p>
                                 <p class="more"><a  target="_blank" href="__URL__/caseDetails/id/{$vo['id']}">查看详情</a></p>
                             </div>
                         </div>
@@ -52,6 +54,7 @@
                 <div class="page-1 j_scrollPage"><span class="j_info">1/5</span><div class="ico"><a class="j_prev">上一条</a><a class="j_next">下一条</a><i class="prev"></i><i class="next"></i></div>
             	</div>
             </div>
+            </notempty>
             <!-- end:caseFocus -->
             
         	<div class="box-filter clearfix mt-2">
@@ -105,21 +108,21 @@
              <div class="w-76 list-3">
             	<ul class="w-80 j-hover">
                   <foreach name='caseList' item='vo'>
-                	<li><a href="__GROUP__/Case/caseDetails/id/{$vo['id']}"><img src="{$vo.focus_img}" alt="{$vo.name}" /></a>
+                	<li><a href="__GROUP__/Case/caseDetails/id/{$vo['id']}" target="_blank"><img src="{$vo.focus_img}" alt="{$vo.name}" /></a>
                     	<div class="l">
-                        	<a href="__GROUP__/Designer/designerDetails/uid/{$vo['uid']}">
-                            	<div class="pic">{$vo['header']}1111<img src="{$vo['header']}" alt="" /></div>
+                        	<a href="__GROUP__/Designer/designerDetails/uid/{$vo['uid']}" target="_blank">
+                            	<div class="pic"><img src="{$vo['header']}" alt="" /></div>
                             	{$vo.desginer_name}
                             </a>
                         </div>
                         <div class="r">
                         	<strong><a href="__GROUP__/Case/caseDetails/id/{$vo['id']}">{$vo.name}</a></strong>
-                            <p>{$vo.info}</p>
+                            <p>{$vo.info_j}</p>
                         </div>
                         <div class="tag"><i class="ico ico-18"></i>
-                        <foreach name='vo["tags"]' item='i'>
-                        <a href="javascript:void(0)">{$i}</a>
-                        </foreach>
+                        <foreach name='vo["tag_zh"]' item='i'>
+                		<a href="javascript:void(0)">{$i}</a>
+                	</foreach>
                         </div>
                     </li>
                   </foreach>

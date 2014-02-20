@@ -49,6 +49,14 @@ class CaseAction extends BaseAction{
 		$this->assign('designerCase', $this->model->getDesignerCase($data['uid'], 4));
 		$this->assign('designerInfo', D('User_designer')->queryOne(array('uid' => $data['uid'])));
 		
+		$this->model = D("Comment");
+		$where = array(
+				'type' => '1',
+				'target' => $data['id']
+				);
+		$data = $this->model->getList($where, "createtime desc", 5, true);
+		$this->assign('caseComment', $data['list']);
+		$this->assign('caseCommentPage', $data['page']);
 		$this->display();
 	}
 	

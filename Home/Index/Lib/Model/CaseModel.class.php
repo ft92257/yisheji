@@ -11,7 +11,7 @@ class CaseModel extends BaseModel {
 		$resultSet['authorize_zh'] = $this->_aBaseOptions['authorize'][$resultSet['authorize']];
 		$resultSet['focus_img'] = getFileUrl($resultSet['focus']);
 		$resultSet['designer'] = D('User_designer')->where(array('uid' => $resultSet['uid']))->find();
-		$resultSet['header'] = $resultSet['designer']['header'];
+		$resultSet['header'] = getFileUrl($resultSet['designer']['focus']);
 		$resultSet['designer_name'] = $resultSet['designer']['realname'] ? $resultSet['designer']['realname'] : $resultSet['designer']['nickname'];
 		$resultSet['tag_zh'] = formatTag($resultSet['tags']);
 		$resultSet['is_original_zh'] = $resultSet['is_original'] ? '原创' : '转发';

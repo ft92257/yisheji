@@ -3,22 +3,26 @@
     	<div class="designer-info clearfix">
         	<div class="l">
             	<div class="left">
-                	<div class="pic"><img src="{$designerInfo.header}" style='width:200px; height:200px'/></div>
+                	<div class="pic"><img src="{$designerInfo['header']}" style='width:200px; height:200px'/></div>
                     <div class="statistic clearfix">
-                    	<a href="#"><b>168</b><br />发布</a>
+                    	<a href="#"><b>{$designerInfo['case_count']}</b><br />发布</a>
                         <i></i>
-                        <a href="#"><b>2689</b><br />人气</a>
+                        <a href="#"><b>{$designerInfo['click_count']}</b><br />人气</a>
                         <i></i>
-                        <a href="#"><b>65</b><br />关注</a>
+                        <a href="#"><b>{$designerInfo['friend_c']}</b><br />关注</a>
                         <i></i>
-                        <a href="#"><b>37</b><br />粉丝</a>
+                        <a href="#"><b>{$designerInfo['fensi_c']}</b><br />粉丝</a>
                     </div>
                 </div>
                 <div class="right">
                 	<div class="t">
-                    	<h3>{$designerInfo.name_zh}</h3>
+                    	<h3>{$designerInfo['name_zh']}</h3>
                     	<if condition="($isSelf eq 0)">
-                        <a class="btn btn-8" ><i class="ico ico-33"></i><span>已关注</span></a>
+                    	<if condition="($designerInfo['is_friend'] eq 1)">
+                        <a href='javascript:void(0)' id='del_friend' class="btn btn-8" data-uid="{$designerInfo['uid']}" ><i class="ico ico-33"></i><span>已关注</span></a>
+                        <else/>
+                        <a href='javascript:void(0)' id='add_friend' class="btn btn-8"  data-uid="{$designerInfo['uid']}" ><i class="ico ico-33"></i><span>加关注</span></a>
+                        </if>
                         <a rel="#send-letter" href="javascript:void(0)" class="btn btn-9"><i class="ico ico-34" ></i><span>发私信</span></a>
                         </if>
                     </div>
@@ -230,5 +234,7 @@ $(function(){
 		}
 		actRequest($('#letter_form').serialize(), '9103'); 
 	});
+	$('#add_friend').bind('click', function(){ actRequest("uid="+$(this).attr('data-uid'), '8101'); });
+	$('#del_friend').bind('click', function(){ actRequest("uid="+$(this).attr('data-uid'), '8102'); });
 });
 </script>

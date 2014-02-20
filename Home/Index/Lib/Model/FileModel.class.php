@@ -122,7 +122,6 @@ class FileModel extends BaseModel {
 			$this->parseThumbConfig($aConfig);
 	
 			$info = D('File')->upload($filename, $fileType, $aConfig);
-	
 			return $info;
 		} else {
 			return array('status' => -1, 'msg' => '未上传文件！');
