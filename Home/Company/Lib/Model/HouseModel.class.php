@@ -64,5 +64,14 @@ class HouseModel extends BaseModel {
 			$value['createtime'] = date('Y-m-d H:i', $value['createtime']);
 		}
 	}
+	
+	/*
+	 * 全文搜索添加记录
+	*/
+	protected function _after_insert($data,$options) {
+		$this->_auto_process_data($data);
+		$fields = 'name,decoration_type,style,housetype,step,community';
+		D('Search')->addRecord($data, $fields, 3);
+	}
 }
 ?>

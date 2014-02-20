@@ -18,6 +18,7 @@ class ActiveModel extends BaseModel {
 			'type' => array('类型', 'select'),
 			'datetype' => array('日期类型', 'radio'),
 			'weekdays' => array('活动频率', 'checkbox'),
+			'active_date' => array('活动日期', 'date'),
 			'begin_date' => array('开始日期', 'date'),
 			'end_date' => array('结束日期', 'date'),
 			'begin_time' => array('开始时间', 'text', '（例：09:30）'),
@@ -63,5 +64,13 @@ class ActiveModel extends BaseModel {
 		}
 	}
 	
+	/*
+	 * 全文搜索添加记录
+	 */
+	protected function _after_insert($data,$options) {
+		$this->_auto_process_data($data);
+		$fields = 'title,type,address,organizer,info';
+		D('Search')->addRecord($data, $fields, 1);
+	}
 }
 ?>

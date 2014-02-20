@@ -32,6 +32,8 @@ class PictureAction extends BaseAction {
 			$tab = $this->model->getTabTitle($type, $target, $data);
 			$this->assign('tabTitle', $tab);
 			
+			$this->assign('type', $type);
+			$this->assign('target', $target);
 			$this->_display_form();
 		}
 	}
@@ -39,14 +41,31 @@ class PictureAction extends BaseAction {
 	/*
 	 * 添加图片
 	*/
-	/*
 	public function multiadd(){
-		$this->retType = array(
-			'success' => array('success' => 1),
-			'error' => array('error' => 1),
+		$this->retFunc = array(
+			'success' => 'uploadSuccess',
+			'error' => 'uploadError',
 		);
+		$this->assign('session_id', session_id());
+		/*
+		if ($this->isPost()) {
+			print_r($_FILES);
+		} else {
+			$this->_display_form();
+		}*/
 		$this->add();
-	}*/
+	}
+	
+	protected function uploadSuccess($message, $jumpUrl='') {
+		header("Content-type:text/html;charset=utf-8");
+		die($message);
+	}
+	
+	protected function uploadError($message, $jumpUrl='') {
+		header('HTTP/1.1 500 Upload Error');
+		header("Content-type:text/html;charset=utf-8");
+		die($message);
+	}
 	
 	/*
 	 * 修改

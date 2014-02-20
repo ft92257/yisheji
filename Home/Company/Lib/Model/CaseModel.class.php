@@ -25,6 +25,7 @@ class CaseModel extends BaseModel {
 				'7'=>'奢华',
 				'8'=>'地中海风格'
 			),
+			'htype' => array('1' => '连锁店', '2' => '办公室', '3' => '实验室', '4' => '公共空间'),
 	);
 	
 	protected $formConfig = array(
@@ -32,11 +33,12 @@ class CaseModel extends BaseModel {
 			'is_original' => array('类型', 'radio'),
 			'source' => array('来源', 'text'),
 			'decoration_type' => array('装修类型', 'select'),
+			'style' => array('风格', 'select', array('all')),
+			'housetype' => array('户型', 'text', '例：3室1厅'),
+			'htype' => array('工装类型', 'select', array('all')),
 			'info' => array('说明', 'textarea'),
 			'createdate' => array('创作日期', 'date'),
 			'authorize' => array('作品授权', 'radio', array('br')),
-			'housetype' => array('户型', 'text', '例：3室1厅'),
-			'style' => array('风格', 'select', array('all')),
 			'design_fee' => array('费用', 'text', array('int', '元')),
 			'tags' => array('标签', 'tags'),
 			'recommend' => array('推荐（排序值）', 'text', array('int', '数值大的优先出现在首页')),
@@ -48,7 +50,6 @@ class CaseModel extends BaseModel {
 			'id' => '编号',
 			'name' => '作品名称',
 			'decoration_type' => '装修类型',
-			'housetype' => '户型',
 			'style' => '风格',
 			'design_fee' => '费用(元)',
 			'recommend' => '推荐',
@@ -67,6 +68,15 @@ class CaseModel extends BaseModel {
 			$this->_auto_process_data($value);
 			$value['createtime'] = date('Y-m-d H:i', $value['createtime']);
 		}
+	}
+	
+	/*
+	 * 全文搜索添加记录
+	*/
+	protected function _after_insert($data,$options) {
+		$this->_auto_process_data($data);
+		$fields = 'name,is_original,decoration_type,style,housetype,htype,info';
+		D('Search')->addRecord($data, $fields, 2);
 	}
 }
 ?>
