@@ -225,16 +225,17 @@
 <include file="Public:footer" />
 <script>
 $(function(){
-	$('#grade_sub').bind('click', function(){ actRequest($('#grade_form').serialize(), '1111'); });
-	$('#reserve_sub').bind('click', function(){ actRequest($('#reserve_form').serialize(), '9101'); });
+	$('#grade_sub').bind('click', function(){ isLogin(); actRequest($('#grade_form').serialize(), '1111'); });
+	$('#reserve_sub').bind('click', function(){ isLogin(); actRequest($('#reserve_form').serialize(), '9101'); });
 	$('#letter_sub').bind('click', function(){ 
+		isLogin();
 		if($('#txt_content').val().replace(/[ ]/g,"") == ''){
 			alert('你必须填写内容');
 			return false;
 		}
 		actRequest($('#letter_form').serialize(), '9103'); 
 	});
-	$('#add_friend').bind('click', function(){ actRequest("uid="+$(this).attr('data-uid'), '8101'); });
-	$('#del_friend').bind('click', function(){ actRequest("uid="+$(this).attr('data-uid'), '8102'); });
+	$('#add_friend').bind('click', function(){ isLogin(); actRequest("uid="+$(this).attr('data-uid'), '8101'); });
+	$('#del_friend').bind('click', function(){ isLogin(); actRequest("uid="+$(this).attr('data-uid'), '8102'); });
 });
 </script>

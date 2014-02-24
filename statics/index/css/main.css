@@ -665,7 +665,7 @@ footer .nav_site nav{ margin-left:-10px; cursor:default;}
 .activity-top .scroll{ height:380px; width:740px;}
 .activity-top .items div{ width:740px;}
 .activity-top .items img{ height:380px; min-width:740px;}
-.activity-top .page-1{ height:40px; line-height:40px; background-color:#fff; position:absolute;left:0;top:310px; padding:0 10px 0 25px;}
+.activity-top .page-1{ height:40px; line-height:40px; background-color:#fff; position:absolute;right:0;top:310px; padding:0 10px 0 25px;}
 .activity-top .page-1 strong{ float:left; font-size:14px;color:#395978;}
 .activity-top .page-1 .ico{ margin:12px 0 0 50px;}
 

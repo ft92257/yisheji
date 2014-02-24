@@ -11,7 +11,7 @@ class DesignerAction extends BaseAction{
 			default: $format = $field;
 		}
 	
-		$sql = "SELECT {$field}, count(id) AS {$field}_c  FROM tb_user_designer GROUP BY {$field}";
+		$sql = "SELECT {$field}, count(id) AS {$field}_c  FROM tb_user_designer where ischeck = 1 and appid = 1 and status = 0 GROUP BY {$field}";
 		$res = $this->model->query($sql);
 	
 		foreach($res as $k => $i){
@@ -107,6 +107,7 @@ class DesignerAction extends BaseAction{
 		if($this->para['cid'] > 0){
 			$where['cid'] = $this->para['cid'];
 		}
+		$where = array_merge($where, array('ischeck' => 1));
 		return $this->model->getList($where, $order, 5, true);
 	}
 	
@@ -124,6 +125,9 @@ class DesignerAction extends BaseAction{
 	}
 	
 	public function designerComment(){
+		$this->model = D("Comment");
+		$this->model->getList(array('uid' => $this->para['uid']));
+		
 		$this->display();
 	}
 	

@@ -4,11 +4,10 @@ function actRequest(data, act){
 			'url' : GROUP+'/Base/actRequest',
 			'data': data+'&act='+act,
 			'dataType': 'json',
-			//'async' : false,
+			'async' : false,
 			'success': function(r){
 				ajaxReturnFun(r);
 			}
-		
 		});
 	}
 	
@@ -67,14 +66,21 @@ function actRequest(data, act){
 		} else if(status == 2){
 			setTimeout(function(){url == null ? window.location.reload() : window.location.href = url;}, 5000);
 		}
-		
 	}
 	
 	function isLogin(){
-		
+		$.ajax({
+			'type' : 'post',
+			'url' : GROUP+'/Base/isLogin',
+			'async' : false,
+			'success': function(r){
+				if(r == -2){
+					showLogin();
+					return false;
+				}
+			}
+		});
 	}
-	
-	
 	function ajaxReturnFun(r){
 		switch(r.act){
 			case '105':
@@ -84,7 +90,6 @@ function actRequest(data, act){
 			case '108':
 				flag = r.status ? 0 : 1; return;
 		}
-	
 		switch(r.status){
 			case -1:
 				alert('参数错误:'+r.msg); return;
@@ -96,10 +101,5 @@ function actRequest(data, act){
 				showAlert(1, r.msg, r.url); return;
 			case 0:
 				showAlert(2, r.msg, r.url); return;
-		}
-		if(r.msg != null){
-			alert(r.msg);
-		}
-		r.url == null ? window.location.reload() : window.location.href = r.url;
-		
+		}	
 	}

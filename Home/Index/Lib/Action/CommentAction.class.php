@@ -22,7 +22,20 @@ class CommentAction extends BaseAction{
 		if (!$id) {
 			$this->resultFormat(null, 0, 'SQL:'.$this->model->getLastSql());
 		}
-		$this->resultFormat(null, 1);
+		switch($this->para['type']){
+			case '1': //案例
+				$this->model = D('Case');
+				break;
+			case '3': //活动
+				$this->model = D('Active');
+				break;
+			case '4': //样板房
+				$this->model = D('House');
+				break;
+		}
+		$comment_count = $this->model->where(array('id' => $this->para['target']))->getField('comment_count');
+		$res = $this->model->update(array('comment_count' => $comment_count+1), array('id' => $this->para['target']));
+		$res != false ? $this->resultFormat(null, 1) : $this->resultFormat(null, 0, $this->model->getLastSql());
 	}
 	
 	function reply(){

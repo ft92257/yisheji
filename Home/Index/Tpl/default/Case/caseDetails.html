@@ -24,9 +24,9 @@
                 		<a href="#">{$i}</a>
                 	</foreach>
                 	</div>
-                    <span><a><i class="ico ico-20"></i>浏览<b>（{$caseInfo['click_count']}）</b></a></span>
-                    <span><a><i class="ico ico-21"></i>收藏<b>（{$caseInfo['collect_count']}）</b></a></span>
-                    <span><a><i class="ico ico-22"></i>评论<b>（{$caseInfo['comment_count']}）</b></a></span>
+                    <span><a><i class="ico ico-20" ></i>浏览<b>（{$caseInfo['click_count']}）</b></a></span>
+                    <span><a href='javascript: void(0)' data-id="{$caseInfo['id']}" data-type="1" id='collect_btn'><i class="ico ico-21"></i>收藏<b>（{$caseInfo['collect_count']}）</b></a></span>
+                    <span><a href="#comment_a"><i class="ico ico-22"></i>评论<b>（{$caseInfo['comment_count']}）</b></a></span>
                 </div>
                 <div class="cnt-article clearfix pt-2 pb-3">
                 	<div class="mb-5">{$caseInfo['info']}</div>
@@ -77,6 +77,7 @@
             </if>
         </div>
       <div class="comment-1 w-66 f-no pt-2-5">
+     		<a name="comment_a"></a>
             <h3 class="t-comment-1">作品讨论</h3>
             <div class="form-comment-1 pb-2 clearfix">
             <form id='comment_form'>
@@ -182,9 +183,9 @@
  <script type="text/javascript" src="__STATICS__/js/jquery.qqFace.js"></script> 
 <script>
 $(function(){
-	$("#case_zan_sub").bind('click',function(){ actRequest("target="+$(this).attr('data-target')+"&type=3", '9102'); });
-	$('#reserve_sub').bind('click', function(){ actRequest($('#reserve_form').serialize(), '9101'); });
 	$('.emotion').qqFace();
+	$("#case_zan_sub").bind('click',function(){isLogin(); actRequest("target="+$(this).attr('data-target')+"&type=3", '9102'); });
+	$('#reserve_sub').bind('click', function(){isLogin(); actRequest($('#reserve_form').serialize(), '9101'); });
 	$('.look').bind('click', function(){
 		$.layer({
 			border : [0,0,'',false],
@@ -197,7 +198,12 @@ $(function(){
 		    area : ['1100px','602px']
 		})
 	});
-	$('#comment_sub').bind('click', function(){ 
+	$('#collect_btn').bind('click', function(){
+		isLogin();
+		actRequest('type='+$(this).attr('data-type')+'&target='+$(this).attr('data-id'), '9105'); 
+	});
+	$('#comment_sub').bind('click', function(){
+		isLogin();
 		if($('#txt_comment').val().replace(/[ ]/g,"") == ''){
 			alert('你必须填写内容');
 			return false;
@@ -208,6 +214,7 @@ $(function(){
 });
 
 function reply(id){
+	isLogin();
 	if($('#txt_reply_'+id).val().replace(/[ ]/g,"") == ''){
 		alert('你必须填写内容');
 		return false;

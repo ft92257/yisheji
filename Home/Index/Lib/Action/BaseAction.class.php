@@ -54,12 +54,16 @@ class BaseAction extends Action {
 		$confArr = array('1111', '2105', '3107', '7101', '7102', '7103', '8101', '8102', '9101', '9102', '9103', '9105');
 		if(in_array($act, $confArr)){
 			if(empty($this->oUser)){
-				$this->resultFormat(null,-2);
+				$this->resultFormat(null, -2);
 			}
 		}
 	}
 	
 	protected function paraCheck($act){	 }
+	
+	public function isLogin(){
+		echo empty($this->oUser) ? -2 : 1; exit;
+	}
 	
 	public function actRequest(){
 		
@@ -67,200 +71,71 @@ class BaseAction extends Action {
 		
 		switch($this->para['act']){
 			#Index
-			case '0101':
-				A('Index')->index(); #首页
-				break;
-			case '0102':
-				A('Index')->indexCase(); #首页案例查询
-				break;
-			case '0103':
-				A('Index')->indexDesigner(); #首页设计师查询
-				break;
-			case '0104':
-				A('Index')->indexHouse();  #首页样板房查询
-				break;
-
+			case '0101':A('Index')->index(); break;
+			case '0102':A('Index')->indexCase(); break;
+			case '0103':A('Index')->indexDesigner(); break;
+			case '0104':A('Index')->indexHouse();  break;
 			#My
-			case '0201':
-				A('My')->myCollect(); #我的收藏
-				break;
-			case '0202':
-				A('My')->myLetterList(); #我的私信列表
-				break;
-			case '0203':
-				A('My')->myLetterDetails(); #我的私信明细
-				break;
-			case '0204':
-				A('My')->mySet(); #个人中心设置
-				break;
-			case '0205': 
-				A("My")->passwordSave(); #修改密码
-				break;
-			case '0206': 
-				A("My")->headerEdit(); #头像设置
-				break;
-			case '0207':
-				A("My")->infoEdit(); #信息设置
+			case '0201': A('My')->myCollect(); break; #我的收藏列表
+			case '0202': A('My')->myLetterList(); break; #我的私信列表
+			case '0203': A('My')->myLetterDetails(); break; #我的私信明细
+			case '0204': A('My')->mySet(); break; #个人信息设置
+			case '0205': A("My")->passwordSave(); break; #修改密码	
+			case '0206': A("My")->headerEdit(); break; #头像设置
+			case '0207': A("My")->infoEdit(); break; #信息设置
 			#User
-			case '1001': 
-				A('User')->register();  #注册
-				break;
-			case '1002': 
-				A('User')->init(); #初始化个人信息
-				break;
-			case '1003': 
-				A('User')->login();  #登录
-				break;
-			case '1004':
-				A('User')->fastLogin();  #快速登录（弹层）
-				break;
+			case '1001': A('User')->register();  break; #注册
+			case '1002': A('User')->init(); break; #初始化个人信息
+			case '1003': A('User')->login();  break; #登录
+			case '1004': A('User')->fastLogin();  break; #快速登录（弹层）
 			#Designer
-			case '1101': 
-				A('Designer')->designerIndex(); #设计师列表
-				break;
-			case '1102':
-				A('Designer')->designerDetails(); #设计师详情
-				break;
-			case '1103':
-				A('Designer')->designerList(); 
-				break;
-			case '1104':
-				A('Designer')->designerFocus();
-				break;
-			case '1105':
-				A('Designer')->designerCase(); #设计师案例查询
-				break;
-			case '1106':
-				A('Designer')->designerComment(); #设计师评论查询
-				break;
-			case '1107':
-				A('Designer')->designerActive(); #设计师活动查询
-				break;
-			case '1108':
-				A('Designer')->designerFriend(); #设计师圈子查询
-				break;
-			case '1109':
-				A('Designer')->designerInfo(); #设计师描述查询
-				break;
-			case '1110':
-				A('Designer')->designerMessage(); #设计师分享查询
-				break;
-			case '1111':
-				A('Designer')->grade(); #为设计师评分
-				break;
-			case '1112':
-				A("My")->designerApply(); #申请成为设计师
-				break;
+			case '1101': A('Designer')->designerIndex(); break; #设计师列表
+			case '1102': A('Designer')->designerDetails(); break; #设计师详情
+			case '1105': A('Designer')->designerCase(); #设计师案例查询
+			case '1106': A('Designer')->designerComment(); break; #设计师评论查询	
+			case '1107': A('Designer')->designerActive(); break; #设计师活动查询
+			case '1108': A('Designer')->designerFriend(); break; #设计师圈子查询
+			case '1109': A('Designer')->designerInfo(); break; #设计师描述查询
+			case '1110': A('Designer')->designerMessage(); break; #设计师分享查询
+			case '1111':  A('Designer')->grade(); break; #为设计师评分
+			case '1112': A("My")->designerApply(); break; #申请成为设计师
 			#Company
-			case '1201':
-				A('Company')->companyDetails(); #企业详情
-				break;
+			case '1201': A('Company')->companyDetails(); break; #企业详情
 			#Case
-			case '2101':
-				A('Case')->caseIndex(); #案例列表
-				break;
-			case '2102':
-				A('Case')->caseDetails(); #案例详情
-				break;
-			case '2103':
-				A('Case')->caseList();
-				break;
-			case '2104':
-				A('Case')->caseFocus();
-				break;
-			case '2105':
-				A('Case')->caseReport(); #举报案例
-				break;
+			case '2101': A('Case')->caseIndex(); break; #案例列表
+			case '2102': A('Case')->caseDetails(); break; #案例详情
+			case '2105': A('Case')->caseReport(); break; #举报案例	
 			#House
-			case '2201':
-				A('House')->houseIndex(); #样板房列表
-				break;
-			case '2202':
-				A('House')->houseDetails(); #样板房详情
-				break;
-			case '2203':
-				A('House')->houseList(); 
-				break;
-			case '2204':
-				A('House')->houseFocus();
-				break;
+			case '2201': A('House')->houseIndex(); break; #样板房列表
+			case '2202': A('House')->houseDetails(); break; #样板房详情	
+			case '2205': A('House')->houseApply(); break; #申请成为样板房	
 			#Active
-			case '3101':
-				A('Active')->activeIndex(); #活动列表
-				break;
-			case '3102':
-				A('Active')->activeDetails(); #活动详情
-				break;
-			case '3103':
-				A('Active')->activeList();
-				break;
-			case '3104':
-				A('Active')->activeFocus();
-				break;
-			case '3105':
-				A('Active')->activeImgList(); #活动图片列表
-				break;
-			case '3106':
-				A('Active')->activeImgDetails(); #活动图片详情
-				break;
-			case '3107':
-				A("Active")->signUp(); #活动报名
-				break;
+			case '3101': A('Active')->activeIndex(); break; #活动列表
+			case '3102': A('Active')->activeDetails(); break; #活动详情
+			case '3103': A('Active')->activeImgList(); break; #活动图片列表
+			case '3104': A('Active')->activeImgDetails(); break; #活动图片详情	
+			case '3107': A("Active")->signUp(); break; #活动报名	
 			#Question	
-			case '4101':
-				A('Question')->testIndex(); #测试首页
-				break;
-			case '4102':
-				A('Question')->testStep(); #测试题
-				break;
-			case '4103':
-				A('Question')->testMatch(); #测试结果匹配
-				break;
+			case '4101': A('Question')->testIndex(); break; #测试首页	
+			case '4102': A('Question')->testStep(); break; #测试题	
+			case '4103': A('Question')->testMatch(); break; #测试结果匹配
 			#comment
-			case '7101':
-				A('Comment')->add(); #发布评论
-				break;
-			case '7102':
-				A('Comment')->reply(); #回复评论
-				break;
-			case '7103':
-				A('Comment')->forward(); #转发评论
-				break;
+			case '7101': A('Comment')->add(); break; #发布评论
+			case '7102': A('Comment')->reply(); break; #回复评论
+			case '7103': A('Comment')->forward(); break; #转发评论	
 			#Friend
-			case '8101':
-				A('Friend')->add(); #加关注
-				break;
-			case '8102':
-				A('Friend')->del(); #取消关注
-				break;
+			case '8101': A('Friend')->add(); break; #加关注
+			case '8102': A('Friend')->del(); break; #取消关注
 			#Common
-			case '9101':
-				A('Reserve')->add(); #预约设计师/装修公司
-				break;
-			case '9102':
-				A("Common")->zan(); #赞
-				break;
-			case '9103':
-				A("Letter")->sendLetter(); #发送私信
-				break;
-			case '9104':
-				A("Letter")->delLetter(); #删除私信
-				break;
-			case '9105':
-				A('Collect')->add(); #添加收藏
-				break;				
-			case '105': 
-				A("User")->accountUnique(); #账号唯一校验
-				break;
-			case '106': 
-				A("User")->emailUnique(); #邮件唯一校验
-				break;
-			case '107': 
-				A("User")->mobileUnique(); #手机唯一校验
-				break;
-			case '108': 
-				A("User")->passwordCheck(); #检查密码
-				break;
+			case '9101': A('Reserve')->add(); break; #预约设计师/装修公司
+			case '9102': A("Common")->zan(); break; #赞
+			case '9103': A("Letter")->sendLetter(); break; #发送私信
+			case '9104': A("Letter")->delLetter(); break; #删除私信	
+			case '9105': A('Collect')->add(); break; #添加收藏			
+			case '105': A("User")->accountUnique(); break; #账号唯一校验
+			case '106': A("User")->emailUnique(); break; #邮件唯一校验
+			case '107': A("User")->mobileUnique(); break; #手机唯一校验
+			case '108': A("User")->passwordCheck(); break; #检查密码
 		}
 	}
 	

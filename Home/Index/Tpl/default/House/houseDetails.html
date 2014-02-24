@@ -1,7 +1,15 @@
 <include file="Public:header" />
-    <style type="text/css">
+<style type="text/css">
  .wl_a a{ color:#395978; font-weight:bold}
  .wl_a p{ background:url(__STATICS__/images/2014-01-13_142651.png) left top no-repeat; padding-left:20px}
+
+ .list-comment-1 .discussReply{ background-color:#FFF; border:#D9D9D9 1px solid; overflow:hidden; margin-top:5px; margin-left:60px; padding:5px 10px 15px 10px; border-radius:3px}
+ .discussReplyForm{ margin-bottom:10px; margin-top:10px}
+ .list-comment-1 .discussReply .listBox{ border-top:#D9D9D9 1px dashed}
+ .discussReplyForm textarea{ resize:none;border:1px solid #D9D9D9; width:555px; height:60px; float:left; font-size:12px;padding:10px; line-height:20px;}
+ .discussReplyForm .l{ line-height:20px; padding-top:7px; margin-left:-12px}
+ .discussReplyForm .l a{ float:left;color:#999; margin-right:15px;}
+ .discussReplyForm .r{ padding-top:10px; height:30px; margin-right:1px}
 </style>
     <div id="pbody"><div class="extra pb-6 pt-2-5">
     	<div class="t-1">
@@ -93,8 +101,71 @@
             	<h3>评论该样板房</h3>
             </div>
             <div class="comment-1 model-house-comment">
-                <include file="Public:speakForm1" />
-                <include file="Active:activeDetailsComment" />
+                <div class="form-comment-1 pb-2 clearfix">
+            <form id='comment_form'>
+                <textarea id="txt_comment" name="content"></textarea>
+                <input type='hidden' name="type" value="4"/>
+                <input type='hidden' name="target" value="{$houseInfo['id']}"/>
+                <input type='hidden' name="focus" value="{$houseInfo['focus']}"/>
+                <div class="l">
+                    <a href="javascript:;" class="emotion" face="txt_comment"><i class="ico ico-25"></i><span>表情</span></a> 
+                </div>
+                <div class="r"><input class="btn btn-submit-1" type="button" id='comment_sub' value="发布" /></div>
+            </form>	
+            </div>
+            <div class="list-comment-1">
+                <ul>
+                <foreach name = "houseComment" item="vo">
+                    <li>
+                    	<div style="overflow:hidden">
+                            <div class="pic"><a href="#"><img src="{$vo['header']}" alt="" /></a></div>
+                            <div class="l">
+                                <div class="t"><a href="{$vo['header']}">{$vo['name_zh']}</a>：</div>
+                                <div class="cnt-article clearfix">
+                                    <p>{$vo['content']}</p>
+                                </div>
+                            </div>
+                            <div class="r">
+                                <div class="time">{$vo['createtime']}</div>
+                                <a href="javascript:;" class='show'>共{$vo['reply_c']}条对话</a>|<a href="javascript:;" class='show'>回复</a>
+                            </div>
+                        </div>
+                        
+                    	<div class="discussReply" style="display:none">
+                        	<div  class="discussReplyForm clearfix">
+                            	<form id="reply_form_{$vo['id']}">
+                                	<textarea id="txt_reply_{$vo['id']}" name="content"></textarea>
+                                	<input type='hidden' name="id" value="{$vo['id']}"/>
+                                	<input type='hidden' name="type" value="4"/>
+					                <input type='hidden' name="focus" value="{$caseInfo['focus']}"/>
+                                    <div class="l">
+                   						 <a href="javascript:;" class="emotion" face="txt_reply_{$vo['id']}"><i class="ico ico-25"></i><span>表情</span></a> 
+                					</div>
+                					<div class="r"><input class="btn btn-submit-1" type="button" onclick="reply('{$vo['id']}')" value="发布" /></div>
+                                </form>
+                            </div>
+                            <foreach name = "vo['reply_arr']" item="i">
+                        	<div class="clearfix pt-1-5 pb-1-5 listBox">
+                                <div class="pic"><a href="#"><img src="{$i['header']}" alt="" /></a></div>
+                                <div class="l">
+                                    <div class="t"><a href="#">{$i['name_zh']}</a>：</div>
+                                    <div class="cnt-article clearfix">
+                                        <p>{$i['content']}</p>
+                                    </div>
+                                </div>
+                                <div class="r">
+                                    <div class="time">{$i['createtime']}</div>
+                                </div>
+                            </div>
+                            </foreach>
+                        </div>
+                    </li>
+                   </foreach>
+                </ul>
+            </div>
+	<div class="page-2 clearfix mt-1">
+         {$houseCommentPage}
+        </div>
             </div>
         </div>
         <div class="w-24 r">
@@ -109,10 +180,73 @@
                 <p>3.活动海报吸引人眼球</p>
             	<div class="t pt-4">推荐预约的理由3：</div>
                 <p>我们为优秀的活动争取商家赞助</p>
-                <div class="pt-3 pl-2 pb-1 clearfix"><a class="btn btn-4" href="#">申请成为样板房</a></div>
+                <div class="pt-3 pl-2 pb-1 clearfix"><a rel="#reserve-house" class="btn btn-4" href="javascript:void(0)">申请成为样板房</a></div>
             </div>
         </div>
     </div></div>
 <!---->
 </div>
+<form id='apply_form'>
+<div id="reserve-house" class="overlay clearfix">
+	<div class="t-3">
+    	<h3>申请成为样板房</h3>
+    </div>
+    <div class="score-cnt">
+    	<p class="tips">请填写真实的详细信息</p>
+        <table width="460">
+            <tr>
+            	<td>真实名称：</td>
+                <td><input name='name' type="text" /></td>
+            </tr>
+            <tr>
+            	<td>手机号码：</td>
+                <td><input name='telephone' type="text" />
+                </td>
+            </tr>
+             <tr>
+            	<td>小区：</td>
+                <td><input name='community' type="text" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+	                <input name='target' type="hidden" value="{$houseInfo['id']}" />
+	                <input name='cid' type="hidden" value="{$houseInfo['cid']}"/>
+                	<input class="btn btn-submit-1" type="button" id='apply_sub' value="提交" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+</form>
 <include file="Public:footer" />
+<script type="text/javascript" src="__STATICS__/js/jquery.qqFace.js"></script> 
+<script>
+$(function(){
+	$('.emotion').qqFace();
+	$('#apply_sub').bind('click', function(){ isLogin(); actRequest($('#apply_form').serialize(), '2205'); });
+	$('#collect_btn').bind('click', function(){
+		isLogin();
+		actRequest('type='+$(this).attr('data-type')+'&target='+$(this).attr('data-id'), '9105'); 
+	});
+	$('#comment_sub').bind('click', function(){
+		isLogin();
+		if($('#txt_comment').val().replace(/[ ]/g,"") == ''){
+			alert('你必须填写内容');
+			return false;
+		}
+		actRequest($('#comment_form').serialize(), '7101'); 
+	});
+	$('.list-comment-1 ul li .show').toggle(function(){ $(this).parents("li").find(".discussReply").show()},function(){$(this).parents("li").find(".discussReply").hide()});
+});
+
+function reply(id){
+	isLogin();
+	if($('#txt_reply_'+id).val().replace(/[ ]/g,"") == ''){
+		alert('你必须填写内容');
+		return false;
+	}
+	actRequest($('#reply_form_'+id).serialize(), '7102'); 
+}
+
+</script>

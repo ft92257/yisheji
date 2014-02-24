@@ -24,14 +24,14 @@ class CollectAction extends BaseAction {
 				$this->model = D('Case');
 				$res = $this->model->where(array('id' => $this->para['target']))->find();
 				break;
-			case '2': //样板房
-				$this->model = D('House');
-				$res = $this->model->where(array('id' => $this->para['target']))->find();
-				break;
 			case '3': //活动
 				$this->model = D('Active');
 				$res = $this->model->where(array('id' => $this->para['target']))->find();
 				$res['tags'] = $this->Options['activeType'][$res['type']];
+				break;
+			case '4': //样板房
+				$this->model = D('House');
+				$res = $this->model->where(array('id' => $this->para['target']))->find();
 				break;
 		}
 		
@@ -45,6 +45,22 @@ class CollectAction extends BaseAction {
 		);
 		$this->model = D('Collect');
 		$res = $this->model->insert($data);
+		if(!$res){
+			$this->resultFormat(null, 0, $this->model->getLastSql());
+		}
+		switch($this->para['type']){
+			case '1': //案例
+				$this->model = D('Case');
+				break;
+			case '3': //活动
+				$this->model = D('Active');
+				break;
+			case '4': //样板房
+				$this->model = D('House');
+				break;
+		}
+		$collect_count = $this->model->where(array('id' => $this->para['target']))->getField('collect_count');
+		$res = $this->model->update(array('collect_count' => $collect_count+1), array('id' => $this->para['target']));
 		$res != false ? $this->resultFormat(null, 1) : $this->resultFormat(null, 0, $this->model->getLastSql()); 
 	}
 }
