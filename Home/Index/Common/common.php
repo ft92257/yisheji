@@ -203,7 +203,7 @@ function time_tran($the_time){
 				if($dur < 259200){//3天内
 					return floor($dur/86400).'天前';
 				}else{
-					return $the_time;
+					return date("Y-m-d H:i:s", $the_time);
 				}
 			}
 		}
@@ -260,7 +260,7 @@ begin;
 }
 
 function formatTag($tagString){
-	return explode(',', $tagString);
+	return explode('|', $tagString);
 }
 
 function infoFormat($str,$mylen = 126){
