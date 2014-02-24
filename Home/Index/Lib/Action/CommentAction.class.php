@@ -67,6 +67,8 @@ class CommentAction extends BaseAction{
 		if(!is_array($reply)){ $reply = array(); }
 		$data = array(
 				'uid' => $this->oUser['id'],
+				'header' => getFileUrl($this->oUser['avatar']),
+				'name_zh' => $this->oUser['nickname'] ? $this->oUser['nickname'] : $this->oUser['realname'],
 				'content' => $this->para['content'],
 				'createtime' => time()
 		);
@@ -81,6 +83,10 @@ class CommentAction extends BaseAction{
 			$this->resultFormat(null, 0, 'SQL:'.$this->model->getLastSql());
 		}
 		$this->resultFormat(null, 1);
+	}
+	
+	function forward(){
+		
 	}
 	
 }

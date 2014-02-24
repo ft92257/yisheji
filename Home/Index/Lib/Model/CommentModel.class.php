@@ -18,14 +18,10 @@ class CommentModel extends BaseModel{
 	
 	private function replyFormat($reply){
 		$reply = json_decode($reply, 1);
-		$this->model = D('User');
-		foreach($reply as $i){
-			$data = $this->model->where(array('id' => $i['uid']))->find();
-			$data['name_zh'] = $data['nickname'] ? $data['nickname'] : $data['realname'];
-			$data['header'] = getFileUrl($data['avatar']);
-			$data['content'] = ubbReplace($i['content']);
-			$data['createtime'] = date('Y-m-d h:i:s', $i['createtime']);
-			$new[] = $data;
+		foreach($reply as $i){ 
+			$i['content'] = ubbReplace($i['content']);
+			$i['createtime'] = date('Y-m-d h:i:s', $i['createtime']);
+			$new[] = $i;
 		}
 		return array_reverse($new);
 	}
