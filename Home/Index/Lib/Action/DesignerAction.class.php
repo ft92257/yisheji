@@ -29,7 +29,7 @@ class DesignerAction extends BaseAction{
 		$this->model = D('User_designer');
 		$this->assign('decoration_type_c', $this->getCount('decoration_type'));
 		$this->assign('style_c', $this->getCount('style'));
-		$this->assign('total', $this->model->where(array())->count());
+		$this->assign('total', $this->model->where(array('ischeck' => 1))->count());
 		
 		$this->assign('decoration_type', $this->_aBaseOptions['decorationType']);
 		$this->assign('design_fee', $this->_aBaseOptions['designFee']);
