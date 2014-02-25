@@ -8,6 +8,7 @@ class User_designerModel extends BaseModel {
 	);
 	
 	protected $formConfig = array(
+
 	);
 	
 	/*

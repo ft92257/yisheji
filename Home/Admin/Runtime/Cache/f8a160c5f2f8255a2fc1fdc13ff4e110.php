@@ -51,9 +51,12 @@
           <ul>
             <li><a href="<?php echo U('Company/index');?>" data-match="/Company/">公司管理</a></li>
             <li><a href="<?php echo U('User/index');?>" data-match="/User/">用户管理</a></li>
+            <li><a href="<?php echo U('Designer/index');?>" data-match="/Designer/">设计师管理</a></li>
 			<li><a href="<?php echo U('Report/index');?>" data-match="/Report/">举报管理</a></li>
 			<li><a href="<?php echo U('Question/index');?>" data-match="/Question/">题目管理</a></li>
+			<li><a href="<?php echo U('Tag/index');?>" data-match="/Question/">标签管理</a></li>
 			<li><a href="<?php echo U('Richtext/edit');?>" data-match="/Richtext/">自定义页面</a></li>
+		
           </ul>
         </div>
         
@@ -77,7 +80,6 @@
           <div class="">
             <h3>用户列表</h3>
 			<div class="link">
-                <a href="<?php echo U('index');?>/type/1">+普通用户列表</a>&nbsp;&nbsp;&nbsp;<a href="<?php echo U('index');?>/type/2">+设计师列表</a>&nbsp;&nbsp;&nbsp;<a href="<?php echo U('index');?>/type/3">+公司用户列表</a>
             </div>
             <form method="POST" action="">
              <table>

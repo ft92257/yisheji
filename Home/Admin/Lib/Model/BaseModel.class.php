@@ -13,7 +13,6 @@ class BaseModel extends Model {
 	private $_aBaseOptions = array(
 		'status' => array(
 			'0' => '正常',
-			'-1' => '未审核',
 			'-2' => '已删除',
 		),
 	);
@@ -759,9 +758,18 @@ class BaseModel extends Model {
 						break;
 					case 'audit':
 						$s .= '<select oldval="'.$aValue[$field . '_o'].'" onchange="audit(\''.__URL__.'/audit/id/'.$aValue['id'].'\', this)">';
-						$s .= '<option value="-1"'.($aValue[$field . '_o'] == '-1' ? ' selected="selected"' : '').'>未审核</option>';
 						$s .= '<option value="0"'.($aValue[$field . '_o'] == '0' ? ' selected="selected"' : '').'>正常</option>';
 						$s .= '<option value="-2"'.($aValue[$field . '_o'] == '-2' ? ' selected="selected"' : '').'>已删除</option>';
+						$s .= '</select>';
+						break;
+					case 'select':
+						$url = $this->getHref($config[2], $aValue, $vars);
+						$s .= '<select name="'.$field.'" oldval="'.$aValue[$field . '_o'].'" onchange="autoUpdate(this, \''.$url.'\')">';
+						//$s .= '<option value=""></option>';
+						foreach ($this->getOptions($field) as $i => $option) {
+							$checked = $aValue[$field. '_o'] !== '' && $aValue[$field. '_o'] == $i ? ' selected="selected"' : '';
+							$s .= '<option '.$checked.' value="'.$i.'">'.$option.'</option>';
+						}
 						$s .= '</select>';
 						break;
 					default:
@@ -812,5 +820,21 @@ class BaseModel extends Model {
 		
 		return $s;
 	}
+	/*
+	 * 处理链接地址
+	*/
+	protected function getHref($href, $aValue, $vars) {
+		if (substr($href, 0, 7) == '__URL__') {
+			$urlbase = __URL__;
+			$href = substr($href, 7);
+		} else {
+			$urlbase = __APP__ ;
+		}
+		_replaceValue($href, $aValue);
+		_replaceValue($href, $vars, '[', ']');
+	
+		return $urlbase.$href;
+	}
+	
 }
 ?>

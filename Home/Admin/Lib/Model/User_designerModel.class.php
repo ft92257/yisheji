@@ -2,10 +2,10 @@
 /**
  * 后台用户登录
  */
-class UserModel extends BaseModel {
+class User_designerModel extends BaseModel {
 	protected $aOptions = array(
-		'type' => array('1' => '普通用户', '2' => '设计师','3' => '公司'),
-		'sex' => array('0'=>'保密','1'=>'男','2'=>'女'),
+		'ischeck' => array('0'=>'未申请','1' => '审核通过', '2' => '审核未通过','3'=>'等待审核'),
+		
 	);
 	/*
 	 * 验证form字段规则
@@ -29,19 +29,19 @@ class UserModel extends BaseModel {
 	);
 	protected $listConfig = array(
 			'id' => '编号',
-			'type' => '类型',
-			'account' => '账户',
-			'sex' => '性别',
-			'realname' => '真实姓名',
-			'nickname' =>'昵称',
-			'createtime' => '添加时间',
+			'style' => '擅长风格',
+			'design_fee' => '设计最低费用(元)',
+			'housetype' =>'擅长户型',
+			'decoration_type'=> '装修类型',
+			'designation'=>'职称',
+			'ischeck'=>array('审核状态',array('select'),'/Designer/ischeck/id/{id}'),
 			'status' => array('状态', array('audit')),
-	);
+		);
 	protected $searchConfig = array(
-			'type' =>array('类型：','radio_list'),
 			'status' => array('状态：', 'radio_list'),
-			'account' => array('账号：', 'text'),
+			'ischeck'=>array('审核状态：','radio_list'),
 			'createtime' => array('选择时间：', 'date'),
+	
 	);
 	/*
 	 * 扣款

@@ -139,22 +139,6 @@ function getFileUrl($fid, $thumb='', $default = '') {
 	return $url;
 }
 
-/*
- * 替换{var}为$data['var']
- */
-function _replaceValue(&$mVal, $data, $tag_begin = '{', $tag_end = '}') {
-	if (is_array($mVal)) {
-		foreach ($mVal as &$val) {
-			_replaceValue($val, $data);
-		}
-	} else {
-		preg_match_all("/\\".$tag_begin."\w+\\".$tag_end."/", $mVal, $matches);
-		foreach ($matches[0] as $value) {
-			$key = str_replace(array($tag_begin, $tag_end), '', $value);
-			$mVal = str_replace($value, $data[$key], $mVal);
-		}
-	}
-}
 
 /*
  * 插入数组单元到某个键值的单元后面，$afterkey为空则插入最前面
@@ -173,4 +157,21 @@ function insertArray($arr,$afterkey,$insertArr) {
 
 	return $ret;
 }
+/*
+ * 替换{var}为$data['var']
+ */
+function _replaceValue(&$mVal, $data, $tag_begin = '{', $tag_end = '}') {
+	if (is_array($mVal)) {
+		foreach ($mVal as &$val) {
+			_replaceValue($val, $data);
+		}
+	} else {
+		preg_match_all("/\\".$tag_begin."\w+\\".$tag_end."/", $mVal, $matches);
+		foreach ($matches[0] as $value) {
+			$key = str_replace(array($tag_begin, $tag_end), '', $value);
+			$mVal = str_replace($value, $data[$key], $mVal);
+		}
+	}
+}
+
 ?>

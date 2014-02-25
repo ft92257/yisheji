@@ -13,7 +13,8 @@
                    <volist name="data" id="vo">
                   <tr>
                   	<td>{$vo.uid}</td><td>{$vo.account}</td><td>{$vo.realname}</td><td>{$vo.nickname}</td>
-				  	<td><a href="{:U('/Designer/delete/uid')}/{$vo.uid}" onclick="if(!confirm('确定删除该记录？')){return false;}">删除</a></td>
+				  	<td><a href="{:U('/Designer/delete/uid')}/{$vo.uid}" onclick="if(!confirm('确定删除该记录？')){return false;}">删除</a>
+				  	<a href="{:U('/Designer/edit/id/')}/{$vo.id}">编辑</a></td>
 				  </tr>
                 	</volist>
                 </table>

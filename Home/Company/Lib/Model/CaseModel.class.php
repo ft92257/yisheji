@@ -16,17 +16,20 @@ class CaseModel extends BaseModel {
 					'0' => '不限制用途',
 			),
 			'style' => array('1' => '地中海风格', '2' => '简约风格', '3' => '欧美风格'),
+			'style' => array('4' => '连锁店','2'=>'实验室','3'=>'实验室','4'=>'厂房'),
+			'housetype' => array()
 	);
 	
 	protected $formConfig = array(
 			'name' => array('作品名称', 'text'),
 			'is_original' => array('类型', 'radio'),
 			'source' => array('来源', 'text'),
-			'decoration_type' => array('装修类型', 'select'),
+			'decoration_type' => array('装修类型', 'select',array('all')),
 			'info' => array('说明', 'textarea'),
 			'createdate' => array('创作日期', 'date'),
 			'authorize' => array('作品授权', 'radio', array('br')),
-			'housetype' => array('户型', 'text', '例：3室1厅'),
+			'housetype' => array('户型', 'select', array('all')),
+			'ptype' => array('类型','select',array('all')),
 			'style' => array('风格', 'select', array('all')),
 			'design_fee' => array('费用', 'text', array('int', '元')),
 			'tags' => array('标签', 'tags'),

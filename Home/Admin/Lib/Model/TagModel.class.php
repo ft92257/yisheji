@@ -9,12 +9,22 @@ class TagModel extends BaseModel {
 	);
 	
 	protected $aOptions = array(
+		'type' => array('1' => '活动', '2' => '案例','3' => '样板房'),
 	);
 	
 	protected $formConfig = array(
+			'type' => array('标签类型', 'select',array('all')),
+			'content' => array('标签内容', 'text'),
+			array('', 'submit'),
 	);
 	
 	protected $listConfig = array(
+			'id' => '编号',
+			'type' => '标签类型',
+			'content' => '标签内容',
+			'usecount'=> '使用次数',
+			'createtime' => '添加时间',
+			'status' => array('状态', array('audit')),
 	);
 	
 	protected $searchConfig = array(
@@ -22,6 +32,9 @@ class TagModel extends BaseModel {
 	
 	protected function _after_select(&$resultSet,$options) {
 		foreach ($resultSet as &$value) {
+			$this->_auto_process_data($value);
+			$value['logo'] = getFileUrl($value['logo']);
+			$value['createtime'] = date('Y-m-d H:i', $value['createtime']);
 		}
 	}
 	
