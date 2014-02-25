@@ -8,7 +8,6 @@ function actRequest(data, act){
 			'success': function(r){
 				ajaxReturnFun(r);
 			}
-		
 		});
 	}
 	
@@ -28,7 +27,7 @@ function actRequest(data, act){
 	
 	function showAlert(status, msg, url){
 		var str = [];
-		str.push('<div class="layer_alert" style="padding:10px"><table class="layerTable"><tr>');
+		str.push('<div class="layer_alert" style="padding:10px; background-color:#fff"><table class="layerTable"><tr>');
 		if(status == 1){
 			str.push('<td class="pLeft">');
 			str.push('<td class="pLeft"><img src="'+STATICS+'/images/1212121xiao.jpg" /></td>');
@@ -36,6 +35,7 @@ function actRequest(data, act){
 			if(msg != null){
 				str.push('<p>'+msg+'</p>');
 			}
+			str.push('<p style=" font-size:12px; margin-top:5px"><!--span style="color:red">1秒后自动跳转</span--></p>');
 			str.push('</td>');
 		}
 		if(status == 2){
@@ -45,6 +45,7 @@ function actRequest(data, act){
 			if(msg != null){
 				str.push('<p>'+msg+'</p>');
 			}
+			str.push('<p style=" font-size:12px; margin-top:5px"><span style="color:red">5秒后自动跳转</span></p>');
 			str.push('</td>');
 		}
 		str.push('</tr></table></div>');
@@ -60,10 +61,26 @@ function actRequest(data, act){
 				layer.close(index);
 			}
 		});
-		setTimeout(function(){url == null ? window.location.reload() : window.location.href = url;},5000);
+		if(status == 1){
+			setTimeout(function(){url == null ? window.location.reload() : window.location.href = url;}, 500);
+		} else if(status == 2){
+			setTimeout(function(){url == null ? window.location.reload() : window.location.href = url;}, 5000);
+		}
 	}
 	
-	
+	function isLogin(){
+		$.ajax({
+			'type' : 'post',
+			'url' : GROUP+'/Base/isLogin',
+			'async' : false,
+			'success': function(r){
+				if(r == -2){
+					showLogin();
+					return false;
+				}
+			}
+		});
+	}
 	function ajaxReturnFun(r){
 		switch(r.act){
 			case '105':
@@ -73,7 +90,6 @@ function actRequest(data, act){
 			case '108':
 				flag = r.status ? 0 : 1; return;
 		}
-	
 		switch(r.status){
 			case -1:
 				alert('参数错误:'+r.msg); return;
@@ -85,10 +101,5 @@ function actRequest(data, act){
 				showAlert(1, r.msg, r.url); return;
 			case 0:
 				showAlert(2, r.msg, r.url); return;
-		}
-		if(r.msg != null){
-			alert(r.msg);
-		}
-		r.url == null ? window.location.reload() : window.location.href = r.url;
-		
+		}	
 	}

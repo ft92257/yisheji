@@ -6,8 +6,7 @@ class User_designerModel extends BaseModel {
 	}
 	
 	protected function _after_find(&$resultSet,$options) {
-		$user = D('User');
-		$data = $user->where(array('id' => $resultSet['uid']))->find();
+		$data = D('User')->where(array('id' => $resultSet['uid']))->find();
 		$resultSet = array_merge($data, $resultSet);
 		$resultSet['sex_zh'] = $this->_aBaseOptions['sex'][$resultSet['sex']];
 		$resultSet['style_zh'] = $this->_aBaseOptions['style'][$resultSet['style']];
@@ -20,6 +19,10 @@ class User_designerModel extends BaseModel {
 		$resultSet['header'] = getFileUrl($resultSet['avatar']);
 		$resultSet['avg_score'] = ($resultSet['score_skill'] + $resultSet['score_service']) / 2;
 		$resultSet['star_html'] = getStar($resultSet['avg_score']);
+		$resultSet['info_j'] =  infoFormat($resultSet['info']);
+		$resultSet['is_friend'] = D('Friend')->isFriend($resultSet['uid']);
+		$resultSet['friend_c'] = D('Friend')->getFriendCount($resultSet['uid']);
+		$resultSet['fensi_c'] = D('Friend')->getFensiCount($resultSet['uid']);
 	}
 	
 	public function getAvgScore(){

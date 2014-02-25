@@ -9,7 +9,16 @@ class HouseModel extends BaseModel {
 	
 	protected $aOptions = array(
 			'decoration_type' => array('1' => '家装', '2' => '工装'),
-			'style' => array('1' => '地中海风格', '2' => '简约风格', '3' => '欧美风格'),
+			'style' => array(
+				'1'=>'意式风格',
+				'2'=>'美国乡村',
+				'3'=>'东南亚风格',
+				'4'=>'简约主义',
+				'5'=>'田园风格',
+				'6'=>'中式',
+				'7'=>'奢华',
+				'8'=>'地中海风格'
+			),
 			'step' => array('1' => '隐蔽', '2' => '泥木', '3' => '油漆', '4' => '安装', '5' => '软装', '6' => '竣工'),
 	);
 	
@@ -54,6 +63,15 @@ class HouseModel extends BaseModel {
 			$this->_auto_process_data($value);
 			$value['createtime'] = date('Y-m-d H:i', $value['createtime']);
 		}
+	}
+	
+	/*
+	 * 全文搜索添加记录
+	*/
+	protected function _after_insert($data,$options) {
+		$this->_auto_process_data($data);
+		$fields = 'name,decoration_type,style,housetype,step,community';
+		D('Search')->addRecord($data, $fields, 3);
 	}
 }
 ?>

@@ -10,7 +10,6 @@ class CaseAction extends BaseAction{
 		$this->assign('style', $this->_aBaseOptions['style']);
 		
 		$this->assign('caseFocus', $this->caseFocus());
-		
 		$data = $this->caseList();
 		$this->assign('caseList', $data['list']);
 		$this->assign('casePage', $data['page']);
@@ -33,7 +32,6 @@ class CaseAction extends BaseAction{
 		
 		$this->model = D('Case');
 		$data = $this->model->queryOne(array('id' => $this->para['id']));
-		
 		if(empty($data)){
 			redirect(__URL__.'/caseIndex');
 		}
@@ -51,7 +49,14 @@ class CaseAction extends BaseAction{
 		$this->assign('designerCase', $this->model->getDesignerCase($data['uid'], 4));
 		$this->assign('designerInfo', D('User_designer')->queryOne(array('uid' => $data['uid'])));
 		
-		
+		$this->model = D("Comment");
+		$where = array(
+				'type' => '1',
+				'target' => $data['id']
+				);
+		$data = $this->model->getList($where, "createtime desc", 5, true);
+		$this->assign('caseComment', $data['list']);
+		$this->assign('caseCommentPage', $data['page']);
 		$this->display();
 	}
 	
@@ -73,8 +78,10 @@ class CaseAction extends BaseAction{
 			$order = $this->para['list_createtime'] == 1 ? 'desc' : '';
 			$order =  "createtime {$order}";
 		}
+		if($this->para['cid'] > 0){
+			$where['cid'] = $this->para['cid'];
+		}
 		return $this->model->getList($where, $order, 10, true);
-		
 	}
 	
 	public function caseFocus(){

@@ -6,16 +6,17 @@ class CaseModel extends BaseModel {
 	}
 	
 	protected function _after_find(&$resultSet,$options) {
-		$resultSet['housetype_zh'] = $this->_aBaseOptions['housetype'][$resultSet['housetype']];
+		$resultSet['housetype_zh'] = $this->_aBaseOptions['houseType'][$resultSet['housetype']];
 		$resultSet['style_zh'] = $this->_aBaseOptions['style'][$resultSet['style']];
 		$resultSet['authorize_zh'] = $this->_aBaseOptions['authorize'][$resultSet['authorize']];
 		$resultSet['focus_img'] = getFileUrl($resultSet['focus']);
 		$resultSet['designer'] = D('User_designer')->where(array('uid' => $resultSet['uid']))->find();
-		$resultSet['header'] = $resultSet['designer']['header'];
+		$resultSet['header'] = getFileUrl($resultSet['designer']['focus']);
 		$resultSet['designer_name'] = $resultSet['designer']['realname'] ? $resultSet['designer']['realname'] : $resultSet['designer']['nickname'];
 		$resultSet['tag_zh'] = formatTag($resultSet['tags']);
 		$resultSet['is_original_zh'] = $resultSet['is_original'] ? '原创' : '转发';
 		$resultSet['createtime_zh'] = time_tran($resultSet['createtime']);
+		$resultSet['info_j'] =  infoFormat($resultSet['info']);
 		$resultSet['is_collect'] = 0;
 		if(!empty($this->oCollect['case'])){
 			foreach($this->oCollect['case'] as $i){
@@ -36,6 +37,6 @@ class CaseModel extends BaseModel {
 	
 	public function getCasePhoto($id){
 		$where  =  array('type' => 2, 'target' => $id);
-		return D('Picture')->getList($where, 'createtime desc');
+		return D('Picture')->getList($where);
 	}
 }

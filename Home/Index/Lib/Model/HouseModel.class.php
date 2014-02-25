@@ -17,11 +17,12 @@ class HouseModel extends BaseModel {
 				}
 			}
 		}
+		$resultSet['info_j'] =  infoFormat($resultSet['info']);
 		$resultSet['picture'] = D('Picture')->where(array('type'=>3, 'target' => $resultSet['id']))->select();
 		$resultSet['material'] = explode("\n", $resultSet['material']);
 		$resultSet['owner_interview'] = json_decode($resultSet['owner_interview'], 1);
 		$resultSet['designer_interview'] = json_decode($resultSet['designer_interview'], 1);
 		$resultSet['cons_interview'] = json_decode($resultSet['cons_interview'], 1);
-		$resultSet['jl_jump'] = "http://192.168.2.104/jianli/house/index.php?s=/Case/detail/id/{$resultSet['jl_id']}";
+		$resultSet['jl_jump'] = "http://yijianli.com/house/index.php?s=/Case/detail/id/{$resultSet['jl_id']}";
 	}
 }

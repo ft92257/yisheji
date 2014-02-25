@@ -1,5 +1,14 @@
 <include file="Public:header" />
-    <div id="pbody"><div class="extra pb-6">
+<style type="text/css">
+ .list-comment-1 .discussReply{ background-color:#FFF; border:#D9D9D9 1px solid; overflow:hidden; margin-top:5px; margin-left:60px; padding:5px 10px 15px 10px; border-radius:3px}
+ .discussReplyForm{ margin-bottom:10px; margin-top:10px}
+ .list-comment-1 .discussReply .listBox{ border-top:#D9D9D9 1px dashed}
+ .discussReplyForm textarea{ resize:none;border:1px solid #D9D9D9; width:555px; height:60px; float:left; font-size:12px;padding:10px; line-height:20px;}
+ .discussReplyForm .l{ line-height:20px; padding-top:7px; margin-left:-12px}
+ .discussReplyForm .l a{ float:left;color:#999; margin-right:15px;}
+ .discussReplyForm .r{ padding-top:10px; height:30px; margin-right:1px}
+</style>
+	<div id="pbody"><div class="extra pb-6">
     	<div id="local"><a href="#">首页</a>&gt;<a href="#">案例</a>&gt;<span>案例详情</span></div>
         <div class="row-3 relative clearfix">
         	<div class="w-69 pb-7">
@@ -15,22 +24,25 @@
                 		<a href="#">{$i}</a>
                 	</foreach>
                 	</div>
-                    <span><a><i class="ico ico-20"></i>浏览<b>（{$caseInfo['click_count']}）</b></a></span>
-                    <span><a><i class="ico ico-21"></i>收藏<b>（{$caseInfo['collect_count']}）</b></a></span>
-                    <span><a><i class="ico ico-22"></i>评论<b>（{$caseInfo['comment_count']}）</b></a></span>
+                    <span><a><i class="ico ico-20" ></i>浏览<b>（{$caseInfo['click_count']}）</b></a></span>
+                    <span><a href='javascript: void(0)' data-id="{$caseInfo['id']}" data-type="1" id='collect_btn'><i class="ico ico-21"></i>收藏<b>（{$caseInfo['collect_count']}）</b></a></span>
+                    <span><a href="#comment_a"><i class="ico ico-22"></i>评论<b>（{$caseInfo['comment_count']}）</b></a></span>
                 </div>
                 <div class="cnt-article clearfix pt-2 pb-3">
-                	{$caseInfo['info']}<br/>
+                	<div class="mb-5">{$caseInfo['info']}</div>
                 	<foreach name="casePhoto" item="vo" key="i">
-                	<a href="javascript:void(0)" class='look' data-num="{$i+1}" data-id="{$caseInfo['id']}"><img src="{$vo['fid_img']}" alt=""/></a><br/>
-                	<p>{$vo['title']}</p>
+                	<div class="mt-3">
+                	 <a href="javascript:void(0)" class='look' data-num="{$i+1}" data-id="{$caseInfo['id']}"><img src="{$vo['fid_img']}" alt=""/></a><br/>
+                	 <p>{$vo['title']}</p>
+                	</div>
                 	</foreach>
                 </div>
                 <div class="cnt-article-bottom">
                 	<div class="l"><i class="ico ico-28"></i>该作品有问题，我要 <a href="__GROUP__/Case/caseReport/id/{$caseInfo['id']}">举报</a></div>
                     <div class="r">
-                    	<a href="#"><i class="ico ico-23"></i><span>分享<br />{$caseInfo['share_count']}</span></a>
-                        <a href="#"><i class="ico ico-24"></i><span>喜欢<br />{$caseInfo['like_count']}</span></a>
+                    	<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#uuid=999&style=-1"></script>
+                    	<a href='javasript:void(0)' onclick="javascript:bShare.more(event);return false;"><i class="ico ico-23"></i><span >分享<br />{$caseInfo['share_count']}</span></a>
+                        <a href="javascript:void(0)" id='case_zan_sub' data-target="{$caseInfo['id']}"><i class="ico ico-24"></i><span>喜欢<br />{$caseInfo['like_count']}</span></a>
                     </div>
                 </div>
             </div>
@@ -38,7 +50,7 @@
             	<div class="case-designer-info pt-2 clearfix">
                 	<a href="#"><img src="{$designerInfo['header']}"  alt="" /></a>
                     <strong>{$designerInfo['name_zh']}</strong>
-                    <div class="star"><span class="star-2"></span></div>
+                    <div class="star"><span class="{$designer['star_html']}"></span></div>
                     <p>{$designerInfo.nationality}，{$designerInfo.housetype_zh}设计</p>
                     <p class="intro">{$vo['info']}</p>
                     <p class="pb-1">设计专长：<br />{$designerInfo.decoration_type_zh}</p>
@@ -64,10 +76,75 @@
             <a class="case-next" href='__GROUP__/Case/caseDetails/id/{$nid}'><i class="ico ico-12"></i></a>
             </if>
         </div>
-        <div class="comment-1 w-66 f-no pt-2-5">
+      <div class="comment-1 w-66 f-no pt-2-5">
+     		<a name="comment_a"></a>
             <h3 class="t-comment-1">作品讨论</h3>
-            <include file="Public:speakForm1" />
-            <include file="Active:activeDetailsComment" />
+            <div class="form-comment-1 pb-2 clearfix">
+            <form id='comment_form'>
+                <textarea id="txt_comment" name="content"></textarea>
+                <input type='hidden' name="type" value="1"/>
+                <input type='hidden' name="target" value="{$caseInfo['id']}"/>
+                <input type='hidden' name="focus" value="{$caseInfo['focus']}"/>
+                <div class="l">
+                    <a href="javascript:;" class="emotion" face="txt_comment"><i class="ico ico-25"></i><span>表情</span></a> 
+                </div>
+                <div class="r"><input class="btn btn-submit-1" type="button" id='comment_sub' value="发布" /></div>
+            </form>	
+            </div>
+            <div class="list-comment-1">
+                <ul>
+                <foreach name = "caseComment" item="vo">
+                    <li>
+                    	<div style="overflow:hidden">
+                            <div class="pic"><a href="#"><img src="{$vo['header']}" alt="" /></a></div>
+                            <div class="l">
+                                <div class="t"><a href="{$vo['header']}">{$vo['name_zh']}</a>：</div>
+                                <div class="cnt-article clearfix">
+                                    <p>{$vo['content']}</p>
+                                </div>
+                            </div>
+                            <div class="r">
+                                <div class="time">{$vo['createtime']}</div>
+                                <a href="javascript:;" class='show'>共{$vo['reply_c']}条对话</a>|<a href="javascript:;" class='show'>回复</a>
+                            </div>
+                        </div>
+                        
+                    	<div class="discussReply" style="display:none">
+                        	<div  class="discussReplyForm clearfix">
+                            	<form id="reply_form_{$vo['id']}">
+                                	<textarea id="txt_reply_{$vo['id']}" name="content"></textarea>
+                                	<input type='hidden' name="id" value="{$vo['id']}"/>
+                                	<input type='hidden' name="type" value="1"/>
+					                <input type='hidden' name="focus" value="{$caseInfo['focus']}"/>
+                                    <div class="l">
+                   						 <a href="javascript:;" class="emotion" face="txt_reply_{$vo['id']}"><i class="ico ico-25"></i><span>表情</span></a> 
+                					</div>
+                					<div class="r"><input class="btn btn-submit-1" type="button" onclick="reply('{$vo['id']}')" value="发布" /></div>
+                                </form>
+                            </div>
+                            <foreach name = "vo['reply_arr']" item="i">
+                        	<div class="clearfix pt-1-5 pb-1-5 listBox">
+                                <div class="pic"><a href="#"><img src="{$i['header']}" alt="" /></a></div>
+                                <div class="l">
+                                    <div class="t"><a href="#">{$i['name_zh']}</a>：</div>
+                                    <div class="cnt-article clearfix">
+                                        <p>{$i['content']}</p>
+                                    </div>
+                                </div>
+                                <div class="r">
+                                    <div class="time">{$i['createtime']}</div>
+                                </div>
+                            </div>
+                            </foreach>
+                        </div>
+                    </li>
+                   </foreach>
+                </ul>
+            </div>
+	<div class="page-2 clearfix mt-1">
+         {$caseCommentPage}
+        </div>
+        </div>
         </div>
     </div></div>
 <!---->
@@ -103,21 +180,46 @@
 <!-- end:reserveForm -->
 
 <include file="Public:footer" />
+ <script type="text/javascript" src="__STATICS__/js/jquery.qqFace.js"></script> 
 <script>
 $(function(){
-	$('#reserve_sub').bind('click', function(){ actRequest($('#reserve_form').serialize(), '9101'); });
+	$('.emotion').qqFace();
+	$("#case_zan_sub").bind('click',function(){isLogin(); actRequest("target="+$(this).attr('data-target')+"&type=3", '9102'); });
+	$('#reserve_sub').bind('click', function(){isLogin(); actRequest($('#reserve_form').serialize(), '9101'); });
+	$('.look').bind('click', function(){
+		$.layer({
+			border : [0,0,'',false],
+			title : false,
+		    type : 2,
+		    offset : ['100px', ''],
+		    iframe : {
+		        src : 'http://'+window.location.host+GROUP+'Case/caseImgDetails/id/'+$(this).attr("data-id")+'/num/'+$(this).attr("data-num")
+		    },	
+		    area : ['1100px','602px']
+		})
+	});
+	$('#collect_btn').bind('click', function(){
+		isLogin();
+		actRequest('type='+$(this).attr('data-type')+'&target='+$(this).attr('data-id'), '9105'); 
+	});
+	$('#comment_sub').bind('click', function(){
+		isLogin();
+		if($('#txt_comment').val().replace(/[ ]/g,"") == ''){
+			alert('你必须填写内容');
+			return false;
+		}
+		actRequest($('#comment_form').serialize(), '7101'); 
+	});
+	$('.list-comment-1 ul li .show').toggle(function(){ $(this).parents("li").find(".discussReply").show()},function(){$(this).parents("li").find(".discussReply").hide()});
 });
 
-$('.look').bind('click', function(){
-	$.layer({
-		border : [0,0,'',false],
-		title : false,
-	    type : 2,
-	    offset : ['100px', ''],
-	    iframe : {
-	        src : 'http://'+window.location.host+GROUP+'Case/caseImgDetails/id/'+$(this).attr("data-id")+'/num/'+$(this).attr("data-num")
-	    },	
-	    area : ['1100px','602px']
-	})
-});
+function reply(id){
+	isLogin();
+	if($('#txt_reply_'+id).val().replace(/[ ]/g,"") == ''){
+		alert('你必须填写内容');
+		return false;
+	}
+	actRequest($('#reply_form_'+id).serialize(), '7102'); 
+}
+
 </script>

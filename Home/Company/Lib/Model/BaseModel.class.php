@@ -798,6 +798,16 @@ class BaseModel extends Model {
 						$url = $this->getHref($cfg, $aValue, $vars);
 						$s .= '<input type="text" style="width:100%;height:100%" field="'.$field.'" oldval="'.$aValue[$field].'" onblur="autoUpdate(this, \''.$url.'\')" value="'.$aValue[$field].'" />';
 						break;
+					case 'select':
+						$url = $this->getHref($cfg, $aValue, $vars);
+						$s .= '<select name="'.$field.'" oldval="'.$aValue[$field . '_o'].'" onchange="autoUpdate(this, \''.$url.'\')">';
+						$s .= '<option value=""></option>';
+						foreach ($this->getOptions($field) as $i => $option) {
+							$checked = $aValue[$field. '_o'] !== '' && $aValue[$field. '_o'] == $i ? ' selected="selected"' : '';
+							$s .= '<option '.$checked.' value="'.$i.'">'.$option.'</option>';
+						}
+						$s .= '</select>';
+						break;
 					default:
 						if (is_array($operate)) {
 							//处理链接地址

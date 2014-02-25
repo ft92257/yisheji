@@ -105,15 +105,16 @@ class DistrictModel extends BaseModel {
 		
 		$redis = $this->getRedis();
 		if ($redis === null) {
-			return $this->where($where)->order('ord DESC')->select();
-		}
-		$key = $this->trueTableName . '-where:' . md5($where);
-		if (!$redis->exists($key)) {
 			$data = $this->where($where)->order('ord DESC')->select();
-			$redis->set($key, serialize($data));
 		} else {
-			$data = $redis->get($key);
-			$data = unserialize($data);
+			$key = $this->trueTableName . '-where:' . md5($where);
+			if (!$redis->exists($key)) {
+				$data = $this->where($where)->order('ord DESC')->select();
+				$redis->set($key, serialize($data));
+			} else {
+				$data = $redis->get($key);
+				$data = unserialize($data);
+			}
 		}
 
 		$html = '';

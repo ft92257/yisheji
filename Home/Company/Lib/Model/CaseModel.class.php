@@ -15,15 +15,30 @@ class CaseModel extends BaseModel {
 					'2' => '禁止匿名转载；禁止商业用途',
 					'0' => '不限制用途',
 			),
+<<<<<<< HEAD
 			'style' => array('1' => '地中海风格', '2' => '简约风格', '3' => '欧美风格'),
 			'style' => array('4' => '连锁店','2'=>'实验室','3'=>'实验室','4'=>'厂房'),
 			'housetype' => array()
+=======
+			'style' => array(
+				'1'=>'意式风格',
+				'2'=>'美国乡村',
+				'3'=>'东南亚风格',
+				'4'=>'简约主义',
+				'5'=>'田园风格',
+				'6'=>'中式',
+				'7'=>'奢华',
+				'8'=>'地中海风格'
+			),
+			'htype' => array('1' => '连锁店', '2' => '办公室', '3' => '实验室', '4' => '公共空间'),
+>>>>>>> 66672bc40d0f6a493d5f7a051bb84e1eb53b2a9e
 	);
 	
 	protected $formConfig = array(
 			'name' => array('作品名称', 'text'),
 			'is_original' => array('类型', 'radio'),
 			'source' => array('来源', 'text'),
+<<<<<<< HEAD
 			'decoration_type' => array('装修类型', 'select',array('all')),
 			'info' => array('说明', 'textarea'),
 			'createdate' => array('创作日期', 'date'),
@@ -31,6 +46,15 @@ class CaseModel extends BaseModel {
 			'housetype' => array('户型', 'select', array('all')),
 			'ptype' => array('类型','select',array('all')),
 			'style' => array('风格', 'select', array('all')),
+=======
+			'decoration_type' => array('装修类型', 'select'),
+			'style' => array('风格', 'select', array('all')),
+			'housetype' => array('户型', 'text', '例：3室1厅'),
+			'htype' => array('工装类型', 'select', array('all')),
+			'info' => array('说明', 'textarea'),
+			'createdate' => array('创作日期', 'date'),
+			'authorize' => array('作品授权', 'radio', array('br')),
+>>>>>>> 66672bc40d0f6a493d5f7a051bb84e1eb53b2a9e
 			'design_fee' => array('费用', 'text', array('int', '元')),
 			'tags' => array('标签', 'tags'),
 			'recommend' => array('推荐（排序值）', 'text', array('int', '数值大的优先出现在首页')),
@@ -42,7 +66,6 @@ class CaseModel extends BaseModel {
 			'id' => '编号',
 			'name' => '作品名称',
 			'decoration_type' => '装修类型',
-			'housetype' => '户型',
 			'style' => '风格',
 			'design_fee' => '费用(元)',
 			'recommend' => '推荐',
@@ -61,6 +84,15 @@ class CaseModel extends BaseModel {
 			$this->_auto_process_data($value);
 			$value['createtime'] = date('Y-m-d H:i', $value['createtime']);
 		}
+	}
+	
+	/*
+	 * 全文搜索添加记录
+	*/
+	protected function _after_insert($data,$options) {
+		$this->_auto_process_data($data);
+		$fields = 'name,is_original,decoration_type,style,housetype,htype,info';
+		D('Search')->addRecord($data, $fields, 2);
 	}
 }
 ?>

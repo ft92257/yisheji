@@ -13,6 +13,8 @@
 </form>
 <script>
 radioTarget('datetype', 2);
+checkedTarget('datetype', 0, '$("[name=active_date]").parent().parent()');
+checkedHideTarget('datetype', 0, '$("[name=begin_date],[name=end_date]").parent().parent()');
 </script>
 	</div>
 	

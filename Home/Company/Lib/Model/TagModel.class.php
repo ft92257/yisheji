@@ -29,7 +29,11 @@ class TagModel extends BaseModel {
 	 * 获取已选中标签的html
 	 */
 	public function getSelectedHtml($val, $field = 'tags') {
+<<<<<<< HEAD
 		$html = '<div class="selectedTags">已贴标签:';
+=======
+		$html = '<div class="selectedTags">';
+>>>>>>> 66672bc40d0f6a493d5f7a051bb84e1eb53b2a9e
 		$html .= '<input type="hidden" name="'.$field.'" value="'.$val.'" />';
 		$aTags = explode('|', $val);
 		foreach ($aTags as $tag) {
@@ -72,7 +76,10 @@ class TagModel extends BaseModel {
 		
 		$html = '<div class="hotTags">';
 		//$html .= '<input type="text" /><input type="button" value="贴上" tagType="'.$type.'" onclick="pasteTag(this)" /><br>';
+<<<<<<< HEAD
 		$html .='<span>选择标签:</span>';
+=======
+>>>>>>> 66672bc40d0f6a493d5f7a051bb84e1eb53b2a9e
 		foreach ($data as $value) {
 			if (in_array($value['content'], $aTags)) {
 				$html .= '<span class="pasted" tagType="'.$type.'">' . $value['content'] . '</span>';

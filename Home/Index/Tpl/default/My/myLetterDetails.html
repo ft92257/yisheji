@@ -8,6 +8,9 @@
             <div class="form-comment-1 pb-2 clearfix">
             <form id='letter_form'>
                 <textarea id='txt_content' name='content'></textarea>
+                <div class="l">
+                    <a href="javascript:;" class="emotion" face="txt_content"><i class="ico ico-25"></i><span>表情</span></a> 
+                </div>
                 <input type='hidden' name='sender' value='{$sender}'/>
                 <input type='hidden' name='recipient' value='{$recipient}'/>
                 <div class="r"><input class="btn btn-submit-1" type="button" id='letter_sub' value="发布" /></div>
@@ -53,5 +56,6 @@ $(function(){
 	$('#letter_del').bind('click', function(){
 		actRequest('type=byId&ids='+$(this).attr('data-id'), '9104');
 	});
+	$('.emotion').qqFace();
 });
 </script>

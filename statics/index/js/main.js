@@ -62,12 +62,14 @@ $(function(){
 			scrollInfo=$(this).find('.j_info');
 		scrollInfo.html('1/'+itemsSize);
 		$(this).find('.j_prev').click(function(){
+			if(itemsIndex <= 1) return false;
 			$(this).siblings('.prev').trigger('click');
 			itemsIndex=itemsIndex-1;
 			if(itemsIndex<1)itemsIndex=1;
 			scrollInfo.html(itemsIndex+'/'+itemsSize);
 		});
 		$(this).find('.j_next').click(function(){
+			if(itemsIndex >= itemsSize) return false;
 			$(this).siblings('.next').trigger('click');	
 			itemsIndex=itemsIndex+1;
 			if(itemsIndex>itemsSize) itemsIndex=itemsSize;
