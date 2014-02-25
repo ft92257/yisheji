@@ -264,23 +264,7 @@ function formatTag($tagString){
 }
 
 function infoFormat($str,$mylen = 126){
-$value = substr($str, 0, $mylen);  
-$value_length = strlen($value);     
-if($value_length <= $mylen)
-	return $value."..";
-$value_count = 0;     
-for ($i = 0; $i < $value_length; $i++)     
-{     
-    if (ord($value{$i}) > 127)     
-    {     
-        $value_count++;     
-    }     
-}     
-if ($value_count % 3 != 0)     
-{     
-    $value = substr($str, 0, $value_length - 2);   
-}  
-return $value."..";
+	return mb_strimwidth($str, 0, $mylen,"...","utf-8");
 }
 
 

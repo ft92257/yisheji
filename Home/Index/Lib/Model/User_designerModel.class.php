@@ -31,6 +31,13 @@ class User_designerModel extends BaseModel {
 		return $arr;
 	}
 	
+	public function getCase($uid){
+		$this->model = D('Case');
+		$this->model->where(array('uid' => $uid));
+		$this->model->order('createtime desc');
+		return $this->model->find();	
+	}	
+	
 	public function getHotDesigner($limit = 8){
 		return $this->getList(array('ischeck' => 1), 'reserve_count desc', $limit);
 	}
