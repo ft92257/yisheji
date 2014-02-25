@@ -29,6 +29,9 @@ class User_designerModel extends BaseModel {
 	);
 	protected $listConfig = array(
 			'id' => '编号',
+			'account' => '账号',
+			'realname' => '真实姓名',
+			'nickname' => '昵称',
 			'style' => '擅长风格',
 			'design_fee' => '设计最低费用(元)',
 			'housetype' =>'擅长户型',
@@ -91,6 +94,9 @@ class User_designerModel extends BaseModel {
 	protected function _after_select(&$resultSet,$options) {
 		foreach ($resultSet as &$value) {
 			$this->_auto_process_data($value);
+			$value['account'] = $aUser['account'];
+			$value['realname'] = $aUser['realname'];
+			$value['nickname'] = $aUser['nickname'];
 			$value['createtime'] = date('Y-m-d H:i', $value['createtime']);
 		}
 	}
