@@ -164,3 +164,24 @@ function checkNotAll(obj) {
 		$(obj).prevAll("input[type='checkbox']").filter("[value='ALL']").attr("checked", false);
 	}
 }
+/*
+ * 自动更新列表字段
+ */
+
+function autoUpdate(obj, url) {
+	if (confirm('确定要进行该操作吗？')) {
+		if ($(obj).attr('oldval') == obj.value) {
+			return false;
+		}
+		
+		$.post(url, {field:$(obj).attr('name'),value:obj.value}, function(text){
+			if (text.status != 1) {
+				alert(text.info);
+			} else {
+				$(obj).attr('oldval', obj.value);
+			}
+		},"json");
+	}else {
+		obj.value = $(obj).attr('oldval');
+	}
+}

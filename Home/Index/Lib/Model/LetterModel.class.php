@@ -9,6 +9,7 @@ class LetterModel extends BaseModel {
 		$user = D('User');
 		
 		$res = $user->where(array('id' => $resultSet['sender']))->find();
+		$resultSet['content'] = ubbReplace($resultSet['content']);
 		$resultSet['name_zh'] = $res['nickname'] ? $res['nickname'] : $res['account'];
 		$resultSet['header'] = getFileUrl($res['avatar']);
 		$resultSet['time_zh'] = date('Y-m-d h:i:s', $resultSet['createtime']);

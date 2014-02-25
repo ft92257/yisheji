@@ -11,7 +11,7 @@ class DesignerAction extends BaseAction{
 			default: $format = $field;
 		}
 	
-		$sql = "SELECT {$field}, count(id) AS {$field}_c  FROM tb_user_designer GROUP BY {$field}";
+		$sql = "SELECT {$field}, count(id) AS {$field}_c  FROM tb_user_designer where ischeck = 1 and appid = 1 and status = 0 GROUP BY {$field}";
 		$res = $this->model->query($sql);
 	
 		foreach($res as $k => $i){
@@ -29,7 +29,7 @@ class DesignerAction extends BaseAction{
 		$this->model = D('User_designer');
 		$this->assign('decoration_type_c', $this->getCount('decoration_type'));
 		$this->assign('style_c', $this->getCount('style'));
-		$this->assign('total', $this->model->where(array())->count());
+		$this->assign('total', $this->model->where(array('ischeck' => 1))->count());
 		
 		$this->assign('decoration_type', $this->_aBaseOptions['decorationType']);
 		$this->assign('design_fee', $this->_aBaseOptions['designFee']);
@@ -59,7 +59,7 @@ class DesignerAction extends BaseAction{
 		$this->model = D('User_designer');
 		$data = $this->model->queryOne(array('uid' => $this->para['uid']));
 		if(empty($data)){
-			redirect(__URL__.'/caseIndex');
+			redirect(__URL__.'/designerIndex');
 		}
 		$click_count = $this->model->where(array('uid' => $this->para['uid']))->getField('click_count');
 		$this->model->update(array('click_count' => $click_count+1), array('uid' => $this->para['uid']));
@@ -107,6 +107,7 @@ class DesignerAction extends BaseAction{
 		if($this->para['cid'] > 0){
 			$where['cid'] = $this->para['cid'];
 		}
+		$where = array_merge($where, array('ischeck' => 1));
 		return $this->model->getList($where, $order, 5, true);
 	}
 	
@@ -124,6 +125,9 @@ class DesignerAction extends BaseAction{
 	}
 	
 	public function designerComment(){
+		$this->model = D("Comment");
+		$this->model->getList(array('uid' => $this->para['uid']));
+		
 		$this->display();
 	}
 	

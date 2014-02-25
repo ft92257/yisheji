@@ -26,6 +26,7 @@ class CaseModel extends BaseModel {
 				'8'=>'地中海风格'
 			),
 			'htype' => array('1' => '连锁店', '2' => '办公室', '3' => '实验室', '4' => '公共空间'),
+
 	);
 	
 	protected $formConfig = array(

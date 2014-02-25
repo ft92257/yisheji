@@ -29,6 +29,15 @@ class ActiveAction extends BaseAction{
 			redirect(__URL__.'/activeIndex');
 		}
 		$this->assign('activeInfo', $data);
+		
+		$this->model = D("Comment");
+		$where = array(
+				'type' => '3',
+				'target' => $data['id']
+		);
+		$data = $this->model->getList($where, "createtime desc", 5, true);
+		$this->assign('activeComment', $data['list']);
+		$this->assign('activeCommentPage', $data['page']);
 		$this->display();
 	}
 	
