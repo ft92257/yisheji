@@ -78,6 +78,9 @@ class CaseModel extends BaseModel {
 		$this->_auto_process_data($data);
 		$fields = 'name,is_original,decoration_type,style,housetype,htype,info';
 		D('Search')->addRecord($data, $fields, 2);
+		
+		//增加设计师的案例数量
+		D('User_designer')->where(array('uid' => $data['uid']))->setInc('case_count');
 	}
 }
 ?>

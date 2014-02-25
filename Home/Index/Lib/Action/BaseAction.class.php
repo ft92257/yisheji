@@ -21,7 +21,7 @@ class BaseAction extends Action {
 		if ($uid) {
 			$user = D('User')->where(array('id' => $uid))->find();
 			$_SESSION['user'] = $user;
-			$this->oUser = (array)$user;
+			$this->oUser = $user;
 			#用户名
 			$this->assign('user', $this->oUser);
 			#未读私信数
@@ -32,6 +32,8 @@ class BaseAction extends Action {
 			$collect['active'] = D('collect')->where(array('uid'=>$this->oUser['id'], 'type'=>3))->select();
 			$_SESSION['collect'] = $collect;
 			$this->oCollect = $collect;
+		} else {
+			$this->oUser = array();
 		}
 		$this->assign('hot_designer', D('User_designer')->getHotDesigner());
 		$this->assign('hot_case', D('Case')->getHotCase());
