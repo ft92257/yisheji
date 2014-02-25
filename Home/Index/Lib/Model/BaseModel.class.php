@@ -16,7 +16,7 @@ class BaseModel extends Model {
 		$this->_aBaseOptions = require CONF_PATH.'dataConfig.inc.php';
 		$this->oApp = $_SESSION['app_index'];
 		$this->oCom = $_SESSION['company'];
-		$this->oUser = $_SESSION['user'];
+		$this->oUser = (array) $_SESSION['user'];
 		$this->oCollect = $_SESSION['collect'];
 	}
 	

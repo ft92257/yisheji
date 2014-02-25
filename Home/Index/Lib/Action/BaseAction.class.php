@@ -21,7 +21,7 @@ class BaseAction extends Action {
 		if ($uid) {
 			$user = D('User')->where(array('id' => $uid))->find();
 			$_SESSION['user'] = $user;
-			$this->oUser = (array)$user;
+			$this->oUser = $user;
 			#用户名
 			$this->assign('user', $this->oUser);
 			#未读私信数

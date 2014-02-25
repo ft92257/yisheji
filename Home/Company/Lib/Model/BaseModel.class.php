@@ -46,7 +46,7 @@ class BaseModel extends Model {
 		
 		$this->oApp = $_SESSION['app'];
 		$this->oCom = $_SESSION['company'];
-		$this->oUser = $_SESSION['user'];
+		$this->oUser = (object) $_SESSION['user'];
 	}
 	
 	//删除方法
