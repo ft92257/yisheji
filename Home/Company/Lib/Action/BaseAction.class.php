@@ -29,10 +29,15 @@ class BaseAction extends Action {
 			$_SESSION['user'] = $oUser;
 
  			if(in_array($this->oUser->type, array(2,3)) ){
-				$aCom =  D('Company')->getObjectById($this->oUser->id, 'uid');
-				if (empty($aCom)) {
-					$this->error('ERROR:没有公司信息！');
-				}
+ 				if ($this->oUser->type == 2) {
+ 					$aDesigner = D('User_designer')->getById($this->oUser->id, 'uid');
+ 					$aCom =  D('Company')->getObjectById($aDesigner['cid']);
+ 				} elseif ($this->oUser->type == 3) {
+ 					$aCom =  D('Company')->getObjectById($this->oUser->id, 'uid');
+  				}
+ 				if (empty($aCom)) {
+ 					$this->error('ERROR:没有公司信息！');
+ 				}
 				$_SESSION['company'] = $aCom;
 				$this->oCom = $aCom;
 			} else {
