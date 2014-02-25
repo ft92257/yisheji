@@ -31,6 +31,8 @@ class User_designerModel extends BaseModel {
 		return $arr;
 	}
 	
+	public function getHost
+	
 	public function getHotDesigner($limit = 8){
 		return $this->getList(array('ischeck' => 1), 'reserve_count desc', $limit);
 	}

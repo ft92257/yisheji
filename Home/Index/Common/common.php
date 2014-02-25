@@ -267,7 +267,7 @@ function infoFormat($str,$mylen = 126){
 $value = substr($str, 0, $mylen);  
 $value_length = strlen($value);     
 if($value_length <= $mylen)
-	return $value;
+	return $value."..";
 $value_count = 0;     
 for ($i = 0; $i < $value_length; $i++)     
 {     
