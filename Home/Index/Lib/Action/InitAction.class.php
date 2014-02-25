@@ -211,6 +211,7 @@ class InitAction extends BaseAction {
 		if(isset($this->para['where']))
 			$this->model->where($this->para['where']);
 		$res = $this->model->select();
+		echo $this->model->getLastSql();
 		print_r('<pre>');
 		print_r($res);
 	}
