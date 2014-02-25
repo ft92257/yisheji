@@ -206,5 +206,13 @@ class InitAction extends BaseAction {
 		}
 	}
 	
+	public function getData(){
+		$this->model = D($this->para['model']);
+		if(isset($this->para['where']))
+		$res = $this->model->where($this->para['where'])->select();
+		print_r('<pre>');
+		print_r($res);
+	}
+	
 	
 }
