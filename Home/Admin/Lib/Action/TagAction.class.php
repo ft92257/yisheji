@@ -10,40 +10,33 @@ class TagAction extends BaseAction {
 	
 		$this->model = D('Tag');
 	}
-	
+	public function index() {
+		$params = array(
+			'order' => 'createtime DESC',
+		);
+
+		$this->_getPageList($params);
+	}
 	/*
-	 * 添加
+	 * 添加案例
 	 */
 	public function add(){
 		if ($this->isPost()) {
-			$data = getRequestData('type,content');
-			$aTag = $this->model->get($data);
-			if (!empty($aTag)) {
-				$set = array(
-						'usecount' => $aTag['usecount'] + 1,
-						);
-				$this->model->where(array('id' => $aTag['id']))->data($set)->save();
-				die('1');
-			}
-			
-			$data['usecount'] = 1;
-			if ($this->model->addData($data)) {
-				echo '1';
-			} else {
-				echo $this->model->getError();
-			}
+			$dataBase = array(
+					'cid' => $this->oCom->id,
+					'uid' => $this->oUser->id,
+			);
+			$this->_add($dataBase);
 		} else {
-			$this->error('非法操作！');
+			$this->_display_form();
 		}
 	}
 	
 	/*
-	 * 删除
+	 * 审核
 	 */
-	public function delete() {
-		$id = getRequest('id');
-
+	public function audit() {
+		$this->_audit();
 	}
-	
 }
 ?>

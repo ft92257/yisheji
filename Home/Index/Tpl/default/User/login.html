@@ -52,3 +52,15 @@
 <!---->
 </div>
 <include file='Public:footer' />
+<script>
+
+document.onkeydown=function()
+{
+var e=event.srcElement;
+if(event.keyCode==13)
+{
+$("#login_sub").click();
+return false;
+}
+}
+</script> 

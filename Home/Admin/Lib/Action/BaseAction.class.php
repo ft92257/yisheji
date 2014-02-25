@@ -223,5 +223,20 @@ class BaseAction extends Action {
 			die('1');
 		}
 	}
+	protected function _ischeck() {
+		$id = getRequest('id');
+		$ischeck = getRequest('field');
+		$value = getRequest('value');
+		if(!in_array($value,array('0','1','2','3'))){
+			die('非法操作！');
+		}
+		$ret = $this->model->where(array('id'=>$id))->data(array($ischeck=>$value))->save();
+		if($ret === false) {
+			echo json_encode(array('info'=>'数据库操作失败'));
+		} else {
+			echo json_encode(array('info'=>'sssdds','status'=>'1'));
+		}
+		
+	}
 }
 ?>

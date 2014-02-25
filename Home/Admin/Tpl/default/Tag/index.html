@@ -2,16 +2,17 @@
 <include file="Public:left" />
       <div class="right">
         <div class="frame hide" id="menu2">
-          <h2>用户列表</h2>
+          <h2>标签列表</h2>
           <div class="">
-            <h3>用户列表</h3>
-			<div class="link">
-            </div>
+            <h3>标签列表</h3>
             <form method="POST" action="">
              <table>
                 {$searchHtml}
              </table>
             </form>
+            <div class="link">
+                <a href="{:U('add')}">+添加标签</a>
+            </div>
             <div class="Tevents">
               <table width="100%">
 				{$listHtml}

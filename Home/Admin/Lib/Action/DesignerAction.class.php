@@ -3,12 +3,12 @@
 /**
  * 	装修公司后台登陆
  */
-class UserAction extends BaseAction {
+class DesignerAction extends BaseAction {
   
 	public function __construct() {
 		parent::__construct();
 	
-		$this->model = D('User');
+		$this->model = D('User_designer');
 	}
 	/*
 	public function test() {
@@ -26,27 +26,6 @@ class UserAction extends BaseAction {
 		echo $this->model->getLastSql();
 	}*/
 	
-	
-	/*
-	 * 登录
-	*/
-	public function login() {
-		if ($this->isLogin()) {
-			redirect('admin.php');
-		}
-	
-		if (!$this->isPost()) {
-			$this->display();
-			die;
-		}
-	
-		if ($this->model->login()) {
-			$this->success('登录成功！', U('/Index/index'));
-		} else {
-			$this->error($this->model->getError());
-		}
-	}
-	
 	/*
 	 * 退出
 	*/
@@ -54,17 +33,31 @@ class UserAction extends BaseAction {
 		unset($_SESSION['admin_user']);
 		$this->success('退出成功！');
 	}
+	/*
+	 * 设计师列表
+	 */
 	public function index() {
-			//dump($_SERVER);die;
-			//echo U('Case');die;
+		//$str = json_encode(array('text'=>array('info'=>'sss')));
+		//echo $str;die;
 		$params = array(
 			'order' => 'createtime DESC',
 		);
-		if(getRequest('type')){
-			$params['where'] = array('type'=>getRequest('type')) ;
-		}
-		
 		$this->_getPageList($params);
+		//echo $this->model->getLastSql();die;
+	}
+	/*
+	 * 添加设计师
+	 */
+	/*public function add(){
+		if ($this->isPost()) {
+			$dataBase = array(
+					'cid' => $this->oCom->id,
+					'uid' => $this->oUser->id,
+			);
+			$this->_add($dataBase);
+		} else {
+			$this->_display_form();
+		}
 	}
 		/*
 	 * 审核
@@ -72,6 +65,8 @@ class UserAction extends BaseAction {
 	public function audit() {
 		$this->_audit();
 	}
-		
+	public function ischeck() {
+		$this->_ischeck();
+	}	
 }
 ?>

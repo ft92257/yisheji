@@ -69,5 +69,18 @@ class DesignerAction extends BaseAction {
 		
 		$this->success('删除成功！');
 	}
+	/*
+	 * 修改
+	 */
+	public function edit() {
+		$data = $this->model->getById(getRequest('id'));
+		$this->checkPurviewData($data);
+		
+		if ($this->isPost()) {
+			$this->_edit($data);
+		} else {
+			$this->_display_form($data,'add');
+		}
+	}
 }
 ?>
