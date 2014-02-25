@@ -257,7 +257,7 @@ header .login-info .hover .show,header .login-info .set:hover .show{ display:blo
 .active-index .info .intro{color:#999;}
 
 footer{ background-color:#333; height:300px; overflow:hidden; min-width:1160px;}
-footer .weixin{ background:#4F4F4F url(../images/weixin.png) center 38px no-repeat; width:360px; float:right; height:300px; position:relative; z-index:1;}
+footer .weixin{ background:#4F4F4F url(../images/xinlang.jpg) center 38px no-repeat; width:360px; float:right; height:300px; position:relative; z-index:1;}
 footer .weixin span{ display:block; height:24px;font:20px/24px "Microsoft YaHei UI","微软雅黑"; width:360px; text-align:center;color:#fff; position:absolute;left:0;top:248px;}
 footer .nav_foot{ padding-top:12px; height:205px;}
 footer .nav_foot ul{ float:left; width:180px; padding-right:30px;color:#999;}
