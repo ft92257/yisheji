@@ -162,7 +162,6 @@ class BaseAction extends Action {
 		$this->assign('page', $Page->show());
 		
 		$data = $this->model->where($where)->order($params['order'])->limit($Page->firstRow.','.$Page->listRows)->select();
-		
 		$searchHtml = $this->model->getSearchHtml();
 		$listHtml = $this->model->getListHtml($data, $params['vars']);
 		

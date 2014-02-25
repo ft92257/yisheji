@@ -94,9 +94,10 @@ class User_designerModel extends BaseModel {
 	protected function _after_select(&$resultSet,$options) {
 		foreach ($resultSet as &$value) {
 			$this->_auto_process_data($value);
-			$value['account'] = $aUser['account'];
-			$value['realname'] = $aUser['realname'];
-			$value['nickname'] = $aUser['nickname'];
+			$data = D('User')->getById($value['uid']);
+			$value['account'] = $data['account'];
+			$value['realname'] = $data['realname'];
+			$value['nickname'] = $data['nickname'];
 			$value['createtime'] = date('Y-m-d H:i', $value['createtime']);
 		}
 	}
