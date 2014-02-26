@@ -23,6 +23,7 @@ class User_designerModel extends BaseModel {
 		$resultSet['is_friend'] = D('Friend')->isFriend($resultSet['uid']);
 		$resultSet['friend_c'] = D('Friend')->getFriendCount($resultSet['uid']);
 		$resultSet['fensi_c'] = D('Friend')->getFensiCount($resultSet['uid']);
+		//$resultSet['case'] = $this->getCase($resultSet['uid']);
 	}
 	
 	public function getAvgScore(){

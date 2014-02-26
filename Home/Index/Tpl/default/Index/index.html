@@ -98,7 +98,7 @@
                             <foreach name="activeType1" item="vo">
                             <li><div class="pic">
                             		<div class="thumb j_gallery">
-                            		<foreach name="vo['photo']['list']" item="val">
+                            		<foreach name="vo['picture']" item="val">
                                         <a data-meta="{ pic:'{$val.fid_img}'}"><img src="{$val.fid_img}" alt="" /></a>
                                        </foreach>
                                     </div>
@@ -111,7 +111,7 @@
                                     <p>发起人：<a href="#">{$vo.organizer}</a></p>
                                     <p>类 &nbsp;&nbsp; 型：{$vo.type_zh}</p>
                                     <p>费 &nbsp;&nbsp; 用：{$vo.design_fee}</p>
-                                    <p class="intro">{$vo.info}</p>
+                                    <p class="intro">{$vo.info_j}</p>
                                 </div>
                             </li>
                             </foreach>
@@ -126,7 +126,7 @@
                             <foreach name="activeType2" item="vo">
                             <li><div class="pic">
                             		<div class="thumb j_gallery">
-                            		<foreach name="vo['photo']['list']" item="val">
+                            		<foreach name="vo['picture']" item="val">
                                         <a data-meta="{ pic:'{$val.fid_img}'}"><img src="{$val.fid_img}" alt="" /></a>
                                        </foreach>
                                     </div>
@@ -139,7 +139,7 @@
                                     <p>发起人：<a href="#">{$vo.organizer}</a></p>
                                     <p>类 &nbsp;&nbsp; 型：{$vo.type_zh}</p>
                                     <p>费 &nbsp;&nbsp; 用：{$vo.design_fee}</p>
-                                    <p class="intro">{$vo.info}</p>
+                                    <p class="intro">{$vo.info_j}</p>
                                 </div>
                             </li>
                             </foreach>
@@ -154,7 +154,7 @@
                             <foreach name="activeType3" item="vo">
                             <li><div class="pic">
                             		<div class="thumb j_gallery">
-                            		<foreach name="vo['photo']['list']" item="val">
+                            		<foreach name="vo['picture']" item="val">
                                         <a data-meta="{ pic:'{$val.fid_img}'}"><img src="{$val.fid_img}" alt="" /></a>
                                        </foreach>
                                     </div>
@@ -167,7 +167,7 @@
                                     <p>发起人：<a href="#">{$vo.organizer}</a></p>
                                     <p>类 &nbsp;&nbsp; 型：{$vo.type_zh}</p>
                                     <p>费 &nbsp;&nbsp; 用：{$vo.design_fee}</p>
-                                    <p class="intro">{$vo.info}</p>
+                                    <p class="intro">{$vo.info_j}</p>
                                 </div>
                             </li>
                             </foreach>
