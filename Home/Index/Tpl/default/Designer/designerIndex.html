@@ -121,7 +121,10 @@
                 </div>
                 <a class="r" title="详细" href="__GROUP__/Designer/designerDetails/uid/{$vo.uid}" target = 'blank'><i class="ico ico-32"></i></a> </div>
               <div class="info">
-                <p class="t">{$vo.service_area}， 擅长{$vo.decoration_type_zh}、{$vo.housetype_zh}设计</p>
+                <p class="t">
+                <notempty name="vo['service_area']">{$vo['service_area']}&nbsp;&nbsp;</notempty>
+                <notempty name="vo['decoration_type_zh']">{$vo['decoration_type_zh']}&nbsp;&nbsp;</notempty>
+                {$vo.housetype_zh}</p>
                 <p>{$vo.info}</p>
               </div>
             </div>

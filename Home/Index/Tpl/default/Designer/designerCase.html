@@ -15,7 +15,7 @@
 	<ul class="w-110">
         <foreach name='caseList2' item='vo'>
     	<li><a class="pic" href="__GROUP__/Case/caseDetails/id/{$vo['id']}"><img src="{$vo.focus_img}" alt="" /></a>
-        	<strong><a href="#">{$vo.name}</a></strong>
+        	<strong><a href="__GROUP__/Case/caseDetails/id/{$vo['id']}">{$vo.name}</a></strong>
             <p><foreach name='vo["tags"]' item='i'>{$i}</foreach></p>
         </li>
      </foreach>  
