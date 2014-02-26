@@ -11,8 +11,6 @@ class IndexAction extends BaseAction{
 		
 		$this->model = D('Active');
 		$data = $this->model->getList(array('type' => 1), 'recommend desc,createtime desc', 3);
-		print_r('<pre>');
-		print_r($data);
 		$this->assign('activeType1', $data);
 		$data = $this->model->getList(array('type' => 2), 'recommend desc,createtime desc', 3);
 		$this->assign('activeType2', $data);
