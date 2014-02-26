@@ -106,7 +106,7 @@
                             	</div>
                             	<div class="info">
                                 	<strong>{$vo.title}</strong>
-                                    <p class="date clearfix"><i class="ico ico-14"></i>{$vo.begin_date}~{$vo.end_date}&nbsp;{$vo.begin_time}~{$vo.end_time}</p>
+                                    <p class="date clearfix"><i class="ico ico-14"></i>{$vo.begin_date}~{$vo.end_date}<br/>{$vo.begin_time}~{$vo.end_time}</p>
                                     <p class="clearfix"><i class="ico ico-15"></i>{$vo.address}</p>
                                     <p>发起人：<a href="#">{$vo.organizer}</a></p>
                                     <p>类 &nbsp;&nbsp; 型：{$vo.type_zh}</p>
@@ -127,7 +127,7 @@
                             <li><div class="pic">
                             		<div class="thumb j_gallery">
                             		<foreach name="vo['picture']" item="val">
-                                        <a data-meta="{ pic:'{$val.fid_img}'}"><img src="{$val.fid_img}" alt="" /></a>
+                                        <a href="__GROUP__/Active/ActiveDetails/id/{$vo['id']}" data-meta="{ pic:'{$val.fid_img}'}"><img src="{$val.fid_img}" alt="" /></a>
                                        </foreach>
                                     </div>
                                     <div class="bigpic j_galleryCnt"></div>
