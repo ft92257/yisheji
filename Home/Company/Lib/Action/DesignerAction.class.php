@@ -31,6 +31,16 @@ class DesignerAction extends BaseAction {
 	 */
 	public function add() {
 		if ($this->isPost()) {
+				$password = getRequest('password');
+				$repassword = getRequest('repassword');
+				if(!($password || $repassword)){
+					$this->error('请输入密码');
+				}
+				if($password || $repassword){
+			    	if($password != $repassword){
+			    		$this->error('两次密码输入不一致');
+			    	}
+				}
 			$database = array(
 				'type' => 2,//设计师
 			);
@@ -47,7 +57,7 @@ class DesignerAction extends BaseAction {
 			$this->model = D('User_designer');
 			$this->_add($database);
 		} else {
-			$this->display();
+			$this->_display_form();
 		}
 	}
 	
@@ -73,13 +83,15 @@ class DesignerAction extends BaseAction {
 	 * 修改
 	 */
 	public function edit() {
-		$data = $this->model->getById(getRequest('id'));
+		$aDsner = $this->model->getById(getRequest('id'));
+		$aUser = D('User')->getById($aDsner['uid']);
+		$data = array_merge($aDsner,$aUser);
 		$this->checkPurviewData($data);
 		
 		if ($this->isPost()) {
 			$this->_edit($data);
 		} else {
-			$this->_display_form($data,'add');
+			$this->_display_form($data);
 		}
 	}
 }
