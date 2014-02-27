@@ -16,7 +16,7 @@ class BaseAction extends Action {
 		//加载项目信息
 		if (empty($_SESSION['app'])) {
 			$_SESSION['app'] = (object) C('APP_INFO');
-			$this->oApp = $data;
+			$this->oApp = $_SESSION['app'];
 		} else {
 			$this->oApp = $_SESSION['app'];
 		}

@@ -83,13 +83,15 @@ class DesignerAction extends BaseAction {
 	 * 修改
 	 */
 	public function edit() {
-		$data = $this->model->getById(getRequest('id'));
+		$aDsner = $this->model->getById(getRequest('id'));
+		$aUser = D('User')->getById($aDsner['uid']);
+		$data = array_merge($aDsner,$aUser);
 		$this->checkPurviewData($data);
 		
 		if ($this->isPost()) {
 			$this->_edit($data);
 		} else {
-			$this->_display_form($data,'add');
+			$this->_display_form($data);
 		}
 	}
 }
