@@ -118,7 +118,7 @@ class BaseAction extends Action {
 			die;
 		}
 	}
-
+	/*
 	/*
 	 * 添加操作
 	 */

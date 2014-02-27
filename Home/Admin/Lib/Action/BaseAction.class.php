@@ -229,11 +229,16 @@ class BaseAction extends Action {
 		if(!in_array($value,array('0','1','2','3'))){
 			die('非法操作！');
 		}
-		$ret = $this->model->where(array('id'=>$id))->data(array($ischeck=>$value))->save();
+		if($value == '1'){
+			$uid = D('User_designer')->where(array('id'=>$id))->getField('uid');
+			$cid = D('Company')->add(array('uid'=>$uid,'type'=>'2','appid'=>$this->oApp->id,'createtime'=>time()));
+			$ret = $this->model->where(array('id'=>$id))->data(array($ischeck=>$value,'cid'=>$cid))->save();
+		}else
+			$ret = $this->model->where(array('id'=>$id))->data(array($ischeck=>$value))->save();
 		if($ret === false) {
 			echo json_encode(array('info'=>'数据库操作失败'));
 		} else {
-			echo json_encode(array('info'=>'sssdds','status'=>'1'));
+			echo json_encode(array('status'=>'1'));
 		}
 		
 	}
