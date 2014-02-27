@@ -8,7 +8,7 @@ class ReserveAction extends BaseAction {
 	public function add() {
 		#ID不存在退出预约
 		switch($this->para['type']){
-			case '1':
+			case '3':
 				$company =  D('Company')->where(array('uid' => $this->para['uid']))->find();
 				if(empty($company)){
 					$this->resultFormat(null, -1);
@@ -115,7 +115,7 @@ class ReserveAction extends BaseAction {
 		}
 		#更新设计师预约记录
 		switch($this->para['type']){
-			case '1':
+			case '3':
 				$this->model = D('Company');
 				$where = array('uid' => $this->para['uid']);
 				$data = array('reserve_count' => ($company['reserve_count'] + $reserve_count));

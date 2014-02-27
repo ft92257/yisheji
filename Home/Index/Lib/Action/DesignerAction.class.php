@@ -71,6 +71,7 @@ class DesignerAction extends BaseAction{
 
 		$this->assign('sender', $this->oUser['id']);
 		$this->assign('recipient', $data['uid']);
+		$this->assign('user', $this->oUser);
 		
 		$isSelf = $this->para['uid'] == $this->oUser['id'] ? 1 : 0;
 		$this->assign('isSelf', $isSelf);
