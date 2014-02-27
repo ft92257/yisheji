@@ -23,6 +23,7 @@ class User_designerModel extends BaseModel {
 		$resultSet['is_friend'] = D('Friend')->isFriend($resultSet['uid']);
 		$resultSet['friend_c'] = D('Friend')->getFriendCount($resultSet['uid']);
 		$resultSet['fensi_c'] = D('Friend')->getFensiCount($resultSet['uid']);
+		//$resultSet['case'] = $this->getCase($resultSet['uid']);
 	}
 	
 	public function getAvgScore(){
@@ -30,6 +31,13 @@ class User_designerModel extends BaseModel {
 		$arr['avg_score_service'] = $this->avg('score_service');
 		return $arr;
 	}
+	
+	public function getCase($uid){
+		$this->model = D('Case');
+		$this->model->where(array('uid' => $uid));
+		$this->model->order('createtime desc');
+		return $this->model->find();	
+	}	
 	
 	public function getHotDesigner($limit = 8){
 		return $this->getList(array('ischeck' => 1), 'reserve_count desc', $limit);

@@ -51,7 +51,7 @@
                 	<a href="#"><img src="{$designerInfo['header']}"  alt="" /></a>
                     <strong>{$designerInfo['name_zh']}</strong>
                     <div class="star"><span class="{$designer['star_html']}"></span></div>
-                    <p>{$designerInfo.nationality}，{$designerInfo.housetype_zh}设计</p>
+                    <p><notempty name="designerInfo['nationality']">{$designerInfo.nationality}&nbsp;&nbsp;</notempty><notempty name="designerInfo['housetype_zh']">{$designerInfo.housetype_zh}</notempty></p>
                     <p class="intro">{$vo['info']}</p>
                     <p class="pb-1">设计专长：<br />{$designerInfo.decoration_type_zh}</p>
                     <a rel="#reserve-designer" class="btn btn-4" href="javascript:void(0)"><i class="ico ico-16"></i><span>立即预约</span></a>
