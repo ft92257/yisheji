@@ -272,7 +272,7 @@ function ubbReplace($str){
 	$str = str_replace(">",'<；',$str);
 	$str = str_replace(">",'>；',$str);
 	$str = str_replace("\n",'>；br/>；',$str);
-	$str = preg_replace("[\[em_([0-9]*)\]]","<img src=\"http://s.trueart.com/js/ckeditor/plugins/smiley/images/$1.gif\" />",$str);
+	$str = preg_replace("[\[em_([0-9]*)\]]","<img src=\"http://s.trueart.com/js/ckeditor/plugins/smiley/images/$1.gif\" />", $str);
 	return $str;
 }
 
@@ -283,18 +283,19 @@ function updateCache($model, $where, $data){
 	$newArr = array();
 	foreach($data as $k => $v){
 		if(key_exists($k, $arr)){
-			if	($v == '+1') 
+			if	($v == '++') 
 				$newArr[$k] = $arr[$k]+1;
-			else if ($v == '-1')
+			else if ($v == '--')
 				$newArr[$k] = $arr[$k]-1;
 			else 
-				$newArr[$k] = $v;
+				$newArr[$k] = 1;
 		} else {
+			$data[$k] = 1;
 			$newArr = array_merge($arr, $data);
 		}
 	}
-	$this->resultFormat(null, 0, '111');
-	return $model->where($where)->data(array('cache' =>json_encode($newArr)))->save();
+	$res = $model->where($where)->data(array('cache' =>json_encode($newArr)))->save();
+	return $res;
 }
 
 ?>

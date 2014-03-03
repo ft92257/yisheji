@@ -2,6 +2,7 @@
 class DesignerAction extends BaseAction{
 	
 	public function __construct() {
+		ini_set('memory_limit', '128M');
 		parent::__construct();
 	}
 	

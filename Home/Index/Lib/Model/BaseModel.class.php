@@ -109,7 +109,6 @@ class BaseModel extends Model {
 		if (!$redis->exists($key)) {
 			$data = $this->where(array($pk => $id))->find();
 			$redis->hmset($key, $data);
-			
 			return $data;
 		} else {
 			return $redis->hgetall($key);

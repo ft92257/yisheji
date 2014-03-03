@@ -10,11 +10,11 @@ class CaseModel extends BaseModel {
 		$resultSet['style_zh'] = $this->_aBaseOptions['style'][$resultSet['style']];
 		$resultSet['authorize_zh'] = $this->_aBaseOptions['authorize'][$resultSet['authorize']];
 		$resultSet['focus_img'] = getFileUrl($resultSet['focus']);
-		$user = D('User')->where(array('id' => $resultSet['uid']))->find();
+		$user =  D('User')->getById($resultSet['uid']);
 		if($user['type'] == 2){
-			$resultSet['user'] = D('User_designer')->where(array('uid'=> $user['id']))->find();
+			$resultSet['user'] = D('User_designer')->where(array('uid' =>$resultSet['uid']))->find();
 		} else if($user['type'] == 3){
-			$resultSet['user'] = D('Company')->where(array('uid'=> $user['id']))->find();
+			$resultSet['user'] = D('Company')->where(array('uid' =>$resultSet['uid']))->find();
 		}
 		$resultSet['user']['type'] = getFileUrl($user['type']);
 		$resultSet['user']['header'] = getFileUrl($user['avatar']);
