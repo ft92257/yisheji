@@ -6,7 +6,7 @@ class User_designerModel extends BaseModel {
 	}
 	
 	protected function _after_find(&$resultSet,$options) {
-		$data = D('User')->where(array('id' => $resultSet['uid']))->find();
+		$data = D('User')->getById($resultSet['uid']);
 		$resultSet = array_merge($data, $resultSet);
 		$resultSet['sex_zh'] = $this->_aBaseOptions['sex'][$resultSet['sex']];
 		$resultSet['style_zh'] = $this->_aBaseOptions['style'][$resultSet['style']];
@@ -21,9 +21,10 @@ class User_designerModel extends BaseModel {
 		$resultSet['star_html'] = getStar($resultSet['avg_score']);
 		$resultSet['info_j'] =  infoFormat($resultSet['info']);
 		$resultSet['is_friend'] = D('Friend')->isFriend($resultSet['uid']);
-		$resultSet['friend_c'] = D('Friend')->getFriendCount($resultSet['uid']);
-		$resultSet['fensi_c'] = D('Friend')->getFensiCount($resultSet['uid']);
-		//$resultSet['case'] = $this->getCase($resultSet['uid']);
+		$cache = json_decode($resultSet['cache'], 1);
+		$resultSet['friend_c'] = $cache['friend_count'] ? $cache['friend_count'] : 0;
+		$resultSet['fensi_c'] = $cache['fensi_count'] ? $cache['fensi_count'] : 0;
+		$resultSet['case_focus'] = $cache['case']['focus'];
 	}
 	
 	public function getAvgScore(){
@@ -31,13 +32,6 @@ class User_designerModel extends BaseModel {
 		$arr['avg_score_service'] = $this->avg('score_service');
 		return $arr;
 	}
-	
-	public function getCase($uid){
-		$this->model = D('Case');
-		$this->model->where(array('uid' => $uid));
-		$this->model->order('createtime desc');
-		return $this->model->find();	
-	}	
 	
 	public function getHotDesigner($limit = 8){
 		return $this->getList(array('ischeck' => 1), 'reserve_count desc', $limit);

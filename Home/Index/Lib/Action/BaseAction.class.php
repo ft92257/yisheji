@@ -39,7 +39,7 @@ class BaseAction extends Action {
 		$this->assign('hot_case', D('Case')->getHotCase());
 	}
 	
-	protected  function resultFormat($data = null, $status = 0, $msg = null, $url = null){
+	public  function resultFormat($data = null, $status = 0, $msg = null, $url = null){
 		$arr['act'] = $this->para['act'];
 		$arr['data'] = $data;
 		$arr['status'] = $status;

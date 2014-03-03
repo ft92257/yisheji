@@ -12,15 +12,12 @@ class FriendAction extends BaseAction{
 				'other' => $this->para['uid']
 				);
 		$this->model = D('Friend');
-		/*
 		$id = $this->model->insert($data);
 		if (!$id) {
 			$this->resultFormat(null, 0, 'SQL:'.$this->model->getLastSql());
 		}
-		*/
 		$type = D('User')->where(array('id' => $this->oUser['id']))->getField('type');
-		$this->resultFormat(null, 0, $type);
-		switch($this->para['utype']){
+		switch($type){
 			case '1':
 				$this->model = D('User_owner');
 				break;
@@ -31,12 +28,12 @@ class FriendAction extends BaseAction{
 				$this->model = D('Company');
 				break;
 		}
-		$res = updateCache($this->model, array('uid' => $this->oUser['id']), array('friend_count', '+1'));
+		$res = updateCache($this->model, array('uid' => $this->oUser['id']), array('friend_count'=>'++'));
 		if ($res === false){
 			$this->resultFormat(null, 0, 'SQL:'.$this->model->getLastSql());
 		}
 		$type = D('User')->where(array('id' => $this->para['uid']))->getField('type');
-		switch($this->para['utype']){
+		switch($type){
 			case '1':
 				$this->model = D('User_owner');
 				break;
@@ -47,7 +44,7 @@ class FriendAction extends BaseAction{
 				$this->model = D('Company');
 				break;
 		}
-		$res = updateCache($this->model, array('uid' => $this->para['uid']), array('fensi_count', '+1'));
+		$res = updateCache($this->model, array('uid' => $this->para['uid']), array('fensi_count'=>'++'));
 		if ($res === false){
 			$this->resultFormat(null, 0, 'SQL:'.$this->model->getLastSql());
 		}
@@ -67,7 +64,7 @@ class FriendAction extends BaseAction{
 		}
 			
 		$type = D('User')->where(array('id' => $this->oUser['id']))->getField('type');
-		switch($this->para['utype']){
+		switch($type){
 			case '1':
 				$this->model = D('User_owner');
 				break;
@@ -78,12 +75,12 @@ class FriendAction extends BaseAction{
 				$this->model = D('Company');
 				break;
 		}
-		$res = updateCache($this->model, array('uid' => $this->oUser['id']), array('friend_count', '-1'));
+		$res = updateCache($this->model, array('uid' => $this->oUser['id']), array('friend_count'=>'--'));
 		if ($res === false){
 			$this->resultFormat(null, 0, 'SQL:'.$this->model->getLastSql());
 		}
 		$type = D('User')->where(array('id' => $this->para['uid']))->getField('type');
-		switch($this->para['utype']){
+		switch($type){
 			case '1':
 				$this->model = D('User_owner');
 				break;
@@ -94,7 +91,7 @@ class FriendAction extends BaseAction{
 				$this->model = D('Company');
 				break;
 		}
-		$res = updateCache($this->model, array('uid' => $this->para['uid']), array('fensi_count', '-1'));
+		$res = updateCache($this->model, array('uid' => $this->para['uid']), array('fensi_count'=>'--'));
 		if ($res === false){
 			$this->resultFormat(null, 0, 'SQL:'.$this->model->getLastSql());
 		}
