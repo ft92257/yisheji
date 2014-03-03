@@ -116,6 +116,7 @@ class CaseModel extends BaseModel {
 		$aCache['case'] = array('id'=>$aData['id'],'name' => $aData['name'],'focus'=>getFileUrl($aData['focus']));
 		
 		$model->where(array('uid'=>$uid))->data(array('cache'=>json_encode($aCache)))->save();
+		echo "sql:".$model->getLastSql();exit;
 		//更新cache字段
 		
 	}
