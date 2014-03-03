@@ -796,7 +796,7 @@ class BaseModel extends Model {
 						break;
 					case 'text':
 						$url = $this->getHref($cfg, $aValue, $vars);
-						$s .= '<input type="text" style="width:100%;height:100%" field="'.$field.'" oldval="'.$aValue[$field].'" onblur="autoUpdate(this, \''.$url.'\')" value="'.$aValue[$field].'" />';
+						$s .= '<input type="text" style="width:100%;" field="'.$field.'" oldval="'.$aValue[$field].'" onblur="autoUpdate(this, \''.$url.'\')" value="'.$aValue[$field].'" />';
 						break;
 					case 'select':
 						$url = $this->getHref($cfg, $aValue, $vars);

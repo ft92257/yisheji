@@ -261,7 +261,7 @@ class BaseAction extends Action {
 		
 		$params = array(
 				'where' => array('type' => $type,	'target' => $id),
-				'order' => 'createtime DESC',
+				'order' => 'ord DESC,createtime DESC',
 				'templete' => 'Picture:index',
 				'vars' => array('focus' => $data['focus']),
 				);
