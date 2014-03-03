@@ -145,7 +145,8 @@ header .login-info .set-link:hover .ico-6{background-position:-192px -40px;}*/
 header .login-info .line{ background-color:#BCAA3C; float:left; width:1px; height:11px; margin:3px 10px 0; _overflow:hidden;}
 header .login-info .set-link{margin-right:0; height:26px;}
 header .set{ float:left;width:17px;padding:0 10px; margin:0 3px;}
-header .set .show{ position:absolute; background-color:#4C4C4C;top:34px; height:76px;padding:12px 40px 12px 20px;right:0;color:#9A9A9A;display:none; z-index:10;}
+header .set .showBox{position:absolute;top:34px;right:0; width:300px}
+header .set .show{ position:absolute;right:0; background-color:#4C4C4C; height:76px;padding:12px 40px 12px 20px; display:none;color:#9A9A9A; z-index:10;}
 header .set a span{ clear:both; line-height:24px;}
 header .set .show a{color:#9A9A9A; display:block; width:50px; text-align:center; margin:0 10px 0 15px;}
 header .set .line{ background-color:#3A3A3A;border-left:1px solid #626262; height:60px; margin-top:6px;}

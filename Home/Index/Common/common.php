@@ -276,4 +276,25 @@ function ubbReplace($str){
 	return $str;
 }
 
+function updateCache($model, $where, $data){
+	$cache = $model->where($where)->getField('cache');
+	$arr = json_decode($cache, 1);
+	$arr = is_array($arr) ? $arr : array();
+	$newArr = array();
+	foreach($data as $k => $v){
+		if(key_exists($k, $arr)){
+			if	($v == '+1') 
+				$newArr[$k] = $arr[$k]+1;
+			else if ($v == '-1')
+				$newArr[$k] = $arr[$k]-1;
+			else 
+				$newArr[$k] = $v;
+		} else {
+			$newArr = array_merge($arr, $data);
+		}
+	}
+	$this->resultFormat(null, 0, '111');
+	return $model->where($where)->data(array('cache' =>json_encode($newArr)))->save();
+}
+
 ?>

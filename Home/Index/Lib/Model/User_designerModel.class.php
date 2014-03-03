@@ -10,7 +10,7 @@ class User_designerModel extends BaseModel {
 		$resultSet = array_merge($data, $resultSet);
 		$resultSet['sex_zh'] = $this->_aBaseOptions['sex'][$resultSet['sex']];
 		$resultSet['style_zh'] = $this->_aBaseOptions['style'][$resultSet['style']];
-		$resultSet['name_zh'] = $resultSet['nickname'] ? $resultSet['nickname'] : $resultSet['realname'];
+		$resultSet['name_zh'] = $resultSet['nickname'] ? $resultSet['nickname'] : $resultSet['realname'] ? $resultSet['realname'] : $resultSet['account'];
 		$resultSet['decoration_type_zh'] = $this->_aBaseOptions['decorationType'][$resultSet['decoration_type']];
 		$resultSet['housetype_zh'] = $this->_aBaseOptions['houseType'][$resultSet['housetype']];
 		$resultSet['designation_zh'] = $this->_aBaseOptions['designation'][$resultSet['designation']];

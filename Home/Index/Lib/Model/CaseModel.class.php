@@ -10,9 +10,15 @@ class CaseModel extends BaseModel {
 		$resultSet['style_zh'] = $this->_aBaseOptions['style'][$resultSet['style']];
 		$resultSet['authorize_zh'] = $this->_aBaseOptions['authorize'][$resultSet['authorize']];
 		$resultSet['focus_img'] = getFileUrl($resultSet['focus']);
-		$resultSet['designer'] = D('User_designer')->where(array('uid' => $resultSet['uid']))->find();
-		$resultSet['header'] = getFileUrl($resultSet['designer']['avatar']);
-		$resultSet['designer_name'] = $resultSet['designer']['realname'] ? $resultSet['designer']['realname'] : $resultSet['designer']['nickname'];
+		$user = D('User')->where(array('id' => $resultSet['uid']))->find();
+		if($user['type'] == 2){
+			$resultSet['user'] = D('User_designer')->where(array('uid'=> $user['id']))->find();
+		} else if($user['type'] == 3){
+			$resultSet['user'] = D('Company')->where(array('uid'=> $user['id']))->find();
+		}
+		$resultSet['user']['type'] = getFileUrl($user['type']);
+		$resultSet['user']['header'] = getFileUrl($user['avatar']);
+		$resultSet['user']['name_zh'] = $user['realname'] ? $user['realname'] : $user['nickname'];
 		$resultSet['tag_zh'] = formatTag($resultSet['tags']);
 		$resultSet['is_original_zh'] = $resultSet['is_original'] ? '原创' : '转发';
 		$resultSet['createtime_zh'] = time_tran($resultSet['createtime']);
