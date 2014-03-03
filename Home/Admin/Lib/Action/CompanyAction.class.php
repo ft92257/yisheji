@@ -34,7 +34,6 @@ class CompanyAction extends BaseAction {
 			} else {
 				$aUser = D('User')->getById($aCompany['uid']);
 				$data = array();
-				$data['password']=$aUser['password'];
 				$data['account']=$aUser['account'];
 				$data['name']=$aCompany['name'];
 				$this->_display_form($data, 'add');

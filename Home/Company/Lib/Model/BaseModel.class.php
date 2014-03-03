@@ -23,7 +23,7 @@ class BaseModel extends Model {
 	
 	//表单配置
 	protected $formConfig = array();
-
+	
 	//列表配置
 	protected $listConfig = array();
 	
