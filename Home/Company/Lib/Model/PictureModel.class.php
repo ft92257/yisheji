@@ -18,6 +18,7 @@ class PictureModel extends BaseModel {
 				'fid' => array('图片', array('img')),
 				'title' => array('说明', array('textarea' => '/Picture/autoUpdate/id/{id}')),
 				'createtime' => '添加时间',
+				'ord' => array('排序', array('text' => '/Picture/autoUpdate/id/{id}')),
 				array('操作', array(
 						array('/Picture/edit/id/{id}', '编辑'),
 						array('/Picture/delete/id/{id}', '删除', array('confirm' => '确定要删除该图片吗？')), 
