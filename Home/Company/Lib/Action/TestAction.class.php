@@ -5,9 +5,6 @@ class TestAction extends BaseAction {
 	}
 	
 	public function index(){
-		$a = json_decode('{"case":{"id":"9","name":"\u6211\u662f\u8c01","focus":"http:\/\/localhost\/yisheji\/data\/files\/404.jpg"}}',true);
-		//dump($a);die;
-		$b = D('User_designer')->where(array())->select();dump($b);
 		$aUser = D('User')->where(array())->select();
 		foreach($aUser as $value){
 			if($value['type'] > 1){
