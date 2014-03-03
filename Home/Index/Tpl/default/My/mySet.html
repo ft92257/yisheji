@@ -16,7 +16,9 @@
             <a class="current" href="javascript:void(0)">基本资料<i></i></a>
             <a href="javascript:void(0)">修改头像<i></i></a>
             <a href="javascript:void(0)">修改密码<i></i></a>
+             <if condition="($user['type'] eq 2)">
             <a href="javascript:void(0)">申请成为设计师<i></i></a>
+            </if>
         </div>
         <div class="table-main-2 form-main-2 pt-3 qh_sh" >
         <form id='set_form'>
@@ -116,6 +118,7 @@
         <if condition="($user['designer'] eq 0)">您当前的状态：【未认证设计师】，以下请填写真实的资料
         <elseif condition="($user['designer'] eq 3)"/>您当前的状态：【申请认证未处理】，请耐心等待管理员的处理结果
         <elseif condition="($user['designer'] eq 2)"/>您当前的状态：【申请认证未通过】，请确认并重新提交资料
+         <elseif condition="($user['designer'] eq 1)"/>您当前的状态：【申请认证已通过】，您已经是设计师，如果您再次提交申请表单，您当前的设计师身份将被撤销，需要在资料审核通过后才能恢复。
         </if>
         <form id='designer_apply_form' action="__GROUP__/My/designerApply" enctype="multipart/form-data" method="post">
         	<table>

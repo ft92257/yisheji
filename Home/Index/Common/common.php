@@ -264,23 +264,7 @@ function formatTag($tagString){
 }
 
 function infoFormat($str,$mylen = 126){
-$value = substr($str, 0, $mylen);  
-$value_length = strlen($value);     
-if($value_length <= $mylen)
-	return $value;
-$value_count = 0;     
-for ($i = 0; $i < $value_length; $i++)     
-{     
-    if (ord($value{$i}) > 127)     
-    {     
-        $value_count++;     
-    }     
-}     
-if ($value_count % 3 != 0)     
-{     
-    $value = substr($str, 0, $value_length - 2);   
-}  
-return $value."..";
+	return mb_strimwidth($str, 0, $mylen,"...","utf-8");
 }
 
 
@@ -288,8 +272,30 @@ function ubbReplace($str){
 	$str = str_replace(">",'<；',$str);
 	$str = str_replace(">",'>；',$str);
 	$str = str_replace("\n",'>；br/>；',$str);
-	$str = preg_replace("[\[em_([0-9]*)\]]","<img src=\"http://s.trueart.com/js/ckeditor/plugins/smiley/images/$1.gif\" />",$str);
+	$str = preg_replace("[\[em_([0-9]*)\]]","<img src=\"http://s.trueart.com/js/ckeditor/plugins/smiley/images/$1.gif\" />", $str);
 	return $str;
+}
+
+function updateCache($model, $where, $data){
+	$cache = $model->where($where)->getField('cache');
+	$arr = json_decode($cache, 1);
+	$arr = is_array($arr) ? $arr : array();
+	$newArr = array();
+	foreach($data as $k => $v){
+		if(key_exists($k, $arr)){
+			if	($v == '++') 
+				$newArr[$k] = $arr[$k]+1;
+			else if ($v == '--')
+				$newArr[$k] = $arr[$k]-1;
+			else 
+				$newArr[$k] = 1;
+		} else {
+			$data[$k] = 1;
+			$newArr = array_merge($arr, $data);
+		}
+	}
+	$res = $model->where($where)->data(array('cache' =>json_encode($newArr)))->save();
+	return $res;
 }
 
 ?>

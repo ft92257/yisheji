@@ -6,7 +6,7 @@ $DB = require("config.inc.php");	//数据库配置
 
 //系统配置
 $system = array(
-
+	'SHOW_PAGE_TRACE'=>1,
 	//路由配置
 	'URL_MODEL'             => 3,							//URL重写，兼容模式  如：home.php?s=/User/user   或者  home.php/User/user
 	'URL_ROUTER_ON'   => true, //开启路由
@@ -15,7 +15,6 @@ $system = array(
 	//session及时区配置
 	'SESSION_AUTO_START' => true,				//session常开
 	'DEFAULT_TIMEZONE'=>'Asia/Shanghai', 	// 设置默认时区
-	
 	//分页配置
 	'VAR_PAGE'=>'p',	
 			

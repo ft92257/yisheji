@@ -16,7 +16,7 @@ class BaseAction extends Action {
 		//加载项目信息
 		if (empty($_SESSION['app'])) {
 			$_SESSION['app'] = (object) C('APP_INFO');
-			$this->oApp = $data;
+			$this->oApp = $_SESSION['app'];
 		} else {
 			$this->oApp = $_SESSION['app'];
 		}
@@ -52,7 +52,7 @@ class BaseAction extends Action {
 		} 
 		
 		$this->assign('user', (array) $this->oUser);
-		$this->assign('isCompany', ($this->oCom->type == 1 ? 1 : 0));
+		$this->assign('isCompany', ($this->oUser->type == 3 ? 1 : 0));
 	}
 	
 	/*
@@ -118,7 +118,7 @@ class BaseAction extends Action {
 			die;
 		}
 	}
-
+	/*
 	/*
 	 * 添加操作
 	 */

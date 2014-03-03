@@ -47,7 +47,6 @@ class CaseAction extends BaseAction{
 		$this->assign('nid', $nid ? $nid : 0);
 		
 		$this->assign('designerCase', $this->model->getDesignerCase($data['uid'], 4));
-		$this->assign('designerInfo', D('User_designer')->queryOne(array('uid' => $data['uid'])));
 		
 		$this->model = D("Comment");
 		$where = array(

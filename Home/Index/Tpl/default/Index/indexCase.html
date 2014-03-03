@@ -28,7 +28,7 @@
             	<h3>设计案例</h3>
             	<div class="fun">
                 	<!--下拉列表开始-->
-                    <div class="pt-1 r">
+                    <!-- div class="pt-1 r">
                         <div class="slt j_select" name="select-name" wd="100" swd="100" data-meta="{fun:'caseStyle'}">
                             <div class="curr"><span></span></div>
                             <div class="show">
@@ -51,7 +51,7 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    </div-->
                     <!--下拉列表结束-->
                 </div>
             </div>
@@ -64,7 +64,7 @@
                     	<li>
                     		<a class="pic " href="__GROUP__/Case/caseDetails/id/{$vo['id']}" target="_blank" data-collect="{$vo['is_collect']}"><img src="{$vo['focus_img']}" alt="" /></a>
                     		<strong><a href="__GROUP__/Case/caseDetails/id/{$vo['id']}" target="_blank">{$vo['name']}</a></strong>
-                            <p class="info"><notempty name="vo['housetype_zh']"><span style="margin-left:5px">{$vo['housetype_zh']} ,</span></notempty><notempty name="vo['style_zh']"><span style="margin-left:5px">{$vo['style_zh']} ,</span></notempty><if condition="($vo['design_fee'] gt 0)"><span style="margin-left:5px">￥{$vo['design_fee']}</span></if></p>
+                            <p class="info"><notempty name="vo['housetype_zh']"><span style="margin-left:5px">{$vo['housetype_zh']}&nbsp;&nbsp;</span></notempty><notempty name="vo['style_zh']"><span style="margin-left:5px">{$vo['style_zh']}&nbsp;&nbsp;</span></notempty><if condition="($vo['design_fee'] gt 0)"><span style="margin-left:5px">￥{$vo['design_fee']}</span></if></p>
                             <p>{$vo['info_j']}</p>
                             <empty name="vo['uid']">
                             <a class="pic_designer" title="" href="__GROUP__/Designer/designerDetails/uid/{$vo['uid']}"><img src="{$vo['header']}" alt="" /></a>
@@ -74,11 +74,11 @@
                             <span><i class="ico ico-10"></i>已收藏</span>
                             <i class="bg"></i>
                              </div>
-                    		<else/>
+                    		<!-- else/>
                             <div class="status" style="display:block; cursor:pointer" >
                             <span class='sp_collect' data-id="{$vo['id']}" data-type="1"><i class="ico ico-10"></i>添加收藏</span>
                             <i class="bg"></i>
-                            </div>
+                            </div -->
                             </if>
                         </li>
                      </foreach>   
@@ -105,11 +105,11 @@
                             <span><i class="ico ico-10"></i>已收藏</span>
                             <i class="bg"></i>
                              </div>
-                    		<else/>
+                    		<!-- else/>
                             <div class="status" style="display:block; cursor:pointer" >
                             <span class='sp_collect' data-id="{$vo['id']}" data-type="1"><i class="ico ico-10"></i>添加收藏</span>
                             <i class="bg"></i>
-                            </div>
+                            </div-->
                             </if>
                         </li>
                      </foreach>  

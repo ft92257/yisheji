@@ -48,7 +48,6 @@ class SessionModel extends BaseModel {
 			'expire' => time() + 7200,
 			'ip' => get_client_ip(),
 		);
-		
 		$session = $this->getById($oUser->id, 'uid');
 		if (empty($session)) {
 			$data['appid'] = $this->oApp->id;
@@ -62,7 +61,6 @@ class SessionModel extends BaseModel {
 		$expire = time() + 36000;
 		
 		setcookie('SN_KEY', $key, $expire, '/');
-
 		return $key;
 	}
 	

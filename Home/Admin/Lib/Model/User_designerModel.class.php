@@ -5,7 +5,18 @@
 class User_designerModel extends BaseModel {
 	protected $aOptions = array(
 		'ischeck' => array('0'=>'未申请','1' => '审核通过', '2' => '审核未通过','3'=>'等待审核'),
-		
+		'decoration_type' => array('1' => '家装', '2' => '工装'),
+		'style' => array(
+				'1'=>'意式风格',
+				'2'=>'美国乡村',
+				'3'=>'东南亚风格',
+				'4'=>'简约主义',
+				'5'=>'田园风格',
+				'6'=>'中式',
+				'7'=>'奢华',
+				'8'=>'地中海风格'
+			),
+		'housetype' => array('1' => '连锁店', '2' => '办公室', '3' => '实验室', '4' => '公共空间'),
 	);
 	/*
 	 * 验证form字段规则
@@ -94,9 +105,10 @@ class User_designerModel extends BaseModel {
 	protected function _after_select(&$resultSet,$options) {
 		foreach ($resultSet as &$value) {
 			$this->_auto_process_data($value);
-			$value['account'] = $aUser['account'];
-			$value['realname'] = $aUser['realname'];
-			$value['nickname'] = $aUser['nickname'];
+			$data = D('User')->getById($value['uid']);
+			$value['account'] = $data['account'];
+			$value['realname'] = $data['realname'];
+			$value['nickname'] = $data['nickname'];
 			$value['createtime'] = date('Y-m-d H:i', $value['createtime']);
 		}
 	}

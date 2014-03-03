@@ -14,7 +14,7 @@ class ActiveModel extends BaseModel {
 			}
 		}
 		$resultSet['focus_img'] = getFileUrl($resultSet['focus']);
-		$resultSet['picture'] = D('Picture')->where(array('type'=>3, 'target' => $resultSet['id']))->select();
+		$resultSet['picture'] = D('Picture')->where(array('type'=>1, 'target' => $resultSet['id']))->select();
 		$resultSet['join_count'] = D('Active_partner')->where(array('type' => 1, 'aid' => $resultSet['id']))->count();
 		$resultSet['info_j'] =  infoFormat($resultSet['info']);
 	}

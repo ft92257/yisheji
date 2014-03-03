@@ -112,7 +112,7 @@
         <ul>
 	<foreach name='designerList' item='vo'>
           <li>
-            <div class="pic"><a href="__GROUP__/Designer/designerDetails/uid/{$vo['uid']}" target="_blank"><img src="{$vo.header}" alt="" /></a></div>
+            <div class="pic"><a href="__GROUP__/Designer/designerDetails/uid/{$vo['uid']}" target="_blank"><img src="{$vo['case_focus']}" alt="" /></a></div>
             <div class="r">
               <div class="designer clearfix">
                 <div class="designer-pic"><a href="__GROUP__/Designer/designerDetails/uid/{$vo['uid']}" target="_blank"><img src="{$vo.header}" width="50" height="50" alt="" /></a></div>
@@ -121,8 +121,11 @@
                 </div>
                 <a class="r" title="详细" href="__GROUP__/Designer/designerDetails/uid/{$vo.uid}" target = 'blank'><i class="ico ico-32"></i></a> </div>
               <div class="info">
-                <p class="t">{$vo.service_area}， 擅长{$vo.decoration_type_zh}、{$vo.housetype_zh}设计</p>
-                <p>{$vo.info}</p>
+                <p class="t">
+                <notempty name="vo['service_area']">{$vo['service_area']}&nbsp;&nbsp;</notempty>
+                <notempty name="vo['decoration_type_zh']">{$vo['decoration_type_zh']}&nbsp;&nbsp;</notempty>
+                {$vo.housetype_zh}</p>
+                <p>{$vo.info_j}</p>
               </div>
             </div>
           </li>

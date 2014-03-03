@@ -6,8 +6,7 @@ class User_ownerModel extends BaseModel {
 	}
 
 	protected function _after_find(&$resultSet,$options) {
-		$user = D('User');
-		$data = $user->where(array('id' => $resultSet['uid']))->find();
+		$data = D('User')->getById($resultSet['uid'], 'uid');
 		$resultSet = array_merge($data, $resultSet);
 		$resultSet['sex_zh'] = $this->_aBaseOptions['sex'][$resultSet['sex']];
 		$resultSet['style_zh'] = $this->_aBaseOptions['style'][$resultSet['style']];

@@ -49,11 +49,11 @@
             <div class="w-22 r mr-0-5 pb-3">
             	<div class="case-designer-info pt-2 clearfix">
                 	<a href="#"><img src="{$designerInfo['header']}"  alt="" /></a>
-                    <strong>{$designerInfo['name_zh']}</strong>
-                    <div class="star"><span class="{$designer['star_html']}"></span></div>
-                    <p>{$designerInfo.nationality}，{$designerInfo.housetype_zh}设计</p>
-                    <p class="intro">{$vo['info']}</p>
-                    <p class="pb-1">设计专长：<br />{$designerInfo.decoration_type_zh}</p>
+                    <strong>{$caseInfo['user']['name_zh']}</strong>
+                    <div class="star"><span class="{$caseInfo['user']['star_html']}"></span></div>
+                    <p><notempty name="designerInfo['nationality']">{$caseInfo['user']['nationality']}&nbsp;&nbsp;</notempty><notempty name="designerInfo['housetype_zh']">{$designerInfo.housetype_zh}</notempty></p>
+                    <p class="intro">{$caseInfo['user']['info_j']}</p>
+                    <p class="pb-1">设计专长：<br />{$caseInfo['user']['decoration_type_zh']}</p>
                     <a rel="#reserve-designer" class="btn btn-4" href="javascript:void(0)"><i class="ico ico-16"></i><span>立即预约</span></a>
                 </div>
                 <div class="list-decoration-1 pt-3">
@@ -170,7 +170,8 @@
             <tr>
             	<td></td>
                 <td>
-                <input type='hidden' name='aid' value="{$activeInfo['id']}"/>
+                <input type='hidden' name='uid' value="{$caseInfo['user']['id']}"/>
+                <input type='hidden' name='type' value="{$caseInfo['user']['type']}"/>
                 <input class="btn btn-submit-1" type="button" id='reserve_sub' value="确认提交" /></td>
             </tr>
         </table>
