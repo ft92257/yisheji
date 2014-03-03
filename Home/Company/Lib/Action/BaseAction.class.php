@@ -52,7 +52,7 @@ class BaseAction extends Action {
 		} 
 		
 		$this->assign('user', (array) $this->oUser);
-		$this->assign('isCompany', ($this->oCom->type == 1 ? 1 : 0));
+		$this->assign('isCompany', ($this->oUser->type == 3 ? 1 : 0));
 	}
 	
 	/*
