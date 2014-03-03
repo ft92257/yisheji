@@ -39,8 +39,9 @@ class User_designerModel extends BaseModel {
 		array('', 'submit'),
 	);
 	protected $listConfig = array(
-			'id' => '编号',
+			'uid' => '编号',
 			'account' => '账号',
+			'avatar' => array('头像', array('img')),
 			'realname' => '真实姓名',
 			'nickname' => '昵称',
 			'style' => '擅长风格',
@@ -109,6 +110,7 @@ class User_designerModel extends BaseModel {
 			$value['account'] = $data['account'];
 			$value['realname'] = $data['realname'];
 			$value['nickname'] = $data['nickname'];
+			$value['avatar'] = getFileUrl($data['avatar']);
 			$value['createtime'] = date('Y-m-d H:i', $value['createtime']);
 		}
 	}

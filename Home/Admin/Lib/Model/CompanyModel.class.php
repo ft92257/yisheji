@@ -21,7 +21,7 @@ class CompanyModel extends BaseModel {
 			array('', 'submit'),
 	);
 	protected $listConfig = array(
-			'id' => '编号',
+			'uid' => '编号',
 			'name' => '公司名称',
 			'type' => '类型',
 			'region' => '服务区域',

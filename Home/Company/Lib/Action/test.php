@@ -5,7 +5,6 @@ class TestAction extends BaseAction {
 	}
 	
 	public function index(){
-		
 		$aUser = D('User')->where(array())->select();
 		foreach($aUser as $value){
 			if($value['type'] > 1){
