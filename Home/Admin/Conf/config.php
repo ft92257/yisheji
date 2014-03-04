@@ -6,7 +6,6 @@ $DB = require("config.inc.php");	//数据库配置
 
 //系统配置
 $system = array(
-	'SHOW_PAGE_TRACE'=>1,
 	//路由配置
 	'URL_MODEL'             => 3,							//URL重写，兼容模式  如：home.php?s=/User/user   或者  home.php/User/user
 	'URL_ROUTER_ON'   => true, //开启路由
