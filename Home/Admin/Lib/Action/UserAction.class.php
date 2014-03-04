@@ -72,6 +72,16 @@ class UserAction extends BaseAction {
 	public function audit() {
 		$this->_audit();
 	}
-		
+
+	public function autologin() {
+		$uid = getRequest('uid');
+		$oUser = $this->model->getObjectById($uid);
+		D('Session')->setKey($oUser);
+		if ($oUser->type == 3) {
+			redirect('company.php');
+		} else {
+			redirect('index.php?s=/My/mySet/uid/' . $uid);
+		}
+	}
 }
 ?>

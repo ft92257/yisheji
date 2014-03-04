@@ -36,6 +36,9 @@ class UserModel extends BaseModel {
 			'nickname' =>'昵称',
 			'createtime' => '添加时间',
 			'status' => array('状态', array('audit')),
+			array('操作', array(
+					'<a href="admin.php?s=/User/autologin/uid/{id}" target="_blank">编辑</a>',
+				),),
 	);
 	protected $searchConfig = array(
 			'type' =>array('类型：','radio_list'),
