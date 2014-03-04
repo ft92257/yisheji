@@ -25,6 +25,7 @@ class User_designerModel extends BaseModel {
 		$resultSet['friend_c'] = $cache['friend_count'] ? $cache['friend_count'] : 0;
 		$resultSet['fensi_c'] = $cache['fensi_count'] ? $cache['fensi_count'] : 0;
 		$resultSet['case_focus'] = $cache['case']['focus'];
+		$resultSet['case_id'] = $cache['case']['id'];
 	}
 	
 	public function getAvgScore(){

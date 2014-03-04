@@ -12,13 +12,19 @@ class CaseModel extends BaseModel {
 		$resultSet['focus_img'] = getFileUrl($resultSet['focus']);
 		$user =  D('User')->getById($resultSet['uid']);
 		if($user['type'] == 2){
-			$resultSet['user'] = D('User_designer')->where(array('uid' =>$resultSet['uid']))->find();
+			$designer = D('User_designer')->where(array('uid' =>$resultSet['uid']))->find();
+			$resultSet['user'] = $designer;
+			$resultSet['user']['name_zh'] = $designer['realname'] ? $designer['realname'] : $designer['nickname'];
+			$resultSet['user']['url'] = __GROUP__."/Designer/designerDetails/uid/".$designer['uid'];
 		} else if($user['type'] == 3){
-			$resultSet['user'] = D('Company')->where(array('uid' =>$resultSet['uid']))->find();
+			$company = D('Company')->where(array('uid' =>$resultSet['uid']))->find();
+			$resultSet['user'] = $company;
+			$resultSet['user']['name_zh'] = $company['name'];
+			$resultSet['user']['url'] = __GROUP__."/Company/companyDetails/uid/".$company['uid'];
 		}
-		$resultSet['user']['type'] = getFileUrl($user['type']);
+		$resultSet['user']['type'] = $user['type'];
 		$resultSet['user']['header'] = getFileUrl($user['avatar']);
-		$resultSet['user']['name_zh'] = $user['realname'] ? $user['realname'] : $user['nickname'];
+		
 		$resultSet['tag_zh'] = formatTag($resultSet['tags']);
 		$resultSet['is_original_zh'] = $resultSet['is_original'] ? '原创' : '转发';
 		$resultSet['createtime_zh'] = time_tran($resultSet['createtime']);
@@ -43,6 +49,6 @@ class CaseModel extends BaseModel {
 	
 	public function getCasePhoto($id){
 		$where  =  array('type' => 2, 'target' => $id);
-		return D('Picture')->getList($where);
+		return D('Picture')->getList($where, 'ord, createtime desc');
 	}
 }
