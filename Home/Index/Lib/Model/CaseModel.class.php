@@ -49,6 +49,6 @@ class CaseModel extends BaseModel {
 	
 	public function getCasePhoto($id){
 		$where  =  array('type' => 2, 'target' => $id);
-		return D('Picture')->getList($where, 'ord desc, createtime desc');
+		return D('Picture')->getList($where, 'ord esc, createtime desc');
 	}
 }

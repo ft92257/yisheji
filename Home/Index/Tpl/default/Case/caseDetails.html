@@ -15,7 +15,7 @@
                 <div class="t-case pt-1 pb-1">
                     <h3><span>[{$caseInfo['is_original_zh']}]</span>{$caseInfo['name']}</h3>
                     <div class="fun case-user-info">
-                        <a href="#">{$caseInfo['designer_name']}</a> 上传于{$caseInfo['createtime_zh']}
+                        <a href="#">{$caseInfo['user']['designer_name']}</a> 上传于{$caseInfo['createtime_zh']}
                     </div>
                 </div>
                 <div class="case-info clearfix">
@@ -48,10 +48,10 @@
             </div>
             <div class="w-22 r mr-0-5 pb-3">
             	<div class="case-designer-info pt-2 clearfix">
-                	<a href="#"><img src="{$designerInfo['header']}"  alt="" /></a>
+                	<a href="#"><img src="{$caseInfo['user']['header']}" style="width:220px;height:220px"   alt="$caseInfo['user']['name_zh']}" /></a>
                     <strong>{$caseInfo['user']['name_zh']}</strong>
                     <div class="star"><span class="{$caseInfo['user']['star_html']}"></span></div>
-                    <p><notempty name="designerInfo['nationality']">{$caseInfo['user']['nationality']}&nbsp;&nbsp;</notempty><notempty name="designerInfo['housetype_zh']">{$designerInfo.housetype_zh}</notempty></p>
+                    <p><notempty name="designerInfo['nationality']">{$caseInfo['user']['nationality']}&nbsp;&nbsp;</notempty><notempty name="$caseInfo['user']['housetype_zh']">{$$caseInfo['user']['housetype_zh']}</notempty></p>
                     <p class="intro">{$caseInfo['user']['info_j']}</p>
                     <p class="pb-1">设计专长：<br />{$caseInfo['user']['decoration_type_zh']}</p>
                     <a rel="#reserve-designer" class="btn btn-4" href="javascript:void(0)"><i class="ico ico-16"></i><span>立即预约</span></a>
@@ -66,7 +66,7 @@
                         </li>
                     </foreach>    
                     </ul>
-                    <div class="more"><a href="__GROUP__/Designer/designerDetails/uid/{$designerInfo['uid']}">查看更多作品请前往设计师个人主页 »</a></div>
+                    <div class="more"><a href="{$caseInfo['user']['url']}">查看更多作品请前往设计师个人主页 »</a></div>
                 </div>
             </div>
             <if condition="$pid gt 0">
