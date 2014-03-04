@@ -27,7 +27,7 @@ class CaseAction extends BaseAction {
 	
 	//案例列表
 	public function index(){
-		$params = array(
+			$params = array(
 				'where' => $this->getPurviewCondition(),
 				'order' => 'createtime DESC',
 		);

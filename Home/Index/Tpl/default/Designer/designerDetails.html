@@ -225,7 +225,7 @@
 <script>
 $(function(){
 	$('#grade_sub').bind('click', function(){ isLogin(); actRequest($('#grade_form').serialize(), '1111'); });
-	$('#reserve_sub').bind('click', function(){ isLogin(); actRequest($('#reserve_form').serialize(), '9101'); });
+	$('#reserve_sub').bind('click', function(){checkTrueName($("[name='name']").val());checkPhone($("[name='telephone']").val()) ;isLogin(); actRequest($('#reserve_form').serialize(), '9101'); });
 	$('#letter_sub').bind('click', function(){ 
 		isLogin();
 		if($('#txt_content').val().replace(/[ ]/g,"") == ''){
