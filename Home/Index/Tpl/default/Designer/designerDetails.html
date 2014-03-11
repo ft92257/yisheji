@@ -177,11 +177,11 @@
         <table width="100%">
         	<tr>
             	<td width="76">真实姓名</td>
-                <td><input class="text w-20" type="text" name='name'/></td>
+                <td><input class="text w-20" type="text" name='name'/><span style='color:red' id='name'></td>
             </tr>
             <tr>
             	<td>联系方式</td>
-                <td><input class="text w-20 j_watermark" type="text" name='telephone'/></td>
+                <td><input class="text w-20 j_watermark" type="text" name='telephone'/><span style='color:red' id='telephone'></span></td>
             </tr>
             <tr>
             	<td></td>
@@ -223,10 +223,45 @@
 <!-- end:sendLetterForm  -->
 <include file="Public:footer" />
 <script>
+
+var error = [];
 $(function(){
-	$('#grade_sub').bind('click', function(){ isLogin(); actRequest($('#grade_form').serialize(), '1111'); });
-	$('#reserve_sub').bind('click', function(){checkTrueName($("[name='name']").val());checkPhone($("[name='telephone']").val()) ;isLogin(); actRequest($('#reserve_form').serialize(), '9101'); });
+	error['name'] = false;
+	error['telephone'] = false;
+	$("[name='name']").bind("blur",function(){
+		if(!checkTrueName($("[name='name']").val())){
+			error['name'] = false;
+			$("#name").html("请输入2-4位中文字符!");
+		}else{
+			$("#name").html("");
+			error['name'] = true;
+		}
+	})
+	$("[name='telephone']").bind("blur",function(){
+		if(!checkPhone($("[name='telephone']").val())){
+			error['telephone'] = false;
+			$("#telephone").html("手机号码格式不对!");
+		}else{
+			$("#telephone").html("");		
+			error['telephone'] = true;
+		}
+	})
+	$('#grade_sub').bind('click', function(){ if($("#j_scoreStar-1 [src$='star-on.png']").length<1) {alert('请对设计水平评分');return ;}
+		if($("#j_scoreStar-2 [src$='star-on.png']").length<1) {alert('请对服务态度评分');return ;}
+		//if($("[name='comment']").val().length)>100){alert('hhh');}
+		if($("[name='comment']").val().length>100){alert('评论字数必须在100以内');return;}
+		if($("[name='comment']").val().length<1){alert('请先评论');return;}
+		;isLogin(); actRequest($('#grade_form').serialize(), '1111'); });
+	$('#reserve_sub').bind('click', function(){ 	
+		for(i in error){
+		if(error[i] == false){
+			alert('请确认姓名联系方式填写无误');
+			return false;
+		}
+	};isLogin(); actRequest($('#reserve_form').serialize(), '9101'); });
 	$('#letter_sub').bind('click', function(){ 
+		if($("[name='content']").val().length>200){alert('私信内容必须在200以内');return;}
+		if($("[name='content']").val().length<1){alert('请先填写私信内容');return;}
 		isLogin();
 		if($('#txt_content').val().replace(/[ ]/g,"") == ''){
 			alert('你必须填写内容');
@@ -237,4 +272,33 @@ $(function(){
 	$('#add_friend').bind('click', function(){ isLogin(); actRequest("uid="+$(this).attr('data-uid'), '8101'); });
 	$('#del_friend').bind('click', function(){ isLogin(); actRequest("uid="+$(this).attr('data-uid'), '8102'); });
 });
+/*
+$(function(){
+	var	Validator = YUI.Validator;
+	Validator.setup({
+		         "submit": "reg_sub",
+		         "callback": function(){
+		            alert('自定义处理方法');
+		         }
+		     }).add({
+	    "target": "account",
+		"rule": "username",
+		"fn": function(){
+			return true;
+		}
+	}).add({
+		"target": "password",
+		"rule": "password",
+		"plus": true
+	}).add({
+		"target": "confirm-password",
+		"rule": "password",
+        "to": "password" 
+	}).add({
+		"target": "email",
+		"rule": "email"
+	});
+});	
+*/
+
 </script>

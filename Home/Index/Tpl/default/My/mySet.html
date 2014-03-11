@@ -32,7 +32,7 @@
                         </tr>
                         <tr>
                             <th>职业</th>
-                            <td><select name='occupation' class="w-25">
+                            <td><select id="occupation" name='occupation' class="w-25">
                             <option value='-1' selected='selected'>职业</option>
                             <foreach name='occupation' item='vo' key='i'>
                             <option value='{$i}'  <if condition="$user['occupation'] eq $i" >selected="selected"</if> >{$vo}</option>
@@ -45,19 +45,19 @@
                         </tr>
                         <tr>
                             <th>联系电话</th>
-                            <td><input name='mobile' class="text w-37" type="text"  value="{$user['mobile']}" /></td>
+                            <td><input id='mobile' name='mobile' class="text w-37" type="text"  value="{$user['mobile']}" /></td>
                         </tr>
                         <tr>
                             <th>个人网站</th>
-                            <td><input name='web' class="text w-37" type="text" value="{$user['web']}" /></td>
+                            <td><input id='web' name='web' class="text w-37" type="text" value="{$user['web']}" /></td>
                         </tr>
                         <tr>
                             <th>毕业学校</th>
-                            <td><input name='school' class="text w-37" type="text" value="{$user['school']}" /></td>
+                            <td><input id='school' name='school' class="text w-37" type="text" value="{$user['school']}" /></td>
                         </tr>
                         <tr>
                             <th>专业</th>
-                            <td><input name='subject' class="text w-37" type="text" value="{$user['subject']}" /></td>
+                            <td><input id='subject' name='subject' class="text w-37" type="text" value="{$user['subject']}" /></td>
                         </tr>
                         <tr>
                             <th>兴趣爱好</th>
@@ -65,7 +65,7 @@
                         </tr>
                         <tr>
                             <th valign="top">简介</th>
-                            <td><textarea class="w-37 h-11" name='info' >{$user['info']}</textarea></td>
+                            <td><textarea id="info" class="w-37 h-11" name='info' >{$user['info']}</textarea></td>
                         </tr>
                         <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
                         <tr>
@@ -172,8 +172,116 @@
 <!---->
 </div>
 <include file='Public:footer' />
-<script src="__STATICS__/js/check.js"></script>
+<script src="__STATICS__/js/yui.js"></script>
+<script src="__STATICS__/js/yui.validator.js"></script>
+<script type="text/javascript">
+function ajaxCity(act,json){
+	
+	$.ajax({
+		type:'post',
+		url:'__GROUP__/City/citySelect',
+		async:false,
+		data:{'data':json,'act':act},
+		success:function(r){
+			$("#"+act).append(r);
+			}
+		});
+}
+function remove(obj){
+	if(obj.attr('id') == 'province'){
+		$("#city").remove();
+		$("#county").remove();
+	}else if(obj.attr('id') == 'city'){
+		$("#county").remove();	
+	}
+}
+$(function(){
+	if($("#sheng").val() == 0 && $("#shi").val() == 0 && $("#qu").val() == 0){
+		ajaxCity('zh');
+	}
+	if($("#sheng").val()>0){
+		ajaxCity('zh',{ 'level':1,'pid':0,'default':$('#sheng').val() });
+	}
+	if($("#shi").val()>0){
+		ajaxCity('zh',{ 'level':2,'pid':$('#sheng').val(),'default':$('#shi').val() });
+	}
+	if($("#qu").val()>0){
+		ajaxCity('zh',{ 'level':3,'pid':$('#shi').val(),'default':$('#qu').val() });
+	}
+	
+	var	Validator = YUI.Validator;
+	Validator.setup({
+		         "submit": "set_sub",
+		         "callback": function(){
+		            alert('自定义处理方法');
+		         }
+		     }).add({
+	    "target": "occupation",
+		"rule": "number",
+		"fn": function(){
+			return true;
+		}
+	}).add({
+		"target": "province",
+		"rule": "number1",
+		"plus": true
+	}).add({
+		"target": "mobile",
+		"rule": "mobile",
+	}).add({
+		"target": "web",
+		"rule": "url"
+	}).add({
+		"target": "school",
+		"rule": "chinese"
+	}).add({
+		"target": "subject",
+		"rule": "chinese"
+	}).add({
+		"target": "info",
+		"rule": "require",
+		"plus": function(){
+		var cmt = byId('info'), 
+			len = cmt.value.length, 
+			max = 150,
+			val = max - len;
+			
+		if (val >= 0) {
+			counter.innerHTML = val;
+		}
+		else {
+		    cmt.value = cmt.value.substring(0, max); 
+		}
+	}
+	});
+});	
+$(".designer-tab a").click(function(){
+	  var qh_a_index=$(this).index();
+	  $(this).addClass("current").siblings("a").removeClass("current");
+	  $(".qh_sh").eq(qh_a_index).show().siblings(".qh_sh").hide();
+	 });
+
+$("#sub_moni").click(function(){
+	  $("#sub_file").click();
+	 });
+
+var tag ="{$tag}";
+$(".designer-tab").find("a").eq(tag).click();
+
+$(".designer-tab a").click(function(){
+	  var qh_a_index=$(this).index();
+	  $(this).addClass("current").siblings("a").removeClass("current");
+	  $(".qh_sh").eq(qh_a_index).stop(true,true).fadeIn().siblings(".qh_sh").hide();
+	 });
+
+$(".file_idcard_box").click(function(){
+	  $(".file_idcard").click();
+	 });
+
+</script>
+
 <script>
+/*
 var flag = 0;
 var error_pass = [];
 error_pass['repassword'] = false;

@@ -19,3 +19,11 @@ radioTarget('is_original', 1);
 </div>
 </body>
 </html>
+<script>
+$(":submit").bind('click',function(){
+	//if(!($("[name='title']").val()&& $("[name='type']").val()&&$("[name='attr']").val()) alert('ggg');return false;
+	if(!$("[name='title']").val()) {alert('请填写题目内容！');return false;}
+	if(!$("[name='type']").val()) {alert('请选择类型！');return false;}
+	if(!$("[name='attr']").val()) {alert('请选择属性！');return false;}
+})
+</script>

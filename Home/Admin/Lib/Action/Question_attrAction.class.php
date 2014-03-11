@@ -15,9 +15,11 @@ class Question_attrAction extends BaseAction {
 	 */
 	public function add(){
 		if ($this->isPost()) {
-			$id = getRequest('id');
-			$this->_add(array('qid'=>$id));
+			$this->_add();
 		} else {
+			$number = $this->model->max('number');
+			$number = $number ? $number+1 : 2;
+			$this->assign('num',$number);
 			$this->_display_form();
 		}
 	}
@@ -46,7 +48,7 @@ class Question_attrAction extends BaseAction {
 		
 		if ($this->isPost()) {
 			$this->_edit($data);
-		} else {
+		} else {``
 			$this->_display_form($data, 'add');
 		}
 	}

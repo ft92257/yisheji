@@ -38,8 +38,10 @@ class QuestionAction extends BaseAction {
 			}	
 		}
 		if(!empty($this->oUser)){
-			$this->model = D('User_owner');
-			$this->model->where(array('uid' => $this->oUser['id']))->data(array('attr' => json_encode($arr)))->save();
+			if($this->oUser['type'] == 1){
+				$this->model = D('User_owner');
+				$this->model->where(array('uid' => $this->oUser['id']))->data(array('attr' => json_encode($arr)))->save();
+			}
 		}
 		echo '1';exit;
 	}
@@ -50,9 +52,10 @@ class QuestionAction extends BaseAction {
 		$max_number = D('Question_attr')->count();
 		$type = $this->para['type'] ? $this->para['type'] : 0;
 		
-		$attr = D('Question_attr')->where(array('id' => $number))->getField('attr');
+		//$id = D('Question_attr')->where(array('number' => $number-1))->getField('number');
 		$this->model = D('Question');
-		$data = $this->model->where(array('type'=>$this->para['type'], 'attr' => $attr))->order('rand()')->find();
+		$data = $this->model->where(array('type'=>$this->para['type'], 'number' => $number))->order('rand()')->find();
+		echo $this->model->getLastSql();
 		$this->assign('question', $data);
 		$this->assign('hidden', array('number'=>$number, 'max_number'=>$max_number, 'type' => $type)) ;
 		$this->display();

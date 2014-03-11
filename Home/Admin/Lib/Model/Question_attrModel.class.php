@@ -6,7 +6,7 @@ class Question_attrModel extends BaseModel {
 	
 	protected $aOptions = array(
 			'type' => array('1' => '家装', '2' => '工装'),
-			'attr' => array('1' => '风格', '2' => '面积' , '3'=>'油漆'),
+			'attr' => array('1' => '类型', '2' => '房型' , '3'=>'风格', '4'=>'费用'),
 	);
 	
 	protected $listConfig = array(
@@ -17,7 +17,7 @@ class Question_attrModel extends BaseModel {
 	);
 	protected $formConfig = array(
 			'number' => array('编号', 'text',array('int')),
-			'attr' => array('属性','text'),
+			'attr' => array('属性','select',array('all')),
 			array('', 'submit'),
 	);
 	protected $searchConfig = array(
