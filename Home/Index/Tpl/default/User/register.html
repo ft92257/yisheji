@@ -10,22 +10,22 @@
                         <table>
                             <tr>
                                 <th width="80"><span style='color:red'>*</span>用户名</th>
-                                <td><input class="text w-31" type="text" id='account' name='account'/><span style='color:red' id='account_msg'></span></td>
+                                <td><input class="text w-31 " type="text" id='account' name='account'/><span style='color:red' id='account_msg'></span></td>
                             </tr>
                             <tr>
                                 <th><span style='color:red'>*</span>密码</th>
-                                <td><input class="text w-31" type="password" id='password' name='password' /><span style='color:red' id='password_msg'></span></td>
+                                <td><input class="text w-31 input-item" type="password" id='password' name='password' /><span style='color:red' id='password_msg'></span></td>
                             </tr>
                             <tr>
                                 <th><span style='color:red'>*</span>确认密码</th>
-                                <td><input class="text w-31" type="password" id='repassword' name='repassword' /><span style='color:red' id='repassword_msg'></span></td>
+                                <td><input class="text w-31 input-item" type="password" id='confirm-password' name='repassword' /><span style='color:red' id='repassword_msg'></span></td>
                             </tr>
                             <tr>
                                 <th><span style='color:red'>*</span>邮箱地址</th>
-                                <td><input class="text w-31" type="text" id='email'  name='email'/><span style='color:red' id='email_msg'></span></td>
+                                <td><input class="text w-31 input-item" type="text" id='email'  name='email'/><span style='color:red' id='email_msg'></span></td>
                             </tr>
                             <tr>
-                                <th><span style='color:red'>*</span>你的身份</th>
+                               <th><span style='color:red'>*</span>你的身份</th>
                                 <td><label class="mr-2"><input checked class="radio" type="radio" name='type' value='1'/>普通业主</label>
                                     <label><input class="radio" type="radio" name='type' value='2'/>设计师</label>
                                 </td>
@@ -35,20 +35,7 @@
                                 <td><label class="mr-2"><input checked class="radio" type="radio" name='decoration_type' value='2'/>家装</label>
                                     <label><input class="radio" type="radio" name='decoration_type' value='1' />工装</label>
                                 </td>
-                            </tr>
-                            <tr>
-                                <th>擅长风格</th>
-                                <td>
-	                                <select class="w-32" name='style' >
-	                                	<option>北欧极简</option>
-	                                	<option>美国田园</option>
-	                                </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>设计费用</th>
-                                <td><input class="text w-9" type="text" name='design_fee' id='design_fee'/><div class="exp ml-1">人民币/每平米</div><span style='color:red' id='fee_msg'></span></td>
-                            </tr>
+                            </tr> 
                             <tr>
                                 <th></th>
                                 <td><input class="btn btn-submit-2" type="button" value="立即注册" id='reg_sub' /></td>
@@ -92,85 +79,33 @@
 <!---->
 </div>
 <include file='Public:footer' />
-<script src="__STATICS__/js/check.js"></script>
-<script>
-var flag = 0;
-var error = [];
+<script src="__STATICS__/js/yui.js"></script>
+<script src="__STATICS__/js/yui.validator.js"></script>
+<script type="text/javascript">
 $(function(){
-	error['account'] = false;
-	error['password'] = false;
-	error['repassword'] = false;
-	error['email'] = false;
-	$('#account').bind('blur',function(){
-		if(!checkUserName($(this).val())){
-			$('#account_msg').html('用户名由4~24位字母、数字、下划线或中文(相当于2个字符)组成');
-			error['account'] = false;
-			return;
+	var	Validator = YUI.Validator;
+	Validator.setup({
+		         "submit": "reg_sub",
+		         "callback": function(){
+		            alert('自定义处理方法');
+		         }
+		     }).add({
+	    "target": "account",
+		"rule": "username",
+		"fn": function(){
+			return true;
 		}
-		flag = 0;
-		actRequest('account='+$(this).val(), '105');
-		if(flag == 1){
-			$('#account_msg').html('该用户名已经存在');
-			error['account'] = false;
-			return;
-		}
-		$('#account_msg').html('');
-		error['account'] = true;
+	}).add({
+		"target": "password",
+		"rule": "password",
+		"plus": true
+	}).add({
+		"target": "confirm-password",
+		"rule": "password",
+        "to": "password" 
+	}).add({
+		"target": "email",
+		"rule": "email"
 	});
-	$('#password').bind('blur',function(){
-		if(!checkPass($(this).val())){
-			$('#password_msg').html('密码名由6~16位字母、数字或下划线组成');
-			error['password'] = false;
-		}else{
-			$('#password_msg').html('');
-			error['password'] = true;
-		}
-	});
-	$('#repassword').bind('blur',function(){
-		if($(this).val() != $('#password').val()){
-			$('#repassword_msg').html('两次密码不一致');
-			error['repassword'] = false;
-		}else{
-			$('#repassword_msg').html('');
-			error['repassword'] = true;
-		}
-	});
-	$('#email').bind('blur',function(){
-		if(!checkEmail($(this).val())){
-			$('#email_msg').html('Email格式不合法');
-			error['email'] = false;
-			return;
-		}
-		flag = 0;
-		actRequest('email='+$(this).val(), '106');
-		if(flag == 1){
-			$('#email_msg').html('该Email已经存在');
-			error['email'] = false;
-			return;
-		}
-		$('#email_msg').html('');
-		error['email'] = true;
-	});
-	
-	$('#design_fee').bind('blur',function(){
-		if($(this).val() != ""){
-			if(isNaN($(this).val()) || $(this).val() <=0){
-				$('#fee_msg').html('输入的费用不合法');
-				error['design_fee'] = false;
-			}else{
-				$('#fee_msg').html('');
-				error['design_fee'] = true;
-			}
-		}
-	});
-	$('#reg_sub').bind('click',function(){
-		for(i in error){
-			if(error[i] == false){
-				alert('请确认*项填写无误');
-				return false;
-			}
-		}
-		actRequest($("#reg_form").serialize(), '1001');
-	});
-});
+});	
 </script>

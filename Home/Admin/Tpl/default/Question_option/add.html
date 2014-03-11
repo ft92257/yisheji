@@ -5,17 +5,50 @@
 	<div class="b frame">
 		<h3>填写基本信息</h3>
 
-<form method="post" action="" enctype="multipart/form-data">
+<form id='tot' method="post" action="">
 	<table width="100%">
 	<tr><td width="120"></td><td></td></tr>
-	{$formHtml}
+	<select id="ops" name="ops" >
+		<option >请选择答案选项数量：</option>
+		<option value="2">2个选项</option>
+		<option value="3">3个选项</option>
+		<option value="4">4个选项</option>
+	</select>
 	</table>
 </form>
-<script>
-radioTarget('is_original', 1);
-</script>
-	</div>
+<form method="post" enctype="multipart/form-data" action="">
+<for start="1" end="$ops+1" >
+{$i}<input type="text" ch="问题答案" name="answer{$i}"/> 
+<input type="file" ch="图片" name="pic{$i}"/>
+<select ch="选项值" name="val{$i}">
+<option >请选择选项值</option>
+<foreach name="aqt" item="vo">
+<option value={$key}>{$vo}</option>
+</foreach>
+
+</select>
+<br/>
+</for>
+<input id="hidden" type=hidden name="ops" ></input>
+<input type=submit value="提交"></input>
+</form>
+</div>
 	
 </div>
 </body>
 </html>
+<script>
+var error;
+$("[name='ops']").bind('change',function(){
+	this.form.submit();
+	//window.location.href={U('Question_option/add)}
+})
+ 
+$("#ops option[value={$ops}]").attr("selected", true);
+$(":submit").bind('click',function(){
+	  $(":input,select").each(function(){
+		  if($(this).val()==""||$(this).val()=="请选择选项值") {error=1;alert($(this).attr("ch")+'填写完全！');return false;}else error=0;});if(error==1)return false;
+})
+$("#hidden").val({$ops});
+
+</script>

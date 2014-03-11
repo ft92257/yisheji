@@ -3,7 +3,6 @@ class TestAction extends BaseAction {
 	public function __construct() {
 		parent::__construct();
 	}
-	
 	public function index(){
 		$aUser = D('User')->where(array())->select();
 		foreach($aUser as $value){

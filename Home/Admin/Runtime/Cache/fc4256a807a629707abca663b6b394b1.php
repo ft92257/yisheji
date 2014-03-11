@@ -54,7 +54,7 @@
             <li><a href="<?php echo U('Designer/index');?>" data-match="/Designer/">设计师管理</a></li>
 			<li><a href="<?php echo U('Report/index');?>" data-match="/Report/">举报管理</a></li>
 			<li><a href="<?php echo U('Question/index');?>" data-match="/Question/">题目管理</a></li>
-			<li><a href="<?php echo U('Tag/index');?>" data-match="/Question/">标签管理</a></li>
+			<li><a href="<?php echo U('Tag/index');?>" data-match="/Tag/">标签管理</a></li>
 			<li><a href="<?php echo U('Richtext/edit');?>" data-match="/Richtext/">自定义页面</a></li>
 		
           </ul>

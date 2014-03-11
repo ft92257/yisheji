@@ -77,6 +77,7 @@ class BaseAction extends Action {
 		
 		if (!$this->model->getError()) {
 			$newid = $this->model->addData($data);
+			//echo $this->model->getLastSql();die;
 			if ($newid) {
 				if ($return) {
 					return $newid;

@@ -3,6 +3,19 @@ function checkEmail(email){
 	return reg.test(email);
 }
 
+function checkTrueName(trueName){
+	var reg = /^[\u4e00-\u9fa5]+$/gi;
+	var length = getCharLength(trueName);
+	if(length<4 || length>8) {
+		return false;
+	}
+	
+	if(!reg.test(trueName)){
+		return false;
+	}
+	return true;
+}
+
 function checkUserName(userName){
 	var reg = /^[\w\u4e00-\u9fa5]+$/gi;
 	var length = getCharLength(userName);
@@ -30,6 +43,10 @@ function getCharLength(str){
 
 function checkPhone(phone){
 	var reg = /^1[0-9]{10}$/;
+	if(!reg.test(phone)){
+		return false;
+	}
+	return true;
 }
 
 function checkPass(pass){

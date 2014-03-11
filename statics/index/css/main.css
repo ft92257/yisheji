@@ -805,7 +805,7 @@ footer .nav_site nav{ margin-left:-10px; cursor:default;}
 .form-main-2 input,.form-main-2 label{ float:left;}
 .form-main-2 .exp{color:#666; float:left; margin-top:5px;}
 .form-main-2 .exp a{color:#2097DD;}
-.form-main-2 .text{ height:16px; line-height:16px;padding:9px 4px;border:1px solid #bfbfbf;}
+.form-main-2 .text{ height:16px; line-height:16px;padding:9px 4px;}
 .form-main-2 textarea{padding:3px 4px;color:#bfbfbf; line-height:18px; font-size:12px;border:1px solid #bfbfbf; resize:none;}
 .form-main-2 select{border:1px solid #bfbfbf;+margin-top:1px;_margin-top:1px;padding:8px; float:left;}
 .form-main-2 .ico-time{ background:#fff url(../images/bg_6.png) 100px center no-repeat;}
@@ -925,3 +925,11 @@ footer .nav_site nav{ margin-left:-10px; cursor:default;}
 .qqFace table td{padding:0px;}
 .qqFace table td img{cursor:pointer;border:1px #fff solid;}
 .qqFace table td img:hover{border:1px #0066cc solid;}
+/* Validator */
+.validator-tip{display:none;position:absolute;z-index:999;width:240px;border:1px solid #40B3FF;background:#E5F5FF url(../img/msg_bg.png) 5px -143px no-repeat;font-size:12px;color:#666;padding:5px 5px 5px 26px;line-height:20px;text-align:left;overflow:hidden;}
+.validator-tip a{font-weight:bold;padding:0 5px;cursor:pointer;color:#039;}
+.tip-error,.item-error{background-color:#FFF2E9;border:1px solid #F60;}
+.tip-error{background-position:5px 7px;}
+.item-pass{background-color:#E6FFE6;border:1px solid #00BE00;}
+.tip-pass{background:transparent url(../img/msg_bg.png) 5px -243px no-repeat;border:none;text-indent:-99999px;width:50px;}
+span.security-level{float:left;margin-top:3px;width:220px;height:20px;background:transparent url(../img/levels.gif) left top no-repeat;overflow:hidden;}

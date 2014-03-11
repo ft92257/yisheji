@@ -7,7 +7,6 @@ class HouseAction extends BaseAction {
 	
 	public function __construct() {
 		parent::__construct();
-	
 		$this->model = D('House');
 	}
 	
