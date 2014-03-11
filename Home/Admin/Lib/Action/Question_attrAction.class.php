@@ -48,7 +48,7 @@ class Question_attrAction extends BaseAction {
 		
 		if ($this->isPost()) {
 			$this->_edit($data);
-		} else {``
+		} else {
 			$this->_display_form($data, 'add');
 		}
 	}
