@@ -1,0 +1,106 @@
+<include file='Public:header' />
+    <div id="pbody" class="pt-3-5 pb-6">
+        <div class="row-2"><div class="extra pt-4 pb-6">
+            <div class="regist-l">
+                <div class="t-4 pb-2">
+                    <h3>注册<span class="regist-login">已经是我们的会员？<a href="__URL__/login">点此登录</a></span></h3>
+                </div>
+                
+                <form id="reg_form">
+						<div class="form-row clearfix">
+							<div class="field-label left"><label for="account">用户名</label></div>
+							<div class="field-widget left"><input  name="account" id="account"  class="text text31 required validate-alphanumchinese" title="您的用户名" /></div>
+						</div>
+						<div class="form-row clearfix">
+							<div class="field-label left"><label for="password">密码</label></div>
+							<div class="field-widget left"><input type="password" name="password" id="password" class="text text31 required validate-password" title="您的密码" /></div>
+						</div>
+						<div class="form-row clearfix">
+							<div class="field-label left"><label for="repassword">确认密码</label></div>
+							<div class="field-widget left"><input type="password" name="repassword" class="text text31 required validate-password-confirm" title="再次输入密码" /></div>
+						</div>
+						<div class="form-row clearfix">
+							<div class="field-label left"><label for="email">邮箱地址</label></div>
+							<div class="field-widget left">
+								<input name="email" id="email" class="text text31 required validate-email" title="您的邮箱" />		
+							</div>
+						</div>
+						<div class="form-row clearfix">
+							<div class="field-label left"><label for="field6">您的身份</label></div>
+							<div class="field-widget left mt-1" >
+								<input type="radio" name="type" class=" mr-0-5" value="1" />普通业主<input type="radio" name="type" value="2" class="ml-2  mr-0-5 validate-one-required" />设计师
+							</div>
+						</div>
+						<div class="form-row clearfix">
+							<div class="field-label left"><label for="field6">装修类别</label></div>
+							<div class="field-widget left mt-1" >
+								<input type="radio" class=" mr-0-5" name="decoration_type" value="1" />住宅设计<input type="radio" name="decoration_type" value="2" class="ml-2 mr-0-5 validate-one-required" />商业空间
+							</div>
+						</div>
+					   <div class="form-row clearfix">
+							<div class="field-label left"><label for="field6"></label></div>
+							<div class="field-widget left mt-1" >
+								<input class="btn btn-submit-2" value="立即注册" id="reg_sub" type="submit">
+							</div>
+						</div>
+					</form>
+					
+                <div class="login-other mt-3">
+                	<div class="t">第三方帐号快速注册</div>
+                    <div class="cnt clearfix">
+                    	<a href="#"><i class="ico ico-43"></i>新浪微博</a>
+                        <a href="#"><i class="ico ico-44"></i>腾讯QQ</a>
+                        <a href="#"><i class="ico ico-45"></i>腾讯微博</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-36 r">
+            	<ul class="list-reigst">
+                	<li><div class="l"><i class="icon icon-7"></i></div>
+                    	<div class="r">
+                        	<strong>一秒注册，如此简单</strong>
+                            <p>易设计是建立设计师与业主线上线下一对一服务的装修平台。</p>
+                        </div>
+                    </li>
+                    <li><div class="l"><i class="icon icon-8"></i></div>
+                    	<div class="r">
+                        	<strong>展示作品，如此便捷</strong>
+                            <p>易设计为设计师提供最真实的作品展示空间。</p>
+                        </div>
+                    </li>
+                    <li><div class="l"><i class="icon icon-9"></i></div>
+                    	<div class="r">
+                        	<strong>智能匹配，如此神奇</strong>
+                            <p>易设计为业主提供科学智能匹配，帮您找到最合适的设计师。</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div></div>
+    </div>
+<!---->
+</div>
+<include file='Public:footer' />
+<script src="__STATICS__/js/check.js"></script>
+<script>
+function formCallback(result, form) {
+	if(result){
+		actRequest(form.serialize(), '1001');
+	}
+}
+
+var valid = new Validation('reg_form', {immediate : true, onFormValidate : formCallback});
+
+Validation.addAllThese([
+	['validate-password', '密码可包含任意字符，长度为6~15位，但是不能与您的用户名一样', {
+	 	minLength: '6',
+		maxLength: '15',
+		notEqualToField : 'account'
+	}],
+	['validate-password-confirm', '2次密码输入不一致', {
+		equalToField : 'password'
+	}]
+]);
+</script>
+		
+

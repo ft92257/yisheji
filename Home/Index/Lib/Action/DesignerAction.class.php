@@ -148,7 +148,16 @@ class DesignerAction extends BaseAction{
 	}
 	
 	public function designerFriend(){
-		$this->display();
+		$this->model = D('Friend');
+		$where = array('other' => $this->para['uid']);
+		$data = $this->model->getList($where, false, 10, true);
+		$this->display('fensiList', $data['list']);
+		$this->display('fensiPage', $data['page']);
+		
+		$where = array('self' => $this->para['uid']);
+		$data = $this->model->getList($where, false, 10, true);
+		$this->display('guanzhuList', $data['list']);
+		$this->display('guanzhuPage', $data['page']);
 	}
 	
 	public function designerInfo(){

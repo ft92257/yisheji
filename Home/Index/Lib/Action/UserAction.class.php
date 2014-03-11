@@ -7,6 +7,38 @@ class UserAction extends BaseAction {
 		parent::__construct();
 	}
 	
+	public function register2() {
+		if ($this->para['act'] == '1001') {
+			$this->model = D('User');
+			$data = array(
+				'account' => $this->para['account'],
+				'password' => md5($this->para['password']),
+				'type' => $this->para['type'],
+				'reg_ip' => ip2long($_SERVER["REMOTE_ADDR"]),
+				'email' => $this->para['email']
+			);
+			$id = $this->model->insert($data);
+			if (!$id) {
+				$this->resultFormat(null, 0, 'SQL:'.$this->model->getLastSql());
+			}
+			$this->model = $this->para['type'] == 1 ? D('User_owner') : D('User_designer');
+			$data = array(
+				'uid' => $id,
+				'decoration_type' => $this->para['decoration_type']
+			);
+			$id = $this->model->insert($data);
+			if (!$id) {
+				$this->resultFormat(null, 0, 'SQL:'.$this->model->getLastSql());
+			}
+			setcookie('uaccount', $this->para['account'], time()+7200, '/');
+			setcookie('upassword', $this->para['password'], time()+7200, '/');
+			$user = D('User')->login($this->para['account'], $this->para['password']);
+			$this->resultFormat(array('uid' => $data['uid']), 1, null, __APP__ . "/User/init/uid/{$id}");
+		}else {
+			$this->display();
+		}
+	}
+	
 	public function register() {
 		if ($this->para['act'] == '1001') {
 			$this->model = D('User');

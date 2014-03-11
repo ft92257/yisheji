@@ -4,6 +4,7 @@ class BaseModel extends Model {
 	public $oApp;
 	public $oCom;
 	public $oUser;
+	
 	public $oCollect;
 	public $_aBaseOptions;
 	private $para;
