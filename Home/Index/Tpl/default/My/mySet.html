@@ -172,8 +172,6 @@
 <!---->
 </div>
 <include file='Public:footer' />
-<script src="__STATICS__/js/yui.js"></script>
-<script src="__STATICS__/js/yui.validator.js"></script>
 <script type="text/javascript">
 function ajaxCity(act,json){
 	
@@ -209,52 +207,6 @@ $(function(){
 		ajaxCity('zh',{ 'level':3,'pid':$('#shi').val(),'default':$('#qu').val() });
 	}
 	
-	var	Validator = YUI.Validator;
-	Validator.setup({
-		         "submit": "set_sub",
-		         "callback": function(){
-		            alert('自定义处理方法');
-		         }
-		     }).add({
-	    "target": "occupation",
-		"rule": "number",
-		"fn": function(){
-			return true;
-		}
-	}).add({
-		"target": "province",
-		"rule": "number1",
-		"plus": true
-	}).add({
-		"target": "mobile",
-		"rule": "mobile",
-	}).add({
-		"target": "web",
-		"rule": "url"
-	}).add({
-		"target": "school",
-		"rule": "chinese"
-	}).add({
-		"target": "subject",
-		"rule": "chinese"
-	}).add({
-		"target": "info",
-		"rule": "require",
-		"plus": function(){
-		var cmt = byId('info'), 
-			len = cmt.value.length, 
-			max = 150,
-			val = max - len;
-			
-		if (val >= 0) {
-			counter.innerHTML = val;
-		}
-		else {
-		    cmt.value = cmt.value.substring(0, max); 
-		}
-	}
-	});
-});	
 $(".designer-tab a").click(function(){
 	  var qh_a_index=$(this).index();
 	  $(this).addClass("current").siblings("a").removeClass("current");
@@ -281,7 +233,7 @@ $(".file_idcard_box").click(function(){
 </script>
 
 <script>
-/*
+
 var flag = 0;
 var error_pass = [];
 error_pass['repassword'] = false;
