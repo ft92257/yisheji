@@ -272,33 +272,5 @@ $(function(){
 	$('#add_friend').bind('click', function(){ isLogin(); actRequest("uid="+$(this).attr('data-uid'), '8101'); });
 	$('#del_friend').bind('click', function(){ isLogin(); actRequest("uid="+$(this).attr('data-uid'), '8102'); });
 });
-/*
-$(function(){
-	var	Validator = YUI.Validator;
-	Validator.setup({
-		         "submit": "reg_sub",
-		         "callback": function(){
-		            alert('自定义处理方法');
-		         }
-		     }).add({
-	    "target": "account",
-		"rule": "username",
-		"fn": function(){
-			return true;
-		}
-	}).add({
-		"target": "password",
-		"rule": "password",
-		"plus": true
-	}).add({
-		"target": "confirm-password",
-		"rule": "password",
-        "to": "password" 
-	}).add({
-		"target": "email",
-		"rule": "email"
-	});
-});	
-*/
 
 </script>
