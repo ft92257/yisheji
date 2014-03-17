@@ -161,18 +161,19 @@
         <table width="100%">
         	<tr>
             	<td width="76">真实姓名</td>
-                <td><input class="text w-20" type="text" name='name'/></td>
+                <td><input class="text w-20 validate[required]" type="text" name='name'/></td>
             </tr>
             <tr>
             	<td>联系方式</td>
-                <td><input class="text w-20 j_watermark" type="text" name='telephone'/></td>
+                <td><input class="text w-20 j_watermark validate[required]" type="text" name='telephone'/></td>
             </tr>
             <tr>
             	<td></td>
                 <td>
                 <input type='hidden' name='uid' value="{$caseInfo['user']['id']}"/>
                 <input type='hidden' name='type' value="{$caseInfo['user']['type']}"/>
-                <input class="btn btn-submit-1" type="button" id='reserve_sub' value="确认提交" /></td>
+                <input type='hidden' name='cid' value="{$caseInfo['user']['cid']}"/>
+                <input class="btn btn-submit-1" type="submit" value="确认提交" /></td>
             </tr>
         </table>
     </div>
@@ -186,7 +187,16 @@
 $(function(){
 	$('.emotion').qqFace();
 	$("#case_zan_sub").bind('click',function(){isLogin(); actRequest("target="+$(this).attr('data-target')+"&type=3", '9102'); });
-	$('#reserve_sub').bind('click', function(){isLogin(); actRequest($('#reserve_form').serialize(), '9101'); });
+	
+	$("#reserve_form").validationEngine('attach', {
+		onValidationComplete: function(form, status){
+			if(status){
+				isLogin();
+				actRequest($('#reserve_form').serialize(), '9101');
+			}
+		}  
+	});
+	
 	$('.look').bind('click', function(){
 		$.layer({
 			border : [0,0,'',false],
