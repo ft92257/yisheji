@@ -11,17 +11,17 @@
                         <table>
                             <tr>
                                 <th width="80">用户名</th>
-                                <td><input class="text w-32" type="text" name='account' id='txt_account'/></td>
+                                <td><input class="text w-32 validate[required]" data-prompt-position="topRight:-30, 3" type="text" name='account' id='txt_account'/></td>
                             </tr>
                             <tr>
                                 <th>密码</th>
-                                <td><input class="text w-32" type="password" name='password'  id='txt_password'/></td>
+                                <td><input class="text w-32 validate[required]" data-prompt-position="topRight:-30, 3" type="password" name='password'  id='txt_password'/></td>
                             </tr>
                             <tr>
                             	<th></th>
                                 <td><label class="mr-2"><input class="checkbox" type="checkbox" />自动登录</label>
                                 	<label><input class="checkbox" checked type="checkbox" />记住用户名</label>
-                                    <div class="r"><input class="btn btn-submit-1" type='button' id='login_sub' value="登 录" /></div>
+                                    <div class="r"><input class="btn btn-submit-1" type='submit' value="登 录" /></div>
                                 </td>
                             </tr>
                             <tr>
@@ -63,4 +63,14 @@ $("#login_sub").click();
 return false;
 }
 }
+
+$(function(){
+	$("#login_form").validationEngine('attach', {
+		onValidationComplete: function(form, status){
+			if(status){
+				actRequest(form.serialize(), '1003');
+			}
+		}  
+	});
+});
 </script> 

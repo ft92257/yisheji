@@ -188,16 +188,16 @@
         <table width="460">
             <tr>
             	<td>真实名称：</td>
-                <td><input name='name' type="text" /></td>
+                <td><input name='name' type="text" class="validate[required]" /></td>
             </tr>
             <tr>
             	<td>手机号码：</td>
-                <td><input name='telephone' type="text" /></div>
+                <td><input name='telephone' type="text" class="validate[required]"/></div>
                 </td>
             </tr>
             <tr>
                 <td colspan="2">
-                	<input class="btn btn-submit-1" type="button" id='reserve_btn' value="提交" />
+                	<input class="btn btn-submit-1" type="submit" value="提交" />
                 </td>
             </tr>
         </table>
@@ -210,8 +210,16 @@
 <include file="Public:footer" />
 <script>
 $(function(){
-	$('#reserve_btn').bind('click', function(){
-		actRequest($('#reserve_form').serialize(), 301);
+	
+	$("#reserve_form").validationEngine('attach', {
+		onValidationComplete: function(form, status){
+			if(status){
+				isLogin();
+				actRequest($('#reserve_form').serialize(), '9101');
+			}
+		}  
 	});
 });
+
+
 </script>

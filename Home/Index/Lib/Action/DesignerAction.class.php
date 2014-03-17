@@ -18,7 +18,7 @@ class DesignerAction extends BaseAction{
 		foreach($res as $k => $i){
 			$arr[$k] = array(
 					$field => $i[$field],
-					"{$field}_zh" => $this->_aBaseOptions[$format][$i[$field]],
+					"{$field}_zh" => $i[$field] == 0 ? '不限' : $this->_aBaseOptions[$format][$i[$field]],
 					"{$field}_c" => $i["{$field}_c"]
 			);
 			
