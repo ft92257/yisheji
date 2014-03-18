@@ -51,13 +51,12 @@ class QuestionAction extends BaseAction {
 		$number = $this->para['id'] ? $this->para['id'] : 1;
 		$max_number = D('Question_attr')->count();
 		$type = $this->para['type'] ? $this->para['type'] : 0;
-		
-		//$id = D('Question_attr')->where(array('number' => $number-1))->getField('number');
 		$this->model = D('Question');
 		$data = $this->model->where(array('type'=>$this->para['type'], 'number' => $number))->order('rand()')->find();
-		echo $this->model->getLastSql();
 		$this->assign('question', $data);
 		$this->assign('hidden', array('number'=>$number, 'max_number'=>$max_number, 'type' => $type)) ;
+		$jump = $number >= $max_number ? __GROUP__.'/Question/testMatch' : __GROUP__.'/Question/testStep/id/'.($number+1).'/type/'.$type;
+		$this->assign('jump', $jump);
 		$this->display();
 	}
 	
