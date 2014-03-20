@@ -48,14 +48,14 @@ class QuestionAction extends BaseAction {
 	
 	public function testStep(){
 		
-		$number = $this->para['id'] ? $this->para['id'] : 1;
-		$max_number = D('Question_attr')->count();
+		echo $number = $this->para['id'] ? $this->para['id'] : 1;
+		echo $max_number = D('Question_attr')->count();
 		$type = $this->para['type'] ? $this->para['type'] : 0;
 		$this->model = D('Question');
 		$data = $this->model->where(array('type'=>$this->para['type'], 'number' => $number))->order('rand()')->find();
 		$this->assign('question', $data);
 		$this->assign('hidden', array('number'=>$number, 'max_number'=>$max_number, 'type' => $type)) ;
-		$jump = $number >= $max_number ? __GROUP__.'/Question/testMatch' : __GROUP__.'/Question/testStep/id/'.($number+1).'/type/'.$type;
+		$jump = $number-1 >= $max_number ? __GROUP__.'/Question/testMatch' : __GROUP__.'/Question/testStep/id/'.($number+1).'/type/'.$type;
 		$this->assign('jump', $jump);
 		$this->display();
 	}
@@ -64,23 +64,26 @@ class QuestionAction extends BaseAction {
 		if(!empty($this->oUser)){
 			$this->model = D('User_owner');
 			$attr = $this->model->where(array('uid' => $this->oUser['id']))->getField('attr');
+			
 			$attrArr = json_decode($attr, 1);
+			print_r('<pre>');print_r($attrArr);
 		} else {
 			$attrArr = json_decode($_COOKIE['Question_attr'], 1);
 		}
 		
 		$this->model = D('User_designer');
 		$where = array();
-		$in = '';
 		foreach($attrArr as $attr=>$i){
+			$in = '';
 			foreach($i as $v){
 				$in .= ",$v";
 			}
+			
 			$in = substr($in, 1);
 			$where = array_merge($where, array($this->_aBaseOptions['attr'][$attr] => array('in', $in)));
 		}
 		$data = $this->model->getList($where, 'createtime desc', 3);
-
+		echo $this->model->getLastSql();
 		$this->assign('designerList', $data['list']);
 		
 		$this->display();

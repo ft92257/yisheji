@@ -13,8 +13,8 @@
 </form>
 <script>
 radioTarget('is_original', 1);
-$("[name='number'").attr("readonly","readonly");
-$("[name='number'").val("{$num}");
+$("[name='number']").attr("readonly","readonly");
+$("[name='number']").val("{$num}");
 $(":submit").bind('click',function(){
 	if($("[name='attr'").val()=="") {alert("请选择题目属性");return false;}
 })

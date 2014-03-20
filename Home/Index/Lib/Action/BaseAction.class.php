@@ -6,6 +6,7 @@ class BaseAction extends Action {
 	protected $_aBaseOptions;
 	protected $model;
 	protected $para;
+	protected $urlPara;
 	protected $oCollect;
 	
 	public function __construct() {

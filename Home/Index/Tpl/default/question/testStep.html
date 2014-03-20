@@ -19,7 +19,7 @@
             </div>
             <div class="test-option">
             	<foreach name="question['option']" item="vo">
-            	<a href="javascript:void(0)"  class='answer_option' data-attr="{$question['attr']}" data-val="{$vo['value']}"><img src="{$vo['focus_img']}" title="{$vo['answer']}" /></a>
+            	<a href="javascript:void(0)"  class='answer_option' data-attr="{$question['attr']}" data-val="{$vo['value']}"><img src="{$vo['focus_img']}" title="{$vo['answer']}" /></a>{$vo['answer']}
             	</foreach>
             </div>
             <div class="test-next"><a href="{$jump}">跳过</a></div>
