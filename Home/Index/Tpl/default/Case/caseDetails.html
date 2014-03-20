@@ -60,7 +60,7 @@
                 	<div class="t">{$caseInfo['user']['name_zh']}的最新案例</div>
                     <ul>
                     <foreach name='designerCase' item="vo">
-                        <li><a href="#"><img src="{$vo['focus_img']}" alt="" />
+                        <li><a href="__GROUP__/Case/caseDetails/id/{$vo['id']}"><img src="{$vo['focus_img']}" alt="" />
                                 <p>{$vo['name']}</p>
                             </a>
                         </li>

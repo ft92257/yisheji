@@ -74,3 +74,17 @@ function replace_em(str){
 	return str;
 }
 
+function replace_urlpara(url, arg, val){
+	if(!/\/$/.test(url)){
+		url += '/';
+	}
+	if(url.indexOf("/" + arg + "/") > 0){
+		var raRegExp = new RegExp("/" + arg + "/(.*?)/","ig"); 
+		url = url.replace(raRegExp, "/" + arg + "/" + val + "/");
+	} else {
+		url = url + arg + "/" + val + "/";
+	}
+	return url.substr(0,url.length-1);
+}
+
+

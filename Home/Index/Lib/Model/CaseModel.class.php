@@ -10,6 +10,7 @@ class CaseModel extends BaseModel {
 		$resultSet['style_zh'] = $this->_aBaseOptions['style'][$resultSet['style']];
 		$resultSet['authorize_zh'] = $this->_aBaseOptions['authorize'][$resultSet['authorize']];
 		$resultSet['focus_img'] = getFileUrl($resultSet['focus']);
+		$resultSet['name'] = str_replace("\'", "'", $resultSet['name']);
 		$user =  D('User')->getById($resultSet['uid']);
 		if($user['type'] == 2){
 			$designer = D('User_designer')->where(array('uid' =>$resultSet['uid']))->find();

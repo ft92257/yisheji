@@ -193,16 +193,10 @@ class InitAction extends BaseAction {
 	}
 	
 	public function del(){
-		$arr = array(
-				'User',
-				'User_designer',
-				'User_owner',
-				'Case',
-				'Active',
-				'House'
-				);
-		foreach($arr as $val){
-			D($val)->delete();
+		$res = mysql_list_tables('yisheji');
+		while($row=mysql_fetch_row($result))
+		{
+			echo $row[0]."<br>";
 		}
 	}
 	
