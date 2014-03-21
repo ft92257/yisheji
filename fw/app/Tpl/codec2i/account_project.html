@@ -1,0 +1,94 @@
+{include file="inc/header.html"} 
+<?php
+$this->_var['dpagejs'][] = $this->_var['TMPL_REAL']."/js/deal_list.js";
+$this->_var['dcpagejs'][] = $this->_var['TMPL_REAL']."/js/deal_list.js";
+$this->_var['dpagecss'][] = $this->_var['TMPL_REAL']."/css/account.css";
+?>
+<link rel="stylesheet" type="text/css" href="{function name="parse_css" v="$dpagecss"}" />
+<script type="text/javascript" src="{function name="parse_script" v="$dpagejs" c="$dcpagejs"}"></script>
+<div class="blank"></div>
+
+<div class="shadow_bg">
+	<div class="wrap white_box"">
+		<div class="page_title">
+			{$lang.my}{$lang.project}
+		</div>
+		<div class="switch_nav">
+			<ul>
+				<li><a href="{url r="account#index"}">{$lang.suppot}{$lang.project}</a></li>
+				<li class="current"><a href="{url r="account#project"}">{$lang.my}{$lang.project}</a></li>
+				<li><a href="{url r="account#focus"}">{$lang.attention}{$lang.project}</a></li>
+				<li><a href="{url r="account#credit"}">{$lang.payDetail}</a></li>
+				
+			</ul>
+		</div>
+		
+		<div class="blank"></div>		
+		{include file="inc/money_box.html"} 		
+
+		<div class="full">
+		{if $deal_list}
+		<table class="data-table">
+			<tr>
+				<th>{$lang.project}{$lang.name}</th>
+				<th width="50">{$lang.status}</th>
+				<th width="200">{$lang.operation}</th>
+			</tr>
+			{foreach from=$deal_list item=deal_item}
+			<tr>
+				<td class="deal_name">
+					<div><a href="{url r="deal#show" p="id=$deal_item.id"}" target="_blank" title="{$deal_item.name}"><img src="{function name="get_spec_image" v=$deal_item.image w=50 h=50 g=1}"  alt="{$deal_item.name}"/></a></div>	
+					<div><a href="{url r="deal#show" p="id=$deal_item.id"}" target="_blank" title="{$deal_item.name}">{function name="msubstr" v=$deal_item.name b=0 e=25}</a></div>	
+				</td>
+				<td>
+          {if $deal_item.is_edit eq 1}
+					{$lang.pending}
+					{elseif $deal_item.is_effect eq 0}
+					{$lang.preparing}
+					{else}
+						{if $deal_item.is_success eq 1}
+							{if $deal_item.begin_time > $now}{$lang.notStart}{/if}
+							{if $deal_item.end_time < $now and $deal_item.end_time neq 0}{$lang.success2}{/if}
+							{if $deal_item.begin_time < $now and ($deal_item.end_time > $now or $deal_item.end_time eq 0)}{$lang.success2}{/if}
+						{else}
+							{if $deal_item.begin_time > $now}{$lang.notStart}{/if}
+							{if $deal_item.end_time < $now and $deal_item.end_time neq 0}{$lang.failure}{/if}
+							{if $deal_item.begin_time < $now and ($deal_item.end_time > $now or $deal_item.end_time eq 0)}{$lang.going}{/if}
+						{/if}
+					{/if}
+				</td>
+				<td>
+					{if $deal_item.is_edit eq 1}
+					{$lang.pending}
+					{elseif $deal_item.is_effect eq 0}
+						<a href="{url r="project#edit" p="id=$deal_item.id"}">{$lang.edit}</a>
+						<a href="{url r="project#del" p="id=$deal_item.id"}" class="del_deal">{$lang.delate}</a>
+					{else}
+						<a href="{url r="deal#update" p="id=$deal_item.id"}">{$lang.project}{$lang.log}</a>
+						{if $deal_item.is_success eq 1}
+							<a href="{url r="account#support" p="id=$deal_item.id"}">{$lang.suppot}{$lang.record}</a>
+							<a href="{url r="account#paid" p="id=$deal_item.id"}">{$lang.moneyLog}</a>
+																
+						{/if}
+					{/if}
+				</td>
+			</tr>
+			{/foreach}
+		</table>
+		
+		{else}
+		<div class="empty_tip">
+			{$lang.InfoProject5} <a href="{url r="project#add"}" class="linkgreen">{$lang.immediately}{$lang.create}{$lang.project}</a>
+		</div>
+		{/if}
+		
+		
+		</div>
+		<div class="blank"></div>
+		<div class="pages">{$pages}</div>
+		<div class="blank"></div>
+		
+	</div>
+</div>
+<div class="blank"></div>
+{include file="inc/footer.html"} 

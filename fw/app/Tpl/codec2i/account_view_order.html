@@ -1,0 +1,158 @@
+{include file="inc/header.html"} 
+<?php
+$this->_var['dpagecss'][] = $this->_var['TMPL_REAL']."/css/account.css";
+$this->_var['dpagejs'][] = $this->_var['TMPL_REAL']."/js/cart_pay.js";
+$this->_var['dcpagejs'][] = $this->_var['TMPL_REAL']."/js/cart_pay.js";
+?>
+<link rel="stylesheet" type="text/css" href="{function name="parse_css" v="$dpagecss"}" />
+<script type="text/javascript" src="{function name="parse_script" v="$dpagejs" c="$dcpagejs"}"></script>
+
+<div class="blank"></div>
+
+<div class="shadow_bg">
+	<div class="wrap white_box"">
+		<div class="page_title">
+			{$order_info.deal_name}
+		</div>
+		<div class="switch_nav">
+			<ul>
+				<li class="current"><a href="{url r="account#index"}">{$lang.suppot}{$lang.project}</a></li>
+				<li><a href="{url r="account#project"}">{$lang.my}{$lang.project}</a></li>
+				<li><a href="{url r="account#focus"}">{$lang.attention}{$lang.project}</a></li>
+				<li><a href="{url r="account#credit"}">{$lang.payDetail}</a></li>
+				
+			</ul>
+		</div>
+		
+		<div class="blank"></div>
+		
+		{include file="inc/money_box.html"} 
+		
+		<div class="full">
+			<table class="data-table order_table">
+
+				<tr>
+					<td class="deal_name" width=150>{$lang.project}{$lang.name}</td>
+					<td>
+						{if $deal_info}
+						<a href="{url r="deal#show" p="id=$deal_info.id"}" target="_blank">{$order_info.deal_name}</a>
+						{else}
+						{$order_info.deal_name}
+						{/if}
+					</td>
+				</tr>
+				{if $order_info.consignee neq ''}
+				<tr>
+					<td class="deal_name">{$lang.postInfo}{$lang.info}</td>
+					<td>
+						{$lang.address}:{$order_info.province}{$order_info.city}{$order_info.address} {$lang.postcode}:{$order_info.zip} {$lang.addressee}:{$order_info.consignee} {$lang.tel}:{$order_info.mobile}
+					</td>
+				</tr>
+				{/if}
+				{if $order_info.support_memo neq ''}
+				<tr>
+					<td class="deal_name">{$lang.remarks}{$lang.info}</td>
+					<td>
+						{$order_info.support_memo}
+					</td>
+				</tr>
+				{/if}
+				<tr>
+					<td class="deal_name">{$lang.totalAmount}</td>
+					<td>
+						
+						{if $order_info.delivery_fee gt 0}
+						{$lang.project}{$lang.amount}:{function name="format_price" v=$order_info.deal_price}
+						{$lang.freight}:{function name="format_price" v=$order_info.delivery_fee}
+						{$lang.totalAmount1}:{function name="format_price" v=$order_info.total_price}
+						{else}
+						{function name="format_price" v=$order_info.total_price}
+						{/if}
+						
+					</td>
+				</tr>
+				<tr>
+					<td class="deal_name">{$lang.InfoPay11}</td>
+					<td>
+						{if $order_info.order_status eq 1}
+						{$lang.InfoProject6}
+						{/if}
+						{if $order_info.order_status eq 2}
+						{$lang.InfoProject7}
+						{/if}	
+						{if $order_info.order_status eq 3}
+						{$lang.pay}{$lang.success}
+						{/if}	
+						{if $order_info.order_status eq 0}
+						{$lang.InfoPay7}
+							{if $order_info.credit_pay gt 0}
+							{$lang.InfoPay6}{function name="format_price" v=$order_info.credit_pay}
+							{/if}
+						{/if}	
+					</td>
+				</tr>
+				{if $order_info.order_status eq 3}
+				<tr>
+					<td class="deal_name">{$lang.redound}{$lang.situation}</td>
+					<td>
+						{if $order_info.is_success eq 0}
+							{if $order_info.is_refund eq 1}
+							{$lang.project}{$lanng.InfoProject8}
+							{else}
+							{$lang.project}{$lang.failure}
+							{/if}
+						{else}
+							{if $order_info.repay_time eq 0}
+							{$lang.project}{$lang.success}，{$lang.redound}{$lang.notGrant}
+							{else}
+							{$order_info.repay_memo}
+							{/if}
+						{/if}
+					</td>
+				</tr>
+				{/if}
+	
+			</table>
+			{if $order_info.order_status eq 0}
+			<div class="blank"></div>
+			<form class="pay_form" action="{url r="account#go_order_pay"}" target="_blank">									
+				
+				{if $user_info.money gt 0}
+					<div class="form_row">
+						<div class="blank15"></div>
+						<label class="title">{$lang.InfoPay5}:</label>
+						<input type="text" class="textbox" value="0" name="credit" style="width:100px;" />
+						<label class="title" style="padding-left:10px;">{$lang.usableBalance}：{function name="format_price" v=$user_info.money}</label>
+						<input type="hidden" name="max_credit" value="{$user_info.money}" />
+						<input type="hidden" name="max_pay" value="{$max_pay}" />
+						<div class="blank15"></div>
+					</div>
+				{/if}
+						
+				{$payment_html}
+				
+				<div class="blank"></div>
+				<div>
+					<div class="ui-button green" rel="green">
+						<div>
+							<span>{$lang.InfoPay3}</span>
+						</div>
+					</div>				
+					<input type="hidden" id="back_url" value="{url r="account#view_order" p="id=$order_info.id"}" />	
+					<input type="hidden" value="{$order_info.id}" name="order_id" />	
+					<input type="hidden" value="1" name="ajax" />					
+					<div class="blank15"></div>
+				</div>
+				
+			</form>
+			{/if}
+		</div>
+
+		
+		<div class="blank"></div>
+		
+		
+	</div>
+</div>
+<div class="blank"></div>
+{include file="inc/footer.html"} 

@@ -1,0 +1,54 @@
+<?php
+$this->_var['dpagejs'][] = $this->_var['TMPL_REAL']."/js/ajax_user_login.js";
+$this->_var['dcpagejs'][] = $this->_var['TMPL_REAL']."/js/ajax_user_login.js";
+?>
+<script type="text/javascript" src="{function name="parse_script" v="$dpagejs" c="$dcpagejs"}"></script>
+
+<div class="signlogin_box">
+			<div class="left">
+				
+				<div class="link_dash f25">
+					{$lang.login}
+				</div>
+				<form id="user_login_form" name="user_login_form" action="{url r="user#do_login"}">
+					
+				<div class="form_row">
+					<div class="blank15"></div>
+					<label class="title"><font>*&nbsp;&nbsp;</font>{$lang.username_1}:</label>
+					<input type="text" value="{$lang.eoru}" class="textbox" name="email"/>
+					<div class="blank15"></div>
+				</div>
+				<div class="form_row">
+					<label class="title"><font>*&nbsp;&nbsp;</font>{$lang.pwd}:</label>
+					<input type="password" name="user_pwd"  class="textbox" />
+					<span class="getpassword"><a href="{url r="user#getpassword"}">{$lang.forgetpwd}？</a></span>
+					<div class="blank15"></div>
+				</div>
+				<div class="form_row auto_login">
+					<input type="checkbox" value="1" name="auto_login" checked="checked" /> 
+					<label class="auto_login_tip">{$lang.autologin}</label>
+					<div class="blank15"></div>
+				</div>
+				
+				<div class="button_row do_login">
+					<input type="button" value="{$lang.login}" name="submit_form" class="btn_do_login" id="btn_do_login" />
+					<input type="hidden" value="1" name="ajax" />
+					<div class="blank15"></div>
+				</div>
+				
+				</form>
+			</div>
+			
+			<div class="right">
+				<div class="link_dash f16">
+					{$lang.ql}				
+				</div>		
+				<div class="blank"></div>		
+				{insert name="api_login"}
+				<span class="no_account_tip">{$lang.nouser}</span>
+				<a href="{url r="user#register"}" class="btn_go_register" title="{$lang.register}">{$lang.register}</a>
+				
+			</div>
+			<div class="blank"></div>
+			
+		</div>

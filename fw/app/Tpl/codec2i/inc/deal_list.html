@@ -1,0 +1,81 @@
+{foreach from=$deal_list item=deal_item key=key}
+	<div class="deal_item_box f_l {if $key mod 4 eq 0}first{/if}">
+			<div class="deal_content_box" style="padding-left:0;padding-right:0;padding-top:0;overflow:hidden;border-radius:5px;">
+			<a href="{url r="deal#show" p="id=$deal_item.id"}" title="{$deal_item.name}"  style="overflow:hidden">
+			<img src="{if $deal_item.image eq ''}{$TMPL}/images/empty_thumb.gif{else}{function name="get_spec_image" v=$deal_item.image w="226" h="176" g="1"}{/if}" alt="{$deal_item.name}"  width="226"  style="overflow:hidden"/>
+			</a>
+			<div class="blank"></div>
+			<a href="{url r="deal#show" p="id=$deal_item.id"}" title="{$deal_item.name}" class="deal_title">{function name="msubstr" v=$deal_item.name b=0 e=25}</a>
+			
+			<!--<div class="deal_loc">
+			{if $deal_item.user_name eq ''}{else}
+			<a href="{url r="home" p="id=$deal_item.user_id"}">{$deal_item.user_name}</a>&nbsp;&nbsp;
+			{/if}
+			{if $deal_item.province neq '' or $deal_item.city neq ''}
+			(
+			{if $deal_item.province neq ''}
+			<span><a href="{url r="deals" p="loc=$deal_item.province"}" title="{$deal_item.province}">{$deal_item.province}</a></span>
+			{/if}
+			{if $deal_item.city neq ''}
+			<span><a href="{url r="deals" p="loc=$deal_item.city"}" title="{$deal_item.city}">{$deal_item.city}</a></span>
+			{/if}
+			)
+			{/if}
+			</div>-->
+			<div class="blank"></div>
+			<div class="deal_brief" title="{$deal_item.brief}">{function name="msubstr" v=$deal_item.brief b=0 e=45}</div>
+			</div>
+			<div class="deal_item_dash"></div>
+      <div class="paiduan deal_content_box">
+        <ul>
+     
+         <li>
+            <a title="{$deal_item.name}" href="{url r="deal" p="act=update&id=$deal_item.id"}">{$lang.feed}(<span>{$deal_item.log_count}</span></a>)
+          </li>
+          <li>
+            <a title="{$deal_item.name}" href="{url r="deal" p="act=support&id=$deal_item.id"}">{$lang.zuser}(<span>{$deal_item.support_count}</span></a>)
+          </li>
+
+         
+        </ul>
+        <div class="">
+					<span class="">
+            {if $deal_item.is_success}
+            <span class="num_1" style=" background:#5fb760">{$lang.success}</span>
+            {elseif $deal_item.end_time > $now}
+            <span class="num_1"  style="background:#428bca">{$lang.ing}</span>
+            {else}
+            <span class="num_2"  style="background:#999999">{$lang.failure}</span>
+            {/if}
+          </span>	
+				</div>
+      </div>
+			<div class="deal_content_box" style="padding-top:0">				
+				<div class="ui-progress">
+					<span style="width:{$deal_item.percent}%;"></span>
+				</div>			
+				<div class="blank"></div>
+				<div class="div3"  style=" text-align:left"><span class="num">{$deal_item.percent}%</span><span class="til">{$lang.reach}</span></div>
+				<div class="div3"  style=" text-align:center"><span class="num" ><font>{function name="round" v=$deal_item.support_amount e=2}</font>{$lang.RMB}</span><span class="til">{$lang.supported}</span></div>
+				<div class="div3"  style=" text-align:right">
+					{if $deal_item.begin_time > $now}
+					<span class="num">{$lang.onlineed}</span>
+					<span class="til">{$lang.endtime}</span>
+					{elseif $deal_item.end_time < $now and $deal_item.end_time neq 0}
+					<span class="num">{$lang.ended}</span>
+					<span class="til">{$lang.endtime}</span>
+					{else}
+					<span class="num">
+						{if $deal_item.end_time eq 0}
+						{$lang.langcassic}
+						{else}
+						<font>{$deal_item.remain_days}</font>{$lang.days}
+						{/if}
+					</span>
+					<span class="til" style=" text-align:right">{$lang.endtime}</span>
+					{/if}					
+				</div>
+				<div class="blank1"></div>
+			</div>
+	</div>
+	{/foreach}

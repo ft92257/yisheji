@@ -1,0 +1,71 @@
+<div class="login">{if $user_info}
+	<a class="a" href="#" id="mymessage">{$lang.pm}</a>|
+	<a class="a" href="#" id="mycenter">{$user_info.user_name}</a>|
+	<a class="a" href="{url r="user#loginout"}" title="{$lang.logout}" id="user_login_out">{$lang.logout}</a>
+	{if $langs eq 'eng'}
+<a class="a" href="{$url}" title="简体中文"  style="position:relative;top:1px">CN</a>
+{else}
+<a class="a" href="{$url}"  title="Englist" style="position:relative;top:1px">EN</a>
+{/if}
+
+	{if $USER_NOTIFY_COUNT>0 or $USER_MESSAGE_COUNT>0}
+	{if $HIDE_USER_NOTIFY eq 0}
+	<div id="user_notify_tip" style="position:absolute; z-index:1; display:none;">		
+		<div class="notify_tip_box" id="close_user_notify">
+			<div class="close_user_notify"></div>
+			{if $USER_NOTIFY_COUNT>0}
+			<span><a class="a" href="{url r="notify"}">{$lang.youhave} <font>{$USER_NOTIFY_COUNT}</font> {$lang.counttz}</a></span>
+			{/if}
+			{if $USER_MESSAGE_COUNT>0}
+			<span><a class="a" href="{url r="message"}">{$lang.youhave} <font>{$USER_MESSAGE_COUNT}</font> {$lang.newpm}</a></span>
+			{/if}
+		</div>
+	</div>
+	{/if}
+	{/if}
+
+	<div id="mymessage_drop" style="position:absolute; display:none;">
+		<div class="drop_box">
+			<span><a class="a" href="{url r="news#fav"}">{$lang.ffeed}</a></span>
+			<span><a class="a" href="{url r="comment"}">{$lang.lookcoment}</a></span>
+			<span><a class="a" href="{url r="message"}">{$lang.lookpm}</a></span>
+			<span><a class="a" href="{url r="notify"}">{$lang.au}</a></span>
+
+		</div>
+	</div>
+	<div id="mycenter_drop" style="position:absolute; display:none;">
+		<div class="drop_box">
+			<span><a class="a" href="{url r="home" p="id=$user_info.id"}">{$lang.myhome}</a></span>
+			<span><a class="a" href="{url r="account"}">{$lang.admincp}</a></span>
+			<span><a class="a" href="{url r="settings"}">{$lang.spacecp}</a></span>
+
+		</div>
+	</div>
+	
+{else}
+ <div style="position:relative;">	
+	<a class="a" href="{url r="user#register"}" title="{$lang.register}" >{$lang.register}</a>|
+	<a class="a" href="{url r="user#login"}" title="{$lang.login}" style="margin-right:100px;">{$lang.login}</a>
+   
+    <div class="otherlogin" style="margin-right:0px;">	
+	{$api_login}
+    {if $langs eq 'eng'}
+<a class="a" href="{$url}" title="简体中文" style="position:relative;top:-5px">CN</a>
+{else}
+<a class="a" href="{$url}"  title="Englist"  style="position:relative;top:-5px">EN</a>
+{/if}
+
+    </div>
+    </div>
+{/if}
+
+</div>
+<script>
+function jump(to,obj){
+	 if(to==1){
+		 window.location.href=window.location.href+'&lang=eng';
+	 }else{
+		 window.location.href=window.location.href;
+	 }
+}
+</script>

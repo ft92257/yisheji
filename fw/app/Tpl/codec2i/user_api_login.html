@@ -1,0 +1,72 @@
+{include file="inc/header.html"} 
+<?php
+$this->_var['dpagecss'][] = $this->_var['TMPL_REAL']."/css/user_api.css";
+$this->_var['dpagejs'][] = $this->_var['TMPL_REAL']."/js/user_api.js";
+$this->_var['dcpagejs'][] = $this->_var['TMPL_REAL']."/js/user_api.js";
+?>
+<link rel="stylesheet" type="text/css" href="{function name="parse_css" v="$dpagecss"}" />
+<script type="text/javascript" src="{function name="parse_script" v="$dpagejs" c="$dcpagejs"}"></script>
+<div class="blank"></div>
+
+<div class="shadow_bg">
+	<div class="wrap white_box">
+		<div class="signlogin_box">
+			<div class="left">
+				
+				<div class="link_dash f25">
+					<a href="{$api_info.url}" target="_blank">{$api_info.name}</a> {$lang.welcomeTo}{function name="app_conf" v="SITE_NAME"}
+				</div>
+				<form id="user_api_login_form" name="user_api_login_form" action="{url r="user#do_api_login"}">
+					
+						
+				<div class="form_row radio_row">
+					<div class="blank15"></div>
+					<input type="radio" id="jump_api_login"  checked="checked" rel="{url r="user#api_login"}"/> 
+					<label>{$lang.IHad}{function name="app_conf" v="SITE_NAME"}{$lang.username1},{$lang.fastBand}</label>
+					<div class="blank15"></div>
+				</div>
+				<div class="form_row">
+					
+					<label class="title"><font>*&nbsp;&nbsp;</font>{$lang.username}:</label>
+					<input type="text" value="{$lang.email}{$lang.or2}{$lang.username2}" class="textbox" name="email"/>
+					<div class="blank15"></div>
+				</div>
+				<div class="form_row">
+					<label class="title"><font>*&nbsp;&nbsp;</font>{$lang.password2}:</label>
+					<input type="password" name="user_pwd"  class="textbox" />
+					<span class="getpassword"><a href="{url r="user#getpassword"}">{$lang.forgetPass}?</a></span>
+					<div class="blank15"></div>
+				</div>
+				
+				<div class="button_row term">
+					<span><a href="{url "help#term"}">{function name="app_conf" v="SITE_NAME"}{$lang.TermOfService}</a></span>
+					<div class="blank15"></div>
+				</div>
+				
+				<div class="button_row do_api_login">
+					<input type="button" value="" name="submit_form" class="btn_do_api_login" id="btn_do_api_login" />
+					<input type="hidden" value="1" name="ajax" />
+					<div class="blank15"></div>
+				</div>
+				
+				</form>
+			</div>
+			
+			
+			<div class="blank"></div>
+			<div class="form_row radio_row">
+					<div class="blank15"></div>
+					<input type="radio" id="jump_api_register" rel="{url r="user#api_register"}" /> 
+					<label>{$lang.fast}{$lang.register}{function name="app_conf" v="SITE_NAME"}{$lang.username1}</label>
+					<div class="blank15"></div>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+<div class="blank"></div>
+{include file="inc/footer.html"} 
+
+
+

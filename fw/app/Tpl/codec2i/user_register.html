@@ -1,0 +1,79 @@
+{include file="inc/header.html"} 
+<?php
+$this->_var['dpagecss'][] = $this->_var['TMPL_REAL']."/css/user_register.css";
+$this->_var['dpagejs'][] = $this->_var['TMPL_REAL']."/js/user_register.js";
+$this->_var['dcpagejs'][] = $this->_var['TMPL_REAL']."/js/user_register.js";
+?>
+<link rel="stylesheet" type="text/css" href="{function name="parse_css" v="$dpagecss"}" />
+<script type="text/javascript" src="{function name="parse_script" v="$dpagejs" c="$dcpagejs"}"></script>
+<div class="blank"></div>
+
+<div class="shadow_bg">
+	<div class="wrap white_box">
+		<div class="signlogin_box">
+			<div class="left">
+				
+				<div class="link_dash f25">
+					{$lang.register}</a>
+				</div>
+				<form id="user_register_form" name="user_register_form" action="{url r="user#do_register"}">
+					
+				<div class="form_row">
+					<div class="blank15"></div>
+					<label class="title"><font>*&nbsp;&nbsp;</font>{$lang.email}:</label>
+					<input type="text" value="{$lang.email}" class="textbox" name="email"/>
+					<div class="tip_box"></div>
+					<div class="blank15"></div>
+				</div>
+				<div class="form_row">
+					<label class="title"><font>*&nbsp;&nbsp;</font>{$lang.password}:</label>
+					<input type="password" name="user_pwd"  class="textbox" />
+					<div class="tip_box"></div>
+					<div class="blank15"></div>
+				</div>
+				<div class="form_row">
+					<label class="title"><font>*&nbsp;&nbsp;</font>{$lang.password1}:</label>
+					<input type="password" name="confirm_user_pwd"  class="textbox" />
+					<div class="tip_box"></div>
+					<div class="blank15"></div>
+				</div>
+				<div class="form_row">
+					<label class="title"><font>*&nbsp;&nbsp;</font>{$lang.username}:</label>
+					<input type="text" value="" class="textbox" name="user_name"/>
+					<div class="tip_box"></div>
+					<div class="blank15"></div>
+				</div>
+				
+				<div class="button_row term">
+					<span><a href="{url "help#term"}">{function name="app_conf" v="SITE_NAME"}{$lang.TermOfService}</a></span>
+					<div class="blank15"></div>
+				</div>
+				
+				<div class="button_row do_register">
+					<input type="button" name="submit_form" class="btn_do_register" id="btn_do_register" value="{$lang.register}" />
+					<input type="hidden" value="1" name="ajax" />
+					<div class="blank15"></div>
+				</div>
+				
+				</form>
+			</div>
+			
+			<div class="right">
+				<div class="link_dash f16">
+					{$lang.InfoReg1}</div>		
+				<div class="blank"></div>		
+				{insert name="api_login"}
+				<span class="no_account_tip">{$lang.hadAccount}</span>
+				<a href="{url r="user#login"}" class="btn_go_login" title="{$lang.immediately}{$lang.login}">{$lang.immediately}{$lang.login}</a>
+				
+			</div>
+			<div class="blank"></div>
+			
+		</div>
+	</div>
+</div>
+
+<div class="blank"></div>
+{include file="inc/footer.html"} 
+
+
