@@ -1,0 +1,113 @@
+{include file="inc/header.html"} 
+<?php
+$this->_var['dpagecss'][] = $this->_var['TMPL_REAL']."/css/index.css";
+$this->_var['dpagejs'][] = $this->_var['TMPL_REAL']."/js/index.js";
+$this->_var['dcpagejs'][] = $this->_var['TMPL_REAL']."/js/index.js";
+$this->_var['dpagejs'][] = $this->_var['TMPL_REAL']."/js/discover.js";
+$this->_var['dcpagejs'][] = $this->_var['TMPL_REAL']."/js/discover.js";
+?>
+<link rel="stylesheet" type="text/css" href="{function name="parse_css" v="$dpagecss"}" />
+<script type="text/javascript" src="{function name="parse_script" v="$dpagejs" c="$dcpagejs"}"></script>
+
+<div class="blank"></div>
+<div class="wrap">
+	
+	<div class="bar">
+      <a href="index.php">{$lang.index}</a><span>/</span>
+      <a href="index.php?ctl=deals">{$lang.lookcassic}</a>
+      
+      {if $p_r eq 'all'}
+        <span>/</span>
+        <a  href="{url r="deals" p="r=all"}">{$lang.alls}</a>
+      {/if}
+      
+      {if $p_r eq 'rec'}
+        <span>/</span>
+        <a href="{url r="deals" p="r=rec"}">{$lang.recommend}</a>
+      {/if} 
+      {if $p_r eq 'new'}
+        <span>/</span>
+        <a href="{url r="deals" p="r=new"}">{$lang.newonline}</a>
+      {/if}
+      {if $p_r eq 'nend'}
+        <span>/</span>
+        <a href="{url r="deals" p="r=nend"}">{$lang.ending}</a>
+      {/if}  
+      {if $p_r eq 'classic'} 
+        <span>/</span>
+        <a href="{url r="deals" p="r=classic"}">{$lang.cassic}</a>
+      {/if}
+      
+      
+       {if $p_id } 
+          <span>/</span>
+          <a href="{url r="deals" p="r=$p_r&id=$p_id&loc=$p_loc"}">{$p_id_name}</a>
+          
+       {/if}
+       
+       
+       
+        {if $p_loc} 
+          {if $p_loc eq 'all'} 
+          {else}
+          <span>/</span>
+          <a href="{url r="deals" p="r=$p_r&id=$p_id&loc=$p_loc"}">{$p_loc}</a>
+          {/if}
+       {/if}
+      
+      
+    </div>
+	
+	<div class="ui-deals-filter clearfix">
+		<div class="ui-deals-filter-item clearfix">
+			<div class="ui-deals-filter-l f_l">
+				属性：
+			</div>
+			<div class="ui-deals-filter-r f_r">
+				<ul>
+          <li {if $p_r eq 'all' or !$p_r}class="current"{/if}><a title="所有属性" href="{url r="deals" p="r=all&id=$p_id&loc=$p_loc"}">所有属性</a></li>
+		  <li {if $p_r eq 'rec'} class="current"{/if}><a href="{url r="deals" p="r=rec&id=$cate_item.id&loc=$p_loc"}">推荐项目</a></li>
+          <li {if $p_r eq 'new'} class="current"{/if}><a href="{url r="deals" p="r=new&id=$cate_item.id&loc=$p_loc"}">最新上线</a></li>
+          <li {if $p_r eq 'nend'} class="current"{/if}><a href="{url r="deals" p="r=nend&id=$cate_item.id&loc=$p_loc"}">即将结束</a></li>
+          <li {if $p_r eq 'classic'} class="current"{/if}><a href="{url r="deals" p="r=classic&id=$cate_item.id&loc=$p_loc"}">经典项目</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="ui-deals-filter-item clearfix">
+			<div class="ui-deals-filter-l f_l">
+				分类：
+			</div>
+			<div class="ui-deals-filter-r f_r">
+				<ul>
+          <li {if $p_id eq 'all' or !$p_id}class="current"{/if}><a title="所有分类" href="{url r="deals" p="r=$p_r&id=all&loc=$p_loc"}">所有分类</a></li>
+          {foreach from=$cate_list item=cate_item}
+          <li {if $p_id eq $cate_item.id}class="current"{/if}><a href="{url r="deals" p="r=$p_r&id=$cate_item.id&loc=$p_loc"}" title="{$cate_item.name}">{$cate_item.name}</a></li>
+          {/foreach}
+        </ul>
+    </div>
+		</div>
+    <div class="ui-deals-filter-item clearfix">
+			<div class="ui-deals-filter-l f_l">
+				地区：
+			</div>
+			<div class="ui-deals-filter-r f_r">
+				<ul>
+          <li {if $p_loc eq 'all' or !$p_loc}class="current"{/if}><a title="所有地区" href="{url r="deals" p="r=$p_r&id=$p_id&loc=all"}">所有地区</a></li>
+          {foreach from=$loc_list item=loc_item}
+          <li {if $p_loc eq $loc_item.province}class="current"{/if}><a href="{url r="deals" p="r=$p_r&id=$p_id&loc=$loc_item.province"}" title="{$loc_item.province}">{$loc_item.province}</a></li>
+          {/foreach}
+        </ul>
+			</div>
+		</div>
+  </div>
+	<div class="blank"></div>
+	<div class="blank"></div>
+	<div class="blank"></div>
+	<div id="pin_box">
+	{include file="inc/deal_list.html"}
+	</div>	
+	<div class="blank"></div>
+	<div id="pin_loading" rel="{url r="ajax#deals" p="r=$p_r&id=$p_id&loc=$p_loc&tag=$p_tag&k=$p_k&p=$current_page"}">正在努力加载</div>	
+	<div class="pages">{$pages}</div>
+</div>
+{include file="inc/footer.html"} 

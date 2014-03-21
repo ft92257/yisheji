@@ -1,0 +1,11 @@
+<div class="page_title">
+		{if ACTION_NAME eq 'index'}{$lang.mycoment}{/if}
+		{if ACTION_NAME eq 'send'}{$lang.sendcoment}{/if}
+</div>
+<div class="blank"></div>		
+<div class="switch_nav">
+	<ul>
+		<li {if ACTION_NAME eq 'index'}class="current"{/if}><a href="{url r="comment"}">{$lang.mycoment}</a></li>
+		<li {if ACTION_NAME eq 'send'}class="current"{/if}><a href="{url r="comment#send"}">{$lang.sendcoment}</a></li>						
+	</ul>		
+</div>

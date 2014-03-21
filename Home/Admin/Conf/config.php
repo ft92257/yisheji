@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 if (!defined('THINK_PATH')) exit();
 
 $DB = require("config.inc.php");	//数据库配置
@@ -46,7 +46,11 @@ function getHostUrl() {
 	if ($_SERVER['SERVER_PORT'] != '80') {
 		$s .= ':' . $_SERVER['SERVER_PORT'];
 	}
-	$s .= dirname($_SERVER['SCRIPT_NAME']) . '/';
+	$s .= dirname($_SERVER['SCRIPT_NAME']);
+	if (substr($s, -1) == "\\") {
+		$s = substr($s, 0, -1);
+	}
+	$s .= '/';
 
 	return $s;
 }
