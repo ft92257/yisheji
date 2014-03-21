@@ -123,21 +123,21 @@
     	<h3>报名表</h3>
     </div>
     <div class="score-cnt">
-    	<p class="tips">我要申请参加“思维导图-让工作变轻松”</p>
+    	<p class="tips">我要申请参加“{$activeInfo['title']}”</p>
         <table width="100%">
         	<tr>
             	<td width="76">真实姓名</td>
-                <td><input class="text w-20" type="text" name='name'/></td>
+                <td><input class="text w-20 validate[required]" type="text" name='name'/></td>
             </tr>
             <tr>
             	<td>联系方式</td>
-                <td><input class="text w-20 j_watermark" type="text" name='telephone'/></td>
+                <td><input class="text w-20 j_watermark validate[required]" type="text" name='telephone'/></td>
             </tr>
             <tr>
             	<td></td>
                 <td>
                 <input type='hidden' name='aid' value="{$activeInfo['id']}"/>
-                <input class="btn btn-submit-1" type="button" id='active_apply_sub' value="确认提交" /></td>
+                <input class="btn btn-submit-1" type="submit" value="确认提交" /></td>
             </tr>
         </table>
     </div>
@@ -150,7 +150,15 @@
 $(function(){
 	$('.emotion').qqFace();
 	$("#active_zan_sub").bind('click',function(){ isLogin(); actRequest("target="+$(this).attr('data-target')+"&type=1", '9102'); });
-	$("#active_apply_sub").bind('click',function(){ isLogin(); actRequest($("#active_apply_form").serialize(), '3107'); });
+	
+	$("#active_apply_form").validationEngine('attach', {
+		onValidationComplete: function(form, status){
+			if(status){
+				actRequest(form.serialize(), '3107');
+			}
+		}  
+	});
+	
 	$('#comment_sub').bind('click', function(){
 		isLogin();
 		if($('#txt_comment').val().replace(/[ ]/g,"") == ''){

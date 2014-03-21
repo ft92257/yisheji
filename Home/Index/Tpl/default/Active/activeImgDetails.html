@@ -25,14 +25,100 @@
                     <div class="r"><a><i class="ico ico-40"></i>20</a><a><i class="ico ico-39"></i>2</a></div>
                     <p class="clear">{$vo.title}</p>
                 </div>
-                <div class="comment-3 pt-3 clearfix">
-                    <include file="Public:speakForm2" />
-                	<div class="t-comment-3">评论（3 条）</div>
-                    <include file="Active:activeImgDetailsComment" />
+                <div class="comment-1 w-66 f-no pt-2-5">
+            <h3 class="t-comment-1">活动讨论</h3>
+            <div class="form-comment-1 pb-2 clearfix">
+            <form id='comment_form'>
+                <textarea id="txt_comment" name="content"></textarea>
+                <input type='hidden' name="type" value="3"/>
+                <input type='hidden' name="target" value="{$activeInfo['id']}"/>
+                <input type='hidden' name="focus" value="{$activeInfo['focus']}"/>
+                <div class="l">
+                    <a href="javascript:;" class="emotion" face="txt_comment"><i class="ico ico-25"></i><span>表情</span></a> 
                 </div>
+                <div class="r"><input class="btn btn-submit-1" type="button" id='comment_sub' value="发布" /></div>
+            </form>	
+            </div>
+            <div class="list-comment-1">
+                <ul>
+                <foreach name = "activeComment" item="vo">
+                    <li>
+                    	<div style="overflow:hidden">
+                            <div class="pic"><a href="#"><img src="{$vo['header']}" alt="" /></a></div>
+                            <div class="l">
+                                <div class="t"><a href="{$vo['header']}">{$vo['name_zh']}</a>：</div>
+                                <div class="cnt-article clearfix">
+                                    <p>{$vo['content']}</p>
+                                </div>
+                            </div>
+                            <div class="r">
+                                <div class="time">{$vo['createtime']}</div>
+                                <a href="javascript:;" class='show'>共{$vo['reply_c']}条对话</a>|<a href="javascript:;" class='show'>回复</a>
+                            </div>
+                        </div>
+                        
+                    	<div class="discussReply" style="display:none">
+                        	<div  class="discussReplyForm clearfix">
+                            	<form id="reply_form_{$vo['id']}">
+                                	<textarea id="txt_reply_{$vo['id']}" name="content"></textarea>
+                                	<input type='hidden' name="id" value="{$vo['id']}"/>
+                                	<input type='hidden' name="type" value="3"/>
+					                <input type='hidden' name="focus" value="{$activeInfo['focus']}"/>
+                                    <div class="l">
+                   						 <a href="javascript:;" class="emotion" face="txt_reply_{$vo['id']}"><i class="ico ico-25"></i><span>表情</span></a> 
+                					</div>
+                					<div class="r"><input class="btn btn-submit-1" type="button" onclick="reply('{$vo['id']}')" value="发布" /></div>
+                                </form>
+                            </div>
+                            <foreach name = "vo['reply_arr']" item="i">
+                        	<div class="clearfix pt-1-5 pb-1-5 listBox">
+                                <div class="pic"><a href="#"><img src="{$i['header']}" alt="" /></a></div>
+                                <div class="l">
+                                    <div class="t"><a href="#">{$i['name_zh']}</a>：</div>
+                                    <div class="cnt-article clearfix">
+                                        <p>{$i['content']}</p>
+                                    </div>
+                                </div>
+                                <div class="r">
+                                    <div class="time">{$i['createtime']}</div>
+                                </div>
+                            </div>
+                            </foreach>
+                        </div>
+                    </li>
+                   </foreach>
+                </ul>
+            </div>
+	<div class="page-2 clearfix mt-1">
+         {$activeCommentPage}
+        </div>
+        </div>
             </div>
         </div>
     </div></div>
 <!---->
 </div>
 <include file="Public:footer" />
+<script>
+$(function(){
+	$('.emotion').qqFace();
+	$('#comment_sub').bind('click', function(){
+		isLogin();
+		if($('#txt_comment').val().replace(/[ ]/g,"") == ''){
+			alert('你必须填写内容');
+			return false;
+		}
+		actRequest($('#comment_form').serialize(), '7101'); 
+	});
+	$('.list-comment-1 ul li .show').toggle(function(){ $(this).parents("li").find(".discussReply").show()},function(){$(this).parents("li").find(".discussReply").hide()});
+});
+
+function reply(id){
+	isLogin();
+	if($('#txt_reply_'+id).val().replace(/[ ]/g,"") == ''){
+		alert('你必须填写内容');
+		return false;
+	}
+	actRequest($('#reply_form_'+id).serialize(), '7102'); 
+}
+</script>

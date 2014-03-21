@@ -18,7 +18,7 @@ class DesignerAction extends BaseAction{
 		foreach($res as $k => $i){
 			$arr[$k] = array(
 					$field => $i[$field],
-					"{$field}_zh" => $this->_aBaseOptions[$format][$i[$field]],
+					"{$field}_zh" => $i[$field] == 0 ? '不限' : $this->_aBaseOptions[$format][$i[$field]],
 					"{$field}_c" => $i["{$field}_c"]
 			);
 			
@@ -148,7 +148,16 @@ class DesignerAction extends BaseAction{
 	}
 	
 	public function designerFriend(){
-		$this->display();
+		$this->model = D('Friend');
+		$where = array('other' => $this->para['uid']);
+		$data = $this->model->getList($where, false, 10, true);
+		$this->display('fensiList', $data['list']);
+		$this->display('fensiPage', $data['page']);
+		
+		$where = array('self' => $this->para['uid']);
+		$data = $this->model->getList($where, false, 10, true);
+		$this->display('guanzhuList', $data['list']);
+		$this->display('guanzhuPage', $data['page']);
 	}
 	
 	public function designerInfo(){

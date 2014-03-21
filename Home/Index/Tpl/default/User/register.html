@@ -10,35 +10,35 @@
                         <table>
                             <tr>
                                 <th width="80"><span style='color:red'>*</span>用户名</th>
-                                <td><input class="text w-31 " type="text" id='account' name='account'/><span style='color:red' id='account_msg'></span></td>
+                                <td><input class="text w-31 validate[required]" data-prompt-position="topRight:-30, 3"  type="text" id='account' name='account'/></td>
                             </tr>
                             <tr>
                                 <th><span style='color:red'>*</span>密码</th>
-                                <td><input class="text w-31 input-item" type="password" id='password' name='password' /><span style='color:red' id='password_msg'></span></td>
+                                <td><input class="text w-31 validate[required]" data-prompt-position="topRight:-30, 3"  type="password" id='password' name='password' /></td>
                             </tr>
                             <tr>
                                 <th><span style='color:red'>*</span>确认密码</th>
-                                <td><input class="text w-31 input-item" type="password" id='confirm-password' name='repassword' /><span style='color:red' id='repassword_msg'></span></td>
+                                <td><input class="text w-31 validate[required,equals[password]]" data-prompt-position="topRight:-30, 3"  type="password" id='confirm-password' name='repassword' /></td>
                             </tr>
                             <tr>
                                 <th><span style='color:red'>*</span>邮箱地址</th>
-                                <td><input class="text w-31 input-item" type="text" id='email'  name='email'/><span style='color:red' id='email_msg'></span></td>
+                                <td><input class="text w-31 validate[required,custom[email]]" data-prompt-position="topRight:-30, 3"  type="text" id='email'  name='email'/></td>
                             </tr>
                             <tr>
                                <th><span style='color:red'>*</span>你的身份</th>
-                                <td><label class="mr-2"><input checked class="radio" type="radio" name='type' value='1'/>普通业主</label>
-                                    <label><input class="radio" type="radio" name='type' value='2'/>设计师</label>
+                                <td><label class="mr-2"><input class="radio validate[required]" type="radio" name='type' value='1' data-prompt-position="topRight:268,28"/>普通业主</label>
+                                    <label><input class="radio validate[required]" type="radio" name='type' value='2' data-prompt-position="topRight:268,28"/>设计师</label>
                                 </td>
                             </tr>
                             <tr>
                                 <th><span style='color:red'>*</span>装修类别</th>
-                                <td><label class="mr-2"><input checked class="radio" type="radio" name='decoration_type' value='2'/>家装</label>
-                                    <label><input class="radio" type="radio" name='decoration_type' value='1' />工装</label>
+                                <td><label class="mr-2"><input class="radio validate[required]" type="radio" name='decoration_type' value='2' data-prompt-position="topRight:268,28"/>家装</label>
+                                    <label><input class="radio validate[required]"  type="radio" name='decoration_type' value='1' data-prompt-position="topRight:268,28"/>工装</label>
                                 </td>
                             </tr> 
                             <tr>
                                 <th></th>
-                                <td><input class="btn btn-submit-2" type="button" value="立即注册" id='reg_sub' /></td>
+                                <td><input class="btn btn-submit-2" type="submit" value="立即注册"/></td>
                             </tr>
                         </table>
                     </form>
@@ -46,9 +46,9 @@
                 <div class="login-other mt-3">
                 	<div class="t">第三方帐号快速注册</div>
                     <div class="cnt clearfix">
-                    	<a href="#"><i class="ico ico-43"></i>新浪微博</a>
-                        <a href="#"><i class="ico ico-44"></i>腾讯QQ</a>
-                        <a href="#"><i class="ico ico-45"></i>腾讯微博</a>
+                    	<a href="__GROUP__/User/sina_login"><i class="ico ico-43"></i>新浪微博</a>
+                        <a href="__GROUP__/User/qq_login"><i class="ico ico-44"></i>腾讯QQ</a>
+                        <a href="__GROUP__/User/qq_login"><i class="ico ico-45"></i>腾讯微博</a>
                     </div>
                 </div>
             </div>
@@ -79,33 +79,14 @@
 <!---->
 </div>
 <include file='Public:footer' />
-<script src="__STATICS__/js/yui.js"></script>
-<script src="__STATICS__/js/yui.validator.js"></script>
 <script type="text/javascript">
 $(function(){
-	var	Validator = YUI.Validator;
-	Validator.setup({
-		         "submit": "reg_sub",
-		         "callback": function(){
-		            alert('自定义处理方法');
-		         }
-		     }).add({
-	    "target": "account",
-		"rule": "username",
-		"fn": function(){
-			return true;
-		}
-	}).add({
-		"target": "password",
-		"rule": "password",
-		"plus": true
-	}).add({
-		"target": "confirm-password",
-		"rule": "password",
-        "to": "password" 
-	}).add({
-		"target": "email",
-		"rule": "email"
+	$("#reg_form").validationEngine('attach', {
+		onValidationComplete: function(form, status){
+			if(status){
+				actRequest(form.serialize(), '1001');
+			}
+		}  
 	});
 });	
 </script>

@@ -6,6 +6,7 @@ class BaseAction extends Action {
 	protected $_aBaseOptions;
 	protected $model;
 	protected $para;
+	protected $urlPara;
 	protected $oCollect;
 	
 	public function __construct() {
@@ -86,7 +87,7 @@ class BaseAction extends Action {
 			case '0206': A("My")->headerEdit(); break; #头像设置
 			case '0207': A("My")->infoEdit(); break; #信息设置
 			#User
-			case '1001': A('User')->register();  break; #注册
+			case '1001': A('User')->register2();  break; #注册
 			case '1002': A('User')->init(); break; #初始化个人信息
 			case '1003': A('User')->login();  break; #登录
 			case '1004': A('User')->fastLogin();  break; #快速登录（弹层）

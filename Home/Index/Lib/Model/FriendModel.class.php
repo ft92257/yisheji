@@ -6,7 +6,8 @@ class FriendModel extends BaseModel {
 	}
 
 	protected function _after_find(&$resultSet,$options) {
-		
+		$self =  D('User')->getById($resultSet['self']);
+		$other =  D('User')->getById($resultSet['other']);
 	}
 	
 	public function isFriend($other){

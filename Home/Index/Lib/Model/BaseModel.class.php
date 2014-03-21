@@ -4,6 +4,9 @@ class BaseModel extends Model {
 	public $oApp;
 	public $oCom;
 	public $oUser;
+	public $aWhere;
+	public $aOrder;
+	
 	public $oCollect;
 	public $_aBaseOptions;
 	private $para;
@@ -49,6 +52,7 @@ class BaseModel extends Model {
 				$this->order($order);
 			}
 			$data = $this->where($where)->select();
+			
 		}
 		return $data;
 	}

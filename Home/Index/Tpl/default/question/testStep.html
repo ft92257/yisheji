@@ -8,7 +8,10 @@
         	<div class="test-step clearfix">
             	<div class="l"><span>1. 检测</span>  >  2. 匹配</div>
                 <div class="r j_first" data-meta="{firstTag:'a'}">
-                	<a class="end">1</a><a class="current">2</a><a>3</a><a>4</a><a>5</a><a>6</a><a>7</a><a>8</a><a>9</a><a>10</a>
+                	<a class="end">1</a>
+                	<for start="2" end="11" name="i">
+                	<a <if condition="($hidden['number'] eq $i)" >class="current"</if>>{$i}</a>
+                	</for>
                 </div>
             </div>
             <div class="t-1 pt-2 pb-1-5">
@@ -16,10 +19,10 @@
             </div>
             <div class="test-option">
             	<foreach name="question['option']" item="vo">
-            	<a href="javascript:void(0)"  class='answer_option' data-attr="{$question['attr']}" data-val="{$vo['value']}"><img src="{$vo['focus_img']}" title="{$vo['answer']}" /></a>
+            	<a href="javascript:void(0)"  class='answer_option' data-attr="{$question['attr']}" data-val="{$vo['value']}"><img src="{$vo['focus_img']}" title="{$vo['answer']}" /></a>{$vo['answer']}
             	</foreach>
             </div>
-            <div class="test-next"><a href="test-match.html">跳过</a></div>
+            <div class="test-next"><a href="{$jump}">跳过</a></div>
         </div></div>
     </div>
 <!---->
@@ -34,12 +37,7 @@ $(function(){
 			'data' : 'id='+$(this).attr('data-attr')+'&val='+$(this).attr('data-val'),
 			'success' : function(r){
 				if(r){
-					if($("#hid_number").val() == $("#hid_max_number").val()){
-						window.location.href = GROUP+'/Question/testMatch';
-					}else{
-						var id = parseInt($("#hid_number").val())+1;
-						window.location.href = GROUP+'/Question/testStep/id/'+id+'/type/'+$("#hid_type").val();
-					}
+					window.location.href = "{$jump}";
 				}
 			}
 		});

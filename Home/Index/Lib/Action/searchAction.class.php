@@ -12,4 +12,6 @@ class SearchAction extends BaseAction{
 		$this->assign('casePage', $data['page']);
 		$this->display();
 	}
+	
+	
 }

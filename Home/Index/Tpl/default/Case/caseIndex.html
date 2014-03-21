@@ -5,9 +5,9 @@
                 <div class="curr"><span></span></div>
                 <div class="show">
                     <ul>
-                        <li <empty name="search['focus_orderby']"> selected="selected"  </empty> ><a>编辑推荐</a></li>
-                        <li val="recommend" <if condition="($search['focus_orderby'] eq 'recommend')"> selected="selected" </if>><a>热门推荐</a></li>
-                        <li val="collect_count" <if condition="($search['focus_orderby'] eq 'collect_count')"> selected="selected" </if>><a>人气案例</a></li>
+                        <li val="0"<empty name="search['focus_order']"> selected="selected"  </empty> ><a>编辑推荐</a></li>
+                        <li val="recommend" <if condition="($search['focus_order'] eq 'recommend')"> selected="selected" </if>><a>热门推荐</a></li>
+                        <li val="collect_count" <if condition="($search['focus_order'] eq 'collect_count')"> selected="selected" </if>><a>人气案例</a></li>
                     </ul>
                 </div>
             </div>
@@ -15,7 +15,7 @@
                 <div class="curr"><span></span></div>
                 <div class="show">
                     <ul>
-                        <li <empty name="search['focus_decoration_type']"> selected="selected"  </empty> ><a>全部分类</a></li>
+                        <li val="0" <empty name="search['focus_decoration_type']"> selected="selected"  </empty> ><a>全部分类</a></li>
                          <foreach name="{decoration_type}" item="vo" key="i">
                          <li val="{$i}" <if condition="($search['focus_decoration_type'] eq $i)"> selected="selected" </if> > <a>{$vo}</a></li>
                          </foreach>
@@ -30,7 +30,7 @@
         	<h3>设计案例</h3>
         </div>
         <div class="case-step clearfix">
-        	<div class="l">-&nbsp; 编辑推荐 &nbsp;-&nbsp; 全部分类</div>
+        	<div class="l">-&nbsp; <span id='s1'></span> &nbsp;-&nbsp; <span id="s2"></span></div>
            </div>
         <div class="w-76">
         <notempty name="caseFocus">
@@ -63,7 +63,7 @@
                     <div class="curr"><span></span></div>
                     <div class="show">
                         <ul>
-                        	<li <empty name="search['list_decoration_type']"> selected="selected"  </empty> ><a>按类型</a></li>
+                        	<li val = "0" <empty name="search['list_decoration_type']"> selected="selected"  </empty> ><a>按类型</a></li>
                             <foreach name="{decoration_type}" item="vo" key="i">
                             <li val="{$i}" <if condition="($search['list_decoration_type'] eq $i)"> selected="selected" </if> > <a>{$vo}</a></li>
                             </foreach>
@@ -74,30 +74,20 @@
                     <div class="curr"><span></span></div>
                     <div class="show">
                         <ul>
-                        	<li <empty name="search['list_style']"> selected="selected"  </empty> ><a>按风格</a></li>
+                        	<li val = "0" <empty name="search['list_style']"> selected="selected"  </empty> ><a>按风格</a></li>
                             <foreach name="{style}" item="vo" key="i">
                             <li val="{$i}" <if condition="($search['list_style'] eq $i)"> selected="selected" </if> ><a>{$vo}</a></li>
                             </foreach>
                         </ul>
                     </div>
                 </div>
-                <div class="slt j_select" name="select-name" wd="100" swd="100" data-meta="{fun:'caseListHot'}">
+                <div class="slt j_select" name="select-name" wd="100" swd="100" data-meta="{fun:'caseListOrder'}">
                     <div class="curr"><span></span></div>
                     <div class="show">
                         <ul>
-                            <li <empty name="search['list_collect_count']"> selected="selected"  </empty> ><a>按人气</a></li>
-	                        <li val="1" <if condition="($search['list_collect_count'] eq 1)"> selected="selected" </if> ><a>降序</a></li>
-	                        <li val="2" <if condition="($search['list_collect_count'] eq 2)"> selected="selected" </if> ><a>升序</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="slt j_select" name="select-name" wd="100" swd="100" data-meta="{fun:'caseListTime'}">
-                    <div class="curr"><span></span></div>
-                    <div class="show">
-                        <ul>
-                            <li <empty name="search['list_createtime']"> selected="selected"  </empty> ><a>按时间</a></li>
-	                        <li val="1" <if condition="($search['list_createtime'] eq 1)"> selected="selected" </if> ><a>降序</a></li>
-	                        <li val="2" <if condition="($search['list_createtime'] eq 2)"> selected="selected" </if> ><a>升序</a></li>
+                        	<li val = "0" <empty name="search['list_order']"> selected="selected"  </empty> ><a>排序</a></li>
+                            <li val="collect_count" <if condition="($search['list_order'] eq collect_count)"> selected="selected" </if> ><a>按人气</a></li>
+                            <li val="createtime" <if condition="($search['list_order'] eq createtime)"> selected="selected" </if> ><a>按时间</a></li>
                         </ul>
                     </div>
                 </div>
@@ -148,10 +138,12 @@
 </div>
 <include file="Public:footer" />
 <script>
-function caseFocusOrder(v){ window.location.href = v == undefined ? '__GROUP__/Case/caseIndex' : '__GROUP__/Case/caseIndex/focus_orderby/'+v; }
-function caseFocusSearch(v){ window.location.href = v == undefined ? '__GROUP__/Case/caseIndex' : '__GROUP__/Case/caseIndex/focus_decoration_type/'+v; }
-function caseListStyle(v){ window.location.href = v == undefined ? '__GROUP__/Case/caseIndex' : '__GROUP__/Case/caseIndex/list_style/' +v; }
-function caseListType(v){ window.location.href = v == undefined ? '__GROUP__/Case/caseIndex' : '__GROUP__/Case/caseIndex/list_decoration_type/' +v; }
-function caseListHot(v){ window.location.href = v == undefined ? '__GROUP__/Case/caseIndex' :  '__GROUP__/Case/caseIndex/list_collect_count/' +v; }
-function caseListTime(v){ window.location.href = v == undefined ? '__GROUP__/Case/caseIndex' :  '__GROUP__/Case/caseIndex/list_createtime/' +v; }
+$(function(){
+	$("#s1").html($(".show ul").eq(0).find("li[selected=selected]").find('a').html());
+	$("#s2").html($(".show ul").eq(1).find("li[selected=selected]").find('a').html());
+});
+function caseFocusOrder(v){ window.location.href = replace_urlpara(window.location.href, 'focus_order', v); }
+function caseFocusSearch(v){ window.location.href = replace_urlpara(window.location.href, 'focus_decoration_type', v); }
+function caseListType(v){ window.location.href = replace_urlpara(window.location.href, 'list_decoration_type', v); }
+function caseListOrder(v){ window.location.href = replace_urlpara(window.location.href, 'list_order', v); }
 </script>

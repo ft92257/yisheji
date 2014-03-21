@@ -9,9 +9,14 @@
 <link rel="stylesheet" type="text/css" href="__STATICS__/css/screen.css">
 <link rel="stylesheet" type="text/css" href="__STATICS__/css/main.css">
 <script src="__STATICS__/js/jquery-1.7.2.min.js"></script>
+
+<link rel="stylesheet" href="__STATICS__/jQueryForm/css/validationEngine.jquery.css" type="text/css"/>
+<link rel="stylesheet" href="__STATICS__/jQueryForm/css/template.css" type="text/css"/>
+<script src="__STATICS__/jQueryForm/js/languages/jquery.validationEngine-zh_CN.js" type="text/javascript" charset="utf-8"></script>
+<script src="__STATICS__/jQueryForm/js/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
+
 </head>
 <body>
-
 <div id="wrap">
 	<header><div class="extra">
     	<h1><a href="__GROUP__/Index/index">易设计</a></h1>
@@ -65,7 +70,6 @@
 	                        </div>
 	                    </div>
                 	</div>
-                	
                 </div>
                 <a href="__GROUP__/User/login">登陆</a>
                 <span class="line"></span>
@@ -77,5 +81,5 @@
     var URL = '__URL__';
     var GROUP = '__GROUP__';
     var STATICS = '__STATICS__';
-    
+    var REQUEST = window.location.search.substr(1);
     </script>
