@@ -1,0 +1,226 @@
+{include file="inc/header.html"} 
+<?php
+$this->_var['dpagecss'][] = $this->_var['TMPL_REAL']."/css/add_item.css";
+$this->_var['dpagejs'][] = $this->_var['TMPL_REAL']."/js/upload_deal_item_image.js";
+$this->_var['dcpagejs'][] = $this->_var['TMPL_REAL']."/js/upload_deal_item_image.js";
+$this->_var['dpagejs'][] = $this->_var['TMPL_REAL']."/js/edit_deal_item.js";
+$this->_var['dcpagejs'][] = $this->_var['TMPL_REAL']."/js/edit_deal_item.js";
+$this->_var['dpagejs'][] = $this->_var['TMPL_REAL']."/js/ajaxupload.js";
+?>
+<script type="text/javascript" src="{function name="parse_script" v="$dpagejs" c="$dcpagejs"}"></script>
+<link rel="stylesheet" type="text/css" href="{function name="parse_css" v="$dpagecss"}" />
+<div class="blank"></div>
+
+<div class="shadow_bg">
+	<div class="wrap white_box">
+
+			<div class="page_title">
+			{$lang.redound}{$lang.set} - {$deal_item.name} 
+			</div>
+			<div class="switch_nav">
+				<ul>
+					<li><a href="{url r="project#edit" p="id=$deal_item.id"}">{$lang.project}{$lang.intro}</a></li>		
+					<li class="current"><a href="{url r="project#add_item" p="id=$deal_item.id"}">{$lang.redound}{$lang.set}</a></li>					
+				</ul>
+			</div>
+					
+			<div class="blank"></div>
+			
+			<div class="add_item_tip">				
+				<h1>{$lang.tips}:</h1>
+				<ul>
+					<li>{$lang.InfoProject9}</li>
+					<li>{$lang.InfoProject10}</li>
+					<li>{$lang.InfoProject11}</li>
+				</ul>
+			</div>
+			
+			<div class="blank"></div>
+			<div class="link_dash"></div>
+			<div class="blank"></div>
+			
+			{if $deal_item_list}
+			<div class="full">
+			<table class="data-table">
+			<tr>
+				<th width="100">{$lang.price}</th>
+				<th width="400">{$lang.descrip}</th>
+				<th width="100">{$lang.quota}</th>
+				<th width="100">{$lang.post}</th>
+				<th width="">{$lang.operation}</th>
+			</tr>
+			{foreach from=$deal_item_list item=item}
+			<tr class="item_row">
+				<td>
+					{function name="format_price" v=$item.price}
+				</td>
+				<td>{$item.description}</td>
+				<td>{if $item.is_limit_user eq 0}{$lang.noLimit}{else} {if $item.limit_user eq 0}{$lang.noLimit}{else}{$item.limit_user}{$lang.people}{/if}{/if}</td>
+				<td>{if $item.is_delivery eq 0}{$lang.without}{$lang.post}{else}{$lang.freight} {if $item.delivery_fee eq 0}{$lang.noPostage}{else}{function name="format_price" v=$item.delivery_fee}{/if}{/if}</td>
+				<td>
+					<a href="{url r="project#edit_item" p="id=$item.id"}">{$lang.edit}</a> &nbsp; &nbsp;
+					<a href="{url r="project#del_item" p="id=$item.id"}" class="del_item">{$lang.delate}</a>
+				</td>
+			</tr>
+			{/foreach}
+			</table>
+			</div>
+			<div class="blank"></div>
+			{/if}
+			
+			<div style="width:300px; margin: 0 auto;" id="add_item_row">
+			<div class="add_item_btn f_l" id="add_item_btn">
+			<div class="ui-button gray" rel="gray">
+						<div>
+							<span>{$lang.add}{$lang.new}{$lang.redound}{$lang.project}</span>
+						</div>
+			</div>
+			<div class="blank"></div>
+			</div>
+			
+      <div class="add_item_btn f_l" id="submit_deal_btn" url="{url r="project#submit_deal" p="id=$deal_item.id"}" jump="{url r="account#project"}" style="margin-left:10px;">
+			<div class="ui-button green" rel="green">
+						<div>
+							<span>{$lang.submit}</span>
+						</div>
+			</div>
+			<div class="blank"></div>
+			</div>
+      </div>
+			
+			
+			<div id="add_item_form" style="display:none;">
+				<form class="ajax_form" id="item_form" action="{url r="project#save_deal_item"}" method="post">		
+				<div class="public_left">									
+						
+						<div class="form_row">
+							<div class="blank15"></div>
+							<label class="title w100">{$lang.suppot}{$lang.amount}:</label>
+							<input type="text" value="" class="textbox" name="price" style="width:100px;" />
+							<label class="tip_box">{$lang.yuan}</label>
+							<div class="blank15"></div>
+						</div>
+		
+						
+						<div class="form_row">
+							<label class="title w100">{$lang.redound}{$lang.content}:</label>
+							<textarea name="description" class="textarea"></textarea>
+							<div class="blank15"></div>
+						</div>
+						
+						<div class="form_row">
+							<label class="title w100">{$lang.introPic}:</label>
+							<div class="f_l">
+								<label class="fileupload" onclick="upd_file(this,'image_file');">{$lang.uploadimg}
+								<input type="file" class="filebox" name="image_file" id="image_file"/>						
+								</label>
+								<label class="fileuploading hide" >{$lang.uploading}</label>
+								
+							</div>
+							<div class="blank15"></div>
+						</div>
+						
+						<div class="form_row">
+							<label class="title w100">{$lang.orDistrib}:</label>
+							<div class="select_box">
+								<select name="is_delivery">
+									<option value="0">{$lang.no}</option>
+									<option value="1">{$lang.yes}</option>
+								</select>
+							</div>
+							<div class="blank15"></div>
+						</div>
+						
+						<div class="form_row" style="display:none;">
+	
+							<label class="title w100">{$lang.freight}:</label>
+							<input type="text" value="" class="textbox" name="delivery_fee" style="width:100px;" />
+							<label class="tip_box">{$lang.yuan}</label>
+							<div class="blank15"></div>
+						</div>
+						
+						<div class="form_row">
+							<label class="title w100">{$lang.orPurLimit}:</label>
+							<div class="select_box">
+								<select name="is_limit_user">
+									<option value="0">{$lang.no}</option>
+									<option value="1">{$lang.yes}</option>
+								</select>
+							</div>
+							<div class="blank15"></div>
+						</div>
+						
+						<div class="form_row" style="display:none;">
+
+							<label class="title w100">{$lang.purLimitNoP}:</label>
+							<input type="text" value="" class="textbox" name="limit_user" style="width:100px;" />
+							<label class="tip_box">{$lang.person}</label>
+							<div class="blank15"></div>
+						</div>
+						
+						<div class="form_row">
+					
+							<label class="title w100">{$lang.redound}{$lang.time}:</label>
+							<label class="tip_box" style="padding-left:0px; padding-right:10px;">{$lang.InfoProject13}</label>
+							<input type="text" value="" class="textbox" name="repaid_day" style="width:100px;" />
+							<label class="tip_box">{$lang.days}</label>
+							<div class="blank15"></div>
+						</div>
+				</div><!--end left-->
+				<div class="public_right">
+					<div class="deal_preview_title">{$lang.editPreview}</div>
+					<div class="blank"></div>
+					<div class="item_preview">
+						<div id="support_price_box">{$lang.suppot}￥<span id="support_price">0</span>{$lang.yuan}<div class="blank"></div></div>						
+						<div>0位{$lang.supporter}&nbsp;&nbsp;&nbsp;&nbsp;<span id="limit_user_box" style="display:none;">{$lang.quota}<span id="limit_user">0</span>{$lang.people},{$lang.rest}<span id="remain_user">0</span>位</span><div class="blank"></div></div>
+						<div id="repaid_content">{$lang.redound}{$lang.content}</div>	
+										
+						<div id="image_box_outer" style="display:none;">
+							<div class="blank"></div>	
+							<div id="image_box">				
+								
+							</div>	
+							<div class="blank1"></div>					
+						</div>
+						<div id="repaid_day_box">
+							<div class="blank"></div>
+							{$lang.InfoProject14}
+							
+						</div>
+						<div id="delivery_box">
+							<div class="blank"></div>
+							{$lang.freight} ￥<span id="delivery_fee_box">0</span>
+							
+						</div>
+						<div class="blank"></div>
+						<div class="ui-button_green">
+							<div>
+								<span>{$lang.suppot}￥<font id="support_price_btn">0</font>{$lang.yuan}</span>
+							</div>
+						</div>
+						<div class="blank1"></div>
+					</div>
+				</div><!--end right-->
+				<div class="blank"></div>
+				<div class="add_item_btn" style="width:250px;">
+				<div class="ui-button green" rel="green">
+							<div>
+								<span>{$lang.save}{$lang.new}{$lang.redound}{$lang.project}</span>
+							</div>
+				</div>
+				<a href="javascript:void(0);" id="cancel_add">{$lang.cancle}{$lang.add}</a>
+				</div>
+				<div class="blank"></div>
+				<input type="hidden" name="deal_id" value="{$deal_item.id}" />
+				<input type="hidden" name="ajax" value="1" />
+				</form>
+			</div>
+			<div class="blank"></div>
+	
+	</div>
+</div>
+
+<div class="blank"></div>
+{include file="inc/footer.html"} 
+
+

@@ -1,0 +1,196 @@
+{include file="inc/header.html"} 
+<script type="text/javascript">
+	var ROOT = '{$APP_ROOT}/keupload.php';
+</script>
+<?php
+$this->_var['dpagejs'][] = $this->_var['TMPL_REAL']."/js/deal_publish.js";
+$this->_var['dcpagejs'][] = $this->_var['TMPL_REAL']."/js/deal_publish.js";
+$this->_var['dpagejs'][] = $this->_var['TMPL_REAL']."/js/upload_deal_image.js";
+$this->_var['dcpagejs'][] = $this->_var['TMPL_REAL']."/js/upload_deal_image.js";
+$this->_var['dpagejs'][] = $this->_var['TMPL_REAL']."/js/ajaxupload.js";
+$this->_var['dpagejs'][] = $this->_var['TMPL_REAL']."/js/switch_city.js";
+$this->_var['dcpagejs'][] = $this->_var['TMPL_REAL']."/js/switch_city.js";
+$this->_var['dpagejs'][] = APP_ROOT_PATH."/system/region.js";
+$this->_var['dcpagejs'][] = APP_ROOT_PATH."/system/region.js";
+?>
+<script type="text/javascript" src="{function name="parse_script" v="$dpagejs" c="$dcpagejs"}"></script>
+<script type='text/javascript' src='{$APP_ROOT}/admin/public/kindeditor/kindeditor.js'></script>
+<div class="blank"></div>
+
+<div class="shadow_bg">
+	<div class="wrap white_box">
+
+			<div class="page_title">
+			发起{$lang.project}
+			</div>
+			<div class="switch_nav">
+				<ul>
+					<li class="current"><a href="#">{$lang.project}{$lang.intro}</a></li>					
+				</ul>
+			</div>
+			
+			<div class="public_left">
+				<form id="project_form" action="{url r="project#save"}" method="post">									
+				<div class="form_row">
+					<div class="blank15"></div>
+					<label class="title w100">{$lang.project}{$lang.classify}:</label>
+					<div class="f_l cate_list">
+						{foreach from=$cate_list item="cate_item" key=key}
+						<span rel="{$cate_item.id}">{$cate_item.name}</span>
+						{/foreach}
+						<input type="hidden" name="cate_id" value="" />
+					</div>
+					<div class="blank15"></div>
+				</div>
+				<div class="form_row">
+					<label class="title w100">{$lang.project}{$lang.name}:</label>
+					<input type="text" value="" class="textbox" name="name" />
+					<div class="blank1"></div>
+					<div class="form_tip">{$lang.InfoStatus5}</div>
+					<div class="blank15"></div>
+				</div>
+
+				<div class="form_row">
+					<label class="title w100">{$lang.start}{$lang.spot}</label>
+					<div class="select_box">
+					<select name="province">				
+					<option value="" rel="0">{$lang.InfoCheckProvince}</option>			
+					{foreach from=$region_lv2 item=region}
+						<option value="{$region.name}" rel="{$region.id}" {if $region.selected}selected="selected"{/if}>{$region.name}</option>
+					{/foreach}
+					</select>
+					
+					<select name="city">				
+					<option value="" rel="0">{$lang.InfoCheckCity}</option>
+					{foreach from=$region_lv3 item=region}
+						<option value="{$region.name}" rel="{$region.id}" {if $region.selected}selected="selected"{/if}>{$region.name}</option>
+					{/foreach}
+					</select>
+					</div>
+					<div class="blank15"></div>
+				</div>
+				<div class="form_row">
+					<label class="title w100">{$lang.shortIntro}:</label>
+					<textarea name="brief" class="textarea"></textarea>
+					<div class="blank1"></div>
+					<div class="form_tip">{$lang.InfoProject2}</div>
+					<div class="blank15"></div>
+				</div>
+				
+				<div class="form_row">
+					<label class="title w100">{$lang.coverPic}:</label>
+					<div class="f_l">
+						<label class="fileupload" onclick="upd_file(this,'image_file');">{$lang.uploadimg}
+						<input type="file" class="filebox" name="image_file" id="image_file"/>						
+						</label>
+						<label class="fileuploading hide" >{$lang.uploading}</label>
+						
+					</div>
+					<div class="blank15"></div>
+				</div>
+				<div class="form_row">
+					<label class="title w100">{$lang.videoUrl}:</label>
+					<input type="text" value="" class="textbox"  name="vedio" />
+					<div class="blank1"></div>
+					<div class="form_tip"{$lang.InfoProject3}</div>
+					<div class="blank15"></div>
+				</div>
+				<div class="form_row">
+					<label class="title w100">{$lang.moreIntro}:</label>
+					<div class="ke_form f_l">
+					{function name="show_ke_form" text_name="descript" width="470" height="300" ctn=""}		
+					</div>
+					<div class="blank15"></div>
+				</div>
+				<div class="form_row">
+					<label class="title w100">{$lang.needmoney}:</label>
+					<input type="text" value="" class="textbox" name="limit_price" style="width:100px;" /> <label class="tip_box">{$lang.yuan}</label>
+					<div class="blank15"></div>
+				</div>
+				<div class="form_row">
+					<label class="title w100">{$lang.onlineDays}:</label>
+					<input type="text" value="" class="textbox" name="deal_days" style="width:100px;" /> <label class="tip_box">{$lang.days}</label>
+					<div class="blank15"></div>
+				</div>
+				<div class="form_row">
+					<label class="title w100">{$lang.QandA}:<br /> <a href="javascript:void(0);" id="add_faq" class="linkgreen">{$lang.add}</a></label>
+					<div style="float:left; width:500px;" id="faq_list">
+						{include file="inc/deal_faq_item.html"}					
+					</div>
+					<div class="blank15"></div>
+				</div>
+				<div class="submit_btn_row">
+					<input type="hidden" name="image" value="{$deal_image.url}" />
+					<input type="hidden" name="savenext" value="0" />
+					<div class="ui-button gray" rel="gray" id="savenow">
+						<div>
+							<span>{$lang.save1}</span>
+						</div>
+					</div>
+					<div class="ui-button green" rel="green" id="savenext" style="margin-left:5px;">
+						<div>
+							<span>{$lang.nextStep}</span>
+						</div>
+					</div>
+					<input type="hidden" value="1" name="ajax" />
+					<input type="hidden" name="id" value="0" />
+					<div class="blank15"></div>
+				</div>
+				
+			</form>
+				
+			</div>
+			
+			<div class="public_right">
+				<div class="deal_preview_title">{$lang.editPreview}</div>
+				<div class="blank"></div>
+				<div class="deal_item_box">
+					<div class="deal_content_box" style="padding-left:0;padding-right:0;padding-top:0;overflow:hidden;border-radius:5px;">
+					<img id="image" src="{if $deal_image.thumb_url eq ''}{$TMPL}/images/empty_thumb.gif{else}{$deal_image.thumb_url}{/if}" width="226"  style="overflow:hidden"/>
+					<div class="blank"></div>
+					<a href="#" class="deal_title" id="deal_title">{$lang.project}的{$lang.name}</a>
+					<div class="blank"></div>
+					<div id="deal_brief" class="deal_brief">{$lang.shortIntro}</div>
+					</div>
+					<div class="deal_item_dash"></div>
+                     <div class="paiduan deal_content_box">
+        <ul>
+     
+         <li>
+            <a title="{$deal_item.name}" href="/index.php?ctl=deal&amp;act=update&amp;id=55">{$lang.feed}(<span>0</span></a>)
+          </li>
+          <li>
+            <a title="{$deal_item.name}" href="/index.php?ctl=deal&amp;act=support&amp;id=55">{$lang.zuser}(<span>0</span></a>)
+          </li>
+
+         
+        </ul>
+        <div cl   <span class="num_1">{$lang.success}</span>
+				</div>
+      </div>
+					<div class="deal_content_box">
+                    
+						<div class="ui-progress">
+							<span style="width:100%;"></span>
+						</div>
+						<div class="blank "></div>
+						<div class="div3"  style=" text-align:left"><span class="num">100%</span><span class="til">{$lang.reach}</span></div>
+						<div class="div3"  style=" text-align:center"><span class="num" ><font id="price">0</font>{$lang.yuan}</span><span class="til">{$lang.amount}</span></div>
+						<div class="div3" style=" text-align:right"><span class="num"><font id="deal_days">0</font>{$lang.days}</span><span class="til" style=" text-align:right">{$lang.endtime}</span></div>
+						<div class="blank1"></div>
+					</div>
+				</div>
+				
+				
+				
+			</div>
+			<div class="blank"></div>
+			
+	
+	</div>
+</div>
+
+<div class="blank"></div>
+{include file="inc/footer.html"} 
+
+

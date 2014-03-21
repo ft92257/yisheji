@@ -1,0 +1,11 @@
+<div class="page_title">
+		{if ACTION_NAME eq 'index'}{$lang.newing}{/if}
+		{if ACTION_NAME eq 'fav'}{$lang.myffeed}{/if}
+</div>
+<div class="blank"></div>		
+<div class="switch_nav">
+	<ul>
+		<li {if ACTION_NAME eq 'index'}class="current"{/if}><a href="{url r="news"}">{$lang.newing}</a></li>
+		<li {if ACTION_NAME eq 'fav'}class="current"{/if}><a href="{url r="news#fav"}">{$lang.myffeed}</a></li>						
+	</ul>		
+</div>

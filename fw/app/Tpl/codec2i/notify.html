@@ -1,0 +1,58 @@
+{include file="inc/header.html"} 
+<?php
+$this->_var['dpagejs'][] = $this->_var['TMPL_REAL']."/js/notify.js";
+$this->_var['dcpagejs'][] = $this->_var['TMPL_REAL']."/js/notify.js";
+$this->_var['dpagecss'][] = $this->_var['TMPL_REAL']."/css/notify.css";
+?>
+<link rel="stylesheet" type="text/css" href="{function name="parse_css" v="$dpagecss"}" />
+<script type="text/javascript" src="{function name="parse_script" v="$dpagejs" c="$dcpagejs"}"></script>
+
+<div class="blank"></div>
+
+<div class="shadow_bg">
+	<div class="wrap white_box"">
+		<div class="page_title">
+			{if $all eq 0}
+			{$lang.unread}{$lang.notice}
+			{else}
+			{$lang.all}{$lang.notice}
+			{/if}
+		</div>
+		<div class="switch_nav">
+			<ul>
+				<li {if $all eq 0}class="current"{/if}><a href="{url r="notify#index"}">{$lang.unread}{$lang.notice}</a></li>
+				<li {if $all eq 1}class="current"{/if}><a href="{url r="notify#index" p="all=1"}">{$lang.all}{$lang.notice}</a></li>				
+			</ul>
+		</div>
+		
+		<div class="full">
+		{if $notify_list}
+		{foreach from=$notify_list item=notify_item}
+		<div class="notify_item">
+			<a href="{$notify_item.url}" target="_blank" class="linkgreen">{$notify_item.log_info}</a> <span>{function name="pass_date" v=$notify_item.log_time}</span>
+			<div class="blank5"></div>
+			<div class="notify_op">
+				{if $notify_item.is_read eq 0}
+				<a href="{url r="notify#ignore" p="id=$notify_item.id"}" class="linkgreen">{$lang.ignore}</a> | 
+				{/if}
+				<a href="{url r="notify#delnotify" p="id=$notify_item.id"}" class="delnotify linkgreen">{$lang.delate}</a>
+			</div>
+			<div class="blank5"></div>
+		</div>
+		<div class="blank"></div>
+		{/foreach}
+	
+		<div class="blank"></div>
+		<a href="{url r="notify#ignoreall"}" class="linkgreen" style="font-size:14px;">{$lang.ignore}{$lang.all}{$lang.notice}</a>
+		
+		<div class="blank"></div>
+		<div class="pages">{$pages}</div>
+		{else}
+		<div class="empty_tip">{if $all eq 0}{$lang.noNew}{$lang.notice}{else}{$lang.no}{$lang.notice}{$lang.record}{/if}</div>
+		{/if}
+		</div>
+				
+	</div>
+</div>
+<div class="blank"></div>
+{include file="inc/footer.html"} 
