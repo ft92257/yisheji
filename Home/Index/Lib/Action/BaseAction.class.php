@@ -34,6 +34,7 @@ class BaseAction extends Action {
 			$_SESSION['collect'] = $collect;
 			$this->oCollect = $collect;
 		} else {
+			unset($_SESSION['user']);
 			$this->oUser = array();
 		}
 		$this->assign('hot_designer', D('User_designer')->getHotDesigner());

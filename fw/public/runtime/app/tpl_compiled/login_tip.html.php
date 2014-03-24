@@ -1,9 +1,7 @@
 <div class="login"><?php if ($this->_var['user_info']): ?>
 	<a class="a" href="#" id="mymessage"><?php echo $this->_var['lang']['pm']; ?></a>|
 	<a class="a" href="#" id="mycenter"><?php echo $this->_var['user_info']['user_name']; ?></a>|
-	<a class="a" href="<?php
-echo parse_url_tag("u:user#loginout|"."".""); 
-?>" title="<?php echo $this->_var['lang']['logout']; ?>" id="user_login_out"><?php echo $this->_var['lang']['logout']; ?></a>
+	<a class="a" href="../index.php?s=/User/logout" title="<?php echo $this->_var['lang']['logout']; ?>" ><?php echo $this->_var['lang']['logout']; ?></a>
 	<?php if ($this->_var['langs'] == 'eng'): ?>
 <a class="a" href="<?php echo $this->_var['url']; ?>" title="简体中文"  style="position:relative;top:1px">CN</a>
 <?php else: ?>
@@ -64,12 +62,8 @@ echo parse_url_tag("u:settings|".""."");
 	
 <?php else: ?>
  <div style="position:relative;">	
-	<a class="a" href="<?php
-echo parse_url_tag("u:user#register|"."".""); 
-?>" title="<?php echo $this->_var['lang']['register']; ?>" ><?php echo $this->_var['lang']['register']; ?></a>|
-	<a class="a" href="<?php
-echo parse_url_tag("u:user#login|"."".""); 
-?>" title="<?php echo $this->_var['lang']['login']; ?>" style="margin-right:100px;"><?php echo $this->_var['lang']['login']; ?></a>
+	<a class="a" href="../index.php?s=/User/register" title="<?php echo $this->_var['lang']['register']; ?>" ><?php echo $this->_var['lang']['register']; ?></a>|
+	<a class="a" href="../index.php?s=/User/login" title="<?php echo $this->_var['lang']['login']; ?>" style="margin-right:100px;"><?php echo $this->_var['lang']['login']; ?></a>
    
     <div class="otherlogin" style="margin-right:0px;">	
 	<?php echo $this->_var['api_login']; ?>

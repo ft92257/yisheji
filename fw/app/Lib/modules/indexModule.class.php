@@ -63,7 +63,12 @@ class indexModule extends BaseModule
 	}
 	
 
-	
-	
+	public function deals() {
+		//$limit = (int) $_GET['limit'];
+		$limit = 3;
+		$deal_list = $GLOBALS['db']->getAll("select * from ".DB_PREFIX."deal where is_effect = 1 and is_recommend = 1 and is_delete = 0 order by sort asc limit ".$limit);
+		die(json_encode($deal_list));
+	}
+
 }
 ?>
