@@ -30,6 +30,7 @@ $tmpl_path = get_domain().APP_ROOT."/app/Tpl/";
 $GLOBALS['tmpl']->assign("TMPL",$tmpl_path.app_conf("TEMPLATE"));
 $GLOBALS['tmpl']->assign("TMPL_REAL",APP_ROOT_PATH."app/Tpl/".app_conf("TEMPLATE")); 
 
+/*
 //载入会员登录信息
 //会员自动登录及输出
 $cookie_uname = es_cookie::get("email")?es_cookie::get("email"):'';
@@ -38,11 +39,28 @@ if($cookie_uname!=''&&$cookie_upwd!=''&&!es_session::get("user_info"))
 {
 	require_once APP_ROOT_PATH."system/libs/user.php";
 	auto_do_login_user($cookie_uname,$cookie_upwd);
-}			
-$user_info = es_session::get('user_info');
-$user_info = $GLOBALS['db']->getRow("select * from ".DB_PREFIX."user where id = ".intval($GLOBALS['user_info']['id'])." and is_effect = 1");
-es_session::set('user_info',$user_info);
-$GLOBALS['tmpl']->assign("user_info",$user_info);
+}*/
+			
+//$user_info = es_session::get('user_info');
+//$user_info = $GLOBALS['db']->getRow("select * from ".DB_PREFIX."user where id = ".intval($GLOBALS['user_info']['id'])." and is_effect = 1");
+//es_session::set('user_info',$user_info);
+//$GLOBALS['tmpl']->assign("user_info",$user_info);
+if (!empty($_SESSION['user'])) {
+	$user_info = $GLOBALS['db']->getRow("select * from ".DB_PREFIX."user where uid = ".intval($_SESSION['user']['id'])." and is_effect = 1");
+	if (empty($user_info)) {
+		$uid = $_SESSION['user']['id'];
+		$email = $_SESSION['user']['email'];
+		$user_name = $_SESSION['user']['account'];
+		
+		$GLOBALS['db']->query("insert into ".DB_PREFIX."user (uid,email,user_name,is_effect) values ('$uid','$eamil','$user_name', 1)");
+		$user_info = $GLOBALS['db']->getRow("select * from ".DB_PREFIX."user where uid = ".intval($_SESSION['user']['id'])." and is_effect = 1");
+	}
+	
+	es_session::set('user_info',$user_info);
+	$GLOBALS['tmpl']->assign("user_info",$user_info);
+} else {
+	es_session::delete("user_info");
+}
 
 define("DEAL_PAGE_SIZE",60);
 define("DEAL_STEP_SIZE",12);

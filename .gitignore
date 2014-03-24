@@ -4,4 +4,8 @@ Home/Company/Runtime
 Home/Index/Runtime
 Home/Admin/Runtime
 fw/db_config.php
+<<<<<<< HEAD
 fw/public/
+=======
+fw/public/db_config.php
+>>>>>>> 44cbabf272c6e9386a0edf6c04f21441dbbaa72c

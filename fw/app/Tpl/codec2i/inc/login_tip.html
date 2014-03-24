@@ -1,7 +1,7 @@
 <div class="login">{if $user_info}
 	<a class="a" href="#" id="mymessage">{$lang.pm}</a>|
 	<a class="a" href="#" id="mycenter">{$user_info.user_name}</a>|
-	<a class="a" href="{url r="user#loginout"}" title="{$lang.logout}" id="user_login_out">{$lang.logout}</a>
+	<a class="a" href="../index.php?s=/User/logout" title="{$lang.logout}" >{$lang.logout}</a>
 	{if $langs eq 'eng'}
 <a class="a" href="{$url}" title="简体中文"  style="position:relative;top:1px">CN</a>
 {else}
@@ -44,8 +44,8 @@
 	
 {else}
  <div style="position:relative;">	
-	<a class="a" href="{url r="user#register"}" title="{$lang.register}" >{$lang.register}</a>|
-	<a class="a" href="{url r="user#login"}" title="{$lang.login}" style="margin-right:100px;">{$lang.login}</a>
+	<a class="a" href="../index.php?s=/User/register" title="{$lang.register}" >{$lang.register}</a>|
+	<a class="a" href="../index.php?s=/User/login" title="{$lang.login}" style="margin-right:100px;">{$lang.login}</a>
    
     <div class="otherlogin" style="margin-right:0px;">	
 	{$api_login}
