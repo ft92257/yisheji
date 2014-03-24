@@ -26,33 +26,24 @@
           <div class="curr"><span></span></div>
           <div class="show">
             <ul>
-            	<li <empty name="search['list_type']"> selected="selected"  </empty> ><a>按类型</a></li>
+            	<li val="0" <empty name="search['list_type']"> selected="selected"  </empty> ><a>按类型</a></li>
                 <foreach name="activeType" item="vo" key="i">
                 <li val="{$i}" <if condition="($search['list_type'] eq $i)"> selected="selected" </if>><a>{$vo}</a></li>
                  </foreach>
               </ul>
           </div>
         </div>
-        <div class="slt j_select" name="select-name" wd="100" swd="100" data-meta="{fun:'activeListHot'}">
+        <div class="slt j_select" name="select-name" wd="100" swd="100" data-meta="{fun:'activeListOrder'}">
           <div class="curr"><span></span></div>
           <div class="show">
-            <ul>
-                 <li <empty name="search['list_collect_count']"> selected="selected"  </empty> ><a>按人气</a></li>
-                 <li val="1" <if condition="($search['list_collect_count'] eq 1)"> selected="selected" </if> ><a>降序</a></li>
-                 <li val="2" <if condition="($search['list_collect_count'] eq 2)"> selected="selected" </if> ><a>升序</a></li>
-             </ul>
-          </div>
+                        <ul>
+                        	<li val = "0" <empty name="search['list_order']"> selected="selected"  </empty> ><a>排序</a></li>
+                            <li val="collect_count" <if condition="($search['list_order'] eq collect_count)"> selected="selected" </if> ><a>按人气</a></li>
+                            <li val="createtime" <if condition="($search['list_order'] eq createtime)"> selected="selected" </if> ><a>按时间</a></li>
+                        </ul>
+                    </div>
         </div>
-        <div class="slt j_select" name="select-name" wd="100" swd="100" data-meta="{fun:'activeListTime'}">
-          <div class="curr"><span></span></div>
-          <div class="show">
-            <ul>
-                 <li <empty name="search['list_createtime']"> selected="selected"  </empty> ><a>按时间</a></li>
-                  <li val="1" <if condition="($search['list_createtime'] eq 1)"> selected="selected" </if> ><a>降序</a></li>
-                  <li val="2" <if condition="($search['list_createtime'] eq 2)"> selected="selected" </if> ><a>升序</a></li>
-      		</ul>
-          </div>
-        </div>
+        
       </div>
       <div class="list-activity pt-2">
         <ul class="j_hover">
@@ -62,7 +53,7 @@
             <div class="r"> <strong><a href="__GROUP__/Active/activeDetails/id/{$vo['id']}">{$vo.title}</a></strong>
               <p>{$vo.info}</p>
               <div class="bottom">
-                <p>主办方&nbsp; <a href="#">{$vo.organizer}</a></p>
+                <p>主办方&nbsp; {$vo.organizer}</p>
                 <p>地 &nbsp;&nbsp; 点&nbsp; {$vo.address}</p>
                 <p>时 &nbsp;&nbsp; 间&nbsp; {$vo.begin_date} - {$vo.end_date}</p>
               </div>
@@ -89,7 +80,6 @@
 </div>
 <include file="Public:footer" />
 <script>
-function activeListType(v){ window.location.href = v == undefined ? '__GROUP__/Active/activeIndex' : '__GROUP__/Active/activeIndex/list_type/'+v; }
-function activeListHot(v){ window.location.href = v == undefined ? '__GROUP__/Active/activeIndex' : '__GROUP__/Active/activeIndex/list_collect_count/'+v;}
-function activeListTime(v){ window.location.href = v == undefined ? '__GROUP__/Active/activeIndex' : '__GROUP__/Active/activeIndex/list_createtime/'+v;}
+function activeListType(v){ window.location.href = replace_urlpara(window.location.href, 'list_type', v); }
+function activeListOrder(v){ window.location.href = replace_urlpara(window.location.href, 'list_order', v); }
 </script>

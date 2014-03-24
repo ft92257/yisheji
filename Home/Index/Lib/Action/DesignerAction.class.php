@@ -87,25 +87,25 @@ class DesignerAction extends BaseAction{
 		$this->model = D('User_designer');
 		$where = array();
 		$order = false;
-		if($this->para['list_service_area']>0){
-			$where = array('service_area' => $this->para['list_service_area']);
+		if($this->para['list_service_area']){
+			$where = array_merge($where, array('service_area' => $this->para['list_service_area']));
 		}
-		if($this->para['list_style']>0){
-			$where = array('style' => $this->para['list_style']);
+		if($this->para['list_style']){
+			$where = array_merge($where, array('style' => $this->para['list_style']));
 		}
-		if($this->para['list_design_fee']>0){
-			$where = array('design_fee' => $this->para['list_design_fee']);
+		if($this->para['list_design_fee']){
+			$where = array_merge($where, array('design_fee' => $this->para['list_design_fee']));
 		}
-		if($this->para['list_decoration_type']>0){
-			$where = array('decoration_type' => $this->para['list_decoration_type']);
+		if($this->para['list_decoration_type']){
+			$where = array_merge($where, array('decoration_type' => $this->para['list_decoration_type']));
 		}
 		if($this->para['list_nationality']){
-			$where = array('nationality' => $this->para['list_nationality']);
+			$where = array_merge($where, array('nationality' => $this->para['list_nationality']));
 		}
-		if($this->para['list_reserve_count']>0){
-			$order = $this->para['list_reserve_count'] == 1 ? 'desc' : '';
-			$order =  "reserve_count {$order}";
+		if($this->para['list_order']){
+			$order =  "{$this->para['list_order']} desc";
 		}
+		
 		if($this->para['cid'] > 0){
 			$where['cid'] = $this->para['cid'];
 		}

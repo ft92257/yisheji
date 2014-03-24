@@ -45,19 +45,14 @@ class HouseAction extends BaseAction{
 		$this->model = D('House');
 		$where = array();
 		$order = false;
-		if($this->para['list_decoration_type']>0){
-			$where = array('decoration_type' => $this->para['list_decoration_type']);
+		if($this->para['list_decoration_type']){
+			$where = array_merge($where, array('decoration_type' => $this->para['list_decoration_type']));
 		}
-		if($this->para['list_style']>0){
-			$where = array('style' => $this->para['list_style']);
+		if($this->para['list_style']){
+			$where = array_merge($where, array('style' => $this->para['list_style']));
 		}
-		if($this->para['list_collect_count']>0){
-			$order = $this->para['list_collect_count'] == 1 ? 'desc' : '';
-			$order =  "collect_count {$order}";
-		}
-		if($this->para['list_createtime']>0){
-			$order = $this->para['list_createtime'] == 1 ? 'desc' : '';
-			$order =  "createtime {$order}";
+		if($this->para['list_order']){
+			$order =  "{$this->para['list_order']} desc";
 		}
 		if($this->para['cid'] > 0){
 			$where['cid'] = $this->para['cid'];
@@ -72,8 +67,8 @@ class HouseAction extends BaseAction{
 		if($this->para['focus_decoration_type']){
 			$where = array('decoration_type' => $this->para['focus_decoration_type']);
 		}
-		if($this->para['focus_orderby']){
-			$order = "{$this->para['focus_orderby']} desc ,";
+		if($this->para['focus_order']){
+			$order = "{$this->para['focus_order']} desc ,";
 		}
 		return $this->model->getList($where, "{$order} createtime desc", 6);
 	}

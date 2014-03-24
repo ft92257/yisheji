@@ -44,7 +44,7 @@
                     <div class="show">
                         <ul>
                         
-                        	<li  <empty name="search['list_service_area']"> selected="selected" </empty> ><a>按地区</a></li>
+                        	<li val="0" <empty name="search['list_service_area']"> selected="selected" </empty> ><a>按地区</a></li>
                             <foreach name="{service_area}" item="vo" key="i">
                             <li val="{$i}" <if condition="($search['list_service_area'] eq $i)"> selected="selected" </if> > <a>{$vo}</a></li>
                             </foreach>
@@ -55,7 +55,7 @@
                     <div class="curr"><span></span></div>
                     <div class="show">
                         <ul>
-                        	<li <empty name="search['list_style']"> selected="selected"  </empty> ><a>按风格</a></li>
+                        	<li val="0" <empty name="search['list_style']"> selected="selected"  </empty> ><a>按风格</a></li>
                             <foreach name="{style}" item="vo" key="i">
                             <li val="{$i}" <if condition="($search['list_style'] eq $i)"> selected="selected" </if> ><a>{$vo}</a></li>
                             </foreach>
@@ -66,7 +66,7 @@
                     <div class="curr"><span></span></div>
                     <div class="show">
                         <ul>
-                        	<li <empty name="search['list_design_fee']"> selected="selected"  </empty>><a>设计费</a></li>
+                        	<li val="0" <empty name="search['list_design_fee']"> selected="selected"  </empty>><a>设计费</a></li>
                             <foreach name="{design_fee}" item="vo" key="i">
                             <li val="{$i}" <if condition="($search['list_design_fee'] eq $i)"> selected="selected" </if>><a>{$vo}</a></li>
                             </foreach>
@@ -77,7 +77,7 @@
                     <div class="curr"><span></span></div>
                     <div class="show">
                         <ul>
-                        	<li <empty name="search['list_nationality']"> selected="selected"  </empty>><a>国籍</a></li>
+                        	<li val="0" <empty name="search['list_nationality']"> selected="selected"  </empty>><a>国籍</a></li>
                             <foreach name="{nationality}" item="vo" key="i">
                             <li val="{$vo}" <if condition="($search['list_nationality'] eq $vo)"> selected="selected" </if> ><a>{$vo}</a></li>
                             </foreach>
@@ -88,7 +88,7 @@
                     <div class="curr"><span></span></div>
                     <div class="show">
                         <ul>
-                        	<li <empty name="search['list_decoration_type']"> selected="selected"  </empty>><a>按专长</a></li>
+                        	<li val="0" <empty name="search['list_decoration_type']"> selected="selected"  </empty>><a>专长</a></li>
                             <foreach name="{decoration_type}" item="vo" key="i">
                             <li val="{$i}" <if condition="($search['list_decoration_type'] eq $i)"> selected="selected" </if>><a>{$vo}</a></li>
                             </foreach>
@@ -99,12 +99,11 @@
                     <div class="slt j_select" name="select-name" wd="100" swd="100" data-meta="{fun:'designerListHot'}">
                         <div class="curr"><span></span></div>
                         <div class="show">
-                             <ul>
-	                            <li <empty name="search['list_reserve_count']"> selected="selected"  </empty> ><a>按人气</a></li>
-	                            <li val="1" <if condition="($search['list_reserve_count'] eq 1)"> selected="selected" </if> ><a>降序</a></li>
-	                            <li val="2" <if condition="($search['list_reserve_count'] eq 2)"> selected="selected" </if> ><a>升序</a></li>
+	                        <ul>
+	                        	<li val = "0" <empty name="search['list_order']"> selected="selected"  </empty> ><a>排序</a></li>
+	                            <li val="collect_count" <if condition="($search['list_order'] eq collect_count)"> selected="selected" </if> ><a>按人气</a></li>
 	                        </ul>
-                        </div>
+	                    </div>
                     </div>
                 </div>
             </div>
@@ -144,10 +143,10 @@
 </div>
 <include file="Public:footer" />
 <script>
-function designerListArea(v){ window.location.href = v == undefined ? '__GROUP__/Designer/designerIndex' : '__GROUP__/Designer/designerIndex/list_service_area/'+v; }
-function designerListStyle(v){ window.location.href = v == undefined ? '__GROUP__/Designer/designerIndex' : '__GROUP__/Designer/designerIndex/list_style/'+v; }
-function designerListFee(v){ window.location.href = v == undefined ? '__GROUP__/Designer/designerIndex' : '__GROUP__/Designer/designerIndex/list_design_fee/'+v; }
-function designerListNationality(v){ window.location.href = v == undefined ? '__GROUP__/Designer/designerIndex' : '__GROUP__/Designer/designerIndex/list_nationality/'+v; }
-function designerListType(v){ window.location.href = v == undefined ? '__GROUP__/Designer/designerIndex' : '__GROUP__/Designer/designerIndex/list_decoration_type/'+v; }
-function designerListHot(v){ window.location.href = v == undefined ? '__GROUP__/Designer/designerIndex' : '__GROUP__/Designer/designerIndex/list_reserve_count/'+v; }
+function designerListArea(v){ window.location.href = replace_urlpara(window.location.href, 'list_service_area', v); }
+function designerListStyle(v){ window.location.href = replace_urlpara(window.location.href, 'list_style', v); }
+function designerListFee(v){ window.location.href = replace_urlpara(window.location.href, 'list_design_fee', v); }
+function designerListNationality(v){ window.location.href = replace_urlpara(window.location.href, 'list_nationality', v); }
+function designerListType(v){ window.location.href = replace_urlpara(window.location.href, 'list_decoration_type', v); }
+function designerListHot(v){ window.location.href = replace_urlpara(window.location.href, 'list_reserve_count', v); }
 </script>

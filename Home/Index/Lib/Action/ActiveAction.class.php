@@ -45,16 +45,11 @@ class ActiveAction extends BaseAction{
 		$this->model = D('Active');
 		$where = array();
 		$order = false;
-		if($this->para['list_type']>0){
+		if($this->para['list_type']){
 			$where = array('type' => $this->para['list_type']);
 		}
-		if($this->para['list_collect_count']>0){
-			$order = $this->para['list_collect_count'] == 1 ? 'desc' : '';
-			$order =  "collect_count {$order}";
-		}
-		if($this->para['list_createtime']>0){
-			$order = $this->para['list_createtime'] == 1 ? 'desc' : '';
-			$order =  "createtime {$order}";
+		if($this->para['list_order']){
+			$order =  "{$this->para['list_order']} desc";
 		}
 		if($this->para['cid'] > 0){
 			$where['cid'] = $this->para['cid'];
