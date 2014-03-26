@@ -1,10 +1,10 @@
-<?php exit;?>a:3:{s:8:"template";a:3:{i:0;s:56:"D:/AppServ/yisheji/fw/app/Tpl/codec2i/user_register.html";i:1;s:53:"D:/AppServ/yisheji/fw/app/Tpl/codec2i/inc/header.html";i:2;s:53:"D:/AppServ/yisheji/fw/app/Tpl/codec2i/inc/footer.html";}s:7:"expires";i:1395629636;s:8:"maketime";i:1395626036;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php exit;?>a:3:{s:8:"template";a:4:{i:0;s:53:"D:/AppServ/yisheji/fw/app/Tpl/codec2i/user_login.html";i:1;s:53:"D:/AppServ/yisheji/fw/app/Tpl/codec2i/inc/header.html";i:2;s:61:"D:/AppServ/yisheji/fw/app/Tpl/codec2i/inc/user_login_box.html";i:3;s:53:"D:/AppServ/yisheji/fw/app/Tpl/codec2i/inc/footer.html";}s:7:"expires";i:1395634366;s:8:"maketime";i:1395630766;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="Generator" />
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>会员注册 - codec2i - 众筹系统</title>
+<title>会员登录 - codec2i - 众筹系统</title>
 <meta name="keywords" content="SEO关键词" />
 <meta name="description" content="SEO描述" />
 <link rel="stylesheet" type="text/css" href="http://sh.yisheji.com/fw/public/runtime/statics/a1a25d0235e7c3cfed48c93d62ea6a9a.css" />
@@ -73,52 +73,37 @@ var ERROR_IMG = 'http://sh.yisheji.com/fw/app/Tpl/codec2i/images/image_err.gif';
 </div>
 	
  
-<link rel="stylesheet" type="text/css" href="http://sh.yisheji.com/fw/public/runtime/statics/a7174e9450a4b4ac9eda5fd33dfe62a9.css" />
-<script type="text/javascript" src="http://sh.yisheji.com/fw/public/runtime/statics/9cc4c9281310110dfd622930e9709c69.js"></script>
 <div class="blank"></div>
 <div class="shadow_bg">
 	<div class="wrap white_box">
-		<div class="signlogin_box">
+		<script type="text/javascript" src="http://sh.yisheji.com/fw/public/runtime/statics/d67c0f32d1050b539049bb8568dc3919.js"></script>
+<div class="signlogin_box">
 			<div class="left">
 				
 				<div class="link_dash f25">
-					注册</a>
-				</div>
-				<form id="user_register_form" name="user_register_form" action="/fw/index.php?ctl=user&act=do_register">
+					登录				</div>
+				<form id="user_login_form" name="user_login_form" action="/fw/index.php?ctl=user&act=do_login">
 					
 				<div class="form_row">
 					<div class="blank15"></div>
-					<label class="title"><font>*&nbsp;&nbsp;</font>电子邮箱:</label>
-					<input type="text" value="电子邮箱" class="textbox" name="email"/>
-					<div class="tip_box"></div>
+					<label class="title"><font>*&nbsp;&nbsp;</font>会员:</label>
+					<input type="text" value="邮箱或者用户名" class="textbox" name="email"/>
 					<div class="blank15"></div>
 				</div>
 				<div class="form_row">
-					<label class="title"><font>*&nbsp;&nbsp;</font>创建密码:</label>
+					<label class="title"><font>*&nbsp;&nbsp;</font>密码:</label>
 					<input type="password" name="user_pwd"  class="textbox" />
-					<div class="tip_box"></div>
+					<span class="getpassword"><a href="/fw/index.php?ctl=user&act=getpassword">忘记密码？</a></span>
 					<div class="blank15"></div>
 				</div>
-				<div class="form_row">
-					<label class="title"><font>*&nbsp;&nbsp;</font>确认密码:</label>
-					<input type="password" name="confirm_user_pwd"  class="textbox" />
-					<div class="tip_box"></div>
-					<div class="blank15"></div>
-				</div>
-				<div class="form_row">
-					<label class="title"><font>*&nbsp;&nbsp;</font>会员帐号:</label>
-					<input type="text" value="" class="textbox" name="user_name"/>
-					<div class="tip_box"></div>
+				<div class="form_row auto_login">
+					<input type="checkbox" value="1" name="auto_login" checked="checked" /> 
+					<label class="auto_login_tip">下次自动登陆</label>
 					<div class="blank15"></div>
 				</div>
 				
-				<div class="button_row term">
-					<span><a href="/fw/index.php?ctl=help&act=term">codec2i服务条款</a></span>
-					<div class="blank15"></div>
-				</div>
-				
-				<div class="button_row do_register">
-					<input type="button" name="submit_form" class="btn_do_register" id="btn_do_register" value="注册" />
+				<div class="button_row do_login">
+					<input type="button" value="登录" name="submit_form" class="btn_do_login" id="btn_do_login" />
 					<input type="hidden" value="1" name="ajax" />
 					<div class="blank15"></div>
 				</div>
@@ -128,15 +113,16 @@ var ERROR_IMG = 'http://sh.yisheji.com/fw/app/Tpl/codec2i/images/image_err.gif';
 			
 			<div class="right">
 				<div class="link_dash f16">
-					</div>		
+					快速用微博登陆				
+				</div>		
 				<div class="blank"></div>		
-				554fcae493e564ee0dc75bdf2ebf94caapi_login|YToxOntzOjQ6Im5hbWUiO3M6OToiYXBpX2xvZ2luIjt9554fcae493e564ee0dc75bdf2ebf94ca				<span class="no_account_tip">已有账号？</span>
-				<a href="/fw/index.php?ctl=user&act=login" class="btn_go_login" title="立即登录">立即登录</a>
+				554fcae493e564ee0dc75bdf2ebf94caapi_login|YToxOntzOjQ6Im5hbWUiO3M6OToiYXBpX2xvZ2luIjt9554fcae493e564ee0dc75bdf2ebf94ca				<span class="no_account_tip">没有账号?</span>
+				<a href="/fw/index.php?ctl=user&act=register" class="btn_go_register" title="注册">注册</a>
 				
 			</div>
 			<div class="blank"></div>
 			
-		</div>
+		</div> 
 	</div>
 </div>
 <div class="blank"></div>
@@ -190,3 +176,4 @@ var ERROR_IMG = 'http://sh.yisheji.com/fw/app/Tpl/codec2i/images/image_err.gif';
 <div id="backtop" class="backtop" style="display: block;"><a href="#top"></a></div>
 </div>
 </div>
+ 
