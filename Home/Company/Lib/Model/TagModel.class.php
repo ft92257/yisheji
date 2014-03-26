@@ -60,7 +60,7 @@ class TagModel extends BaseModel {
 				$type = 0;
 				break;
 		}
-		$data = $this->field('content')->where(array('type' => $type))->order('usecount DESC')->limit(10)->select();
+		$data = $this->field('content')->where(array('type' => $type))->order('usecount DESC')->limit(30)->select();
 		
 		//已贴的标签
 		$aTags = explode('|', $val);
