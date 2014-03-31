@@ -8,17 +8,17 @@
                         <table>
                             <tbody><tr>
                                 <th width="80">用户名</th>
-                                <td><input class="text w-32" name="account" id="txt_account" type="text"></td>
+                                <td><input class="text w-32 validate[required]" name="account" id="txt_account" type="text"></td>
                             </tr>
                             <tr>
                                 <th>密码</th>
-                                <td><input class="text w-32" name="password" id="txt_password" type="password"></td>
+                                <td><input class="text w-32 validate[required]" name="password" id="txt_password" type="password"></td>
                             </tr>
                             <tr>
                             	<th></th>
                                 <td><label class="mr-2"><input class="checkbox" type="checkbox">自动登录</label>
                                 	<label><input class="checkbox" checked="" type="checkbox">记住用户名</label>
-                                    <div class="r"><input class="btn btn-submit-1" id="fast_login_sub" value="登 录" type="button"></div>
+                                    <div class="r"><input class="btn btn-submit-1" id="fast_login_sub" value="登 录" type="submit"></div>
                                 </td>
                             </tr>
                             <tr>
@@ -31,9 +31,9 @@
                 <div class="login-other mt-1">
                 	<div class="t">第三方帐号快速登录</div>
                     <div class="cnt clearfix">
-                    	<a href="#"><i class="ico ico-43"></i>新浪微博</a>
-                        <a href="#"><i class="ico ico-44"></i>腾讯QQ</a>
-                        <a href="#"><i class="ico ico-45"></i>腾讯微博</a>
+                    	<a href="__GROUP__/User/sina_login"><i class="ico ico-43"></i>新浪微博</a>
+                        <a href="__GROUP__/User/qq_login"><i class="ico ico-44"></i>腾讯QQ</a>
+                        <a href="__GROUP__/User/qq_login"><i class="ico ico-45"></i>腾讯微博</a>
                     </div>
                 </div>
 </div>

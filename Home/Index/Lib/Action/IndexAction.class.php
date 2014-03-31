@@ -7,7 +7,7 @@ class IndexAction extends BaseAction{
 	
 	public function index(){
 		#企业LOGO推广
-		$this->assign('companyLogo', $this->getCompanyLogo());
+		//$this->assign('companyLogo', $this->getCompanyLogo());
 		
 		$this->model = D('Active');
 		$data = $this->model->getList(array('type' => 1), 'recommend desc,createtime desc', 3);
@@ -18,7 +18,6 @@ class IndexAction extends BaseAction{
 		$this->assign('activeType3', $data);
 		$this->assign('returnUrl', urlencode('Index/index'));
 		$this->display();
-
 	}
 	
 	public  function getFeeRange($i){
@@ -51,6 +50,12 @@ class IndexAction extends BaseAction{
 	}
 	
 	public function indexCase(){
+		$result = A('Api')->getZhouchouAll();
+		//print_r('<pre>');
+		//print_r($result['data']);exit;
+		$this->assign('now', time());
+		$this->assign('zhongchou', $result['data']);
+		
 		$this->model = D('Case');
 		$where = array('decoration_type' => 1);
 		if($this->para['style'] > 0){
@@ -70,6 +75,8 @@ class IndexAction extends BaseAction{
 			$where = array_merge($where, array('housetype' => $this->para['housetype']));
 		}
 		$data = $this->model->getList($where, 'recommend desc, createtime desc', 6);
+		
+		//var_dump($data);
 		$this->assign('caseType2', $data);
 		$this->assign('housetype', $this->_aBaseOptions['houseType']);
 		$this->assign('style', $this->_aBaseOptions['style']);

@@ -8,13 +8,16 @@
 <title>易设计</title>
 <link rel="stylesheet" type="text/css" href="__STATICS__/css/screen.css">
 <link rel="stylesheet" type="text/css" href="__STATICS__/css/main.css">
-<script src="__STATICS__/js/jquery-1.7.2.min.js"></script>
-
 <link rel="stylesheet" href="__STATICS__/jQueryForm/css/validationEngine.jquery.css" type="text/css"/>
 <link rel="stylesheet" href="__STATICS__/jQueryForm/css/template.css" type="text/css"/>
-<script src="__STATICS__/jQueryForm/js/languages/jquery.validationEngine-zh_CN.js" type="text/javascript" charset="utf-8"></script>
-<script src="__STATICS__/jQueryForm/js/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
 
+<script src="__STATICS__/js/jquery-1.7.2.min.js"></script>
+<!--[if lt IE 9]>
+<script src="__STATICS__/js/html5shiv.js"></script>
+<![endif]-->
+<!--[if IE 6]>
+<script src="__STATICS__/js/DD_belatedPNG.js"></script>
+<![endif]-->
 </head>
 <body>
 <div id="wrap">
@@ -22,10 +25,17 @@
     	<h1><a href="__GROUP__/Index/index">易设计</a></h1>
         <nav>
         	<ul>
-            	<li><a href="__GROUP__/Case/caseIndex"><i class="ico ico-1"></i><span>案例</span></a></li>
-                <li><a href="__GROUP__/Designer/designerIndex"><i class="ico ico-2"></i><span>设计师</span></a></li>
-                <li><a href="__GROUP__/Active/activeIndex"><i class="ico ico-3"></i><span>活动</span></a></li>
-                <li><a href="__GROUP__/House/houseIndex"><i class="ico ico-100"></i><span>样板房</span></a></li>
+            	<li><a href="http://sh.yisheji.com/fw"><i class="ico ico-1"></i><span>众筹</span></a></li>
+                <li>
+                	<a href="__GROUP__/Designer/designerIndex"><i class="ico ico-2"></i><span>找设计</span></a>
+                    <div class="cascade clearfix">
+                        <a href="__GROUP__/Case/caseIndex">案例</a>
+                        <a href="__GROUP__/Designer/designerIndex">设计师</a>
+                        <a href="__GROUP__/Active/activeIndex">活动</a>
+                        <a href="__GROUP__/House/houseIndex">样板房</a>
+                    </div>
+                </li>
+                <li><a href="#"><i class="ico ico-3"></i><span>服务</span></a></li>
             </ul>
         </nav>
         <div class="hotline-t">全国免费咨询热线<br /><strong>400823800</strong></div>
@@ -36,7 +46,7 @@
             	<input class="submit" type="submit" value="&nbsp;" />
             </form>
             </div>
-            <div class="login-info j_hover" data-meta="{hoverTag:'div.set'}">
+            <div class="login-info j_hover" >
             
             <if condition="($user['id'] gt 0)">
             	<span class="welcome-info">你好，<a href="__GROUP__/My/mySet/uid/{$user['id']}">{$user['account']}</a></span>
@@ -81,5 +91,18 @@
     var URL = '__URL__';
     var GROUP = '__GROUP__';
     var STATICS = '__STATICS__';
-    var REQUEST = window.location.search.substr(1);
+	$(function(){
+		$("header nav li").hover(function(){
+	    	$(this).find("div").show();
+	    },function(){
+	    	$(this).find("div").hide();
+	    });
+		
+		$(".set").hover(function(){
+			$('.show').show();
+	    },function(){
+	    	$('.show').hide();
+	    });
+	});
+    
     </script>

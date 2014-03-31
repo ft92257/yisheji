@@ -1,5 +1,5 @@
 <?php
-class PublicAction extends Action{
+class PublicAction extends BaseAction{
 	
 	public function __construct() {
 		parent::__construct();
@@ -22,6 +22,14 @@ class PublicAction extends Action{
 	}
 	
 	public function indexActive(){
+		$this->display();
+	}
+	
+	public function header_zc(){
+		$this->display();
+	}
+	
+	public function header(){
 		$this->display();
 	}
 

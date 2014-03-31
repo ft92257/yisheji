@@ -94,9 +94,9 @@
         <table>
         	<tr>
             	<td width="65">项目周期：</td>
-                <td width="395"><input class="text w-10 j_pickday" type="text" name='case_begin'  />
+                <td width="395"><input class="text w-10 j_pickday validate[required]" type="text" name='case_begin'  />
                 	<span class="line">—</span>
-                    <input class="text w-10 j_pickday" type="text" name='case_end'  />
+                    <input class="text w-10 j_pickday validate[required]" type="text" name='case_end'  />
                     <!--此处js位置可以根据需要随便调动，反正这只是为了突出位置和程序方便找到-->
 					<script src="__STATICS__/js/moment.min.js"></script>
                     <script src="__STATICS__/js/pikaday.min.js"></script>
@@ -120,7 +120,7 @@
             </tr>
             <tr>
             	<td>项目名称：</td>
-                <td><input name='case_name' class="text w-36 j_watermark" type="text" watermark="如54平家装设计北欧风格" /></td>
+                <td><input name='case_name' class="text w-36 j_watermark validate[required]" type="text" watermark="如54平家装设计北欧风格" /></td>
             </tr>
             <tr>
             	<td>设计水平：</td>
@@ -156,7 +156,7 @@
             </tr>
             <tr>
                 <td colspan="2">
-                	<input class="btn btn-submit-1" type="button" id='grade_sub' value="提交" />
+                	<input class="btn btn-submit-1" type="submit" id='grade_sub' value="提交" />
                 </td>
             </tr>
         </table>
@@ -177,18 +177,18 @@
         <table width="100%">
         	<tr>
             	<td width="76">真实姓名</td>
-                <td><input class="text w-20" type="text" name='name'/><span style='color:red' id='name'></td>
+                <td><input class="text w-20 validate[required]" type="text" name='name'/><span style='color:red' id='name'></td>
             </tr>
             <tr>
             	<td>联系方式</td>
-                <td><input class="text w-20 j_watermark" type="text" name='telephone'/><span style='color:red' id='telephone'></span></td>
+                <td><input class="text w-20 j_watermark validate[required,custom[phone]]" type="text" name='telephone'/><span style='color:red' id='telephone'></span></td>
             </tr>
             <tr>
             	<td></td>
                 <td>
                 <input type='hidden' name='uid' value="{$designerInfo['uid']}"/>
                 <input type='hidden' name='type' value="2"/>
-                <input class="btn btn-submit-1" type="button" id='reserve_sub' value="确认提交" /></td>
+                <input class="btn btn-submit-1" type="submit" id='reserve_sub' value="确认提交" /></td>
             </tr>
         </table>
     </div>
@@ -211,7 +211,7 @@
             </tr>
             <tr>
                 <td colspan="2">
-                	<input class="btn btn-submit-1" type="button" id='letter_sub' value="发送" />
+                	<input class="btn btn-submit-1" type="submit" id='letter_sub' value="发送" />
                 </td>
             </tr>
         </table> 
@@ -223,52 +223,34 @@
 <!-- end:sendLetterForm  -->
 <include file="Public:footer" />
 <script>
-
-var error = [];
 $(function(){
-	error['name'] = false;
-	error['telephone'] = false;
-	$("[name='name']").bind("blur",function(){
-		if(!checkTrueName($("[name='name']").val())){
-			error['name'] = false;
-			$("#name").html("请输入2-4位中文字符!");
-		}else{
-			$("#name").html("");
-			error['name'] = true;
-		}
-	})
-	$("[name='telephone']").bind("blur",function(){
-		if(!checkPhone($("[name='telephone']").val())){
-			error['telephone'] = false;
-			$("#telephone").html("手机号码格式不对!");
-		}else{
-			$("#telephone").html("");		
-			error['telephone'] = true;
-		}
-	})
-	$('#grade_sub').bind('click', function(){ if($("#j_scoreStar-1 [src$='star-on.png']").length<1) {alert('请对设计水平评分');return ;}
-		if($("#j_scoreStar-2 [src$='star-on.png']").length<1) {alert('请对服务态度评分');return ;}
-		//if($("[name='comment']").val().length)>100){alert('hhh');}
-		if($("[name='comment']").val().length>100){alert('评论字数必须在100以内');return;}
-		if($("[name='comment']").val().length<1){alert('请先评论');return;}
-		;isLogin(); actRequest($('#grade_form').serialize(), '1111'); });
-	$('#reserve_sub').bind('click', function(){ 	
-		for(i in error){
-		if(error[i] == false){
-			alert('请确认姓名联系方式填写无误');
-			return false;
-		}
-	};isLogin(); actRequest($('#reserve_form').serialize(), '9101'); });
-	$('#letter_sub').bind('click', function(){ 
-		if($("[name='content']").val().length>200){alert('私信内容必须在200以内');return;}
-		if($("[name='content']").val().length<1){alert('请先填写私信内容');return;}
-		isLogin();
-		if($('#txt_content').val().replace(/[ ]/g,"") == ''){
-			alert('你必须填写内容');
-			return false;
-		}
-		actRequest($('#letter_form').serialize(), '9103'); 
+	$("#grade_form").validationEngine('attach', {
+		onValidationComplete: function(form, status){
+			if(status){
+				isLogin(); 
+				actRequest(form.serialize(), '1111');
+			}
+		}  
 	});
+	
+	$("#reserve_form").validationEngine('attach', {
+		onValidationComplete: function(form, status){
+			if(status){
+				isLogin(); 
+				actRequest(form.serialize(), '9101');
+			}
+		}  
+	});
+	
+	$("#reserve_form").validationEngine('attach', {
+		onValidationComplete: function(form, status){
+			if(status){
+				isLogin(); 
+				actRequest(form.serialize(), '9103');
+			}
+		}  
+	});
+	
 	$('#add_friend').bind('click', function(){ isLogin(); actRequest("uid="+$(this).attr('data-uid'), '8101'); });
 	$('#del_friend').bind('click', function(){ isLogin(); actRequest("uid="+$(this).attr('data-uid'), '8102'); });
 });

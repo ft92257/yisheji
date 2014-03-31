@@ -3,24 +3,24 @@
     	<nav class="nav_foot">
         	<ul>
             	<li class="t">案例</li>
-                <li><a href="#">链接1</a></li>
-                <li><a href="#">链接2</a></li>
-                <li><a href="#">链接3</a></li>
-                <li><a href="#">链接4</a></li>
-                <li><a href="#">链接5</a></li>
-                <li><a href="#">链接6</a></li>
+                <li><a href="http://sh.yisheji.com/index.php?s=/Case/caseDetails/id/86">美国犹他州度假庄园</a></li>
+                <li><a href="http://sh.yisheji.com/index.php?s=/Case/caseDetails/id/14">巴西尖顶连体别墅</a></li>
+                <li><a href="http://sh.yisheji.com/index.php?s=/Case/caseDetails/id/15">Giovannoni的芬兰公寓设计</a></li>
+                <li><a href="http://sh.yisheji.com/index.php?s=/Case/caseDetails/id/17">结构多样的瑞典公寓设计</a></li>
+                <li><a href="http://sh.yisheji.com/index.php?s=/Case/caseDetails/id/10">Kfar Shemaryahu儿童中心</a></li>
+                <li><a href="http://sh.yisheji.com/index.php?s=/Case/caseDetails/id/25">世纪之光会所</a></li>
             </ul>
             <ul>
             	<li class="t">设计师</li>
-                <li><a href="#">链接1</a></li>
-                <li><a href="#">链接2</a></li>
+                <li><a href="http://sh.yisheji.com/index.php?s=/Designer/designerDetails/uid/75">赖建安</a></li>
+                <li><a href="http://sh.yisheji.com/index.php?s=/Designer/designerDetails/uid/78">郑永德</a></li>
             </ul>
             <ul>
             	<li class="t">活动</li>
-                <li><a href="#">链接1</a></li>
-                <li><a href="#">链接2</a></li>
-                <li><a href="#">链接3</a></li>
-                <li><a href="#">链接4</a></li>
+                <li><a href="http://sh.yisheji.com/index.php?s=/Active/activeDetails/id/5">样板房参观会</a></li>
+                <li><a href="http://sh.yisheji.com/index.php?s=/Active/activeDetails/id/6">犬的建筑展</a></li>
+                <li><a href="http://sh.yisheji.com/index.php?s=/Active/activeDetails/id/4">2014亚洲软装展</a></li>
+                <li><a href="http://sh.yisheji.com/index.php?s=/Active/activeDetails/id/7">瑞士景观设计展</a></li>
             </ul>
         </nav>
         <div class="nav_site">
@@ -38,27 +38,23 @@
     <div class="weixin"><img onDragstart="return false;" src="__STATICS__/images/weixin.jpg" alt="用微信扫描二维码关注" />关注微信享9折</div>
     <a class="click"></a>
 </div>
-<script src="__STATICS__/layer/layer.min.js"></script>
 <script src="__STATICS__/js/jquery.plugin.js"></script>
 <script src="__STATICS__/js/main.js"></script>
+<script src="__STATICS__/layer/layer.min.js"></script>
 <script src="__STATICS__/js/common.js"></script>
 <script src="__STATICS__/js/ajax.js"></script>
 <script src="__STATICS__/js/jquery.qqFace.js"></script> 
+<script src="__STATICS__/jQueryForm/js/languages/jquery.validationEngine-zh_CN.js" type="text/javascript" charset="utf-8"></script>
+<script src="__STATICS__/jQueryForm/js/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
 <script>
+
 $(function(){
-	$("#login_sub").bind('click', function(){
-		if($("#txt_account").val() == "" && $("#txt_password").val() == ""){
-			alert('用户名或密码不能为空');
-		}else{
-			actRequest($("#login_form").serialize(), '1003');
-		}
-	});
-	$("#fast_login_sub").bind('click', function(){
-		if($("#txt_account").val() == "" && $("#txt_password").val() == ""){
-			alert('用户名或密码不能为空');
-		}else{
-			actRequest($("#fast_login_form").serialize(), '1003');
-		}
+	$("#fast_login_sub").validationEngine('attach', {
+		onValidationComplete: function(form, status){
+			if(status){
+				actRequest(form.serialize(), '1003');
+			}
+		}  
 	});
 });
 /*

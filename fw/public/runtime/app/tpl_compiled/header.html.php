@@ -7,6 +7,25 @@
 <title><?php if ($this->_var['page_title'] != ''): ?><?php echo $this->_var['page_title']; ?> - <?php endif; ?><?php echo $this->_var['site_name']; ?> - <?php echo $this->_var['seo_title']; ?></title>
 <meta name="keywords" content="<?php echo $this->_var['seo_keyword']; ?>" />
 <meta name="description" content="<?php echo $this->_var['seo_description']; ?>" />
+<style>
+.showOne{width:1000px; margin:0 auto; position:relative}
+.showOne .cascade{position:absolute; left:230px; top:0px; width:80px; background-color:#282828; text-align:left}
+.showOne .cascade a{line-height:30px; height:30px; display:black; padding-left:25px}
+.showOne .cascade a:hover{border-left:#707070 5px solid; background-color:#444444; padding-left:20px}
+
+
+
+.show{position:absolute;right:115px; background-color:#4C4C4C; height:76px;padding:12px 40px 12px 20px; display:none;color:#9A9A9A; z-index:10;}
+.show a{color:#9A9A9A; display:block; width:50px; text-align:center; margin:0 10px 0 15px;}
+.show .right{margin-top:2px; width:48px;}
+.show .right a{display:inline; width:auto; height:auto; margin:0;}
+.show .right p{line-height:24px;}
+ .show a:hover{color:#fff; text-decoration:none;}
+.show .right a:hover{text-decoration:underline;color:#9a9a9a;}
+ .show a:hover .icon-10{background-position:-183px -265px;}
+.show a:hover .icon-11{background-position:-247px -265px;}
+ 
+</style>
 <?php
 $this->_var['pagecss'][] = $this->_var['TMPL_REAL']."/css/style.css";
 $this->_var['pagecss'][] = $this->_var['TMPL_REAL']."/css/weebox.css";
@@ -70,7 +89,52 @@ echo $k['name']($k['v'],$k['c']);
 
 </head>
 
-<body>	
+<body>
+  
+<iframe src="http://localhost/yisheji/index.php/Public/header_zc" style="width:100%; height:70px; margin-bottom:-5px; border:0 none; display:inline" scrolling="no" frameborder="0"></iframe> 
+
+<div class="showOne">
+	<div id="currentMenu"></div>
+	<div id="currentMenu2"></div>
+</div>
+
+
+<script>
+
+function showMenu(html,left,top) {
+	html = html.replace(/ href="(?!#)/g, ' href="../');
+	
+
+	$("#currentMenu").html(html);
+	$("#currentMenu").show();
+	$("#currentMenu").css("left",left);
+	$("#currentMenu").css("top",top);
+
+	$("#currentMenu").mouseover(function(){
+		  $(this).show();}).mouseout(function(){
+		$(this).hide();
+	});
+}
+
+function showMenu2(html,left,top) {
+	//alert(html);
+	html = html.replace(/ href="(?!#)/g, ' href="../');
+	
+	$("#currentMenu2").css("width",1);
+	$("#currentMenu2").css("height",1);
+	$("#currentMenu2").html(html);
+	$("#currentMenu2").show();
+	$("#currentMenu2").css("left",left);
+	$("#currentMenu2").css("top",top);
+
+	$("#currentMenu2").mouseover(function(){
+		  $(this).show();}).mouseout(function(){
+		$(this).hide();
+	});
+}
+</script>
+
+<!-- 
 <div class="header">
 	<div class="wrap">
 		<div class="logo f_l" style="margin-top:10px;">
@@ -106,34 +170,31 @@ echo $k['name']($k['v']);
 		<form action="<?php
 echo parse_url_tag("u:deals|"."".""); 
 ?>" method="post" id="header_search_form" class="f_l" style="margin-top:-2px;margin-left:15px;">
-			<div class="header_seach">	
+			<div class="header_seach">
+-->			
+	
 			<!--<a href="<?php
 echo parse_url_tag("u:project#add|"."".""); 
 ?>" class="add_project f_r"></a>			-->
 			<!--<input type="button" value="" class="seach_submit" id="header_submit" />-->
+			
+<!-- 	
 			<input type="text" id="header_keyword" name="k" value="<?php if ($this->_var['p_k'] != ''): ?><?php echo $this->_var['p_k']; ?><?php else: ?><?php echo $this->_var['lang']['search']; ?><?php endif; ?>" class="seach_text" style="font-size:14px">	
 			<input type="hidden" name="redirect" value="1" />				
 			</div>
 			</form>	
-	  </div>
-			
+	  </div>	
 		<div class="f_r">
-			<div class="login_tip">	
+			<div class="login_tip">
 				<?php 
 $k = array (
   'name' => 'login_tip',
 );
 echo $this->_hash . $k['name'] . '|' . base64_encode(serialize($k)) . $this->_hash;
 ?>
-			</div>			
-			
-	
-			
+			</div>				
 		</div>
-		
-		
-
-		
 	</div>		
 </div>
-	
+
+-->
