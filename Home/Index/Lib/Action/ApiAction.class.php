@@ -1,6 +1,6 @@
 <?php
 class ApiAction extends BaseAction{
-	private  $action = 'http://127.0.0.1/yisheji/fw/index.php/?ctl=api&act=index&l=6';
+	private  $action = 'http://sh.yisheji.com/fw/index.php/';
 	
 	public function __construct() {
 		parent::__construct();
@@ -26,7 +26,11 @@ class ApiAction extends BaseAction{
 	}
 	
 	public function getZhouchouAll(){
+		
 		$arr = array(
+				'ctl'=>'api',
+				'act'=>'index',
+				'l' =>6
 				);
 		$result = $this->post_curl($arr);
 		return json_decode($result, 1);
