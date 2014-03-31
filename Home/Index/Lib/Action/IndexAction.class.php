@@ -51,8 +51,8 @@ class IndexAction extends BaseAction{
 	
 	public function indexCase(){
 		$result = A('Api')->getZhouchouAll();
-		//print_r('<pre>');
-		//print_r($result['data']);exit;
+		print_r('<pre>');
+		print_r($result['data']);exit;
 		$this->assign('now', time());
 		$this->assign('zhongchou', $result['data']);
 		
