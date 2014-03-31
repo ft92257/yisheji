@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <?php exit;?>a:3:{s:8:"template";a:4:{i:0;s:54:"C:/wamp/www/yisheji/fw/app/Tpl/codec2i/user_login.html";i:1;s:54:"C:/wamp/www/yisheji/fw/app/Tpl/codec2i/inc/header.html";i:2;s:62:"C:/wamp/www/yisheji/fw/app/Tpl/codec2i/inc/user_login_box.html";i:3;s:54:"C:/wamp/www/yisheji/fw/app/Tpl/codec2i/inc/footer.html";}s:7:"expires";i:1395655765;s:8:"maketime";i:1395652165;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+=======
+<?php exit;?>a:3:{s:8:"template";a:4:{i:0;s:53:"D:/AppServ/yisheji/fw/app/Tpl/codec2i/user_login.html";i:1;s:53:"D:/AppServ/yisheji/fw/app/Tpl/codec2i/inc/header.html";i:2;s:61:"D:/AppServ/yisheji/fw/app/Tpl/codec2i/inc/user_login_box.html";i:3;s:53:"D:/AppServ/yisheji/fw/app/Tpl/codec2i/inc/footer.html";}s:7:"expires";i:1395634366;s:8:"maketime";i:1395630766;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+>>>>>>> 988ff25b0cc007ae964550c51e65af361842a5f7
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="Generator" />
@@ -7,6 +11,7 @@
 <title>会员登录 - codec2i - 众筹系统</title>
 <meta name="keywords" content="SEO关键词" />
 <meta name="description" content="SEO描述" />
+<<<<<<< HEAD
 <link rel="stylesheet" type="text/css" href="http://localhost/yisheji/fw/public/runtime/statics/2240b0a734cc5fe0d7e83a9102d4525e.css" />
 <script type="text/javascript">
 var APP_ROOT = '/yisheji/fw';
@@ -14,44 +19,80 @@ var LOADER_IMG = 'http://localhost/yisheji/fw/app/Tpl/codec2i/images/lazy_loadin
 var ERROR_IMG = 'http://localhost/yisheji/fw/app/Tpl/codec2i/images/image_err.gif';
 </script>
 <script type="text/javascript" src="http://localhost/yisheji/fw/public/runtime/statics/3f195738628750f5538d316db89a8944.js"></script>
+=======
+<link rel="stylesheet" type="text/css" href="http://sh.yisheji.com/fw/public/runtime/statics/a1a25d0235e7c3cfed48c93d62ea6a9a.css" />
+<script type="text/javascript">
+var APP_ROOT = '/fw';
+var LOADER_IMG = 'http://sh.yisheji.com/fw/app/Tpl/codec2i/images/lazy_loading.gif';
+var ERROR_IMG = 'http://sh.yisheji.com/fw/app/Tpl/codec2i/images/image_err.gif';
+</script>
+<script type="text/javascript" src="http://sh.yisheji.com/fw/public/runtime/statics/53189dc055b387119a58e212001a57db.js"></script>
+>>>>>>> 988ff25b0cc007ae964550c51e65af361842a5f7
 </head>
 <body>	
 <div class="header">
 	<div class="wrap">
 		<div class="logo f_l" style="margin-top:10px;">
+<<<<<<< HEAD
 			<a class="link" href="/yisheji/fw/">
 								<span style='display:inline-block; width:227px; height:36px; background:url(http://localhost/yisheji/fw/public/attachment/201312/28/21/52bed6c46ebb5.png) no-repeat; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=http://localhost/yisheji/fw/public/attachment/201312/28/21/52bed6c46ebb5.png, sizingMethod=scale);_background-image:none;'></span>			</a>
+=======
+			<a class="link" href="/fw/">
+								<span style='display:inline-block; width:227px; height:36px; background:url(http://sh.yisheji.com/fw/public/attachment/201312/28/21/52bed6c46ebb5.png) no-repeat; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=http://sh.yisheji.com/fw/public/attachment/201312/28/21/52bed6c46ebb5.png, sizingMethod=scale);_background-image:none;'></span>			</a>
+>>>>>>> 988ff25b0cc007ae964550c51e65af361842a5f7
 		</div>
 		
 	   <div  style="margin-top:13px;float:left">	
 		<ul class="main_nav f_l" >
                					    <li >
 						<span>
+<<<<<<< HEAD
 						<a href="/yisheji/fw/index.php"  target="" title="首页">首页</a>	
+=======
+						<a href="/fw/index.php"  target="" title="首页">首页</a>	
+>>>>>>> 988ff25b0cc007ae964550c51e65af361842a5f7
 						</span>		
 					    </li>
                       					    <li >
 						<span>
+<<<<<<< HEAD
 						<a href="/yisheji/fw/index.php?ctl=deals"  target="" title="浏览项目">浏览项目</a>	
+=======
+						<a href="/fw/index.php?ctl=deals"  target="" title="浏览项目">浏览项目</a>	
+>>>>>>> 988ff25b0cc007ae964550c51e65af361842a5f7
 						</span>		
 					    </li>
                       					    <li >
 						<span>
+<<<<<<< HEAD
 						<a href="/yisheji/fw/index.php?ctl=project&act=add"  target="" title="发起项目">发起项目</a>	
+=======
+						<a href="/fw/index.php?ctl=project&act=add"  target="" title="发起项目">发起项目</a>	
+>>>>>>> 988ff25b0cc007ae964550c51e65af361842a5f7
 						</span>		
 					    </li>
                       					    <li >
 						<span>
+<<<<<<< HEAD
 						<a href="/yisheji/fw/#"  target="" title="服务介绍">服务介绍</a>	
+=======
+						<a href="/fw/#"  target="" title="服务介绍">服务介绍</a>	
+>>>>>>> 988ff25b0cc007ae964550c51e65af361842a5f7
 						</span>		
 					    </li>
                       		
                 
 		</ul>
         	
+<<<<<<< HEAD
 		<form action="/yisheji/fw/index.php?ctl=deals" method="post" id="header_search_form" class="f_l" style="margin-top:-2px;margin-left:15px;">
 			<div class="header_seach">	
 			<!--<a href="/yisheji/fw/index.php?ctl=project&act=add" class="add_project f_r"></a>			-->
+=======
+		<form action="/fw/index.php?ctl=deals" method="post" id="header_search_form" class="f_l" style="margin-top:-2px;margin-left:15px;">
+			<div class="header_seach">	
+			<!--<a href="/fw/index.php?ctl=project&act=add" class="add_project f_r"></a>			-->
+>>>>>>> 988ff25b0cc007ae964550c51e65af361842a5f7
 			<!--<input type="button" value="" class="seach_submit" id="header_submit" />-->
 			<input type="text" id="header_keyword" name="k" value="搜索项目" class="seach_text" style="font-size:14px">	
 			<input type="hidden" name="redirect" value="1" />				
@@ -76,13 +117,21 @@ var ERROR_IMG = 'http://localhost/yisheji/fw/app/Tpl/codec2i/images/image_err.gi
 <div class="blank"></div>
 <div class="shadow_bg">
 	<div class="wrap white_box">
+<<<<<<< HEAD
 		<script type="text/javascript" src="http://localhost/yisheji/fw/public/runtime/statics/ab0f14255edef5bbc4d2d91f64ad321f.js"></script>
+=======
+		<script type="text/javascript" src="http://sh.yisheji.com/fw/public/runtime/statics/d67c0f32d1050b539049bb8568dc3919.js"></script>
+>>>>>>> 988ff25b0cc007ae964550c51e65af361842a5f7
 <div class="signlogin_box">
 			<div class="left">
 				
 				<div class="link_dash f25">
 					登录				</div>
+<<<<<<< HEAD
 				<form id="user_login_form" name="user_login_form" action="/yisheji/fw/index.php?ctl=user&act=do_login">
+=======
+				<form id="user_login_form" name="user_login_form" action="/fw/index.php?ctl=user&act=do_login">
+>>>>>>> 988ff25b0cc007ae964550c51e65af361842a5f7
 					
 				<div class="form_row">
 					<div class="blank15"></div>
@@ -93,7 +142,11 @@ var ERROR_IMG = 'http://localhost/yisheji/fw/app/Tpl/codec2i/images/image_err.gi
 				<div class="form_row">
 					<label class="title"><font>*&nbsp;&nbsp;</font>密码:</label>
 					<input type="password" name="user_pwd"  class="textbox" />
+<<<<<<< HEAD
 					<span class="getpassword"><a href="/yisheji/fw/index.php?ctl=user&act=getpassword">忘记密码？</a></span>
+=======
+					<span class="getpassword"><a href="/fw/index.php?ctl=user&act=getpassword">忘记密码？</a></span>
+>>>>>>> 988ff25b0cc007ae964550c51e65af361842a5f7
 					<div class="blank15"></div>
 				</div>
 				<div class="form_row auto_login">
@@ -117,7 +170,11 @@ var ERROR_IMG = 'http://localhost/yisheji/fw/app/Tpl/codec2i/images/image_err.gi
 				</div>		
 				<div class="blank"></div>		
 				554fcae493e564ee0dc75bdf2ebf94caapi_login|YToxOntzOjQ6Im5hbWUiO3M6OToiYXBpX2xvZ2luIjt9554fcae493e564ee0dc75bdf2ebf94ca				<span class="no_account_tip">没有账号?</span>
+<<<<<<< HEAD
 				<a href="/yisheji/fw/index.php?ctl=user&act=register" class="btn_go_register" title="注册">注册</a>
+=======
+				<a href="/fw/index.php?ctl=user&act=register" class="btn_go_register" title="注册">注册</a>
+>>>>>>> 988ff25b0cc007ae964550c51e65af361842a5f7
 				
 			</div>
 			<div class="blank"></div>
@@ -168,10 +225,17 @@ var ERROR_IMG = 'http://localhost/yisheji/fw/app/Tpl/codec2i/images/image_err.gi
 </ul>
 </div>
 <div class="footerwrap" style="width:960px;margin:0 auto;padding: 25px 0px;">
+<<<<<<< HEAD
 <a href="/yisheji/fw/index.php?ctl=help&act=term" title="服务条款">服务条款</a>
 <a href="/yisheji/fw/index.php?ctl=help&act=intro" title="服务介绍">服务介绍</a>
 <a href="/yisheji/fw/index.php?ctl=help&act=privacy" title="隐私策略">隐私策略</a>
 <a href="/yisheji/fw/index.php?ctl=help&act=about" title="关于我们">关于我们</a>
+=======
+<a href="/fw/index.php?ctl=help&act=term" title="服务条款">服务条款</a>
+<a href="/fw/index.php?ctl=help&act=intro" title="服务介绍">服务介绍</a>
+<a href="/fw/index.php?ctl=help&act=privacy" title="隐私策略">隐私策略</a>
+<a href="/fw/index.php?ctl=help&act=about" title="关于我们">关于我们</a>
+>>>>>>> 988ff25b0cc007ae964550c51e65af361842a5f7
 <p>codec2i</p>
 <div id="backtop" class="backtop" style="display: block;"><a href="#top"></a></div>
 </div>
