@@ -91,7 +91,7 @@ echo $k['name']($k['v'],$k['c']);
 
 <body>
   
-<iframe src="http://localhost/yisheji/index.php/Public/header_zc" style="width:100%; height:70px; margin-bottom:-5px; border:0 none; display:inline" scrolling="no" frameborder="0"></iframe> 
+<iframe src='../index.php/Public/header_zc' style="width:100%; height:70px; margin-bottom:-5px; border:0 none; display:inline" scrolling="no" frameborder="0"></iframe> 
 
 <div class="showOne">
 	<div id="currentMenu"></div>

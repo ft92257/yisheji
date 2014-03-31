@@ -1,9 +1,10 @@
 <?php
 class ApiAction extends BaseAction{
-	private  $action = 'http://sh.yisheji.com/fw/index.php/';
+	private  $action;
 	
 	public function __construct() {
 		parent::__construct();
+		$this->action = C('HOST_URL').'fw/index.php/';
 	}
 	
 	private  function post_curl($param){
