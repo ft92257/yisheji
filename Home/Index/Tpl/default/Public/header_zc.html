@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -25,7 +25,7 @@
     	<h1><a href="__GROUP__/Index/index">易设计</a></h1>
         <nav>
         	<ul>
-            	<li><a href="http://sh.yisheji.com/fw"><i class="ico ico-1"></i><span>众筹</span></a></li>
+            	<li><a href="sh.yisheji.com/fw"><i class="ico ico-1"></i><span>众筹</span></a></li>
                 <li>
                 	<a href="__GROUP__/Designer/designerIndex"><i class="ico ico-2"></i><span>找设计</span></a>
                     <div class="cascade clearfix">
@@ -92,17 +92,40 @@
     var GROUP = '__GROUP__';
     var STATICS = '__STATICS__';
 	$(function(){
+		$("a").attr("target", "_top");
 		$("header nav li").hover(function(){
-	    	$(this).find("div").show();
+			if (parent != window) {
+				var left=$(this).position().left;
+				var top=$(this).position().top + 3;
+				var obj = $(this).find("div");
+				var s = "<div class='"+obj[0].className+"'>" + obj.html() + "</div>";
+				
+				parent.showMenu(s ,left,top);
+			}else{
+				$(this).find("div").show();
+			} 
 	    },function(){
 	    	$(this).find("div").hide();
 	    });
 		
 		$(".set").hover(function(){
-			$('.show').show();
+			if (parent != window) {
+				var left=$(this).position().left;
+				var top=$(this).position().top + 3;
+				var obj = $('.show');
+				var s = "<div class='"+obj[0].className+"'>" + obj.html() + "</div>";
+				
+				parent.showMenu2(s ,left,top);
+			}else{
+				$('.show').show();
+			} 
 	    },function(){
 	    	$('.show').hide();
 	    });
 	});
     
     </script>
+        
+
+	 
+    

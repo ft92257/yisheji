@@ -1,4 +1,4 @@
-{include file="inc/header.html"} 
+{include file="inc/header.html"}
 <?php
 $this->_var['dpagecss'][] = $this->_var['TMPL_REAL']."/css/index.css";
 $this->_var['dpagejs'][] = $this->_var['TMPL_REAL']."/js/index.js";
@@ -9,18 +9,42 @@ $this->_var['dcpagejs'][] = $this->_var['TMPL_REAL']."/js/discover.js";
 <link rel="stylesheet" type="text/css" href="{function name="parse_css" v="$dpagecss"}" />
 <script type="text/javascript" src="{function name="parse_script" v="$dpagejs" c="$dcpagejs"}"></script>
 
-<div class="blank"></div>
+
+<div id="banbg" style="height:320px"></div>
+
+
 <div class="wrap">
-	
-	<div id="index_images" class="index_images">		
-			<div class="roll_box">
-			{foreach from=$image_list item=image_item}
-			<a href="{$image_item.url}" title="{$image_item.title}">
-				<img src="{function name="get_spec_image" v=$image_item.image w=960 h=280 g=1}"  alt="{$image_item.title}" />
-			</a>
-			{/foreach}
-			</div>			
+	<div class="Crowdfunding-Site">
+    	<nav class="clearfix  f_l" style="padding-top:30px">
+        	<ul>
+            	<li><a href="#" class="default">众筹首页</a></li>
+                <li><a href="#">众筹项目</a></li>
+                <li><a href="#">发起众筹项目</a></li>
+            </ul>
+        </nav>
+        <div class="f_r clearfix" style="padding-top:25px">
+        	<div class="f_r selt">
+            	<form>
+                	<input type="text" name="context" id="context" value="搜索项目" />
+                    <input type="button" name="conbut" id="conbut" />
+                </form>
+            </div>
+            <a href="#" class="service f_r" style="margin-right:30px">服务介绍</a>
+        </div>
+    </div>
+	<div class="clearfix">
+		<div id="index_images" class="index_images f_l" style=' margin-left:0; margin-top:10px; width:648px'>		
+				<div class="roll_box">
+				{foreach from=$image_list item=image_item}
+				<a href="{$image_item.url}" title="{$image_item.title}">
+					<img src="{function name="get_spec_image" v=$image_item.image w=960 h=280 g=1}"  alt="{$image_item.title}" />
+				</a>
+				{/foreach}
+				</div>			
+		</div>
+		<div class="f_r" style="margin-top:10px"><img src="http://localhost/yisheji/fw/app/Tpl/codec2i/images/rigm.png" width="300" height="280" /></div>
 	</div>
+	
     
 	<div class="f_l">
 		<ul class="tab-nav">

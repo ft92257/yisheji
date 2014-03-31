@@ -11,7 +11,6 @@ class BaseAction extends Action {
 	
 	public function __construct() {
 		parent::__construct();
-		
 		$this->_aBaseOptions = require CONF_PATH.'dataConfig.inc.php';
 		$this->para = $_REQUEST;
 		if(empty($_SESSION['app_index'])){

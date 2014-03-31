@@ -110,8 +110,8 @@ hr{display:none;}
 
 
 header{ height:70px; background:url(../images/head_bg_1.jpg) left top repeat-x; position:relative; z-index:2;}
-header h1{ height:46px; width:124px; padding-top:10px; float:left;}
-header h1 a{ display:block; height:45px; background:url(../images/logosdimg.png) left top no-repeat; text-indent:-10000px;}
+header h1{ height:46px; width:85px; padding-top:10px; float:left;}
+header h1 a{ display:block; height:46px; background:url(../images/logo_1.png) left top no-repeat; text-indent:-10000px;}
 header nav{ float:left;padding-left:30px;}
 header nav li{ float:left; height:70px; width:80px; text-align:center; position:relative;}
 header nav .current{ background:url(../images/head_bg_2.png) left top no-repeat;}
