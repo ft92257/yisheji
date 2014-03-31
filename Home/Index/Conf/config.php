@@ -30,6 +30,7 @@ $system = array(
 	'TMPL_PARSE_STRING' => array(
 		'__FILES__' => 'data/files',
 		'__STATICS__' => getHostUrl().'statics/index',
+		'__HOST__' => getHostUrl()
 	),
 		
 	'OUTPUT_ENCODE' => false,
