@@ -111,7 +111,7 @@ public function index()
 		foreach($deal_list as $k=>$v)
 		{
 			$deal_list[$k]['support_amount'] = number_price_format($deal_list[$k]['support_amount']);
-			$deal_list[$k]['image'] = 'http://localhost/yisheji/fw'.substr($deal_list[$k]['image'], 1);
+			$deal_list[$k]['image'] = APP_ROOT.substr($deal_list[$k]['image'], 1);
 			$deal_list[$k]['remain_days'] = floor(($v['end_time'] - NOW_TIME)/(24*3600));
 			$deal_list[$k]['percent'] = round($v['support_amount']/$v['limit_price']*100);
 			$deal_list[$k]['limit_price']=number_format($v['limit_price']);
