@@ -8,18 +8,16 @@ $this->_var['dcpagejs'][] = $this->_var['TMPL_REAL']."/js/discover.js";
 ?>
 <link rel="stylesheet" type="text/css" href="{function name="parse_css" v="$dpagecss"}" />
 <script type="text/javascript" src="{function name="parse_script" v="$dpagejs" c="$dcpagejs"}"></script>
-
-
-<div id="banbg" style="height:320px"></div>
+<div id="banbg" style="height:320px;"></div>
 
 
 <div class="wrap">
 	<div class="Crowdfunding-Site">
     	<nav class="clearfix  f_l" style="padding-top:30px">
         	<ul>
-            	<li><a href="#" class="default">众筹首页</a></li>
-                <li><a href="#">众筹项目</a></li>
-                <li><a href="#">发起众筹项目</a></li>
+            	<li><a href="{$APP_ROOT}" class="default">众筹首页</a></li>
+                <li><a href="{$APP_ROOT}/index.php?ctl=deals&act=index">众筹项目</a></li>
+                <li><a href="{$APP_ROOT}/index.php?ctl=project&act=add">发起众筹项目</a></li>
             </ul>
         </nav>
         <div class="f_r clearfix" style="padding-top:25px">
@@ -42,7 +40,7 @@ $this->_var['dcpagejs'][] = $this->_var['TMPL_REAL']."/js/discover.js";
 				{/foreach}
 				</div>			
 		</div>
-		<div class="f_r" style="margin-top:10px"><img src="_APP_/images/rigm.png" width="300" height="280" /></div>
+		<div class="f_r" style="margin-top:10px"><img src='{$TMPL}/images/guanggaowei.jpg' width="300" height="280" /></div>
 	</div>
 	
     

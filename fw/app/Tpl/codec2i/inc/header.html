@@ -4,27 +4,33 @@
 <meta name="Generator" />
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>{if $page_title neq ''}{$page_title} - {/if}{$site_name} - {$seo_title}</title>
+<title>易设计</title>
 <meta name="keywords" content="{$seo_keyword}" />
 <meta name="description" content="{$seo_description}" />
 <style>
-.showOne{ width:1000px; margin:0 auto; position:relative}
-.showOne .cascade{ position:absolute; left:230px; top:0px; width:80px; background-color:#282828; text-align:left}
+.showOne{ width:1000px; margin:0 auto; position:relative; z-index:99}
+.showOne .cascade{ position:absolute; left:230px; top:5px; width:80px; background-color:#282828; text-align:left}
 .showOne .cascade a{ line-height:30px; height:30px; display:black; padding-left:25px}
 .showOne .cascade a:hover{ border-left:#707070 5px solid; background-color:#444444; padding-left:20px}
 
 
 
-.show{ position:absolute;right:115px; background-color:#4C4C4C; height:76px;padding:12px 40px 12px 20px; display:none;color:#9A9A9A; z-index:10;}
-.show a{color:#9A9A9A; display:block; width:50px; text-align:center; margin:0 10px 0 15px;}
-.show .right{ margin-top:2px; width:48px;}
+
+
+.icon{background:url({$TMPL}/images/icon.png) left top no-repeat; display:inline-block; float:left;}
+.icon-10{width:50px; height:50px; background-position:-60px -265px;}
+.icon-11{width:48px; height:50px; background-position:-124px -265px;}
+.show{ position:absolute;right:115px; top:5px; background-color:#4C4C4C; height:76px;padding:12px 40px 12px 20px; display:none;color:#9A9A9A; z-index:10;}
+.line{ background-color:#3A3A3A;border-left:1px solid #626262; height:60px; margin-top:6px; float:left; width:1px}
+.show a{color:#9A9A9A; display:block; width:50px; text-align:center; margin:0 10px 0 15px; float:left;}
+.show .right{ margin-top:2px; width:48px; padding:0 0 0 10px}
 .show .right a{ display:inline; width:auto; height:auto; margin:0;}
 .show .right p{ line-height:24px;}
  .show a:hover{color:#fff; text-decoration:none;}
 .show .right a:hover{ text-decoration:underline;color:#9a9a9a;}
  .show a:hover .icon-10{ background-position:-183px -265px;}
 .show a:hover .icon-11{ background-position:-247px -265px;}
- 
+.show{ display:block;}
 </style>
 <?php
 $this->_var['pagecss'][] = $this->_var['TMPL_REAL']."/css/style.css";
@@ -66,15 +72,11 @@ var send_span = {function name="app_conf" v="SEND_SPAN"}000;
 <body>
   
 <iframe src='../index.php/Public/header_zc' style="width:100%; height:70px; margin-bottom:-5px; border:0 none; display:inline" scrolling="no" frameborder="0"></iframe> 
-
 <div class="showOne">
 	<div id="currentMenu"></div>
 	<div id="currentMenu2"></div>
 </div>
-
-
 <script>
-
 function showMenu(html,left,top) {
 	html = html.replace(/ href="(?!#)/g, ' href="../');
 	

@@ -32,5 +32,9 @@ class PublicAction extends BaseAction{
 	public function header(){
 		$this->display();
 	}
+	
+	public function footer_zc(){
+		$this->display();
+	}
 
 }

@@ -82,10 +82,9 @@
     <!---->
     <div id="pbody">
     
-    	<iframe src="__GROUP__/Index/indexCase" style="width:100%; height:1280px; margin-bottom:-5px; border:0 none; display:inline" scrolling="no" frameborder="0"></iframe>
+    	<iframe src="__GROUP__/Index/indexCase" style="width:100%; height:1180px; margin-bottom:-5px; border:0 none; display:inline" scrolling="no" frameborder="0"></iframe>
         <iframe src="__GROUP__/Index/indexDesigner" style="width:100%; height:438px; margin-bottom:-5px; border:0 none" scrolling="no" frameborder="0"></iframe>
         <iframe src="__GROUP__/Index/indexHouse" style="width:100%; height:438px; margin-bottom:-5px; border:0 none" scrolling="no" frameborder="0"></iframe>
-        
         <div class="row-1"><div class="extra pt-3 pb-6">
         	<div class="t-1 pb-3">
             	<h3>活动</h3>
@@ -191,9 +190,16 @@
             </div>
         </div></div>
     </div>
-
+<!---->
 </div>
 <include file="Public:footer" />
+<script>
+$("header nav li").hover(function(){
+	$(this).find("div").show();
+},function(){
+	$(this).find("div").hide();
+});
+</script>
 <script>
 $(".fade-in li").each(function(){
 	var smalla=$(this).find(".small-img a")

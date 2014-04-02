@@ -266,7 +266,7 @@ header .login-info .hover .show,header .login-info .set:hover .show{ display:blo
 .active-index .pic .thumb a{ margin-bottom:10px; display:block; height:80px; cursor:pointer;border:2px solid #fff; width:80px;overflow:hidden;}
 .active-index .pic .thumb .current{border-color:#2A6AC3;}
 .active-index .pic .bigpic{ width:600px; float:right;height:366px;background:#F7F6F3 url(../images/loading.gif) center no-repeat;overflow:hidden;}
-.active-index .pic .bigpic img{ height:366px; min-width:600px;_width:600px}
+.active-index .pic .bigpic img{ height:366px; min-width:600px;_width:600px;display:none}
 .active-index .info{ float:right; width:229px;border:1px solid #F0F0F0;border-left:none; background-color:#F7F6F3; height:342px; padding:22px 35px 0 40px;}
 .active-index .info strong{ display:block; font-size:14px;color:#333; padding-bottom:15px;}
 .active-index .info p{ line-height:20px;padding:5px 0;}
