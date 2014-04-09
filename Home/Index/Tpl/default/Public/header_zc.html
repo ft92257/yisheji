@@ -3,16 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="render" content="webkit">
-<meta http-equiv="X-UA-Compatible" content="edge,chrome=1" />
+<meta http-equiv="X-UA-Compatible" content="edge,chrome=1, IE=9, IE=10" />
 <meta name="baidu-site-verification" content="8m0rQHsroO" />
 <title>易设计</title>
 <link rel="stylesheet" type="text/css" href="__STATICS__/css/screen.css">
 <link rel="stylesheet" type="text/css" href="__STATICS__/css/main.css">
-<link rel="stylesheet" href="__STATICS__/jQueryForm/css/validationEngine.jquery.css" type="text/css"/>
-<link rel="stylesheet" href="__STATICS__/jQueryForm/css/template.css" type="text/css"/>
 
 <script src="__STATICS__/js/jquery-1.7.2.min.js"></script>
-<!--[if lt IE 9]>
+<!--[if IE]>
 <script src="__STATICS__/js/html5shiv.js"></script>
 <![endif]-->
 <!--[if IE 6]>
@@ -48,6 +46,7 @@
             </div>
             <div class="login-info j_hover" >
             
+            
             <if condition="($user['id'] gt 0)">
             	<span class="welcome-info">你好，<a href="__GROUP__/My/mySet/uid/{$user['id']}">{$user['account']}</a></span>
             	<a class="message-link" title="私信" href="__GROUP__/My/myLetterList/uid/{$user['id']}"><i class="ico ico-4"></i>{$letterCount}</a>
@@ -64,26 +63,26 @@
                 	<div class="showBox">
 	                	<div class="show">
 	                	<if condition="($user['type'] gt 1)">
-	                    	<a href="http://sh.yisheji.com/company.php?s=/Case/add"><i class="icon icon-10"></i><span>上传案例</span></a>
-	                        <a href="http://sh.yisheji.com/company.php?s=/Active/add"><i class="icon icon-11"></i><span>发布活动</span></a>
+	                    	<a href="__ROOT__/company.php?s=/Case/add"><i class="icon icon-10"></i><span>上传案例</span></a>
+	                        <a href="__ROOT__/company.php?s=/Active/add"><i class="icon icon-11"></i><span>发布活动</span></a>
 	                        <span class="line"></span>
 	                     </if>
 	                        <div class="right">
 	                        <if condition="($user['id'] gt 0)">
 	                        	<p><a href="#">我的主页</a></p>
-	                            <p><a href="__GROUP__/My/mySet/uid/{$user['id']}">个人设置</a></p>
-	                            <p><a href="__GROUP__/User/logout">退出</a></p>
+	                            <p><a href="../__GROUP__/My/mySet/uid/{$user['id']}">个人设置</a></p>
+	                            <p><a href="../__GROUP__/User/logout/ref/&ref={$ref}">退出</a></p>
 	                         <else/>
-	                            <p><a href="__GROUP__/User/login">我的主页</a></p>
-	                            <p><a href="__GROUP__/User/login">个人设置</a></p>
+	                            <p><a href="../__GROUP__/User/login">我的主页</a></p>
+	                            <p><a href="../__GROUP__/User/login">个人设置</a></p>
 	                         </if>
 	                        </div>
 	                    </div>
                 	</div>
                 </div>
-                <a href="__GROUP__/User/login">登陆</a>
+                <a href="__GROUP__/User/login/&ref={$ref}">登陆</a>
                 <span class="line"></span>
-                <a href="__GROUP__/User/register">注册</a>
+                <a href="__GROUP__/User/register/&ref={$ref}">注册</a>
             </div>
         </div>
     </div></header>

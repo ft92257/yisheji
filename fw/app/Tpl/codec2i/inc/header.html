@@ -7,15 +7,11 @@
 <title>易设计</title>
 <meta name="keywords" content="{$seo_keyword}" />
 <meta name="description" content="{$seo_description}" />
-<style>
-.showOne{ width:1000px; margin:0 auto; position:relative; z-index:99}
-.showOne .cascade{ position:absolute; left:230px; top:5px; width:80px; background-color:#282828; text-align:left}
+<style type="text/css">
+.showOne{ width:1000px; margin:0 auto; position:relative; z-index:1}
+.showOne .cascade{ position:absolute; left:230px; top:5px; width:80px; background-color:#282828; text-align:left; z-index:1;}
 .showOne .cascade a{ line-height:30px; height:30px; display:black; padding-left:25px}
 .showOne .cascade a:hover{ border-left:#707070 5px solid; background-color:#444444; padding-left:20px}
-
-
-
-
 
 .icon{background:url({$TMPL}/images/icon.png) left top no-repeat; display:inline-block; float:left;}
 .icon-10{width:50px; height:50px; background-position:-60px -265px;}
@@ -88,7 +84,7 @@ function showMenu(html,left,top) {
 
 	$("#currentMenu").mouseover(function(){
 		  $(this).show();}).mouseout(function(){
-		$(this).hide();
+		$(this).show();
 	});
 }
 

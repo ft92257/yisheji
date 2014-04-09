@@ -109,7 +109,11 @@ class UserAction extends BaseAction {
 			}
 			$user = D('User')->login($this->para['account'], $this->para['password']);
 			if ($user) {
-				$this->resultFormat($user, 1);
+				if($this->para['ref']){
+					$this->resultFormat($user, 1, null, urldecode($this->para['ref']));
+				} else {
+					$this->resultFormat($user, 1);
+				}
 			} else {
 				$this->resultFormat(null, 0, '用户名或密码错误');
 			}
@@ -118,6 +122,7 @@ class UserAction extends BaseAction {
 				header('Location: ' . U('/Index/index'));
 				exit;
 			}
+			$this->assign('ref', $this->para['ref']);
 			$this->display();
 		}
 	}
@@ -137,7 +142,12 @@ class UserAction extends BaseAction {
 	//退出
 	public function logout() {
 		D('Session')->destroy($this->oUser['id']);
-		$this->redirect('Index/index');
+		if($this->para['ref']){
+					header('Location: '.$this->para['ref']);
+		}else {
+			$this->redirect('Index/index');
+		}
+		
 	}
 	//账户唯一验证
 	public function accountUnique(){

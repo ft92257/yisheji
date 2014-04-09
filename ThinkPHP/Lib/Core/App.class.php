@@ -31,7 +31,7 @@ class App {
         load_ext_file();
         // URL调度
         Dispatcher::dispatch();
-
+       
         // 定义当前请求的系统常量
         define('NOW_TIME',      $_SERVER['REQUEST_TIME']);
         define('REQUEST_METHOD',$_SERVER['REQUEST_METHOD']);

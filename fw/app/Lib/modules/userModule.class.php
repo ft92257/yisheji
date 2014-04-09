@@ -12,6 +12,7 @@ class userModule extends BaseModule
 {
 	public function login()
 	{		
+		header("location:http://localhost/yisheji/index.php/User/login/app/zc");
 		$GLOBALS['tmpl']->caching = true;
 		$cache_id  = md5(MODULE_NAME.ACTION_NAME);		
 		if (!$GLOBALS['tmpl']->is_cached('user_login.html', $cache_id))

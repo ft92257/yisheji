@@ -26,6 +26,7 @@ class PublicAction extends BaseAction{
 	}
 	
 	public function header_zc(){
+		$this->assign('ref', urlencode($_SERVER['HTTP_REFERER']));
 		$this->display();
 	}
 	

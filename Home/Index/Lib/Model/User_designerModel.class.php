@@ -24,7 +24,7 @@ class User_designerModel extends BaseModel {
 		$cache = json_decode($resultSet['cache'], 1);
 		$resultSet['friend_c'] = $cache['friend_count'] ? $cache['friend_count'] : 0;
 		$resultSet['fensi_c'] = $cache['fensi_count'] ? $cache['fensi_count'] : 0;
-		$resultSet['case_focus'] = $cache['case']['focus'];
+		$resultSet['case_focus'] = $cache['case']['focus'] ? $cache['case']['focus'] : C('HOST_URL') . C('TMPL_PARSE_STRING.__FILES__')."/404.jpg";;
 		$resultSet['case_id'] = $cache['case']['id'];
 	}
 	

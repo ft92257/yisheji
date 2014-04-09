@@ -26,6 +26,7 @@ function actRequest(data, act){
 	}
 	
 	function showAlert(status, msg, url){
+		
 		var str = [];
 		str.push('<div class="layer_alert" style="padding:10px; background-color:#fff"><table class="layerTable"><tr>');
 		if(status == 1){
